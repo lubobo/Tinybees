@@ -15,7 +15,15 @@ public interface AdminDAO {
 
     List<Category> getAllCategory();
 
+    Category getCategoryById(String category);
+
+    List<Category_second> getCategorySecondByName(String categories);
+
+    Category_second getCategorySecondById(String category_second);
+
     List<Category_second> getAllCategorySecond();
+
+    List<Category_third> getCategoryThirdByName(String category_seconds);
 
     List<Category_third> getAllCategoryThird();
 }

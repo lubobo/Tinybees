@@ -7,4 +7,35 @@
     <select id="selectAdminByName" resultType="Admin" parameterType="Admin">
         SELECT * FROM admin WHERE ad_name=#{ad_name} AND ad_password=#{ad_password};
     </select>
+
+    <select id="getAllCategory" resultType="Category">
+        SELECT * FROM category;
+    </select>
+
+    <select id="getCategoryById" resultType="Category">
+        SELECT * FROM category WHERE c_id=#{category};
+    </select>
+
+    <select id="getAllCategorySecond" resultType="Category_second">
+        SELECT * FROM category_second;
+    </select>
+
+    <select id="getCategorySecondById" resultType="Category_second">
+        SELECT *FROM category_second WHERE cs_id=#{category_second}
+    </select>
+
+    <select id="getAllCategoryThird" resultType="Category_third">
+        SELECT * FROM category_third;
+    </select>
+
+    <select id="getCategorySecondByName" resultType="Category_second">
+        SELECT category_second.cs_name FROM category_second,category
+        WHERE category_second.c_id=#{categories} GROUP BY category_second.cs_name;
+    </select>
+
+    <select id="getCategoryThirdByName" resultType="Category_third">
+        SELECT category_third.ct_name FROM category_third,category_second
+        WHERE
+        category_third.cs_id=#{category_seconds} GROUP BY category_third.ct_name;
+    </select>
 </mapper>

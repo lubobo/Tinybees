@@ -2,1179 +2,68 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b364a2b-2d04-41ad-9a69-074ea3501830" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/classes/com/Tinybees/controller/UserInfoController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/classes/com/Tinybees/mapper/MapperScannerConfig.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/classes/com/Tinybees/model/ComboPooledDataSource.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/classes/com/Tinybees/service/UserInfoServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/aopalliance-1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/commons-dbcp2-2.1.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/commons-logging-1.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/commons-pool2-2.4.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/jackson-annotations-2.8.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/jackson-core-2.8.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/jackson-databind-2.8.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/jedis-2.7.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/jstl-1.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/mybatis-3.4.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/mybatis-generator-core-1.3.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/mybatis-spring-1.3.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/mysql-connector-java-5.1.40.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/slf4j-api-1.7.12.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/spring-aop-4.3.6.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/spring-beans-4.3.6.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/spring-context-4.3.6.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/spring-context-support-4.1.7.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/spring-core-4.3.6.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/spring-dao-2.0.8.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/spring-data-redis-1.6.1.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/spring-expression-4.3.6.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/spring-jdbc-4.3.6.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/spring-test-4.3.9.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/spring-tx-4.3.6.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/spring-web-4.3.6.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/spring-webmvc-4.3.6.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/banner/cms-block.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/banner/responsive.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/banner/sample-banner-1-400x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/banner/sample-banner-2-400x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/banner/sample-banner-3-400x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/banner/sample-banner-4-400x150.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/banner/sample-banner-5-400x150.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/banner/small-banner-265x350.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/banner/small-banner1-265x350.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/bullet-dark-rtl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/bullet-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/favicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ae.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/af.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ag.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ai.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/al.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/am.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/an.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ao.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/as.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/at.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/au.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/aw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ax.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/az.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ba.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/bb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/bd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/be.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/bf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/bh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/bi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/bj.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/bm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/bn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/bo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/br.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/bs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/bt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/bv.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/bw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/by.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/bz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ca.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/cc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/cd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/cf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/cg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ci.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ck.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/cl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/cm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/cn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/co.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/cr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/cs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/cu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/cv.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/cx.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/cy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/cz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/de.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/dj.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/dk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/dm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/do.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/dz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ec.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/eg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/eh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/england.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/er.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/es.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/et.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/fam.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/fi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/fj.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/fk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/fm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/fo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/fr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ga.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/gb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/gd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ge.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/gh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/gi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/gl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/gm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/gn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/gp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/gq.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/gr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/gs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/gt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/gu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/gw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/gy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/hk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/hn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/hr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ht.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/hu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/id.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ie.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/il.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/in.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/io.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/iq.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ir.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/is.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/it.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/jm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/jo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/jp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ke.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/kg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/kh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ki.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/km.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/kn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/kp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/kr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/kw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ky.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/kz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/la.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/lb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/lc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/li.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/lk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/lr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ls.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/lt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/lu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/lv.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ly.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ma.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/mc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/md.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/mg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/mh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/mk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ml.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/mm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/mn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/mo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/mp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/mq.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/mr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ms.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/mt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/mu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/mv.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/mw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/mx.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/my.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/mz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/na.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/nc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ne.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/nf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ng.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ni.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/nl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/no.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/np.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/nr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/nu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/nz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/om.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/pa.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/pe.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/pf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/pg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ph.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/pk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/pl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/pm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/pn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/pr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ps.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/pt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/pw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/py.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/qa.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ro.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ru.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/rw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/sa.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/sb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/sc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/scotland.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/sd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/se.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/sg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/sh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/si.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/sk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/sl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/sm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/sn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/so.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/sr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/st.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/sv.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/sy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/sz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/tc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/td.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/tf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/tg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/th.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/tj.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/tk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/tl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/tm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/tn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/to.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/tr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/tt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/tv.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/tw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/tz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ua.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ug.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/um.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/us.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/uy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/uz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/va.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/vc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ve.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/vg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/vi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/vn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/vu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/wales.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/wf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ws.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/ye.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/yt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/za.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/zm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/flags/zw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/grabbing.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/no_image.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/13.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/14.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/15.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/17.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/18.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/19.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/20.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/21.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/22.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/23.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/25.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/26.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/27.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/28.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/29.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/30.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/31.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/33.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/34.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/35.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/36.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/37.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/38.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/39.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/40.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/41.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/42.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/43.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/44.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/45.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/46.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/47.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/48.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/49.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/50.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/51.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/52.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/53.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/patterns/9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/payment/payment_2checkout.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/payment/payment_american.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/payment/payment_cirrus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/payment/payment_delta.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/payment/payment_direct.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/payment/payment_discover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/payment/payment_ebay.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/payment/payment_google.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/payment/payment_maestro.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/payment/payment_mastercard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/payment/payment_moneybookers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/payment/payment_paypal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/payment/payment_sagepay.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/payment/payment_solo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/payment/payment_switch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/payment/payment_visa.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/payment/payment_western_union.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/plus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/FinePix-Long-Zoom-Camera-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/FinePix-Long-Zoom-Camera-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/apple_cinema_30-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/apple_cinema_30-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/apple_logo-100x100.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/apple_logo-60x60.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/canon_eos_5d_1-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/canon_logo-100x100.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/canon_logo-60x60.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/hp_2-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/hp_3-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/hp_logo-60x60.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/htc_logo-60x60.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/iphone_1-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/iphone_1-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/iphone_6-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/iphone_6-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/ipod_classic_1-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/ipod_nano_1-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/ipod_shuffle_1-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/ipod_touch_1-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/macbook_1-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/macbook_1-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/macbook_2-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/macbook_2-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/macbook_3-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/macbook_3-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/macbook_4-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/macbook_4-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/macbook_5-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/macbook_5-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/macbook_air_1-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/macbook_air_1-350x350.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/macbook_air_1-500x500.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/macbook_air_1-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/macbook_air_1-66x66.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/macbook_air_1-90x90.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/macbook_air_2-350x350.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/macbook_air_2-500x500.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/macbook_air_2-66x66.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/macbook_air_3-350x350.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/macbook_air_3-500x500.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/macbook_air_3-66x66.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/macbook_air_4-350x350.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/macbook_air_4-500x500.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/macbook_air_4-66x66.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/macbook_pro_1-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/macbook_pro_1-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/macbook_pro_1-90x90.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/nikon_d300_1-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/nikon_d300_1-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/nikon_d300_4-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/nikon_d300_4-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/nikon_d300_5-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/nikon_d300_5-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/palm_logo-60x60.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/palm_treo_pro_1-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/samsung_tab_1-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/samsung_tab_1-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/samsung_tab_1-90x90.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/sony_logo-60x60.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/sony_vaio_1-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/sony_vaio_1-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/product/store_location-275x180.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/progress.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/slider/banner-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/slider/banner-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/slider/banner-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/bebo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/blogger.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/delicious.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/digg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/dopplr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/ember.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/evernote.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/facebook.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/flickr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/forrst.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/friendfeed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/google_plus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/googletalk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/grooveshark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/instagram.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/lastfm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/linkedin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/mixx.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/myspace.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/newsvine.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/openid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/pandora.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/picasa.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/pinterest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/posterous.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/readernaut.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/reddit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/rss.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/sharethis.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/skype.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/spotify.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/stumbleupon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/technorati.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/tumblr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/twitter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/viadeo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/viddler.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/vimeo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/virb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/vk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/xing.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/yahoobuzz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/yelp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/socialicons/youtube.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/swipebox/src/img/icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/swipebox/src/img/loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/classes/com/Tinybees/controller/back/AdminController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/classes/com/Tinybees/controller/front/UserController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/lib/aopalliance-1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/lib/commons-dbcp2-2.1.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/lib/commons-pool2-2.4.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/lib/jackson-annotations-2.8.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/lib/jackson-core-2.8.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/lib/jackson-databind-2.8.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/lib/jstl-1.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/lib/mybatis-3.4.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/lib/mybatis-generator-core-1.3.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/lib/mybatis-spring-1.3.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/lib/mysql-connector-java-5.1.40.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/lib/spring-aop-4.3.6.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/lib/spring-beans-4.3.6.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/lib/spring-context-4.3.6.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/lib/spring-core-4.3.6.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/lib/spring-dao-2.0.8.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/lib/spring-expression-4.3.6.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/lib/spring-jdbc-4.3.6.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/lib/spring-test-4.3.9.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/lib/spring-tx-4.3.6.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/lib/spring-web-4.3.6.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/lib/spring-webmvc-4.3.6.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/banner/cms-block.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/banner/responsive.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/banner/sample-banner-1-400x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/banner/sample-banner-2-400x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/banner/sample-banner-3-400x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/banner/sample-banner-4-400x150.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/banner/sample-banner-5-400x150.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/banner/small-banner-265x350.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/banner/small-banner1-265x350.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/bullet-dark-rtl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/bullet-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/favicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ae.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/af.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ag.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ai.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/al.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/am.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/an.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ao.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/as.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/at.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/au.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/aw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ax.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/az.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ba.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/bb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/bd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/be.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/bf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/bh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/bi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/bj.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/bm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/bn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/bo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/br.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/bs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/bt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/bv.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/bw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/by.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/bz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ca.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/cc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/cd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/cf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/cg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ci.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ck.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/cl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/cm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/cn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/co.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/cr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/cs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/cu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/cv.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/cx.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/cy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/cz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/de.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/dj.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/dk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/dm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/do.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/dz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ec.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/eg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/eh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/england.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/er.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/es.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/et.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/fam.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/fi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/fj.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/fk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/fm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/fo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/fr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ga.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/gb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/gd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ge.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/gh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/gi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/gl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/gm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/gn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/gp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/gq.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/gr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/gs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/gt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/gu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/gw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/gy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/hk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/hn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/hr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ht.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/hu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/id.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ie.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/il.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/in.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/io.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/iq.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ir.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/is.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/it.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/jm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/jo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/jp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ke.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/kg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/kh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ki.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/km.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/kn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/kp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/kr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/kw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ky.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/kz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/la.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/lb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/lc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/li.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/lk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/lr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ls.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/lt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/lu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/lv.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ly.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ma.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/mc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/md.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/mg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/mh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/mk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ml.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/mm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/mn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/mo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/mp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/mq.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/mr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ms.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/mt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/mu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/mv.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/mw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/mx.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/my.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/mz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/na.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/nc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ne.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/nf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ng.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ni.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/nl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/no.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/np.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/nr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/nu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/nz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/om.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/pa.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/pe.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/pf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/pg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ph.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/pk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/pl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/pm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/pn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/pr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ps.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/pt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/pw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/py.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/qa.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ro.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ru.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/rw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/sa.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/sb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/sc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/scotland.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/sd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/se.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/sg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/sh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/si.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/sk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/sl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/sm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/sn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/so.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/sr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/st.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/sv.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/sy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/sz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/tc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/td.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/tf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/tg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/th.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/tj.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/tk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/tl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/tm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/tn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/to.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/tr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/tt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/tv.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/tw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/tz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ua.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ug.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/um.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/us.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/uy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/uz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/va.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/vc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ve.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/vg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/vi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/vn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/vu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/wales.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/wf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ws.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/ye.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/yt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/za.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/zm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/flags/zw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/grabbing.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/no_image.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/13.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/14.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/15.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/17.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/18.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/19.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/20.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/21.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/22.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/23.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/25.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/26.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/27.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/28.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/29.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/30.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/31.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/33.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/34.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/35.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/36.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/37.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/38.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/39.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/40.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/41.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/42.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/43.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/44.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/45.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/46.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/47.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/48.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/49.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/50.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/51.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/52.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/53.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/patterns/9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/payment/payment_2checkout.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/payment/payment_american.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/payment/payment_cirrus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/payment/payment_delta.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/payment/payment_direct.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/payment/payment_discover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/payment/payment_ebay.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/payment/payment_google.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/payment/payment_maestro.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/payment/payment_mastercard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/payment/payment_moneybookers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/payment/payment_paypal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/payment/payment_sagepay.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/payment/payment_solo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/payment/payment_switch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/payment/payment_visa.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/payment/payment_western_union.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/plus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/FinePix-Long-Zoom-Camera-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/FinePix-Long-Zoom-Camera-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/apple_cinema_30-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/apple_cinema_30-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/apple_logo-100x100.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/apple_logo-60x60.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/canon_eos_5d_1-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/canon_logo-100x100.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/canon_logo-60x60.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/hp_2-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/hp_3-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/hp_logo-60x60.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/htc_logo-60x60.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/iphone_1-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/iphone_1-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/iphone_6-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/iphone_6-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/ipod_classic_1-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/ipod_nano_1-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/ipod_shuffle_1-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/ipod_touch_1-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/macbook_1-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/macbook_1-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/macbook_2-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/macbook_2-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/macbook_3-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/macbook_3-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/macbook_4-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/macbook_4-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/macbook_5-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/macbook_5-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/macbook_air_1-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/macbook_air_1-350x350.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/macbook_air_1-500x500.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/macbook_air_1-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/macbook_air_1-66x66.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/macbook_air_1-90x90.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/macbook_air_2-350x350.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/macbook_air_2-500x500.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/macbook_air_2-66x66.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/macbook_air_3-350x350.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/macbook_air_3-500x500.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/macbook_air_3-66x66.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/macbook_air_4-350x350.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/macbook_air_4-500x500.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/macbook_air_4-66x66.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/macbook_pro_1-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/macbook_pro_1-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/macbook_pro_1-90x90.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/nikon_d300_1-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/nikon_d300_1-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/nikon_d300_4-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/nikon_d300_4-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/nikon_d300_5-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/nikon_d300_5-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/palm_logo-60x60.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/palm_treo_pro_1-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/samsung_tab_1-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/samsung_tab_1-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/samsung_tab_1-90x90.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/sony_logo-60x60.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/sony_vaio_1-200x200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/sony_vaio_1-50x50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/product/store_location-275x180.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/progress.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/slider/banner-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/slider/banner-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/slider/banner-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/bebo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/blogger.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/delicious.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/digg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/dopplr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/ember.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/evernote.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/facebook.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/flickr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/forrst.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/friendfeed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/google_plus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/googletalk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/grooveshark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/instagram.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/lastfm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/linkedin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/mixx.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/myspace.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/newsvine.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/openid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/pandora.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/picasa.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/pinterest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/posterous.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/readernaut.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/reddit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/rss.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/sharethis.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/skype.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/spotify.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/stumbleupon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/technorati.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/tumblr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/twitter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/viadeo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/viddler.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/vimeo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/virb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/vk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/xing.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/yahoobuzz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/yelp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/image/socialicons/youtube.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/bootstrap/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/bootstrap/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/swipebox/src/img/icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/swipebox/src/img/loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/Tinybees/controller/back/AdminController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/Tinybees/controller/front/UserController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Tinybees_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Tinybees_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Tinybees_war_exploded2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/a7aded01-e61b-4ffa-bfcb-76ee9b801010.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__avalon_framework_avalon_framework_4_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__logkit_logkit_1_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_40.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_dbcp2_2_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_generator_mybatis_generator_core_1_3_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_dao_2_0_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_9_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tinybees.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/goupu.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/classes/jdbc.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/classes/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/classes/spring-mvc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/classes/spring-mybatis.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/index.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/AdminController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/front/HomeController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/front/UserController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/user/UserDAO.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/SqlMapConfig.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/404.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/about-us.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/cart.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/category.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/checkout.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/compare.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/contact-us.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/elements.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/faq.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/home.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/login.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/product.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/register.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/search.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/sitemap.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/wishlist.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/less/animated.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/less/bordered-pulled.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/less/core.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/less/fixed-width.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/less/font-awesome.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/less/icons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/less/larger.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/less/list.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/less/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/less/path.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/less/rotated-flipped.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/less/stacked.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/less/variables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/scss/_animated.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/scss/_bordered-pulled.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/scss/_core.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/scss/_fixed-width.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/scss/_icons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/scss/_larger.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/scss/_list.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/scss/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/scss/_path.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/scss/_rotated-flipped.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/scss/_stacked.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/scss/_variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/scss/font-awesome.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/owl.carousel.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/owl.transitions.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/responsive-rtl.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/responsive.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/stylesheet-rtl.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/stylesheet-skin2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/stylesheet-skin3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/stylesheet-skin4.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap/css/bootstrap-flipped.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap/css/bootstrap-flipped.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap/css/bootstrap-flipped.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap/css/bootstrap-rtl.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap/css/bootstrap-rtl.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap/css/bootstrap-rtl.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery-2.1.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery.dcjqaccordion.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery.dcjqaccordion.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery.easing-1.3.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery.elevateZoom-3.0.8.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery.elevatezoom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/owl.carousel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/owl.carousel.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/swipebox/lib/ios-orientationchange-fix.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/swipebox/lib/jquery-2.1.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/swipebox/src/css/swipebox.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/swipebox/src/css/swipebox.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/swipebox/src/img/icons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/swipebox/src/js/jquery.swipebox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/swipebox/src/js/jquery.swipebox.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/classes/jdbc.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/classes/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/classes/spring-mvc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/classes/spring-mybatis.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/less/animated.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/less/bordered-pulled.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/less/core.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/less/fixed-width.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/less/font-awesome.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/less/icons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/less/larger.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/less/list.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/less/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/less/path.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/less/rotated-flipped.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/less/stacked.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/less/variables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/scss/_animated.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/scss/_bordered-pulled.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/scss/_core.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/scss/_fixed-width.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/scss/_icons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/scss/_larger.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/scss/_list.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/scss/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/scss/_path.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/scss/_rotated-flipped.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/scss/_stacked.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/scss/_variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/font-awesome/scss/font-awesome.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/owl.carousel.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/owl.transitions.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/responsive-rtl.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/responsive.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/stylesheet-rtl.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/stylesheet-skin2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/stylesheet-skin3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/stylesheet-skin4.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/css/stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/bootstrap/css/bootstrap-flipped.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/bootstrap/css/bootstrap-flipped.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/bootstrap/css/bootstrap-flipped.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/bootstrap/css/bootstrap-rtl.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/bootstrap/css/bootstrap-rtl.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/bootstrap/css/bootstrap-rtl.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/bootstrap/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/bootstrap/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/bootstrap/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/bootstrap/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/bootstrap/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/bootstrap/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/bootstrap/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/jquery-2.1.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/jquery.dcjqaccordion.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/jquery.dcjqaccordion.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/jquery.easing-1.3.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/jquery.elevateZoom-3.0.8.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/jquery.elevatezoom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/owl.carousel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/owl.carousel.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/swipebox/lib/ios-orientationchange-fix.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/swipebox/lib/jquery-2.1.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/swipebox/src/css/swipebox.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/swipebox/src/css/swipebox.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/swipebox/src/img/icons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/swipebox/src/js/jquery.swipebox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tinybees/js/swipebox/src/js/jquery.swipebox.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/spring-mvc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/spring-mybatis.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/classes/com/Tinybees/controller/UserInfoController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/classes/com/Tinybees/mapper/MapperScannerConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/classes/com/Tinybees/model/ComboPooledDataSource.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/classes/com/Tinybees/service/UserInfoServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/classes/jdbc.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/classes/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/classes/spring-mvc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/classes/spring-mybatis.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/aopalliance-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/commons-dbcp2-2.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/commons-logging-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/commons-pool2-2.4.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/jackson-annotations-2.8.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/jackson-core-2.8.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/jackson-databind-2.8.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/jedis-2.7.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/mybatis-3.4.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/mybatis-generator-core-1.3.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/mybatis-spring-1.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/mysql-connector-java-5.1.40.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/slf4j-api-1.7.12.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/spring-aop-4.3.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/spring-beans-4.3.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/spring-context-4.3.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/spring-context-support-4.1.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/spring-core-4.3.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/spring-dao-2.0.8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/spring-data-redis-1.6.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/spring-expression-4.3.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/spring-jdbc-4.3.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/spring-test-4.3.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/spring-tx-4.3.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/spring-web-4.3.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/lib/spring-webmvc-4.3.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Tinybees_war_exploded2/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/SqlMapConfig.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/Tinybees/controller/back/AdminController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/Tinybees/controller/front/HomeController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/Tinybees/controller/front/UserController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/Tinybees/mapper/admin/AdminDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/Tinybees/mapper/admin/AdminDAO.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/Tinybees/mapper/user/UserDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/Tinybees/mapper/user/UserDAO.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/Tinybees/model/Admin.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/Tinybees/model/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/generatorConfig.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/spring-mybatis.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/classes/com/Tinybees/controller/back/AdminController.class" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/classes/com/Tinybees/controller/back/AdminController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/classes/com/Tinybees/mapper/admin/AdminDAO.class" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/classes/com/Tinybees/mapper/admin/AdminDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tinybees.iml" afterPath="$PROJECT_DIR$/Tinybees.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/AdminController.java" afterPath="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/AdminController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.xml" afterPath="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/add_product.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/add_product.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/classes/com/Tinybees/mapper/admin/AdminDAO.xml" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/classes/com/Tinybees/mapper/admin/AdminDAO.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/add_product.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/add_product.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1224,14 +113,35 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="add_product_1.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/add_product_1.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="457">
+              <caret line="927" column="23" lean-forward="true" selection-start-line="927" selection-start-column="23" selection-end-line="927" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="78" column="64" lean-forward="false" selection-start-line="78" selection-start-column="64" selection-end-line="78" selection-end-column="64" />
+            <state relative-caret-position="320">
+              <caret line="117" column="0" lean-forward="true" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="docComment;class#AdminController#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_product_2.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/add_product_2.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="618" column="91" lean-forward="true" selection-start-line="618" selection-start-column="91" selection-end-line="618" selection-end-column="91" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1239,11 +149,9 @@
       <file leaf-file-name="AdminDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="19" column="47" lean-forward="false" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-              <folding>
-                <element signature="docComment;class#AdminDAO#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="168">
+              <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="44" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1251,54 +159,18 @@
       <file leaf-file-name="AdminDAO.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="249">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
-                <marker date="1500521450368" expanded="true" signature="342:417" ph="SELECT * FRO... admin" />
-                <marker date="1500521450368" expanded="true" signature="497:519" ph="SELECT * FRO... category" />
-                <marker date="1500521450368" expanded="true" signature="612:641" ph="SELECT * FRO... category_second" />
-                <marker date="1500521450368" expanded="true" signature="732:760" ph="SELECT * FRO... category_third" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin_home.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/admin_home.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2133">
-              <caret line="341" column="49" lean-forward="false" selection-start-line="341" selection-start-column="49" selection-end-line="341" selection-end-column="49" />
-              <folding>
-                <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#2;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#2;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#aside#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <marker date="1500519906588" expanded="false" signature="11968:11978" ph="..." />
-                <marker date="1500519906588" expanded="false" signature="13033:13043" ph="..." />
-                <marker date="1500519906588" expanded="false" signature="14096:14106" ph="..." />
-                <marker date="1500519906588" expanded="false" signature="15163:15173" ph="..." />
-                <marker date="1500519906588" expanded="false" signature="43642:43656" ph="..." />
-                <marker date="1500519906588" expanded="false" signature="43982:43999" ph="..." />
-                <marker date="1500519906588" expanded="false" signature="73023:73033" ph="..." />
-                <marker date="1500519906588" expanded="false" signature="73945:73955" ph="..." />
-                <marker date="1500519906588" expanded="false" signature="74876:74886" ph="..." />
-                <marker date="1500519906588" expanded="false" signature="75801:75811" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/home.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="64" />
-              <folding>
-                <element signature="n#!!doc;n#jsp:root#0;n#!!top" expanded="false" />
+                <marker date="1500693534361" expanded="true" signature="342:417" ph="SELECT * FRO... admin" />
+                <marker date="1500693534361" expanded="true" signature="497:519" ph="SELECT * FRO... category" />
+                <marker date="1500693534361" expanded="true" signature="600:645" ph="SELECT * FRO... category" />
+                <marker date="1500693534361" expanded="true" signature="738:767" ph="SELECT * FRO... category_second" />
+                <marker date="1500693534361" expanded="true" signature="861:920" ph="SELECT *FROM... category_second" />
+                <marker date="1500693534361" expanded="true" signature="1010:1038" ph="SELECT * FRO... category_third" />
+                <marker date="1500693534361" expanded="true" signature="1134:1276" ph="SELECT categ... category_second" />
+                <marker date="1500693534361" expanded="true" signature="1370:1499" ph="SELECT categ... category_third" />
+                <marker date="1500693534361" expanded="true" signature="1370:1530" ph="SELECT categ... category_third" />
               </folding>
             </state>
           </provider>
@@ -1307,18 +179,9 @@
       <file leaf-file-name="add_product.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/add_product.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="7" column="64" lean-forward="false" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
-              <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#section#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#textarea#0;n#div#2;n#div#1;n#div#0;n#div#1;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#aside#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
+            <state relative-caret-position="8144">
+              <caret line="913" column="9" lean-forward="true" selection-start-line="913" selection-start-column="9" selection-end-line="913" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1364,6 +227,7 @@
       <find>../</find>
       <find>Compose New Message</find>
       <find>AdminLTE</find>
+      <find>getCategoryById</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -1387,8 +251,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wishlist.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/UserInfoController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/404.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/about-us.jsp" />
@@ -1434,10 +296,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/model/Category_third.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/model/Category_second.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/model/Category.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/add_product.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/add_product_2.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/AdminController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/AdminController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/add_product.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/add_product_1.jsp" />
       </list>
     </option>
   </component>
@@ -1552,6 +416,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1653,6 +518,10 @@
               <option name="myItemId" value="jsp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1693,10 +562,6 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1721,70 +586,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Tinybees" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinybees" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinybees" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinybees" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinybees" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinybees" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinybees" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mapper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1852,79 +653,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinybees" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinybees" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinybees" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="front" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinybees" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinybees" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinybees" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="back" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2510,12 +1242,13 @@
       <workItem from="1500434282306" duration="6911000" />
       <workItem from="1500446196537" duration="9162000" />
       <workItem from="1500511849252" duration="9000" />
-      <workItem from="1500512372069" duration="8934000" />
+      <workItem from="1500512372069" duration="24070000" />
+      <workItem from="1500683944877" duration="11265000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95836000" />
+    <option name="totallyTimeSpent" value="122237000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -2549,14 +1282,12 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28852838" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4750869" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31276825" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22693133" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2566,6 +1297,8 @@
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" x="-280" y="352" width="1738" height="860" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4750869" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2576,7 +1309,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="14" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2585,20 +1318,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="616" column="0" lean-forward="false" selection-start-line="616" selection-start-column="0" selection-end-line="616" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="747" column="0" lean-forward="false" selection-start-line="747" selection-start-column="0" selection-end-line="747" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.6.RELEASE/spring-web-4.3.6.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
@@ -2636,9 +1355,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2654,7 +1370,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
           <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2662,7 +1377,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="2" column="51" lean-forward="false" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2689,18 +1403,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/AdminLTE-cn/documentation/build/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/AdminLTE-cn/documentation/build/index.html" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/controller/front/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="702">
@@ -2715,7 +1421,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="17" column="66" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2723,7 +1428,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="4" column="55" lean-forward="true" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2747,7 +1451,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
           <caret line="1548" column="70" lean-forward="true" selection-start-line="1548" selection-start-column="70" selection-end-line="1548" selection-end-column="70" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2781,7 +1484,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="4" column="55" lean-forward="true" selection-start-line="4" selection-start-column="55" selection-end-line="5" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2797,7 +1499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="4" column="55" lean-forward="true" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2805,7 +1506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2813,7 +1513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2821,7 +1520,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2829,7 +1527,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="13" column="83" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="863" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2872,7 +1569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2880,9 +1576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2914,39 +1607,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/home.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="27">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="64" />
           <folding>
-            <marker date="1500521450368" expanded="true" signature="342:417" ph="SELECT * FRO... admin" />
-            <marker date="1500521450368" expanded="true" signature="497:519" ph="SELECT * FRO... category" />
-            <marker date="1500521450368" expanded="true" signature="612:641" ph="SELECT * FRO... category_second" />
-            <marker date="1500521450368" expanded="true" signature="732:760" ph="SELECT * FRO... category_third" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="19" column="47" lean-forward="false" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-          <folding>
-            <element signature="docComment;class#AdminDAO#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="78" column="64" lean-forward="false" selection-start-line="78" selection-start-column="64" selection-end-line="78" selection-end-column="64" />
-          <folding>
-            <element signature="docComment;class#AdminController#0" expanded="false" />
+            <element signature="n#!!doc;n#jsp:root#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2956,14 +1625,6 @@
         <state relative-caret-position="2133">
           <caret line="341" column="49" lean-forward="false" selection-start-line="341" selection-start-column="49" selection-end-line="341" selection-end-column="49" />
           <folding>
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#2;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#2;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#aside#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <marker date="1500519906588" expanded="false" signature="11968:11978" ph="..." />
             <marker date="1500519906588" expanded="false" signature="13033:13043" ph="..." />
             <marker date="1500519906588" expanded="false" signature="14096:14106" ph="..." />
@@ -2978,30 +1639,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/home.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="64" />
+        <state relative-caret-position="168">
+          <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc;n#jsp:root#0;n#!!top" expanded="false" />
+            <marker date="1500693534361" expanded="true" signature="342:417" ph="SELECT * FRO... admin" />
+            <marker date="1500693534361" expanded="true" signature="497:519" ph="SELECT * FRO... category" />
+            <marker date="1500693534361" expanded="true" signature="600:645" ph="SELECT * FRO... category" />
+            <marker date="1500693534361" expanded="true" signature="738:767" ph="SELECT * FRO... category_second" />
+            <marker date="1500693534361" expanded="true" signature="861:920" ph="SELECT *FROM... category_second" />
+            <marker date="1500693534361" expanded="true" signature="1010:1038" ph="SELECT * FRO... category_third" />
+            <marker date="1500693534361" expanded="true" signature="1134:1276" ph="SELECT categ... category_second" />
+            <marker date="1500693534361" expanded="true" signature="1370:1499" ph="SELECT categ... category_third" />
+            <marker date="1500693534361" expanded="true" signature="1370:1530" ph="SELECT categ... category_third" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="117" column="0" lean-forward="true" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#AdminController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/add_product_2.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="618" column="91" lean-forward="true" selection-start-line="618" selection-start-column="91" selection-end-line="618" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/add_product_1.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="927" column="23" lean-forward="true" selection-start-line="927" selection-start-column="23" selection-end-line="927" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/add_product.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="7" column="64" lean-forward="false" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#textarea#0;n#div#2;n#div#1;n#div#0;n#div#1;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#aside#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="8144">
+          <caret line="913" column="9" lean-forward="true" selection-start-line="913" selection-start-column="9" selection-end-line="913" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3016,6 +1711,7 @@
             <option name="proportions">
               <list>
                 <option value="0.35202205" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

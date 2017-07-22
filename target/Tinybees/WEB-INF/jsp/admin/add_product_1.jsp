@@ -2,7 +2,7 @@
   Created by IntelliJ IDEA.
   User: lukbo
   Date: 2017/7/20
-  Time: 10:58
+  Time: 15:13
   To change this template use File | Settings | File Templates.
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -615,8 +615,11 @@
                         <div class="box-body">
 
                             <div class="form-group col-lg-4">
-                                <select class="form-control" onmouseout="getCategory_second(this.value)" >
-                                    <%--<option>一级分类</option>--%>
+                                <%--<select class="form-control" id="the_first">--%>
+                                <%--<option ><c:out value="${categories}"/></option>--%>
+                                <%--</select>--%>
+                                <select class="form-control" id="the_first" onmouseout="getCategory_second(this.value)" >
+                                    <option value="${category.c_id}"><c:out value="${category.c_name}"/></option>
                                     <c:forEach items="${categories}" var="i" step="1">
                                         <option class="form-control-item" value="${i.c_id}">
                                             <c:out value="${i.c_name}"/>
@@ -626,8 +629,17 @@
                             </div>
 
                             <div class="form-group col-lg-4" id="category_second">
-                                <select class="form-control">
+                                <select class="form-control" id="the_second"
+                                        onmouseout="getCategory_third(
+                                            document.getElementById('the_first').options[document.getElementById('the_first').selectedIndex].value,
+                                            document.getElementById('the_second').options[document.getElementById('the_second').selectedIndex].value
+                                        )">
                                     <option>二级分类</option>
+                                    <c:forEach items="${categories_seconds}" var="i" step="1">
+                                        <option class="form-control" value="${i.cs_id}">
+                                            <c:out value="${i.cs_name}"/>
+                                        </option>
+                                    </c:forEach>
                                 </select>
                             </div>
 
@@ -898,6 +910,24 @@
         //Add text editor
         $("#compose-textarea").wysihtml5();
     });
+
+    function getCategory_third(str,str1) {
+        var xmlhttp;
+        if (window.XMLHttpRequest) {
+            xmlhttp = new XMLHttpRequest();
+        }
+        else {
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange=function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                window.location = "/category_third/"+xmlhttp.getResponseHeader("categories")+"/"+xmlhttp.getResponseHeader("categories_second");
+            }
+        }
+        xmlhttp.open("GET", "/getCategory_third/"+str+"/"+str1, false);
+        xmlhttp.send();
+
+    }
 
     function getCategory_second(str) {
         var xmlhttp;

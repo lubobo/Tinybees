@@ -8,6 +8,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -69,16 +70,54 @@ public class AdminController {
     }
 
     @RequestMapping("/add_product")
-    public ModelAndView add_product(Model model){
+    public ModelAndView add_product(Model model,HttpServletRequest request,HttpServletResponse response){
         ModelAndView modelAndView = new ModelAndView();
         List<Category> categories = adminDAO.getAllCategory();
-        List<Category_second> category_seconds = adminDAO.getAllCategorySecond();
-        List<Category_third> category_thirds = adminDAO.getAllCategoryThird();
         model.addAttribute("categories",categories);
-        model.addAttribute("categories_seconds",category_seconds);
-        model.addAttribute("categories_thirds",category_thirds);
         modelAndView.setViewName("admin/add_product");
         return modelAndView;
     }
 
+    @RequestMapping(value = "/getCategory_second/{categories}")
+    public void getCategories_second(@PathVariable String categories,HttpServletResponse response) throws IOException {
+        response.setContentType("text/plain");
+        response.setCharacterEncoding("UTF-8");
+        response.getWriter().print(categories);
+    }
+
+    @RequestMapping(value = "/category_second/{categories}")
+    public ModelAndView getCategory_second(@PathVariable String categories, Model model, HttpServletRequest request, HttpServletResponse response){
+        ModelAndView modelAndView = new ModelAndView();
+        List<Category_second> category_seconds = adminDAO.getCategorySecondByName(categories);
+        List<Category> categories1 =adminDAO.getAllCategory();
+        model.addAttribute("category",adminDAO.getCategoryById(categories));
+        model.addAttribute("categories",categories1);
+        model.addAttribute("categories_seconds",category_seconds);
+        modelAndView.setViewName("admin/add_product_1");
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/getCategory_third/{categories}/{categories_second}")
+    public void getCategory_third(@PathVariable String categories,@PathVariable String categories_second,HttpServletResponse response) throws IOException{
+        response.setContentType("text/plain");
+        response.setCharacterEncoding("UTF-8");
+        response.setHeader("categories",categories);
+        response.setHeader("categories_second",categories_second);
+    }
+
+    @RequestMapping(value = "/category_third/{categories}/{categories_second}")
+    public ModelAndView category_third(@PathVariable String categories,@PathVariable String categories_second, Model model,HttpServletRequest request,HttpServletResponse response){
+        ModelAndView modelAndView = new ModelAndView();
+        List<Category_third> category_thirds = adminDAO.getCategoryThirdByName(categories_second);
+
+        model.addAttribute("category",adminDAO.getCategoryById(categories));
+        model.addAttribute("category_second",adminDAO.getCategorySecondById(categories_second));
+
+        model.addAttribute("categories",adminDAO.getAllCategory());
+        model.addAttribute("categories_second",adminDAO.getCategorySecondByName(categories_second));
+
+        model.addAttribute("categories_third",category_thirds);
+        modelAndView.setViewName("admin/add_product_2");
+        return modelAndView;
+    }
 }
