@@ -12,7 +12,9 @@
     <!-- Enables the Spring MVC @Controller programming model -->
     <annotation-driven />
 
+
     <!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
+    <resources mapping="/public/**" location="/public/"/>
     <resources mapping="/css/**" location="/css/" />
     <resources mapping="/image/**" location="/image/" />
     <resources mapping="/js/**" location="/js/" />
@@ -24,5 +26,11 @@
     </beans:bean>
 
     <context:component-scan base-package="com.Tinybees.controller" />
+
+    <beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <beans:property name="maxUploadSize" value="104857600" />
+        <beans:property name="maxInMemorySize" value="4096" />
+        <beans:property name="defaultEncoding" value="UTF-8"/>
+    </beans:bean>
 
 </beans:beans>

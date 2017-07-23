@@ -29,13 +29,26 @@
     </select>
 
     <select id="getCategorySecondByName" resultType="Category_second">
-        SELECT category_second.cs_name FROM category_second,category
+        SELECT * FROM category_second,category
         WHERE category_second.c_id=#{categories} GROUP BY category_second.cs_name;
     </select>
 
     <select id="getCategoryThirdByName" resultType="Category_third">
-        SELECT category_third.ct_name FROM category_third,category_second
+        SELECT * FROM category_third,category_second
         WHERE
         category_third.cs_id=#{category_seconds} GROUP BY category_third.ct_name;
     </select>
+
+    <insert id="addProduct" parameterType="Product">
+        INSERT INTO product(p_name,market_price,current_price,pdesc,image,image1,image2,image3,color,size,ct_id)
+        VALUES (#{p_name},#{market_price},#{current_price},#{pdesc},#{image},#{image1},#{image2},#{image3},#{color},#{size},#{ct_id});
+    </insert>
+
+    <select id="getAllProduct" resultType="Product">
+        SELECT * FROM product;
+    </select>
+
+    <delete id="deleteProductById" parameterType="Product">
+        DELETE FROM product WHERE p_id=#{p_id};
+    </delete>
 </mapper>

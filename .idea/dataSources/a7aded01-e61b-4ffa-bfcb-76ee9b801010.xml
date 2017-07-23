@@ -59,567 +59,471 @@
       <ColNames>ap_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="35" parent="14" name="active_pro_ibfk_1">
-      <ColNames>a_id</ColNames>
-      <RefSchemaName>tinybees</RefSchemaName>
-      <RefTableName>activity</RefTableName>
-      <RefColNames>a_id</RefColNames>
-    </foreign-key>
-    <foreign-key id="36" parent="14" name="active_pro_ibfk_2">
-      <ColNames>p_id</ColNames>
-      <RefSchemaName>tinybees</RefSchemaName>
-      <RefTableName>product</RefTableName>
-      <RefColNames>p_id</RefColNames>
-    </foreign-key>
-    <column id="37" parent="15" name="a_id">
+    <column id="35" parent="15" name="a_id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="38" parent="15" name="a_name">
+    <column id="36" parent="15" name="a_name">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="39" parent="15" name="a_reward">
+    <column id="37" parent="15" name="a_reward">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="40" parent="15" name="start_time">
+    <column id="38" parent="15" name="start_time">
       <Position>4</Position>
       <DataType>datetime|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="41" parent="15" name="end_time">
+    <column id="39" parent="15" name="end_time">
       <Position>5</Position>
       <DataType>datetime|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="42" parent="15" name="PRIMARY">
+    <key id="40" parent="15" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>a_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="43" parent="16" name="ad_id">
+    <column id="41" parent="16" name="ad_id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="44" parent="16" name="ad_name">
+    <column id="42" parent="16" name="ad_name">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="45" parent="16" name="ad_password">
+    <column id="43" parent="16" name="ad_password">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <key id="46" parent="16" name="PRIMARY">
+    <key id="44" parent="16" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ad_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="47" parent="17" name="b_id">
+    <column id="45" parent="17" name="b_id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="48" parent="17" name="b_name">
+    <column id="46" parent="17" name="b_name">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="49" parent="17" name="b_image">
+    <column id="47" parent="17" name="b_image">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="50" parent="17" name="PRIMARY">
+    <key id="48" parent="17" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>b_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="51" parent="18" name="bp_id">
+    <column id="49" parent="18" name="bp_id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="52" parent="18" name="b_id">
+    <column id="50" parent="18" name="b_id">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="53" parent="18" name="p_id">
+    <column id="51" parent="18" name="p_id">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="54" parent="18" name="b_id">
+    <index id="52" parent="18" name="b_id">
       <ColNames>b_id</ColNames>
     </index>
-    <index id="55" parent="18" name="p_id">
+    <index id="53" parent="18" name="p_id">
       <ColNames>p_id</ColNames>
     </index>
-    <key id="56" parent="18" name="PRIMARY">
+    <key id="54" parent="18" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>bp_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="57" parent="18" name="brand_pro_ibfk_2">
-      <ColNames>b_id</ColNames>
-      <RefSchemaName>tinybees</RefSchemaName>
-      <RefTableName>brand</RefTableName>
-      <RefColNames>b_id</RefColNames>
-    </foreign-key>
-    <foreign-key id="58" parent="18" name="brand_pro_ibfk_1">
-      <ColNames>p_id</ColNames>
-      <RefSchemaName>tinybees</RefSchemaName>
-      <RefTableName>product</RefTableName>
-      <RefColNames>p_id</RefColNames>
-    </foreign-key>
-    <column id="59" parent="19" name="c_id">
+    <column id="55" parent="19" name="c_id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="60" parent="19" name="c_name">
+    <column id="56" parent="19" name="c_name">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <key id="61" parent="19" name="PRIMARY">
+    <key id="57" parent="19" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>c_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="62" parent="20" name="cs_id">
+    <column id="58" parent="20" name="cs_id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="63" parent="20" name="cs_name">
+    <column id="59" parent="20" name="cs_name">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="64" parent="20" name="c_id">
+    <column id="60" parent="20" name="c_id">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <index id="65" parent="20" name="FK936FCAF21DB1FD15">
+    <index id="61" parent="20" name="FK936FCAF21DB1FD15">
       <ColNames>c_id</ColNames>
     </index>
-    <key id="66" parent="20" name="PRIMARY">
+    <key id="62" parent="20" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>cs_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="67" parent="20" name="FK936FCAF21DB1FD15">
-      <ColNames>c_id</ColNames>
-      <RefSchemaName>tinybees</RefSchemaName>
-      <RefTableName>category</RefTableName>
-      <RefColNames>c_id</RefColNames>
-    </foreign-key>
-    <column id="68" parent="21" name="ct_id">
+    <column id="63" parent="21" name="ct_id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="69" parent="21" name="ct_name">
+    <column id="64" parent="21" name="ct_name">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
-      <NotNull>1</NotNull>
     </column>
-    <column id="70" parent="21" name="cs_id">
+    <column id="65" parent="21" name="cs_id">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
-      <NotNull>1</NotNull>
     </column>
-    <index id="71" parent="21" name="cs_id">
-      <ColNames>cs_id</ColNames>
-    </index>
-    <key id="72" parent="21" name="PRIMARY">
+    <key id="66" parent="21" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ct_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="73" parent="21" name="category_third_ibfk_1">
-      <ColNames>cs_id</ColNames>
-      <RefSchemaName>tinybees</RefSchemaName>
-      <RefTableName>category_second</RefTableName>
-      <RefColNames>cs_id</RefColNames>
-    </foreign-key>
-    <column id="74" parent="22" name="ot_id">
+    <column id="67" parent="22" name="ot_id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="75" parent="22" name="count">
+    <column id="68" parent="22" name="count">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="76" parent="22" name="subtotal">
+    <column id="69" parent="22" name="subtotal">
       <Position>3</Position>
       <DataType>double|0</DataType>
     </column>
-    <column id="77" parent="22" name="p_id">
+    <column id="70" parent="22" name="p_id">
       <Position>4</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="78" parent="22" name="o_id">
+    <column id="71" parent="22" name="o_id">
       <Position>5</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <index id="79" parent="22" name="FKE8B2AB6140ACF87A">
+    <index id="72" parent="22" name="FKE8B2AB6140ACF87A">
       <ColNames>o_id</ColNames>
     </index>
-    <index id="80" parent="22" name="FKE8B2AB6166C01961">
+    <index id="73" parent="22" name="FKE8B2AB6166C01961">
       <ColNames>o_id</ColNames>
     </index>
-    <index id="81" parent="22" name="FKE8B2AB6171DB7AE4">
+    <index id="74" parent="22" name="FKE8B2AB6171DB7AE4">
       <ColNames>p_id</ColNames>
     </index>
-    <key id="82" parent="22" name="PRIMARY">
+    <key id="75" parent="22" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ot_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="83" parent="22" name="FKE8B2AB6171DB7AE4">
-      <ColNames>p_id</ColNames>
-      <RefSchemaName>tinybees</RefSchemaName>
-      <RefTableName>product</RefTableName>
-      <RefColNames>p_id</RefColNames>
-    </foreign-key>
-    <foreign-key id="84" parent="22" name="FKE8B2AB6140ACF87A">
-      <ColNames>o_id</ColNames>
-      <RefSchemaName>tinybees</RefSchemaName>
-      <RefTableName>orders</RefTableName>
-      <RefColNames>o_id</RefColNames>
-    </foreign-key>
-    <column id="85" parent="23" name="total">
+    <column id="76" parent="23" name="total">
       <Position>2</Position>
       <DataType>double|0</DataType>
     </column>
-    <column id="86" parent="23" name="ordertime">
+    <column id="77" parent="23" name="ordertime">
       <Position>3</Position>
       <DataType>datetime|0</DataType>
     </column>
-    <column id="87" parent="23" name="state">
+    <column id="78" parent="23" name="state">
       <Position>4</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="88" parent="23" name="name">
+    <column id="79" parent="23" name="name">
       <Position>5</Position>
       <DataType>varchar(20)|0</DataType>
     </column>
-    <column id="89" parent="23" name="phone">
+    <column id="80" parent="23" name="phone">
       <Position>6</Position>
       <DataType>varchar(20)|0</DataType>
     </column>
-    <column id="90" parent="23" name="addr">
+    <column id="81" parent="23" name="addr">
       <Position>7</Position>
       <DataType>varchar(50)|0</DataType>
     </column>
-    <column id="91" parent="23" name="o_id">
+    <column id="82" parent="23" name="o_id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="92" parent="23" name="u_id">
+    <column id="83" parent="23" name="u_id">
       <Position>8</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <index id="93" parent="23" name="FKC3DF62E5AA3D9C7">
+    <index id="84" parent="23" name="FKC3DF62E5AA3D9C7">
       <ColNames>u_id</ColNames>
     </index>
-    <key id="94" parent="23" name="PRIMARY">
+    <key id="85" parent="23" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>o_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="95" parent="23" name="FKC3DF62E5AA3D9C7">
-      <ColNames>u_id</ColNames>
-      <RefSchemaName>tinybees</RefSchemaName>
-      <RefTableName>user</RefTableName>
-      <RefColNames>u_id</RefColNames>
-    </foreign-key>
-    <column id="96" parent="24" name="market_price">
+    <column id="86" parent="24" name="market_price">
       <Position>3</Position>
       <DataType>double|0</DataType>
     </column>
-    <column id="97" parent="24" name="image">
+    <column id="87" parent="24" name="image">
       <Position>5</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="98" parent="24" name="pdesc">
+    <column id="88" parent="24" name="pdesc">
       <Position>9</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="99" parent="24" name="pdate">
+    <column id="89" parent="24" name="pdate">
       <Position>10</Position>
-      <DataType>datetime|0</DataType>
+      <DataType>timestamp|0</DataType>
     </column>
-    <column id="100" parent="24" name="p_id">
+    <column id="90" parent="24" name="p_id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="101" parent="24" name="p_name">
+    <column id="91" parent="24" name="p_name">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="102" parent="24" name="current_price">
+    <column id="92" parent="24" name="current_price">
       <Position>4</Position>
-      <DataType>int(11)|0</DataType>
+      <DataType>double|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="103" parent="24" name="image1">
+    <column id="93" parent="24" name="image1">
       <Position>6</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="104" parent="24" name="image2">
+    <column id="94" parent="24" name="image2">
       <Position>7</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="105" parent="24" name="image3">
+    <column id="95" parent="24" name="image3">
       <Position>8</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="106" parent="24" name="color">
+    <column id="96" parent="24" name="color">
       <Position>11</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="107" parent="24" name="size">
+    <column id="97" parent="24" name="size">
       <Position>12</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="108" parent="24" name="availability">
+    <column id="98" parent="24" name="availability">
       <Position>13</Position>
       <DataType>int(11)|0</DataType>
-      <NotNull>1</NotNull>
     </column>
-    <column id="109" parent="24" name="ct_id">
+    <column id="99" parent="24" name="ct_id">
       <Position>14</Position>
-      <DataType>int(11)|0</DataType>
+      <DataType>varchar(255)|0</DataType>
     </column>
-    <index id="110" parent="24" name="FKED8DCCEFB9B74E02">
+    <index id="100" parent="24" name="FKED8DCCEFB9B74E02">
       <ColNames>ct_id</ColNames>
     </index>
-    <key id="111" parent="24" name="PRIMARY">
+    <key id="101" parent="24" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>p_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="112" parent="24" name="FKED8DCCEFB9B74E02">
-      <ColNames>ct_id</ColNames>
-      <RefSchemaName>tinybees</RefSchemaName>
-      <RefTableName>category_second</RefTableName>
-      <RefColNames>cs_id</RefColNames>
-    </foreign-key>
-    <column id="113" parent="25" name="r_id">
+    <column id="102" parent="25" name="r_id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="114" parent="25" name="r_comment">
+    <column id="103" parent="25" name="r_comment">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="115" parent="25" name="r_rate">
+    <column id="104" parent="25" name="r_rate">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="116" parent="25" name="p_id">
+    <column id="105" parent="25" name="p_id">
       <Position>4</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="117" parent="25" name="u_id">
+    <column id="106" parent="25" name="u_id">
       <Position>5</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="118" parent="25" name="p_id">
+    <index id="107" parent="25" name="p_id">
       <ColNames>p_id</ColNames>
     </index>
-    <index id="119" parent="25" name="u_id">
+    <index id="108" parent="25" name="u_id">
       <ColNames>u_id</ColNames>
     </index>
-    <key id="120" parent="25" name="PRIMARY">
+    <key id="109" parent="25" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>r_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="121" parent="25" name="review_ibfk_1">
-      <ColNames>p_id</ColNames>
-      <RefSchemaName>tinybees</RefSchemaName>
-      <RefTableName>product</RefTableName>
-      <RefColNames>p_id</RefColNames>
-    </foreign-key>
-    <foreign-key id="122" parent="25" name="review_ibfk_2">
-      <ColNames>u_id</ColNames>
-      <RefSchemaName>tinybees</RefSchemaName>
-      <RefTableName>user</RefTableName>
-      <RefColNames>u_id</RefColNames>
-    </foreign-key>
-    <column id="123" parent="26" name="password">
+    <column id="110" parent="26" name="password">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="124" parent="26" name="email">
+    <column id="111" parent="26" name="email">
       <Position>4</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="125" parent="26" name="phone">
+    <column id="112" parent="26" name="phone">
       <Position>5</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="126" parent="26" name="addr">
+    <column id="113" parent="26" name="addr">
       <Position>6</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="127" parent="26" name="country">
+    <column id="114" parent="26" name="country">
       <Position>7</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="128" parent="26" name="city">
+    <column id="115" parent="26" name="city">
       <Position>8</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="129" parent="26" name="region">
+    <column id="116" parent="26" name="region">
       <Position>9</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="130" parent="26" name="code">
+    <column id="117" parent="26" name="code">
       <Position>10</Position>
       <DataType>varchar(64)|0</DataType>
     </column>
-    <column id="131" parent="26" name="u_id">
+    <column id="118" parent="26" name="u_id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="132" parent="26" name="u_name">
+    <column id="119" parent="26" name="u_name">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <key id="133" parent="26" name="PRIMARY">
+    <key id="120" parent="26" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>u_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="134" parent="27" name="wt_id">
+    <column id="121" parent="27" name="wt_id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="135" parent="27" name="count">
+    <column id="122" parent="27" name="count">
       <Position>2</Position>
       <DataType>double|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="136" parent="27" name="subcount">
+    <column id="123" parent="27" name="subcount">
       <Position>3</Position>
       <DataType>double|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="137" parent="27" name="p_id">
+    <column id="124" parent="27" name="p_id">
       <Position>4</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="138" parent="27" name="u_id">
+    <column id="125" parent="27" name="u_id">
       <Position>5</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="139" parent="27" name="p_id">
+    <index id="126" parent="27" name="p_id">
       <ColNames>p_id</ColNames>
     </index>
-    <index id="140" parent="27" name="u_id">
+    <index id="127" parent="27" name="u_id">
       <ColNames>u_id</ColNames>
     </index>
-    <key id="141" parent="27" name="PRIMARY">
+    <key id="128" parent="27" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>wt_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="142" parent="27" name="wish_item_ibfk_2">
-      <ColNames>p_id</ColNames>
-      <RefSchemaName>tinybees</RefSchemaName>
-      <RefTableName>product</RefTableName>
-      <RefColNames>p_id</RefColNames>
-    </foreign-key>
-    <foreign-key id="143" parent="27" name="wish_item_ibfk_1">
-      <ColNames>u_id</ColNames>
-      <RefSchemaName>tinybees</RefSchemaName>
-      <RefTableName>user</RefTableName>
-      <RefColNames>u_id</RefColNames>
-    </foreign-key>
-    <column id="144" parent="28" name="w_id">
+    <column id="129" parent="28" name="w_id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="145" parent="28" name="w_name">
+    <column id="130" parent="28" name="w_name">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="146" parent="28" name="total">
+    <column id="131" parent="28" name="total">
       <Position>3</Position>
       <DataType>double|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="147" parent="28" name="w_time">
+    <column id="132" parent="28" name="w_time">
       <Position>4</Position>
       <DataType>datetime|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="148" parent="28" name="state">
+    <column id="133" parent="28" name="state">
       <Position>5</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="149" parent="28" name="u_id">
+    <column id="134" parent="28" name="u_id">
       <Position>6</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="150" parent="28" name="u_id">
+    <index id="135" parent="28" name="u_id">
       <ColNames>u_id</ColNames>
     </index>
-    <key id="151" parent="28" name="PRIMARY">
+    <key id="136" parent="28" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>w_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="152" parent="28" name="wish_list_ibfk_1">
-      <ColNames>u_id</ColNames>
-      <RefSchemaName>tinybees</RefSchemaName>
-      <RefTableName>user</RefTableName>
-      <RefColNames>u_id</RefColNames>
-    </foreign-key>
   </database-model>
 </dataSource>

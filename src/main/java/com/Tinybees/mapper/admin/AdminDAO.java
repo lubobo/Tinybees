@@ -1,9 +1,6 @@
 package com.Tinybees.mapper.admin;
 
-import com.Tinybees.model.Admin;
-import com.Tinybees.model.Category;
-import com.Tinybees.model.Category_second;
-import com.Tinybees.model.Category_third;
+import com.Tinybees.model.*;
 
 import java.util.List;
 
@@ -26,4 +23,10 @@ public interface AdminDAO {
     List<Category_third> getCategoryThirdByName(String category_seconds);
 
     List<Category_third> getAllCategoryThird();
+
+    void addProduct(Product product);
+
+    List<Product> getAllProduct();
+
+    void deleteProductById(int p_id);
 }

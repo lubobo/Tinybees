@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="C" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
@@ -64,199 +65,6 @@
 
             <div class="navbar-custom-menu">
                 <ul class="nav navbar-nav">
-                    <!-- Messages: style can be found in dropdown.less-->
-                    <%--<li class="dropdown messages-menu">--%>
-                    <%--<a href="#" class="dropdown-toggle" data-toggle="dropdown">--%>
-                    <%--<i class="fa fa-envelope-o"></i>--%>
-                    <%--<span class="label label-success">4</span>--%>
-                    <%--</a>--%>
-                    <%--<ul class="dropdown-menu">--%>
-                    <%--<li class="header">你有4条消息</li>--%>
-                    <%--<li>--%>
-                    <%--<!-- inner menu: contains the actual data -->--%>
-                    <%--<ul class="menu">--%>
-                    <%--<li><!-- start message -->--%>
-                    <%--<a href="#">--%>
-                    <%--<div class="pull-left">--%>
-                    <%--<img src="/AdminLTE-cn/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">--%>
-                    <%--</div>--%>
-                    <%--<h4>--%>
-                    <%--支持团队--%>
-                    <%--<small><i class="fa fa-clock-o"></i> 5 分钟</small>--%>
-                    <%--</h4>--%>
-                    <%--<p>为什么不买一个新的主题?</p>--%>
-                    <%--</a>--%>
-                    <%--</li>--%>
-                    <%--<!-- end message -->--%>
-                    <%--<li>--%>
-                    <%--<a href="#">--%>
-                    <%--<div class="pull-left">--%>
-                    <%--<img src="/AdminLTE-cn/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">--%>
-                    <%--</div>--%>
-                    <%--<h4>--%>
-                    <%--AdminLTE 设计团队--%>
-                    <%--<small><i class="fa fa-clock-o"></i> 2 hours</small>--%>
-                    <%--</h4>--%>
-                    <%--<p>为什么不买一个新的主题?</p>--%>
-                    <%--</a>--%>
-                    <%--</li>--%>
-                    <%--<li>--%>
-                    <%--<a href="#">--%>
-                    <%--<div class="pull-left">--%>
-                    <%--<img src="/AdminLTE-cn/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">--%>
-                    <%--</div>--%>
-                    <%--<h4>--%>
-                    <%--开发者--%>
-                    <%--<small><i class="fa fa-clock-o"></i> 今天</small>--%>
-                    <%--</h4>--%>
-                    <%--<p>为什么不买一个新的主题?</p>--%>
-                    <%--</a>--%>
-                    <%--</li>--%>
-                    <%--<li>--%>
-                    <%--<a href="#">--%>
-                    <%--<div class="pull-left">--%>
-                    <%--<img src="/AdminLTE-cn/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">--%>
-                    <%--</div>--%>
-                    <%--<h4>--%>
-                    <%--销售部--%>
-                    <%--<small><i class="fa fa-clock-o"></i> 昨天</small>--%>
-                    <%--</h4>--%>
-                    <%--<p>为什么不买一个新的主题?</p>--%>
-                    <%--</a>--%>
-                    <%--</li>--%>
-                    <%--<li>--%>
-                    <%--<a href="#">--%>
-                    <%--<div class="pull-left">--%>
-                    <%--<img src="/AdminLTE-cn/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">--%>
-                    <%--</div>--%>
-                    <%--<h4>--%>
-                    <%--评论--%>
-                    <%--<small><i class="fa fa-clock-o"></i> 2 天</small>--%>
-                    <%--</h4>--%>
-                    <%--<p>为什么不买一个新的主题?</p>--%>
-                    <%--</a>--%>
-                    <%--</li>--%>
-                    <%--</ul>--%>
-                    <%--</li>--%>
-                    <%--<li class="footer"><a href="#">查看所有消息</a></li>--%>
-                    <%--</ul>--%>
-                    <%--</li>--%>
-                    <%--<!-- Notifications: style can be found in dropdown.less -->--%>
-                    <%--<li class="dropdown notifications-menu">--%>
-                    <%--<a href="#" class="dropdown-toggle" data-toggle="dropdown">--%>
-                    <%--<i class="fa fa-bell-o"></i>--%>
-                    <%--<span class="label label-warning">10</span>--%>
-                    <%--</a>--%>
-                    <%--<ul class="dropdown-menu">--%>
-                    <%--<li class="header">你有10条通知</li>--%>
-                    <%--<li>--%>
-                    <%--<!-- inner menu: contains the actual data -->--%>
-                    <%--<ul class="menu">--%>
-                    <%--<li>--%>
-                    <%--<a href="#">--%>
-                    <%--<i class="fa fa-users text-aqua"></i> 5 个新会员加入--%>
-                    <%--</a>--%>
-                    <%--</li>--%>
-                    <%--<li>--%>
-                    <%--<a href="#">--%>
-                    <%--<i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the--%>
-                    <%--page and may cause design problems--%>
-                    <%--</a>--%>
-                    <%--</li>--%>
-                    <%--<li>--%>
-                    <%--<a href="#">--%>
-                    <%--<i class="fa fa-users text-red"></i> 5 个新会员加入--%>
-                    <%--</a>--%>
-                    <%--</li>--%>
-                    <%--<li>--%>
-                    <%--<a href="#">--%>
-                    <%--<i class="fa fa-shopping-cart text-green"></i> 25 个订单--%>
-                    <%--</a>--%>
-                    <%--</li>--%>
-                    <%--<li>--%>
-                    <%--<a href="#">--%>
-                    <%--<i class="fa fa-user text-red"></i> 更改你的用户名--%>
-                    <%--</a>--%>
-                    <%--</li>--%>
-                    <%--</ul>--%>
-                    <%--</li>--%>
-                    <%--<li class="footer"><a href="#">查看所有</a></li>--%>
-                    <%--</ul>--%>
-                    <%--</li>--%>
-                    <%--<!-- Tasks: style can be found in dropdown.less -->--%>
-                    <%--<li class="dropdown tasks-menu">--%>
-                    <%--<a href="#" class="dropdown-toggle" data-toggle="dropdown">--%>
-                    <%--<i class="fa fa-flag-o"></i>--%>
-                    <%--<span class="label label-danger">9</span>--%>
-                    <%--</a>--%>
-                    <%--<ul class="dropdown-menu">--%>
-                    <%--<li class="header">你有9条任务</li>--%>
-                    <%--<li>--%>
-                    <%--<!-- inner menu: contains the actual data -->--%>
-                    <%--<ul class="menu">--%>
-                    <%--<li><!-- Task item -->--%>
-                    <%--<a href="#">--%>
-                    <%--<h3>--%>
-                    <%--设计按钮--%>
-                    <%--<small class="pull-right">20%</small>--%>
-                    <%--</h3>--%>
-                    <%--<div class="progress xs">--%>
-                    <%--<div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">--%>
-                    <%--<span class="sr-only">完成 20% </span>--%>
-                    <%--</div>--%>
-                    <%--</div>--%>
-                    <%--</a>--%>
-                    <%--</li>--%>
-                    <%--<!-- end task item -->--%>
-                    <%--<li><!-- Task item -->--%>
-                    <%--<a href="#">--%>
-                    <%--<h3>--%>
-                    <%--创建漂亮的主题--%>
-                    <%--<small class="pull-right">40%</small>--%>
-                    <%--</h3>--%>
-                    <%--<div class="progress xs">--%>
-                    <%--<div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">--%>
-                    <%--<span class="sr-only">完成 40%</span>--%>
-                    <%--</div>--%>
-                    <%--</div>--%>
-                    <%--</a>--%>
-                    <%--</li>--%>
-                    <%--<!-- end task item -->--%>
-                    <%--<li><!-- Task item -->--%>
-                    <%--<a href="#">--%>
-                    <%--<h3>--%>
-                    <%--还有一些任务要做--%>
-                    <%--<small class="pull-right">60%</small>--%>
-                    <%--</h3>--%>
-                    <%--<div class="progress xs">--%>
-                    <%--<div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">--%>
-                    <%--<span class="sr-only">完成 60%</span>--%>
-                    <%--</div>--%>
-                    <%--</div>--%>
-                    <%--</a>--%>
-                    <%--</li>--%>
-                    <%--<!-- end task item -->--%>
-                    <%--<li><!-- Task item -->--%>
-                    <%--<a href="#">--%>
-                    <%--<h3>--%>
-                    <%--制作漂亮的过渡效果--%>
-                    <%--<small class="pull-right">80%</small>--%>
-                    <%--</h3>--%>
-                    <%--<div class="progress xs">--%>
-                    <%--<div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">--%>
-                    <%--<span class="sr-only">完成 80%</span>--%>
-                    <%--</div>--%>
-                    <%--</div>--%>
-                    <%--</a>--%>
-                    <%--</li>--%>
-                    <%--<!-- end task item -->--%>
-                    <%--</ul>--%>
-                    <%--</li>--%>
-                    <%--<li class="footer">--%>
-                    <%--<a href="#">查看所有任务</a>--%>
-                    <%--</li>--%>
-                    <%--</ul>--%>
-                    <%--</li>--%>
                     <!-- User Account: style can be found in dropdown.less -->
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -276,23 +84,11 @@
                             <!-- Menu Body -->
                             <li class="user-body">
                                 <div class="row">
-                                    <%--<div class="col-xs-4 text-center">--%>
-                                    <%--<a href="#">点赞</a>--%>
-                                    <%--</div>--%>
-                                    <%--<div class="col-xs-4 text-center">--%>
-                                    <%--<a href="#">销售</a>--%>
-                                    <%--</div>--%>
-                                    <%--<div class="col-xs-4 text-center">--%>
-                                    <%--<a href="#">朋友</a>--%>
-                                    <%--</div>--%>
                                 </div>
                                 <!-- /.row -->
                             </li>
                             <!-- Menu Footer-->
                             <li class="user-footer">
-                                <%--<div class="pull-left">--%>
-                                <%--<a href="#" class="btn btn-default btn-flat">简介</a>--%>
-                                <%--</div>--%>
                                 <div class="pull-right">
                                     <a href="/admin_logout" class="btn btn-default btn-flat">退出</a>
                                 </div>
@@ -335,18 +131,7 @@
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu">
                 <li class="header">主导航</li>
-                <%--<li class="treeview">--%>
-                <%--<a href="#">--%>
-                <%--<i class="fa fa-dashboard"></i> <span>仪表盘</span>--%>
-                <%--<span class="pull-right-container">--%>
-                <%--<i class="fa fa-angle-left pull-right"></i>--%>
-                <%--</span>--%>
-                <%--</a>--%>
-                <%--<ul class="treeview-menu">--%>
-                <%--<li><a href="index.html"><i class="fa fa-circle-o"></i> 仪表盘 v1</a></li>--%>
-                <%--<li><a href="index2.html"><i class="fa fa-circle-o"></i> 仪表盘 v2</a></li>--%>
-                <%--</ul>--%>
-                <%--</li>--%>
+
                 <li class="treeview active">
                     <a href="#">
                         <i class="fa fa-files-o"></i>
@@ -357,8 +142,8 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="#"><i class="fa fa-circle-o"></i> 发布商品</a></li>
-                        <li><a href="#"><i class="fa fa-circle-o"></i> 删除商品</a></li>
+                        <li><a href="/add_product"><i class="fa fa-circle-o"></i> 发布商品</a></li>
+                        <li><a href="/product_lists"><i class="fa fa-circle-o"></i> 商品列表</a></li>
                         <%--<li><a href="fixed.html"><i class="fa fa-circle-o"></i> 固定布局</a></li>--%>
                     </ul>
                 </li>
@@ -546,24 +331,19 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Mailbox
-                <small>13 new messages</small>
+                TinyBees
+                <small>Administrator</small>
             </h1>
-            <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li class="active">Mailbox</li>
-            </ol>
         </section>
 
         <!-- Main content -->
         <section class="content">
             <div class="row">
                 <div class="col-md-3">
-                    <a href="mailbox.html" class="btn btn-primary btn-block margin-bottom">Back to Inbox</a>
-
+                    <a href="#" class="btn btn-primary btn-block margin-bottom">Back to Index</a>
                     <div class="box box-solid">
                         <div class="box-header with-border">
-                            <h3 class="box-title">Folders</h3>
+                            <h3 class="box-danger box-title margin-bottom">选择商品配图</h3>
 
                             <div class="box-tools">
                                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -572,35 +352,60 @@
                         </div>
                         <div class="box-body no-padding">
                             <ul class="nav nav-pills nav-stacked">
-                                <li><a href="mailbox.html"><i class="fa fa-inbox"></i> Inbox
-                                    <span class="label label-primary pull-right">12</span></a></li>
-                                <li><a href="#"><i class="fa fa-envelope-o"></i> Sent</a></li>
-                                <li><a href="#"><i class="fa fa-file-text-o"></i> Drafts</a></li>
-                                <li><a href="#"><i class="fa fa-filter"></i> Junk <span class="label label-warning pull-right">65</span></a>
+                                <li>
+                                    <div class="form-group">
+                                        <div class="btn btn-default btn-file btn-block">
+                                            <i class="fa fa-paperclip"></i> 商品配图 （1）
+                                            <input type="file" name="p_image">
+                                        </div>
+                                    </div>
                                 </li>
-                                <li><a href="#"><i class="fa fa-trash-o"></i> Trash</a></li>
+                                <li>
+                                    <div class="form-group">
+                                        <div class="btn btn-default btn-file btn-block">
+                                            <i class="fa fa-paperclip"></i> 商品配图 （2）
+                                            <input type="file" name="p_image1">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <div class="btn btn-default btn-file btn-block">
+                                            <i class="fa fa-paperclip"></i> 商品配图 （3）
+                                            <input type="file" name="p_image2">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <div class="btn btn-default btn-file btn-block">
+                                            <i class="fa fa-paperclip"></i> 商品配图 （4）
+                                            <input type="file" name="p_image3">
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                         <!-- /.box-body -->
                     </div>
                     <!-- /. box -->
                     <div class="box box-solid">
-                        <div class="box-header with-border">
-                            <h3 class="box-title">Labels</h3>
+                        <%--<div class="box-header with-border">--%>
+                        <%--<h3 class="box-title">Labels</h3>--%>
 
-                            <div class="box-tools">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                                </button>
-                            </div>
-                        </div>
+                        <%--<div class="box-tools">--%>
+                        <%--<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>--%>
+                        <%--</button>--%>
+                        <%--</div>--%>
+                        <%--</div>--%>
                         <!-- /.box-header -->
-                        <div class="box-body no-padding">
-                            <ul class="nav nav-pills nav-stacked">
-                                <li><a href="#"><i class="fa fa-circle-o text-red"></i> Important</a></li>
-                                <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> Promotions</a></li>
-                                <li><a href="#"><i class="fa fa-circle-o text-light-blue"></i> Social</a></li>
-                            </ul>
-                        </div>
+                        <%--<div class="box-body no-padding">--%>
+                        <%--<ul class="nav nav-pills nav-stacked">--%>
+                        <%--<li><a href="#"><i class="fa fa-circle-o text-red"></i> Important</a></li>--%>
+                        <%--<li><a href="#"><i class="fa fa-circle-o text-yellow"></i> Promotions</a></li>--%>
+                        <%--<li><a href="#"><i class="fa fa-circle-o text-light-blue"></i> Social</a></li>--%>
+                        <%--</ul>--%>
+                        <%--</div>--%>
                         <!-- /.box-body -->
                     </div>
                     <!-- /.box -->
@@ -615,10 +420,8 @@
                         <div class="box-body">
 
                             <div class="form-group col-lg-4">
-                                <%--<select class="form-control" id="the_first">--%>
-                                <%--<option ><c:out value="${categories}"/></option>--%>
-                                <%--</select>--%>
-                                <select class="form-control" id="the_first" onmouseout="getCategory_second(this.value)" >
+
+                                <select class="form-control" id="the_first" onchange="getCategory_second(this.value)" >
                                     <option value="${category.c_id}"><c:out value="${category.c_name}"/></option>
                                     <c:forEach items="${categories}" var="i" step="1">
                                         <option class="form-control-item" value="${i.c_id}">
@@ -629,14 +432,15 @@
                             </div>
 
                             <div class="form-group col-lg-4" id="category_second">
-                                <select class="form-control" id="the_second"
-                                        onmouseout="getCategory_third(
+                                <select class="form-control"
+                                        onchange="getCategory_third(
                                             document.getElementById('the_first').options[document.getElementById('the_first').selectedIndex].value,
                                             this.value
                                         )">
-                                    <option>二级分类</option>
+                                    <%--<option>二级分类</option>--%>
                                     <c:forEach items="${categories_seconds}" var="i" step="1">
-                                        <option class="form-control" value="${i.cs_id}">
+                                        <c:set var="id" value="${i.cs_id}"/>
+                                        <option class="form-control" value="${id}">
                                             <c:out value="${i.cs_name}"/>
                                         </option>
                                     </c:forEach>
@@ -653,15 +457,8 @@
                                 <input class="form-control" placeholder="商品名称:">
                             </div>
                             <div class="form-group">
-                    <textarea id="compose-textarea" placeholder="商品简介" class="form-control" style="height: 280px">
-                    </textarea>
-                            </div>
-                            <div class="form-group">
-                                <div class="btn btn-default btn-file">
-                                    <i class="fa fa-paperclip"></i> Attachment
-                                    <input type="file" name="attachment">
-                                </div>
-                                <p class="help-block">Max. 32MB</p>
+                                <textarea id="compose-textarea" placeholder="商品简介" class="form-control" style="height: 280px">
+                                </textarea>
                             </div>
                         </div>
                         <!-- /.box-body -->
@@ -687,7 +484,7 @@
         <div class="pull-right hidden-xs">
             <b>Version</b> 2.3.7
         </div>
-        <strong>Copyright &copy; 2014-2016 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
+        <strong>Copyright &copy; 2016-2017 <a href="http://almsaeedstudio.com">Tiny Bees</a>.</strong> All rights
         reserved.
     </footer>
 

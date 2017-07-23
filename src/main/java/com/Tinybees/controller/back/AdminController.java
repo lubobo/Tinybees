@@ -10,13 +10,20 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.MultipartHttpServletRequest;
+import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+
+import java.text.SimpleDateFormat;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -119,5 +126,85 @@ public class AdminController {
         model.addAttribute("categories_third",category_thirds);
         modelAndView.setViewName("admin/add_product_2");
         return modelAndView;
+    }
+
+    @RequestMapping("/post_product")
+    public String post_product(Model model,HttpServletRequest request)throws IllegalStateException,IOException{
+
+//        String p_image = request.getAttribute("p_image").toString();
+//        String p_image1 = request.getAttribute("p_image1").toString();
+//        String p_image2 = request.getAttribute("p_image2").toString();
+//        String p_image3 = request.getAttribute("p_image3").toString();
+        String ct_name = request.getParameter("ct_name");
+        String p_name = request.getParameter("p_name");
+        String p_desc = request.getParameter("p_desc");
+        String p_market = request.getParameter("p_market");
+        String p_current = request.getParameter("p_current");
+        String p_color = request.getParameter("p_color");
+        String p_size = request.getParameter("p_size");
+
+        Product product = new Product();
+
+        //将当前上下文初始化给  CommonsMutipartResolver （多部分解析器）
+        CommonsMultipartResolver multipartResolver=new CommonsMultipartResolver(request.getSession().getServletContext());
+        //检查form中是否有enctype="multipart/form-data"
+        if(multipartResolver.isMultipart(request)){
+            //将request变成多部分request
+            MultipartHttpServletRequest multiRequest=(MultipartHttpServletRequest)request;
+            //获取multiRequest 中所有的文件名
+            Iterator iter=multiRequest.getFileNames();
+            int count = 0;
+            while(iter.hasNext()){
+                //一次遍历所有文件
+                count++;
+                MultipartFile file=multiRequest.getFile(iter.next().toString());
+                if(file!=null){
+                    String path= "E:/Programs/IdeaProjects/Tinybees/src/main/webapp/public/images/"+file.getOriginalFilename();
+                    //上传
+                    if(count==1){
+                        product.setImage(path);
+                    }else if(count==2){
+                        product.setImage1(path);
+                    }else if(count==3){
+                        product.setImage2(path);
+                    }else if(count==4){
+                        product.setImage3(path);
+                    }
+                    file.transferTo(new File(path));
+                }
+            }
+        }
+
+//        product.setImage(p_image);
+//        product.setImage1(p_image1);
+//        product.setImage2(p_image2);
+//        product.setImage3(p_image3);
+
+        product.setP_name(p_name);
+        product.setMarket_price(p_market);
+        product.setCurrent_price(p_current);
+        product.setColor(p_color);
+        product.setCt_id(ct_name);
+        product.setPdesc(p_desc);
+        product.setSize(p_size);
+        product.setAvailability(0);
+        adminDAO.addProduct(product);
+        return "redirect:/product_lists";
+    }
+
+    @RequestMapping("/product_lists")
+    public ModelAndView product_lists(Model model){
+        ModelAndView modelAndView = new ModelAndView();
+        List<Product> products = adminDAO.getAllProduct();
+        model.addAttribute("products",products);
+        modelAndView.setViewName("admin/product/product_lists");
+        return modelAndView;
+    }
+
+    @RequestMapping("/delete_product")
+    public String delete_product(HttpServletRequest request){
+        int product_id=Integer.parseInt(request.getParameter("product_id"));
+        adminDAO.deleteProductById(product_id);
+        return "redirect:/product_lists";
     }
 }

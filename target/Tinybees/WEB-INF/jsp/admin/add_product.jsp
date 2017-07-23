@@ -335,18 +335,7 @@
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu">
                 <li class="header">主导航</li>
-                <%--<li class="treeview">--%>
-                <%--<a href="#">--%>
-                <%--<i class="fa fa-dashboard"></i> <span>仪表盘</span>--%>
-                <%--<span class="pull-right-container">--%>
-                <%--<i class="fa fa-angle-left pull-right"></i>--%>
-                <%--</span>--%>
-                <%--</a>--%>
-                <%--<ul class="treeview-menu">--%>
-                <%--<li><a href="index.html"><i class="fa fa-circle-o"></i> 仪表盘 v1</a></li>--%>
-                <%--<li><a href="index2.html"><i class="fa fa-circle-o"></i> 仪表盘 v2</a></li>--%>
-                <%--</ul>--%>
-                <%--</li>--%>
+
                 <li class="treeview active">
                     <a href="#">
                         <i class="fa fa-files-o"></i>
@@ -357,8 +346,8 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="#"><i class="fa fa-circle-o"></i> 发布商品</a></li>
-                        <li><a href="#"><i class="fa fa-circle-o"></i> 删除商品</a></li>
+                        <li><a href="/add_product"><i class="fa fa-circle-o"></i> 发布商品</a></li>
+                        <li><a href="/product_lists"><i class="fa fa-circle-o"></i> 商品列表</a></li>
                         <%--<li><a href="fixed.html"><i class="fa fa-circle-o"></i> 固定布局</a></li>--%>
                     </ul>
                 </li>
@@ -546,24 +535,19 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Mailbox
-                <small>13 new messages</small>
+                TinyBees
+                <small>Administrator</small>
             </h1>
-            <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li class="active">Mailbox</li>
-            </ol>
         </section>
 
         <!-- Main content -->
         <section class="content">
             <div class="row">
                 <div class="col-md-3">
-                    <a href="mailbox.html" class="btn btn-primary btn-block margin-bottom">Back to Inbox</a>
-
+                    <a href="#" class="btn btn-primary btn-block margin-bottom">Back to Index</a>
                     <div class="box box-solid">
                         <div class="box-header with-border">
-                            <h3 class="box-title">Folders</h3>
+                            <h3 class="box-danger box-title margin-bottom">选择商品配图</h3>
 
                             <div class="box-tools">
                                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -572,35 +556,60 @@
                         </div>
                         <div class="box-body no-padding">
                             <ul class="nav nav-pills nav-stacked">
-                                <li><a href="mailbox.html"><i class="fa fa-inbox"></i> Inbox
-                                    <span class="label label-primary pull-right">12</span></a></li>
-                                <li><a href="#"><i class="fa fa-envelope-o"></i> Sent</a></li>
-                                <li><a href="#"><i class="fa fa-file-text-o"></i> Drafts</a></li>
-                                <li><a href="#"><i class="fa fa-filter"></i> Junk <span class="label label-warning pull-right">65</span></a>
+                                <li>
+                                    <div class="form-group">
+                                        <div class="btn btn-default btn-file btn-block">
+                                            <i class="fa fa-paperclip"></i> 商品配图 （1）
+                                            <input type="file" name="p_image">
+                                        </div>
+                                    </div>
                                 </li>
-                                <li><a href="#"><i class="fa fa-trash-o"></i> Trash</a></li>
+                                <li>
+                                    <div class="form-group">
+                                        <div class="btn btn-default btn-file btn-block">
+                                            <i class="fa fa-paperclip"></i> 商品配图 （2）
+                                            <input type="file" name="p_image1">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <div class="btn btn-default btn-file btn-block">
+                                            <i class="fa fa-paperclip"></i> 商品配图 （3）
+                                            <input type="file" name="p_image2">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <div class="btn btn-default btn-file btn-block">
+                                            <i class="fa fa-paperclip"></i> 商品配图 （4）
+                                            <input type="file" name="p_image3">
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                         <!-- /.box-body -->
                     </div>
                     <!-- /. box -->
                     <div class="box box-solid">
-                        <div class="box-header with-border">
-                            <h3 class="box-title">Labels</h3>
+                        <%--<div class="box-header with-border">--%>
+                        <%--<h3 class="box-title">Labels</h3>--%>
 
-                            <div class="box-tools">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                                </button>
-                            </div>
-                        </div>
+                        <%--<div class="box-tools">--%>
+                        <%--<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>--%>
+                        <%--</button>--%>
+                        <%--</div>--%>
+                        <%--</div>--%>
                         <!-- /.box-header -->
-                        <div class="box-body no-padding">
-                            <ul class="nav nav-pills nav-stacked">
-                                <li><a href="#"><i class="fa fa-circle-o text-red"></i> Important</a></li>
-                                <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> Promotions</a></li>
-                                <li><a href="#"><i class="fa fa-circle-o text-light-blue"></i> Social</a></li>
-                            </ul>
-                        </div>
+                        <%--<div class="box-body no-padding">--%>
+                        <%--<ul class="nav nav-pills nav-stacked">--%>
+                        <%--<li><a href="#"><i class="fa fa-circle-o text-red"></i> Important</a></li>--%>
+                        <%--<li><a href="#"><i class="fa fa-circle-o text-yellow"></i> Promotions</a></li>--%>
+                        <%--<li><a href="#"><i class="fa fa-circle-o text-light-blue"></i> Social</a></li>--%>
+                        <%--</ul>--%>
+                        <%--</div>--%>
                         <!-- /.box-body -->
                     </div>
                     <!-- /.box -->
@@ -615,7 +624,7 @@
                         <div class="box-body">
 
                             <div class="form-group col-lg-4">
-                                <select class="form-control" onmouseout="getCategory_second(this.value)" >
+                                <select class="form-control" onchange="getCategory_second(this.value)" >
                                     <%--<option>一级分类</option>--%>
                                     <c:forEach items="${categories}" var="i" step="1">
                                         <option class="form-control-item" value="${i.c_id}">
@@ -641,15 +650,8 @@
                                 <input class="form-control" placeholder="商品名称:">
                             </div>
                             <div class="form-group">
-                    <textarea id="compose-textarea" placeholder="商品简介" class="form-control" style="height: 280px">
-                    </textarea>
-                            </div>
-                            <div class="form-group">
-                                <div class="btn btn-default btn-file">
-                                    <i class="fa fa-paperclip"></i> Attachment
-                                    <input type="file" name="attachment">
-                                </div>
-                                <p class="help-block">Max. 32MB</p>
+                                <textarea id="compose-textarea" placeholder="商品简介" class="form-control" style="height: 280px">
+                                </textarea>
                             </div>
                         </div>
                         <!-- /.box-body -->
@@ -675,7 +677,7 @@
         <div class="pull-right hidden-xs">
             <b>Version</b> 2.3.7
         </div>
-        <strong>Copyright &copy; 2014-2016 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
+        <strong>Copyright &copy; 2016-2017 <a href="http://almsaeedstudio.com">Tiny Bees</a>.</strong> All rights
         reserved.
     </footer>
 

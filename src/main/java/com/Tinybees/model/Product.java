@@ -20,7 +20,7 @@ public class Product {
 
   @AutoField(alias = "current_price", column = "current_price", isRequired = true, type = "Integer")
   @ExcelVOAttribute(name = "current_price", column = "D")
-  private int current_price;
+  private String current_price;
 
   @AutoField(alias = "image", column = "image", length = 255)
   @ExcelVOAttribute(name = "image", column = "E")
@@ -60,7 +60,7 @@ public class Product {
 
   @AutoField(alias = "ct_id", column = "ct_id", type = "Integer")
   @ExcelVOAttribute(name = "ct_id", column = "N")
-  private int ct_id;
+  private String ct_id;
 
 
   public int getP_id() {
@@ -81,10 +81,10 @@ public class Product {
   public void setMarket_price(String market_price){
     this.market_price = market_price;
   }
-  public int getCurrent_price() {
+  public String getCurrent_price() {
     return current_price;
   }
-  public void setCurrent_price(int current_price){
+  public void setCurrent_price(String current_price){
     this.current_price = current_price;
   }
   public String getImage() {
@@ -141,10 +141,10 @@ public class Product {
   public void setAvailability(int availability){
     this.availability = availability;
   }
-  public int getCt_id() {
+  public String getCt_id() {
     return ct_id;
   }
-  public void setCt_id(int ct_id){
+  public void setCt_id(String ct_id){
     this.ct_id = ct_id;
   }
 }
