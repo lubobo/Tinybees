@@ -1,6 +1,7 @@
 package com.Tinybees.mapper.admin;
 
 import com.Tinybees.model.*;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -38,8 +39,8 @@ public interface AdminDAO {
 //    添加一级分类
     void add_category(Category category);
 //    添加二级分类
-    void add_category_second(Category_second category_second,String category);
+    void add_category_second(@Param("category_second") Category_second category_second,@Param("category") String category);
 //    添加三级分类
-    void add_category_third(Category_third category_third,String  category_second);
+    void add_category_third(@Param("category_third") Category_third category_third,@Param("category_second") String category_second);
 }
 

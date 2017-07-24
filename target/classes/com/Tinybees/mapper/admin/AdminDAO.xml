@@ -86,12 +86,12 @@
 
     <!--添加二级分类-->
     <insert id="add_category_second">
-        INSERT INTO  category_second(cs_name,c_id)VALUES ("sasd",25);
+        INSERT INTO  category_second(cs_name,c_id)VALUES (#{category_second.cs_name},#{category});
     </insert>
 
     <!--添加三级分类-->
     <insert id="add_category_third">
-        INSERT INTO category_third(ct_name,cs_id)VALUES (#{ct_name},#{category_second});
+        INSERT INTO category_third(ct_name,cs_id)VALUES (#{category_third.ct_name},#{category_second});
     </insert>
 
 </mapper>

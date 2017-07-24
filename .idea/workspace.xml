@@ -4,7 +4,10 @@
     <list default="true" id="1b364a2b-2d04-41ad-9a69-074ea3501830" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/AdminController.java" afterPath="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/AdminController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.xml" afterPath="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort_2.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort_2.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort_3.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort_3.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -57,8 +60,8 @@
       <file leaf-file-name="AdminDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="42" column="65" lean-forward="false" selection-start-line="42" selection-start-column="65" selection-end-line="42" selection-end-column="65" />
+            <state relative-caret-position="203">
+              <caret line="39" column="41" lean-forward="true" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
               <folding>
                 <element signature="docComment;class#AdminDAO#0" expanded="false" />
               </folding>
@@ -69,41 +72,41 @@
       <file leaf-file-name="AdminDAO.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+            <state relative-caret-position="332">
+              <caret line="94" column="13" lean-forward="true" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="13" />
               <folding>
-                <marker date="1500881187838" expanded="true" signature="342:417" ph="SELECT * FRO... admin" />
-                <marker date="1500881187838" expanded="true" signature="575:597" ph="SELECT * FRO... category" />
-                <marker date="1500881187838" expanded="true" signature="678:723" ph="SELECT * FRO... category" />
-                <marker date="1500881187838" expanded="true" signature="806:853" ph="SELECT * FRO... category" />
-                <marker date="1500881187838" expanded="true" signature="1105:1134" ph="SELECT * FRO... category_second" />
-                <marker date="1500881187838" expanded="true" signature="1228:1288" ph="SELECT *FROM... category_second" />
-                <marker date="1500881187838" expanded="true" signature="1383:1445" ph="SELECT * FRO... category_second" />
-                <marker date="1500881187838" expanded="true" signature="1542:1662" ph="SELECT * FRO... category_second" />
-                <marker date="1500881187838" expanded="true" signature="1914:1942" ph="SELECT * FRO... category_third" />
-                <marker date="1500881187838" expanded="true" signature="2037:2145" ph="SELECT categ... category_third" />
-                <marker date="1500881187838" expanded="true" signature="2037:2176" ph="SELECT * FRO... category_third" />
-                <marker date="1500881187838" expanded="true" signature="2270:2331" ph="SELECT * FRO... category_third" />
-                <marker date="1500881187838" expanded="true" signature="2423:2481" ph="SELECT * FRO... category_third" />
-                <marker date="1500881187838" expanded="true" signature="2658:2896" ph="INSERT INTO product... " />
-                <marker date="1500881187838" expanded="true" signature="2974:2995" ph="SELECT * FRO... product" />
-                <marker date="1500881187838" expanded="true" signature="3080:3118" ph="DELETE FROM " />
-                <marker date="1500881187838" expanded="true" signature="3296:3344" ph="INSERT INTO category... " />
-                <marker date="1500881187838" expanded="true" signature="3425:3475" ph="INSERT INTO category_second" />
-                <marker date="1500881187838" expanded="true" signature="3425:3482" ph="INSERT INTO category_second" />
-                <marker date="1500881187838" expanded="true" signature="3425:3485" ph="INSERT INTO category_second" />
-                <marker date="1500881187838" expanded="true" signature="3565:3624" ph="INSERT INTO category_third... " />
-                <marker date="1500881187838" expanded="true" signature="3565:3644" ph="INSERT INTO category_third... " />
+                <marker date="1500886984081" expanded="true" signature="342:417" ph="SELECT * FRO... admin" />
+                <marker date="1500886984081" expanded="true" signature="575:597" ph="SELECT * FRO... category" />
+                <marker date="1500886984081" expanded="true" signature="678:723" ph="SELECT * FRO... category" />
+                <marker date="1500886984081" expanded="true" signature="806:853" ph="SELECT * FRO... category" />
+                <marker date="1500886984081" expanded="true" signature="1105:1134" ph="SELECT * FRO... category_second" />
+                <marker date="1500886984081" expanded="true" signature="1228:1288" ph="SELECT *FROM... category_second" />
+                <marker date="1500886984081" expanded="true" signature="1383:1445" ph="SELECT * FRO... category_second" />
+                <marker date="1500886984081" expanded="true" signature="1542:1662" ph="SELECT * FRO... category_second" />
+                <marker date="1500886984081" expanded="true" signature="1914:1942" ph="SELECT * FRO... category_third" />
+                <marker date="1500886984081" expanded="true" signature="2037:2145" ph="SELECT categ... category_third" />
+                <marker date="1500886984081" expanded="true" signature="2037:2176" ph="SELECT * FRO... category_third" />
+                <marker date="1500886984081" expanded="true" signature="2270:2331" ph="SELECT * FRO... category_third" />
+                <marker date="1500886984081" expanded="true" signature="2423:2481" ph="SELECT * FRO... category_third" />
+                <marker date="1500886984081" expanded="true" signature="2658:2896" ph="INSERT INTO product... " />
+                <marker date="1500886984081" expanded="true" signature="2974:2995" ph="SELECT * FRO... product" />
+                <marker date="1500886984081" expanded="true" signature="3080:3118" ph="DELETE FROM " />
+                <marker date="1500886984081" expanded="true" signature="3296:3344" ph="INSERT INTO category... " />
+                <marker date="1500886984081" expanded="true" signature="3425:3475" ph="INSERT INTO category_second" />
+                <marker date="1500886984081" expanded="true" signature="3425:3502" ph="INSERT INTO category_second" />
+                <marker date="1500886984081" expanded="true" signature="3425:3514" ph="INSERT INTO category_second" />
+                <marker date="1500886984081" expanded="true" signature="3594:3668" ph="INSERT INTO category_third... " />
+                <marker date="1500886984081" expanded="true" signature="3594:3688" ph="INSERT INTO category_third... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="285" column="55" lean-forward="false" selection-start-line="285" selection-start-column="55" selection-end-line="285" selection-end-column="55" />
+            <state relative-caret-position="135">
+              <caret line="347" column="0" lean-forward="false" selection-start-line="347" selection-start-column="2" selection-end-line="351" selection-end-column="7" />
               <folding>
                 <element signature="docComment;class#AdminController#0" expanded="false" />
               </folding>
@@ -111,22 +114,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add_sort.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="add_sort.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1469">
-              <caret line="326" column="80" lean-forward="true" selection-start-line="326" selection-start-column="80" selection-end-line="326" selection-end-column="80" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add_sort_2.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort_2.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1971">
-              <caret line="259" column="56" lean-forward="false" selection-start-line="259" selection-start-column="56" selection-end-line="259" selection-end-column="56" />
-              <folding />
+            <state relative-caret-position="432">
+              <caret line="856" column="32" lean-forward="false" selection-start-line="856" selection-start-column="32" selection-end-line="856" selection-end-column="32" />
+              <folding>
+                <marker date="1500887846168" expanded="false" signature="23362:23368" ph="©" />
+                <marker date="1500887846168" expanded="false" signature="27101:27111" ph="..." />
+                <marker date="1500887846168" expanded="false" signature="27755:27765" ph="..." />
+                <marker date="1500887846168" expanded="false" signature="28414:28424" ph="..." />
+                <marker date="1500887846168" expanded="false" signature="29068:29078" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -134,9 +133,33 @@
       <file leaf-file-name="add_sort_3.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort_3.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7344">
-              <caret line="272" column="49" lean-forward="false" selection-start-line="272" selection-start-column="49" selection-end-line="272" selection-end-column="49" />
-              <folding />
+            <state relative-caret-position="297">
+              <caret line="824" column="32" lean-forward="true" selection-start-line="824" selection-start-column="32" selection-end-line="824" selection-end-column="32" />
+              <folding>
+                <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <marker date="1500887915961" expanded="false" signature="18904:18910" ph="©" />
+                <marker date="1500887915961" expanded="false" signature="22391:22401" ph="..." />
+                <marker date="1500887915961" expanded="false" signature="23001:23011" ph="..." />
+                <marker date="1500887915961" expanded="false" signature="23616:23626" ph="..." />
+                <marker date="1500887915961" expanded="false" signature="24226:24236" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_sort_2.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort_2.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="827" column="30" lean-forward="true" selection-start-line="827" selection-start-column="30" selection-end-line="827" selection-end-column="30" />
+              <folding>
+                <marker date="1500887916090" expanded="false" signature="18714:18720" ph="©" />
+                <marker date="1500887916090" expanded="false" signature="22201:22211" ph="..." />
+                <marker date="1500887916090" expanded="false" signature="22811:22821" ph="..." />
+                <marker date="1500887916090" expanded="false" signature="23426:23436" ph="..." />
+                <marker date="1500887916090" expanded="false" signature="24036:24046" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -155,7 +178,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>/Home</find>
       <find>jdbc</find>
       <find>Login</find>
       <find>Continue</find>
@@ -184,6 +206,7 @@
       <find>category_second</find>
       <find>getCategoryByName</find>
       <find>add_category_second</find>
+      <find>可张开的</find>
       <find>getCategorySecondByName</find>
     </findStrings>
     <replaceStrings>
@@ -210,7 +233,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/target/generated-sources/mybatis-generator/com/Tinybees/mapper/UserDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/UserDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/domain/user_SqlMap.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/user/UserDAOImpl.java" />
@@ -255,11 +277,12 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/product_lists.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/add_product.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort_3.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort_2.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/AdminLTE-cn/pages/widgets.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort_3.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort_2.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/AdminController.java" />
       </list>
     </option>
@@ -1392,12 +1415,12 @@
       <workItem from="1500770254610" duration="8410000" />
       <workItem from="1500790775646" duration="10358000" />
       <workItem from="1500856954256" duration="9983000" />
-      <workItem from="1500875924923" duration="5994000" />
+      <workItem from="1500875924923" duration="10451000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167833000" />
+    <option name="totallyTimeSpent" value="172290000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1410,6 +1433,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1431,10 +1455,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28505215" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23927039" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23927039" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1462,13 +1486,13 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17113733" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17061356" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39976826" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24681345" sideWeight="0.49785408" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24565469" sideWeight="0.49785408" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1476,11 +1500,11 @@
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" x="-280" y="352" width="1738" height="860" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28852838" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4750869" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2333691" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23927039" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1495,7 +1519,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="18" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1714,13 +1738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/AdminLTE-cn/pages/widgets.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="540" column="63" lean-forward="false" selection-start-line="540" selection-start-column="63" selection-end-line="540" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/admin_login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -1751,30 +1768,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/sort_lists.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="191" column="12" lean-forward="false" selection-start-line="191" selection-start-column="12" selection-end-line="191" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/product_lists.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="197" column="45" lean-forward="true" selection-start-line="197" selection-start-column="45" selection-end-line="197" selection-end-column="45" />
           <folding>
             <marker date="1500800175611" expanded="false" signature="1966:4687" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/sort_list_3.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="99" column="4" lean-forward="false" selection-start-line="99" selection-start-column="4" selection-end-line="191" selection-end-column="12" />
-          <folding>
-            <element signature="e#10590#10596#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1794,26 +1793,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/sort_list_2.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/add_product_2.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8370">
           <caret line="310" column="0" lean-forward="false" selection-start-line="277" selection-start-column="32" selection-end-line="310" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort_3.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7344">
-          <caret line="272" column="49" lean-forward="false" selection-start-line="272" selection-start-column="49" selection-end-line="272" selection-end-column="49" />
           <folding />
         </state>
       </provider>
@@ -1842,9 +1825,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/sort_lists.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="202" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="447" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/AdminLTE-cn/pages/widgets.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="731" column="0" lean-forward="false" selection-start-line="731" selection-start-column="0" selection-end-line="749" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/sort_list_2.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="26" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="449" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/model/Category_second.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
+        <state relative-caret-position="108">
           <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
           <folding>
             <element signature="e#660#661#0" expanded="true" />
@@ -1853,70 +1860,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/sort_list_3.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding>
-            <marker date="1500881187838" expanded="true" signature="342:417" ph="SELECT * FRO... admin" />
-            <marker date="1500881187838" expanded="true" signature="575:597" ph="SELECT * FRO... category" />
-            <marker date="1500881187838" expanded="true" signature="678:723" ph="SELECT * FRO... category" />
-            <marker date="1500881187838" expanded="true" signature="806:853" ph="SELECT * FRO... category" />
-            <marker date="1500881187838" expanded="true" signature="1105:1134" ph="SELECT * FRO... category_second" />
-            <marker date="1500881187838" expanded="true" signature="1228:1288" ph="SELECT *FROM... category_second" />
-            <marker date="1500881187838" expanded="true" signature="1383:1445" ph="SELECT * FRO... category_second" />
-            <marker date="1500881187838" expanded="true" signature="1542:1662" ph="SELECT * FRO... category_second" />
-            <marker date="1500881187838" expanded="true" signature="1914:1942" ph="SELECT * FRO... category_third" />
-            <marker date="1500881187838" expanded="true" signature="2037:2145" ph="SELECT categ... category_third" />
-            <marker date="1500881187838" expanded="true" signature="2037:2176" ph="SELECT * FRO... category_third" />
-            <marker date="1500881187838" expanded="true" signature="2270:2331" ph="SELECT * FRO... category_third" />
-            <marker date="1500881187838" expanded="true" signature="2423:2481" ph="SELECT * FRO... category_third" />
-            <marker date="1500881187838" expanded="true" signature="2658:2896" ph="INSERT INTO product... " />
-            <marker date="1500881187838" expanded="true" signature="2974:2995" ph="SELECT * FRO... product" />
-            <marker date="1500881187838" expanded="true" signature="3080:3118" ph="DELETE FROM " />
-            <marker date="1500881187838" expanded="true" signature="3296:3344" ph="INSERT INTO category... " />
-            <marker date="1500881187838" expanded="true" signature="3425:3475" ph="INSERT INTO category_second" />
-            <marker date="1500881187838" expanded="true" signature="3425:3482" ph="INSERT INTO category_second" />
-            <marker date="1500881187838" expanded="true" signature="3425:3485" ph="INSERT INTO category_second" />
-            <marker date="1500881187838" expanded="true" signature="3565:3624" ph="INSERT INTO category_third... " />
-            <marker date="1500881187838" expanded="true" signature="3565:3644" ph="INSERT INTO category_third... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort_2.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1971">
-          <caret line="259" column="56" lean-forward="false" selection-start-line="259" selection-start-column="56" selection-end-line="259" selection-end-column="56" />
+        <state relative-caret-position="302">
+          <caret line="104" column="45" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="449" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="42" column="65" lean-forward="false" selection-start-line="42" selection-start-column="65" selection-end-line="42" selection-end-column="65" />
+        <state relative-caret-position="203">
+          <caret line="39" column="41" lean-forward="true" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
           <folding>
             <element signature="docComment;class#AdminDAO#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/AdminController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="285" column="55" lean-forward="false" selection-start-line="285" selection-start-column="55" selection-end-line="285" selection-end-column="55" />
+        <state relative-caret-position="332">
+          <caret line="94" column="13" lean-forward="true" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="13" />
           <folding>
-            <element signature="docComment;class#AdminController#0" expanded="false" />
+            <marker date="1500886984081" expanded="true" signature="342:417" ph="SELECT * FRO... admin" />
+            <marker date="1500886984081" expanded="true" signature="575:597" ph="SELECT * FRO... category" />
+            <marker date="1500886984081" expanded="true" signature="678:723" ph="SELECT * FRO... category" />
+            <marker date="1500886984081" expanded="true" signature="806:853" ph="SELECT * FRO... category" />
+            <marker date="1500886984081" expanded="true" signature="1105:1134" ph="SELECT * FRO... category_second" />
+            <marker date="1500886984081" expanded="true" signature="1228:1288" ph="SELECT *FROM... category_second" />
+            <marker date="1500886984081" expanded="true" signature="1383:1445" ph="SELECT * FRO... category_second" />
+            <marker date="1500886984081" expanded="true" signature="1542:1662" ph="SELECT * FRO... category_second" />
+            <marker date="1500886984081" expanded="true" signature="1914:1942" ph="SELECT * FRO... category_third" />
+            <marker date="1500886984081" expanded="true" signature="2037:2145" ph="SELECT categ... category_third" />
+            <marker date="1500886984081" expanded="true" signature="2037:2176" ph="SELECT * FRO... category_third" />
+            <marker date="1500886984081" expanded="true" signature="2270:2331" ph="SELECT * FRO... category_third" />
+            <marker date="1500886984081" expanded="true" signature="2423:2481" ph="SELECT * FRO... category_third" />
+            <marker date="1500886984081" expanded="true" signature="2658:2896" ph="INSERT INTO product... " />
+            <marker date="1500886984081" expanded="true" signature="2974:2995" ph="SELECT * FRO... product" />
+            <marker date="1500886984081" expanded="true" signature="3080:3118" ph="DELETE FROM " />
+            <marker date="1500886984081" expanded="true" signature="3296:3344" ph="INSERT INTO category... " />
+            <marker date="1500886984081" expanded="true" signature="3425:3475" ph="INSERT INTO category_second" />
+            <marker date="1500886984081" expanded="true" signature="3425:3502" ph="INSERT INTO category_second" />
+            <marker date="1500886984081" expanded="true" signature="3425:3514" ph="INSERT INTO category_second" />
+            <marker date="1500886984081" expanded="true" signature="3594:3668" ph="INSERT INTO category_third... " />
+            <marker date="1500886984081" expanded="true" signature="3594:3688" ph="INSERT INTO category_third... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort_3.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="824" column="32" lean-forward="true" selection-start-line="824" selection-start-column="32" selection-end-line="824" selection-end-column="32" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1500887915961" expanded="false" signature="18904:18910" ph="©" />
+            <marker date="1500887915961" expanded="false" signature="22391:22401" ph="..." />
+            <marker date="1500887915961" expanded="false" signature="23001:23011" ph="..." />
+            <marker date="1500887915961" expanded="false" signature="23616:23626" ph="..." />
+            <marker date="1500887915961" expanded="false" signature="24226:24236" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort_2.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="827" column="30" lean-forward="true" selection-start-line="827" selection-start-column="30" selection-end-line="827" selection-end-column="30" />
+          <folding>
+            <marker date="1500887916090" expanded="false" signature="18714:18720" ph="©" />
+            <marker date="1500887916090" expanded="false" signature="22201:22211" ph="..." />
+            <marker date="1500887916090" expanded="false" signature="22811:22821" ph="..." />
+            <marker date="1500887916090" expanded="false" signature="23426:23436" ph="..." />
+            <marker date="1500887916090" expanded="false" signature="24036:24046" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1469">
-          <caret line="326" column="80" lean-forward="true" selection-start-line="326" selection-start-column="80" selection-end-line="326" selection-end-column="80" />
-          <folding />
+        <state relative-caret-position="432">
+          <caret line="856" column="32" lean-forward="false" selection-start-line="856" selection-start-column="32" selection-end-line="856" selection-end-column="32" />
+          <folding>
+            <marker date="1500887846168" expanded="false" signature="23362:23368" ph="©" />
+            <marker date="1500887846168" expanded="false" signature="27101:27111" ph="..." />
+            <marker date="1500887846168" expanded="false" signature="27755:27765" ph="..." />
+            <marker date="1500887846168" expanded="false" signature="28414:28424" ph="..." />
+            <marker date="1500887846168" expanded="false" signature="29068:29078" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="347" column="0" lean-forward="false" selection-start-line="347" selection-start-column="2" selection-end-line="351" selection-end-column="7" />
+          <folding>
+            <element signature="docComment;class#AdminController#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
