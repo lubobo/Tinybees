@@ -6,7 +6,6 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="C" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
@@ -158,96 +157,12 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="#"><i class="fa fa-circle-o"></i> 新增分类</a></li>
-                        <li><a href="#"><i class="fa fa-circle-o"></i> 修改分类</a></li>
+                        <li><a href="/add_sort"><i class="fa fa-circle-o"></i> 新增分类</a></li>
+                        <li><a href="/sort_list"><i class="fa fa-circle-o"></i> 分类列表</a></li>
                         <%--<li><a href="fixed.html"><i class="fa fa-circle-o"></i> 固定布局</a></li>--%>
                     </ul>
                 </li>
-                <%--<li>--%>
-                <%--<a href="widgets.html">--%>
-                <%--<i class="fa fa-th"></i> <span>小部件</span>--%>
-                <%--<span class="pull-right-container">--%>
-                <%--<small class="label pull-right bg-green">新</small>--%>
-                <%--</span>--%>
-                <%--</a>--%>
-                <%--</li>--%>
-                <%--<li class="treeview">--%>
-                <%--<a href="#">--%>
-                <%--<i class="fa fa-pie-chart"></i>--%>
-                <%--<span>图表</span>--%>
-                <%--<span class="pull-right-container">--%>
-                <%--<i class="fa fa-angle-left pull-right"></i>--%>
-                <%--</span>--%>
-                <%--</a>--%>
-                <%--<ul class="treeview-menu">--%>
-                <%--<li><a href="chartjs.html"><i class="fa fa-circle-o"></i> JS图表</a></li>--%>
-                <%--<li><a href="morris.html"><i class="fa fa-circle-o"></i> 遍历</a></li>--%>
-                <%--<li><a href="flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>--%>
-                <%--<li><a href="inline.html"><i class="fa fa-circle-o"></i> 内嵌图表</a></li>--%>
-                <%--<li><a href="collapsed-sidebar.html"><i class="fa fa-circle-o"></i> 折叠侧栏</a></li>--%>
-                <%--</ul>--%>
-                <%--</li>--%>
-                <%--<li class="treeview">--%>
-                <%--<a href="#">--%>
-                <%--<i class="fa fa-laptop"></i>--%>
-                <%--<span>UI元素</span>--%>
-                <%--<span class="pull-right-container">--%>
-                <%--<i class="fa fa-angle-left pull-right"></i>--%>
-                <%--</span>--%>
-                <%--</a>--%>
-                <%--<ul class="treeview-menu">--%>
-                <%--<li><a href="general.html"><i class="fa fa-circle-o"></i> 一般</a></li>--%>
-                <%--<li><a href="icons.html"><i class="fa fa-circle-o"></i> 图标</a></li>--%>
-                <%--<li><a href="buttons.html"><i class="fa fa-circle-o"></i> 按钮</a></li>--%>
-                <%--<li><a href="sliders.html"><i class="fa fa-circle-o"></i> 滑动条</a></li>--%>
-                <%--<li><a href="timeline.html"><i class="fa fa-circle-o"></i> 时间行</a></li>--%>
-                <%--<li><a href="modals.html"><i class="fa fa-circle-o"></i> 模式</a></li>--%>
-                <%--</ul>--%>
-                <%--</li>--%>
-                <%--<li class="treeview">--%>
-                <%--<a href="#">--%>
-                <%--<i class="fa fa-edit"></i> <span>表单</span>--%>
-                <%--<span class="pull-right-container">--%>
-                <%--<i class="fa fa-angle-left pull-right"></i>--%>
-                <%--</span>--%>
-                <%--</a>--%>
-                <%--<ul class="treeview-menu">--%>
-                <%--<li><a href="general.html"><i class="fa fa-circle-o"></i> 普通元素</a></li>--%>
-                <%--<li><a href="advanced.html"><i class="fa fa-circle-o"></i> 高级元素</a></li>--%>
-                <%--<li><a href="editors.html"><i class="fa fa-circle-o"></i> 编辑</a></li>--%>
-                <%--</ul>--%>
-                <%--</li>--%>
-                <%--<li class="treeview">--%>
-                <%--<a href="#">--%>
-                <%--<i class="fa fa-table"></i> <span>表格</span>--%>
-                <%--<span class="pull-right-container">--%>
-                <%--<i class="fa fa-angle-left pull-right"></i>--%>
-                <%--</span>--%>
-                <%--</a>--%>
-                <%--<ul class="treeview-menu">--%>
-                <%--<li><a href="simple.html"><i class="fa fa-circle-o"></i> 简单表格</a></li>--%>
-                <%--<li><a href="data.html"><i class="fa fa-circle-o"></i> 数据表格</a></li>--%>
-                <%--</ul>--%>
-                <%--</li>--%>
-                <%--<li>--%>
-                <%--<a href="calendar.html">--%>
-                <%--<i class="fa fa-calendar"></i> <span>日历</span>--%>
-                <%--<span class="pull-right-container">--%>
-                <%--<small class="label pull-right bg-red">3</small>--%>
-                <%--<small class="label pull-right bg-blue">17</small>--%>
-                <%--</span>--%>
-                <%--</a>--%>
-                <%--</li>--%>
-                <%--<li>--%>
-                <%--<a href="mailbox.html">--%>
-                <%--<i class="fa fa-envelope"></i> <span>邮箱</span>--%>
-                <%--<span class="pull-right-container">--%>
-                <%--<small class="label pull-right bg-yellow">12</small>--%>
-                <%--<small class="label pull-right bg-green">16</small>--%>
-                <%--<small class="label pull-right bg-red">5</small>--%>
-                <%--</span>--%>
-                <%--</a>--%>
-                <%--</li>--%>
+
                 <li class="treeview active">
                     <a href="#">
                         <i class="fa fa-folder"></i> <span>用户管理</span>
@@ -258,13 +173,7 @@
                     <ul class="treeview-menu">
                         <li><a href="invoice.html"><i class="fa fa-circle-o"></i> 用户删除</a></li>
                         <li><a href="profile.html"><i class="fa fa-circle-o"></i> 用户查看</a></li>
-                        <%--<li><a href="login.html"><i class="fa fa-circle-o"></i> 登录</a></li>--%>
-                        <%--<li><a href="register.html"><i class="fa fa-circle-o"></i> 注册</a></li>--%>
-                        <%--<li><a href="lockscreen.html"><i class="fa fa-circle-o"></i> 锁屏</a></li>--%>
-                        <%--<li class="active"><a href="404.html"><i class="fa fa-circle-o"></i> 404错误</a></li>--%>
-                        <%--<li><a href="500.html"><i class="fa fa-circle-o"></i> 500错误</a></li>--%>
-                        <%--<li><a href="blank.html"><i class="fa fa-circle-o"></i> 空白页面</a></li>--%>
-                        <%--<li><a href="pace.html"><i class="fa fa-circle-o"></i> 一页</a></li>--%>
+
                     </ul>
                 </li>
 
@@ -283,44 +192,6 @@
                         <%--<li><a href="fixed.html"><i class="fa fa-circle-o"></i> 固定布局</a></li>--%>
                     </ul>
                 </li>
-                <%--<li class="treeview">--%>
-                <%--<a href="#">--%>
-                <%--<i class="fa fa-share"></i> <span>多层级</span>--%>
-                <%--<span class="pull-right-container">--%>
-                <%--<i class="fa fa-angle-left pull-right"></i>--%>
-                <%--</span>--%>
-                <%--</a>--%>
-                <%--<ul class="treeview-menu">--%>
-                <%--<li><a href="#"><i class="fa fa-circle-o"></i> 一级</a></li>--%>
-                <%--<li>--%>
-                <%--<a href="#"><i class="fa fa-circle-o"></i> 一级--%>
-                <%--<span class="pull-right-container">--%>
-                <%--<i class="fa fa-angle-left pull-right"></i>--%>
-                <%--</span>--%>
-                <%--</a>--%>
-                <%--<ul class="treeview-menu">--%>
-                <%--<li><a href="#"><i class="fa fa-circle-o"></i> 二级</a></li>--%>
-                <%--<li>--%>
-                <%--<a href="#"><i class="fa fa-circle-o"></i> 二级--%>
-                <%--<span class="pull-right-container">--%>
-                <%--<i class="fa fa-angle-left pull-right"></i>--%>
-                <%--</span>--%>
-                <%--</a>--%>
-                <%--<ul class="treeview-menu">--%>
-                <%--<li><a href="#"><i class="fa fa-circle-o"></i> 三级</a></li>--%>
-                <%--<li><a href="#"><i class="fa fa-circle-o"></i> 三级</a></li>--%>
-                <%--</ul>--%>
-                <%--</li>--%>
-                <%--</ul>--%>
-                <%--</li>--%>
-                <%--<li><a href="#"><i class="fa fa-circle-o"></i> 一级</a></li>--%>
-                <%--</ul>--%>
-                <%--</li>--%>
-                <%--<li><a href="/AdminLTE-cn/documentation/index.html"><i class="fa fa-book"></i> <span>文档</span></a></li>--%>
-                <%--<li class="header">标签</li>--%>
-                <%--<li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>重要</span></a></li>--%>
-                <%--<li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>警告</span></a></li>--%>
-                <%--<li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>信息</span></a></li>--%>
             </ul>
         </section>
         <!-- /.sidebar -->
@@ -339,140 +210,144 @@
         <!-- Main content -->
         <section class="content">
             <div class="row">
-                <div class="col-md-3">
-                    <a href="#" class="btn btn-primary btn-block margin-bottom">Back to Index</a>
-                    <div class="box box-solid">
-                        <div class="box-header with-border">
-                            <h3 class="box-danger box-title margin-bottom">选择商品配图</h3>
+                <form action="/post_product" method="post" enctype="multipart/form-data">
+                    <div class="col-md-3">
+                        <a href="#" class="btn btn-primary btn-block margin-bottom">Back to Index</a>
+                        <div class="box box-solid">
+                            <div class="box-header with-border">
+                                <h3 class="box-danger box-title margin-bottom">选择商品配图</h3>
 
-                            <div class="box-tools">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                                </button>
+                                <div class="box-tools">
+                                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                                    </button>
+                                </div>
                             </div>
+                            <div class="box-body no-padding">
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li>
+                                        <div class="form-group">
+                                            <div class="btn btn-default btn-file btn-block">
+                                                <i class="fa fa-paperclip"></i> 商品配图 （1）
+                                                <input type="file" name="p_image">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-group">
+                                            <div class="btn btn-default btn-file btn-block">
+                                                <i class="fa fa-paperclip"></i> 商品配图 （2）
+                                                <input type="file" name="p_image1">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-group">
+                                            <div class="btn btn-default btn-file btn-block">
+                                                <i class="fa fa-paperclip"></i> 商品配图 （3）
+                                                <input type="file" name="p_image2">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-group">
+                                            <div class="btn btn-default btn-file btn-block">
+                                                <i class="fa fa-paperclip"></i> 商品配图 （4）
+                                                <input type="file" name="p_image3">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /.box-body -->
                         </div>
-                        <div class="box-body no-padding">
-                            <ul class="nav nav-pills nav-stacked">
-                                <li>
-                                    <div class="form-group">
-                                        <div class="btn btn-default btn-file btn-block">
-                                            <i class="fa fa-paperclip"></i> 商品配图 （1）
-                                            <input type="file" name="p_image">
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-group">
-                                        <div class="btn btn-default btn-file btn-block">
-                                            <i class="fa fa-paperclip"></i> 商品配图 （2）
-                                            <input type="file" name="p_image1">
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-group">
-                                        <div class="btn btn-default btn-file btn-block">
-                                            <i class="fa fa-paperclip"></i> 商品配图 （3）
-                                            <input type="file" name="p_image2">
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-group">
-                                        <div class="btn btn-default btn-file btn-block">
-                                            <i class="fa fa-paperclip"></i> 商品配图 （4）
-                                            <input type="file" name="p_image3">
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+                        <!-- /. box -->
+                        <div class="box box-solid">
                         </div>
-                        <!-- /.box-body -->
+                        <!-- /.box -->
                     </div>
-                    <!-- /. box -->
-                    <div class="box box-solid">
-                        <%--<div class="box-header with-border">--%>
-                        <%--<h3 class="box-title">Labels</h3>--%>
+                    <!-- /.col -->
+                    <div class="col-md-9">
+                        <div class="box box-primary">
 
-                        <%--<div class="box-tools">--%>
-                        <%--<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>--%>
-                        <%--</button>--%>
-                        <%--</div>--%>
-                        <%--</div>--%>
-                        <!-- /.box-header -->
-                        <%--<div class="box-body no-padding">--%>
-                        <%--<ul class="nav nav-pills nav-stacked">--%>
-                        <%--<li><a href="#"><i class="fa fa-circle-o text-red"></i> Important</a></li>--%>
-                        <%--<li><a href="#"><i class="fa fa-circle-o text-yellow"></i> Promotions</a></li>--%>
-                        <%--<li><a href="#"><i class="fa fa-circle-o text-light-blue"></i> Social</a></li>--%>
-                        <%--</ul>--%>
-                        <%--</div>--%>
-                        <!-- /.box-body -->
+                            <div class="box-header with-border">
+                                <h3 class="box-title">发布商品</h3>
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body">
+
+                                <div class="form-group col-lg-4">
+                                    <select class="form-control" id="the_first" onchange="getCategory_second(this.value)" >
+                                        <option value="${category.c_id}"><c:out value="${category.c_name}"/></option>
+                                        <c:forEach items="${categories}" var="i" step="1">
+                                            <option class="form-control-item" value="${i.c_id}">
+                                                <c:out value="${i.c_name}"/>
+                                            </option>
+                                        </c:forEach>
+                                    </select>
+                                </div>
+
+                                <div class="form-group col-lg-4" id="category_second">
+                                    <select class="form-control"
+                                            onchange="getCategory_third(this.value,document.getElementById('the_first').attributes[value].value)">
+                                        <option value="${category_second.cs_id}"><c:out value="${category_second.cs_name}"/></option>
+                                        <c:forEach items="${categories_second}" var="i" step="1">
+                                            <option class="form-control" value="${i.cs_name}">
+                                                <c:out value="${i.cs_name}"/>
+                                            </option>
+                                        </c:forEach>
+                                    </select>
+                                </div>
+
+                                <div class="form-group col-lg-4" id="category_third">
+                                    <select class="form-control" name="ct_name">
+                                        <%--<option>三级分类</option>--%>
+                                        <c:forEach items="${categories_third}" var="i" step="1">
+                                            <option class="form-control" value="${i.ct_id}">
+                                                <c:out value="${i.ct_name}"/>
+                                            </option>
+                                        </c:forEach>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <input class="form-control" name="p_name" placeholder="商品名称:">
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="compose-textarea" placeholder="商品简介" name="p_desc" class="form-control" style="height: 300px">
+                                    </textarea>
+                                </div>
+
+                                <div class="form-group col-lg-3">
+                                    <input class="form-control" name="p_market" placeholder="市场价格:">
+                                </div>
+
+                                <div class="form-group col-lg-3">
+                                    <input class="form-control" name="p_current" placeholder="当前价格:">
+                                </div>
+
+
+                                <div class="form-group col-lg-3">
+                                    <input class="form-control" name="p_color" placeholder="颜色:">
+                                </div>
+
+                                <div class="form-group col-lg-3">
+                                    <input class="form-control" name="p_size" placeholder="库存:">
+                                </div>
+
+                            </div>
+                            <!-- /.box-body -->
+                            <div class="box-footer">
+                                <div class="pull-right">
+                                    <%--<button type="button" class="btn btn-default"><i class="fa fa-pencil"></i> Draft</button>--%>
+                                    <button type="submit" class="btn btn-primary"><i class="fa fa-envelope-o"></i> Send</button>
+                                </div>
+                                <button type="reset" class="btn btn-default"><i class="fa fa-times"></i> Discard</button>
+                            </div>
+                            <!-- /.box-footer -->
+                        </div>
+                        <!-- /. box -->
                     </div>
-                    <!-- /.box -->
-                </div>
-                <!-- /.col -->
-                <div class="col-md-9">
-                    <div class="box box-primary">
-                        <div class="box-header with-border">
-                            <h3 class="box-title">发布商品</h3>
-                        </div>
-                        <!-- /.box-header -->
-                        <div class="box-body">
-
-                            <div class="form-group col-lg-4">
-
-                                <select class="form-control" id="the_first" onchange="getCategory_second(this.value)" >
-                                    <option value="${category.c_id}"><c:out value="${category.c_name}"/></option>
-                                    <c:forEach items="${categories}" var="i" step="1">
-                                        <option class="form-control-item" value="${i.c_id}">
-                                            <c:out value="${i.c_name}"/>
-                                        </option>
-                                    </c:forEach>
-                                </select>
-                            </div>
-
-                            <div class="form-group col-lg-4" id="category_second">
-                                <select class="form-control"
-                                        onchange="getCategory_third(
-                                            document.getElementById('the_first').options[document.getElementById('the_first').selectedIndex].value,
-                                            this.value
-                                        )">
-                                    <%--<option>二级分类</option>--%>
-                                    <c:forEach items="${categories_seconds}" var="i" step="1">
-                                        <c:set var="id" value="${i.cs_id}"/>
-                                        <option class="form-control" value="${id}">
-                                            <c:out value="${i.cs_name}"/>
-                                        </option>
-                                    </c:forEach>
-                                </select>
-                            </div>
-
-                            <div class="form-group col-lg-4" id="category_third">
-                                <select class="form-control">
-                                    <option>三级分类</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <input class="form-control" placeholder="商品名称:">
-                            </div>
-                            <div class="form-group">
-                                <textarea id="compose-textarea" placeholder="商品简介" class="form-control" style="height: 280px">
-                                </textarea>
-                            </div>
-                        </div>
-                        <!-- /.box-body -->
-                        <div class="box-footer">
-                            <div class="pull-right">
-                                <button type="button" class="btn btn-default"><i class="fa fa-pencil"></i> Draft</button>
-                                <button type="submit" class="btn btn-primary"><i class="fa fa-envelope-o"></i> Send</button>
-                            </div>
-                            <button type="reset" class="btn btn-default"><i class="fa fa-times"></i> Discard</button>
-                        </div>
-                        <!-- /.box-footer -->
-                    </div>
-                    <!-- /. box -->
-                </div>
+                </form>
                 <!-- /.col -->
             </div>
             <!-- /.row -->
@@ -708,6 +583,7 @@
         $("#compose-textarea").wysihtml5();
     });
 
+
     function getCategory_third(str,str1) {
         var xmlhttp;
         if (window.XMLHttpRequest) {
@@ -721,7 +597,7 @@
                 window.location = "/category_third/"+xmlhttp.getResponseHeader("categories")+"/"+xmlhttp.getResponseHeader("categories_second");
             }
         }
-        xmlhttp.open("GET", "/getCategory_third/"+str+"/"+str1, false);
+        xmlhttp.open("GET", "/getCategory_third/"+str+"/"+str1, true);
         xmlhttp.send();
 
     }

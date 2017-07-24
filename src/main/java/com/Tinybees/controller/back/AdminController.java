@@ -22,7 +22,6 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 
-import java.text.SimpleDateFormat;
 import java.util.Iterator;
 import java.util.List;
 
@@ -61,7 +60,6 @@ public class AdminController {
             modelAndView.setViewName("admin/admin_home");
             return modelAndView;
         }else{
-
             modelAndView.setViewName("admin/admin_login");
             return modelAndView;
         }
@@ -81,7 +79,7 @@ public class AdminController {
         ModelAndView modelAndView = new ModelAndView();
         List<Category> categories = adminDAO.getAllCategory();
         model.addAttribute("categories",categories);
-        modelAndView.setViewName("admin/add_product");
+        modelAndView.setViewName("admin/product/add_product");
         return modelAndView;
     }
 
@@ -95,12 +93,12 @@ public class AdminController {
     @RequestMapping(value = "/category_second/{categories}")
     public ModelAndView getCategory_second(@PathVariable String categories, Model model, HttpServletRequest request, HttpServletResponse response){
         ModelAndView modelAndView = new ModelAndView();
-        List<Category_second> category_seconds = adminDAO.getCategorySecondByName(categories);
+        List<Category_second> category_seconds = adminDAO.getAllCategorySecondById(categories);
         List<Category> categories1 =adminDAO.getAllCategory();
         model.addAttribute("category",adminDAO.getCategoryById(categories));
         model.addAttribute("categories",categories1);
         model.addAttribute("categories_seconds",category_seconds);
-        modelAndView.setViewName("admin/add_product_1");
+        modelAndView.setViewName("admin/product/add_product_1");
         return modelAndView;
     }
 
@@ -115,26 +113,22 @@ public class AdminController {
     @RequestMapping(value = "/category_third/{categories}/{categories_second}")
     public ModelAndView category_third(@PathVariable String categories,@PathVariable String categories_second, Model model,HttpServletRequest request,HttpServletResponse response){
         ModelAndView modelAndView = new ModelAndView();
-        List<Category_third> category_thirds = adminDAO.getCategoryThirdByName(categories_second);
+        List<Category_third> category_thirds = adminDAO.getAllCategoryThirdById(categories_second);
 
         model.addAttribute("category",adminDAO.getCategoryById(categories));
         model.addAttribute("category_second",adminDAO.getCategorySecondById(categories_second));
 
         model.addAttribute("categories",adminDAO.getAllCategory());
-        model.addAttribute("categories_second",adminDAO.getCategorySecondByName(categories_second));
+        model.addAttribute("categories_second",adminDAO.getAllCategorySecondById(categories_second));
 
         model.addAttribute("categories_third",category_thirds);
-        modelAndView.setViewName("admin/add_product_2");
+        modelAndView.setViewName("admin/product/add_product_2");
         return modelAndView;
     }
 
     @RequestMapping("/post_product")
     public String post_product(Model model,HttpServletRequest request)throws IllegalStateException,IOException{
-
-//        String p_image = request.getAttribute("p_image").toString();
-//        String p_image1 = request.getAttribute("p_image1").toString();
-//        String p_image2 = request.getAttribute("p_image2").toString();
-//        String p_image3 = request.getAttribute("p_image3").toString();
+        Product product = new Product();
         String ct_name = request.getParameter("ct_name");
         String p_name = request.getParameter("p_name");
         String p_desc = request.getParameter("p_desc");
@@ -142,20 +136,12 @@ public class AdminController {
         String p_current = request.getParameter("p_current");
         String p_color = request.getParameter("p_color");
         String p_size = request.getParameter("p_size");
-
-        Product product = new Product();
-
-        //将当前上下文初始化给  CommonsMutipartResolver （多部分解析器）
         CommonsMultipartResolver multipartResolver=new CommonsMultipartResolver(request.getSession().getServletContext());
-        //检查form中是否有enctype="multipart/form-data"
         if(multipartResolver.isMultipart(request)){
-            //将request变成多部分request
             MultipartHttpServletRequest multiRequest=(MultipartHttpServletRequest)request;
-            //获取multiRequest 中所有的文件名
             Iterator iter=multiRequest.getFileNames();
             int count = 0;
             while(iter.hasNext()){
-                //一次遍历所有文件
                 count++;
                 MultipartFile file=multiRequest.getFile(iter.next().toString());
                 if(file!=null){
@@ -174,12 +160,6 @@ public class AdminController {
                 }
             }
         }
-
-//        product.setImage(p_image);
-//        product.setImage1(p_image1);
-//        product.setImage2(p_image2);
-//        product.setImage3(p_image3);
-
         product.setP_name(p_name);
         product.setMarket_price(p_market);
         product.setCurrent_price(p_current);
@@ -206,5 +186,45 @@ public class AdminController {
         int product_id=Integer.parseInt(request.getParameter("product_id"));
         adminDAO.deleteProductById(product_id);
         return "redirect:/product_lists";
+    }
+
+    @RequestMapping("/sort_list")
+    public ModelAndView sort_list(Model model){
+        ModelAndView modelAndView = new ModelAndView();
+        List<Category> categories = adminDAO.getAllCategory();
+        model.addAttribute("categories",categories);
+        modelAndView.setViewName("/admin/classfication/sort_lists");
+        return modelAndView;
+    }
+
+    @RequestMapping("/sort_list_2/{category_id}")
+    public ModelAndView sort_list_2(@PathVariable String category_id,Model model){
+        ModelAndView modelAndView = new ModelAndView();
+        List<Category_second> category_seconds = adminDAO.getAllCategorySecondById(category_id);
+        Category category = adminDAO.getCategoryById(category_id);
+        model.addAttribute("category",category);
+        model.addAttribute("category_seconds",category_seconds);
+        modelAndView.setViewName("admin/classfication/sort_list_2");
+        return modelAndView;
+    }
+
+    @RequestMapping("/sort_list_3/{category_id}/{category_second_id}")
+    public ModelAndView sort_list_3(@PathVariable String category_id,@PathVariable String category_second_id,Model model){
+        ModelAndView modelAndView = new ModelAndView();
+        List<Category_third> category_thirds = adminDAO.getAllCategoryThirdById(category_second_id);
+        Category_second category_second = adminDAO.getCategorySecondById(category_second_id);
+        Category category = adminDAO.getCategoryById(category_id);
+        model.addAttribute("category",category);
+        model.addAttribute("category_second",category_second);
+        model.addAttribute("category_thirds",category_thirds);
+        modelAndView.setViewName("admin/classfication/sort_list_3");
+        return modelAndView;
+    }
+
+    @RequestMapping("add_sort")
+    public ModelAndView add_sort(){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("admin/classfication/add_sort");
+        return modelAndView;
     }
 }

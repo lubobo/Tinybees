@@ -8,6 +8,8 @@
         SELECT * FROM admin WHERE ad_name=#{ad_name} AND ad_password=#{ad_password};
     </select>
 
+
+    <!--*****************************一级分类********************************-->
     <select id="getAllCategory" resultType="Category">
         SELECT * FROM category;
     </select>
@@ -15,7 +17,10 @@
     <select id="getCategoryById" resultType="Category">
         SELECT * FROM category WHERE c_id=#{category};
     </select>
+    <!--*********************************************************************-->
 
+
+    <!--******************************二级分类*******************************-->
     <select id="getAllCategorySecond" resultType="Category_second">
         SELECT * FROM category_second;
     </select>
@@ -24,21 +29,30 @@
         SELECT *FROM category_second WHERE cs_id=#{category_second}
     </select>
 
+    <select id="getAllCategorySecondById" resultType="Category_second">
+        SELECT * FROM category_second,category
+        WHERE category_second.c_id=#{categories} GROUP BY category_second.cs_name;
+    </select>
+    <!--**********************************************************************-->
+
+
+    <!--*******************************三级分类*******************************-->
     <select id="getAllCategoryThird" resultType="Category_third">
         SELECT * FROM category_third;
     </select>
 
-    <select id="getCategorySecondByName" resultType="Category_second">
-        SELECT * FROM category_second,category
-        WHERE category_second.c_id=#{categories} GROUP BY category_second.cs_name;
-    </select>
-
-    <select id="getCategoryThirdByName" resultType="Category_third">
+    <select id="getAllCategoryThirdById" resultType="Category_third">
         SELECT * FROM category_third,category_second
         WHERE
         category_third.cs_id=#{category_seconds} GROUP BY category_third.ct_name;
     </select>
 
+    <select id="getCategoryThirdById" resultType="Category_third">
+        SELECT * FROM category_third WHERE ct_id=${category_third};
+    </select>
+    <!--***********************************************************************-->
+
+    <!--商品操作-->
     <insert id="addProduct" parameterType="Product">
         INSERT INTO product(p_name,market_price,current_price,pdesc,image,image1,image2,image3,color,size,ct_id)
         VALUES (#{p_name},#{market_price},#{current_price},#{pdesc},#{image},#{image1},#{image2},#{image3},#{color},#{size},#{ct_id});
@@ -51,4 +65,5 @@
     <delete id="deleteProductById" parameterType="Product">
         DELETE FROM product WHERE p_id=#{p_id};
     </delete>
+
 </mapper>

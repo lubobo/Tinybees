@@ -2,7 +2,7 @@
   Created by IntelliJ IDEA.
   User: lukbo
   Date: 2017/7/23
-  Time: 9:11
+  Time: 15:17
   To change this template use File | Settings | File Templates.
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -13,7 +13,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AdminLTE 2 | 数据表格</title>
+    <title>AdminLTE 2 | 小部件</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.6 -->
@@ -22,8 +22,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- DataTables -->
-    <link rel="stylesheet" href="/AdminLTE-cn/plugins/datatables/dataTables.bootstrap.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="/AdminLTE-cn/dist/css/AdminLTE.min.css">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
@@ -196,108 +194,46 @@
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
+
         <section class="content-header">
             <h1>
-                商品管理
-                <small>商品信息</small>
+                二级分类
+                <small><a href="/sort_list"><b>一级分类</b> </a>/ ${category.c_name}</small>
             </h1>
-            <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> 主页</a></li>
-                <li><a href="#">商品</a></li>
-                <li class="active">商品信息</li>
-            </ol>
         </section>
 
         <!-- Main content -->
         <section class="content">
+
             <div class="row">
-                <div class="col-xs-12">
-                    <!-- /.box -->
+                <!-- /.col -->
+                <c:forEach var="category_second" items="${category_seconds}" step="1">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="info-box">
+                            <span class="info-box-icon bg-red"><i class="fa fa-star-o"></i></span>
 
-                    <div class="box">
-                        <div class="box-header">
-                            <h3 class="box-title">商品管理信息展示</h3>
+                            <a href="/sort_list_3/${category_second.c_id}/${category_second.cs_id}">
+                                <div class="info-box-content">
+                                    <span class="info-box-number">${category_second.cs_name}</span>
+                                    <span class="info-box-text">一级分类</span>
+                                </div>
+                            </a>
+                            <!-- /.info-box-content -->
                         </div>
-                        <!-- /.box-header -->
-                        <div class="box-body">
-                            <table id="example1" class="table table-bordered table-striped">
-                                <thead>
-                                <tr>
-                                    <th>商品名称</th>
-                                    <th>市场价格</th>
-                                    <th>平台价格</th>
-                                    <th>商品库存</th>
-                                    <th>活动商品</th>
-                                    <th>管理商品</th>
-                                    <th>备注商品</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <c:forEach var="product" items="${products}" step="1">
-                                    <tr>
-                                        <td><c:out value="${product.p_name}"/></td>
-                                        <td><c:out value="${product.market_price}"/></td>
-                                        <td><c:out value="${product.current_price}"/></td>
-                                        <td><c:out value="${product.size}"/></td>
-                                        <td>否</td>
-                                        <td><a href="/product_detail/${product.p_id}"><span class="btn-facebook btn btn-xs">查看详情</span></a></td>
-                                        <td><button data-toggle="modal" data-target="#myModal" type="button" class="btn-danger btn btn-xs">删除商品</button> </td>
-                                    </tr>
-
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                        <div class="modal-dialog modal-danger" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                    <h4 class="modal-title" id="myModalLabel">重要提示</h4>
-                                                </div>
-                                                <div class="modal-body">
-                                                    即将删除该商品，是否删除?
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">关闭</button>
-                                                    <form action="/delete_product" method="post">
-                                                        <input name="product_id" class="hidden" value="${product.p_id}">
-                                                        <button type="submit" class="btn btn-outline">删除</button>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </c:forEach>
-
-                                </tbody>
-                                <tfoot>
-                                <tr>
-                                    <th>商品名称</th>
-                                    <th>市场价格</th>
-                                    <th>平台价格</th>
-                                    <th>商品库存</th>
-                                    <th>活动商品</th>
-                                    <th>管理商品</th>
-                                    <th>备注商品</th>
-                                </tr>
-                                </tfoot>
-                            </table>
-                        </div>
-                        <!-- /.box-body -->
+                        <!-- /.info-box -->
                     </div>
-                    <!-- /.box -->
-                </div>
+                </c:forEach>
                 <!-- /.col -->
             </div>
-            <!-- /.row -->
         </section>
-        <!-- /.content -->
     </div>
+    <!-- /.content -->
     <!-- /.content-wrapper -->
     <footer class="main-footer">
         <div class="pull-right hidden-xs">
             <b>Version</b> 2.3.7
         </div>
-        <strong>Copyright &copy; 2016-2017 <a href="http://almsaeedstudio.com">Tiny Bees</a>.</strong> All rights
+        <strong>Copyright &copy; 2014-2016 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
         reserved.
     </footer>
 
@@ -501,10 +437,7 @@
 <script src="/AdminLTE-cn/plugins/jQuery/jquery-2.2.3.min.js"></script>
 <!-- Bootstrap 3.3.6 -->
 <script src="/AdminLTE-cn/bootstrap/js/bootstrap.min.js"></script>
-<!-- DataTables -->
-<script src="/AdminLTE-cn/plugins/datatables/jquery.dataTables.min.js"></script>
-<script src="/AdminLTE-cn/plugins/datatables/dataTables.bootstrap.min.js"></script>
-<!-- SlimScroll -->
+<!-- Slimscroll -->
 <script src="/AdminLTE-cn/plugins/slimScroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
 <script src="/AdminLTE-cn/plugins/fastclick/fastclick.js"></script>
@@ -512,20 +445,5 @@
 <script src="/AdminLTE-cn/dist/js/app.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="/AdminLTE-cn/dist/js/demo.js"></script>
-<!-- page script -->
-<script>
-    $(function () {
-        $("#example1").DataTable();
-        $('#example2').DataTable({
-            "paging": true,
-            "lengthChange": false,
-            "searching": false,
-            "ordering": true,
-            "info": true,
-            "autoWidth": false
-        });
-    });
-</script>
 </body>
 </html>
-

@@ -64,6 +64,7 @@
                             <li>
 
                                 <c:if test="${!empty login_user}">
+                                    <a href="/login">${login_user.u_id}</a>
                                     <a href="/logout">退出</a>
                                 </c:if>
                                 <c:if test="${empty login_user}">

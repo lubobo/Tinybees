@@ -2,10 +2,11 @@
   Created by IntelliJ IDEA.
   User: lukbo
   Date: 2017/7/20
-  Time: 10:58
+  Time: 15:13
   To change this template use File | Settings | File Templates.
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="C" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
@@ -64,199 +65,6 @@
 
             <div class="navbar-custom-menu">
                 <ul class="nav navbar-nav">
-                    <!-- Messages: style can be found in dropdown.less-->
-                    <%--<li class="dropdown messages-menu">--%>
-                    <%--<a href="#" class="dropdown-toggle" data-toggle="dropdown">--%>
-                    <%--<i class="fa fa-envelope-o"></i>--%>
-                    <%--<span class="label label-success">4</span>--%>
-                    <%--</a>--%>
-                    <%--<ul class="dropdown-menu">--%>
-                    <%--<li class="header">你有4条消息</li>--%>
-                    <%--<li>--%>
-                    <%--<!-- inner menu: contains the actual data -->--%>
-                    <%--<ul class="menu">--%>
-                    <%--<li><!-- start message -->--%>
-                    <%--<a href="#">--%>
-                    <%--<div class="pull-left">--%>
-                    <%--<img src="/AdminLTE-cn/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">--%>
-                    <%--</div>--%>
-                    <%--<h4>--%>
-                    <%--支持团队--%>
-                    <%--<small><i class="fa fa-clock-o"></i> 5 分钟</small>--%>
-                    <%--</h4>--%>
-                    <%--<p>为什么不买一个新的主题?</p>--%>
-                    <%--</a>--%>
-                    <%--</li>--%>
-                    <%--<!-- end message -->--%>
-                    <%--<li>--%>
-                    <%--<a href="#">--%>
-                    <%--<div class="pull-left">--%>
-                    <%--<img src="/AdminLTE-cn/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">--%>
-                    <%--</div>--%>
-                    <%--<h4>--%>
-                    <%--AdminLTE 设计团队--%>
-                    <%--<small><i class="fa fa-clock-o"></i> 2 hours</small>--%>
-                    <%--</h4>--%>
-                    <%--<p>为什么不买一个新的主题?</p>--%>
-                    <%--</a>--%>
-                    <%--</li>--%>
-                    <%--<li>--%>
-                    <%--<a href="#">--%>
-                    <%--<div class="pull-left">--%>
-                    <%--<img src="/AdminLTE-cn/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">--%>
-                    <%--</div>--%>
-                    <%--<h4>--%>
-                    <%--开发者--%>
-                    <%--<small><i class="fa fa-clock-o"></i> 今天</small>--%>
-                    <%--</h4>--%>
-                    <%--<p>为什么不买一个新的主题?</p>--%>
-                    <%--</a>--%>
-                    <%--</li>--%>
-                    <%--<li>--%>
-                    <%--<a href="#">--%>
-                    <%--<div class="pull-left">--%>
-                    <%--<img src="/AdminLTE-cn/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">--%>
-                    <%--</div>--%>
-                    <%--<h4>--%>
-                    <%--销售部--%>
-                    <%--<small><i class="fa fa-clock-o"></i> 昨天</small>--%>
-                    <%--</h4>--%>
-                    <%--<p>为什么不买一个新的主题?</p>--%>
-                    <%--</a>--%>
-                    <%--</li>--%>
-                    <%--<li>--%>
-                    <%--<a href="#">--%>
-                    <%--<div class="pull-left">--%>
-                    <%--<img src="/AdminLTE-cn/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">--%>
-                    <%--</div>--%>
-                    <%--<h4>--%>
-                    <%--评论--%>
-                    <%--<small><i class="fa fa-clock-o"></i> 2 天</small>--%>
-                    <%--</h4>--%>
-                    <%--<p>为什么不买一个新的主题?</p>--%>
-                    <%--</a>--%>
-                    <%--</li>--%>
-                    <%--</ul>--%>
-                    <%--</li>--%>
-                    <%--<li class="footer"><a href="#">查看所有消息</a></li>--%>
-                    <%--</ul>--%>
-                    <%--</li>--%>
-                    <%--<!-- Notifications: style can be found in dropdown.less -->--%>
-                    <%--<li class="dropdown notifications-menu">--%>
-                    <%--<a href="#" class="dropdown-toggle" data-toggle="dropdown">--%>
-                    <%--<i class="fa fa-bell-o"></i>--%>
-                    <%--<span class="label label-warning">10</span>--%>
-                    <%--</a>--%>
-                    <%--<ul class="dropdown-menu">--%>
-                    <%--<li class="header">你有10条通知</li>--%>
-                    <%--<li>--%>
-                    <%--<!-- inner menu: contains the actual data -->--%>
-                    <%--<ul class="menu">--%>
-                    <%--<li>--%>
-                    <%--<a href="#">--%>
-                    <%--<i class="fa fa-users text-aqua"></i> 5 个新会员加入--%>
-                    <%--</a>--%>
-                    <%--</li>--%>
-                    <%--<li>--%>
-                    <%--<a href="#">--%>
-                    <%--<i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the--%>
-                    <%--page and may cause design problems--%>
-                    <%--</a>--%>
-                    <%--</li>--%>
-                    <%--<li>--%>
-                    <%--<a href="#">--%>
-                    <%--<i class="fa fa-users text-red"></i> 5 个新会员加入--%>
-                    <%--</a>--%>
-                    <%--</li>--%>
-                    <%--<li>--%>
-                    <%--<a href="#">--%>
-                    <%--<i class="fa fa-shopping-cart text-green"></i> 25 个订单--%>
-                    <%--</a>--%>
-                    <%--</li>--%>
-                    <%--<li>--%>
-                    <%--<a href="#">--%>
-                    <%--<i class="fa fa-user text-red"></i> 更改你的用户名--%>
-                    <%--</a>--%>
-                    <%--</li>--%>
-                    <%--</ul>--%>
-                    <%--</li>--%>
-                    <%--<li class="footer"><a href="#">查看所有</a></li>--%>
-                    <%--</ul>--%>
-                    <%--</li>--%>
-                    <%--<!-- Tasks: style can be found in dropdown.less -->--%>
-                    <%--<li class="dropdown tasks-menu">--%>
-                    <%--<a href="#" class="dropdown-toggle" data-toggle="dropdown">--%>
-                    <%--<i class="fa fa-flag-o"></i>--%>
-                    <%--<span class="label label-danger">9</span>--%>
-                    <%--</a>--%>
-                    <%--<ul class="dropdown-menu">--%>
-                    <%--<li class="header">你有9条任务</li>--%>
-                    <%--<li>--%>
-                    <%--<!-- inner menu: contains the actual data -->--%>
-                    <%--<ul class="menu">--%>
-                    <%--<li><!-- Task item -->--%>
-                    <%--<a href="#">--%>
-                    <%--<h3>--%>
-                    <%--设计按钮--%>
-                    <%--<small class="pull-right">20%</small>--%>
-                    <%--</h3>--%>
-                    <%--<div class="progress xs">--%>
-                    <%--<div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">--%>
-                    <%--<span class="sr-only">完成 20% </span>--%>
-                    <%--</div>--%>
-                    <%--</div>--%>
-                    <%--</a>--%>
-                    <%--</li>--%>
-                    <%--<!-- end task item -->--%>
-                    <%--<li><!-- Task item -->--%>
-                    <%--<a href="#">--%>
-                    <%--<h3>--%>
-                    <%--创建漂亮的主题--%>
-                    <%--<small class="pull-right">40%</small>--%>
-                    <%--</h3>--%>
-                    <%--<div class="progress xs">--%>
-                    <%--<div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">--%>
-                    <%--<span class="sr-only">完成 40%</span>--%>
-                    <%--</div>--%>
-                    <%--</div>--%>
-                    <%--</a>--%>
-                    <%--</li>--%>
-                    <%--<!-- end task item -->--%>
-                    <%--<li><!-- Task item -->--%>
-                    <%--<a href="#">--%>
-                    <%--<h3>--%>
-                    <%--还有一些任务要做--%>
-                    <%--<small class="pull-right">60%</small>--%>
-                    <%--</h3>--%>
-                    <%--<div class="progress xs">--%>
-                    <%--<div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">--%>
-                    <%--<span class="sr-only">完成 60%</span>--%>
-                    <%--</div>--%>
-                    <%--</div>--%>
-                    <%--</a>--%>
-                    <%--</li>--%>
-                    <%--<!-- end task item -->--%>
-                    <%--<li><!-- Task item -->--%>
-                    <%--<a href="#">--%>
-                    <%--<h3>--%>
-                    <%--制作漂亮的过渡效果--%>
-                    <%--<small class="pull-right">80%</small>--%>
-                    <%--</h3>--%>
-                    <%--<div class="progress xs">--%>
-                    <%--<div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">--%>
-                    <%--<span class="sr-only">完成 80%</span>--%>
-                    <%--</div>--%>
-                    <%--</div>--%>
-                    <%--</a>--%>
-                    <%--</li>--%>
-                    <%--<!-- end task item -->--%>
-                    <%--</ul>--%>
-                    <%--</li>--%>
-                    <%--<li class="footer">--%>
-                    <%--<a href="#">查看所有任务</a>--%>
-                    <%--</li>--%>
-                    <%--</ul>--%>
-                    <%--</li>--%>
                     <!-- User Account: style can be found in dropdown.less -->
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -276,23 +84,11 @@
                             <!-- Menu Body -->
                             <li class="user-body">
                                 <div class="row">
-                                    <%--<div class="col-xs-4 text-center">--%>
-                                    <%--<a href="#">点赞</a>--%>
-                                    <%--</div>--%>
-                                    <%--<div class="col-xs-4 text-center">--%>
-                                    <%--<a href="#">销售</a>--%>
-                                    <%--</div>--%>
-                                    <%--<div class="col-xs-4 text-center">--%>
-                                    <%--<a href="#">朋友</a>--%>
-                                    <%--</div>--%>
                                 </div>
                                 <!-- /.row -->
                             </li>
                             <!-- Menu Footer-->
                             <li class="user-footer">
-                                <%--<div class="pull-left">--%>
-                                <%--<a href="#" class="btn btn-default btn-flat">简介</a>--%>
-                                <%--</div>--%>
                                 <div class="pull-right">
                                     <a href="/admin_logout" class="btn btn-default btn-flat">退出</a>
                                 </div>
@@ -362,96 +158,12 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="#"><i class="fa fa-circle-o"></i> 新增分类</a></li>
-                        <li><a href="#"><i class="fa fa-circle-o"></i> 修改分类</a></li>
+                        <li><a href="/add_sort"><i class="fa fa-circle-o"></i> 新增分类</a></li>
+                        <li><a href="/sort_list"><i class="fa fa-circle-o"></i> 分类列表</a></li>
                         <%--<li><a href="fixed.html"><i class="fa fa-circle-o"></i> 固定布局</a></li>--%>
                     </ul>
                 </li>
-                <%--<li>--%>
-                <%--<a href="widgets.html">--%>
-                <%--<i class="fa fa-th"></i> <span>小部件</span>--%>
-                <%--<span class="pull-right-container">--%>
-                <%--<small class="label pull-right bg-green">新</small>--%>
-                <%--</span>--%>
-                <%--</a>--%>
-                <%--</li>--%>
-                <%--<li class="treeview">--%>
-                <%--<a href="#">--%>
-                <%--<i class="fa fa-pie-chart"></i>--%>
-                <%--<span>图表</span>--%>
-                <%--<span class="pull-right-container">--%>
-                <%--<i class="fa fa-angle-left pull-right"></i>--%>
-                <%--</span>--%>
-                <%--</a>--%>
-                <%--<ul class="treeview-menu">--%>
-                <%--<li><a href="chartjs.html"><i class="fa fa-circle-o"></i> JS图表</a></li>--%>
-                <%--<li><a href="morris.html"><i class="fa fa-circle-o"></i> 遍历</a></li>--%>
-                <%--<li><a href="flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>--%>
-                <%--<li><a href="inline.html"><i class="fa fa-circle-o"></i> 内嵌图表</a></li>--%>
-                <%--<li><a href="collapsed-sidebar.html"><i class="fa fa-circle-o"></i> 折叠侧栏</a></li>--%>
-                <%--</ul>--%>
-                <%--</li>--%>
-                <%--<li class="treeview">--%>
-                <%--<a href="#">--%>
-                <%--<i class="fa fa-laptop"></i>--%>
-                <%--<span>UI元素</span>--%>
-                <%--<span class="pull-right-container">--%>
-                <%--<i class="fa fa-angle-left pull-right"></i>--%>
-                <%--</span>--%>
-                <%--</a>--%>
-                <%--<ul class="treeview-menu">--%>
-                <%--<li><a href="general.html"><i class="fa fa-circle-o"></i> 一般</a></li>--%>
-                <%--<li><a href="icons.html"><i class="fa fa-circle-o"></i> 图标</a></li>--%>
-                <%--<li><a href="buttons.html"><i class="fa fa-circle-o"></i> 按钮</a></li>--%>
-                <%--<li><a href="sliders.html"><i class="fa fa-circle-o"></i> 滑动条</a></li>--%>
-                <%--<li><a href="timeline.html"><i class="fa fa-circle-o"></i> 时间行</a></li>--%>
-                <%--<li><a href="modals.html"><i class="fa fa-circle-o"></i> 模式</a></li>--%>
-                <%--</ul>--%>
-                <%--</li>--%>
-                <%--<li class="treeview">--%>
-                <%--<a href="#">--%>
-                <%--<i class="fa fa-edit"></i> <span>表单</span>--%>
-                <%--<span class="pull-right-container">--%>
-                <%--<i class="fa fa-angle-left pull-right"></i>--%>
-                <%--</span>--%>
-                <%--</a>--%>
-                <%--<ul class="treeview-menu">--%>
-                <%--<li><a href="general.html"><i class="fa fa-circle-o"></i> 普通元素</a></li>--%>
-                <%--<li><a href="advanced.html"><i class="fa fa-circle-o"></i> 高级元素</a></li>--%>
-                <%--<li><a href="editors.html"><i class="fa fa-circle-o"></i> 编辑</a></li>--%>
-                <%--</ul>--%>
-                <%--</li>--%>
-                <%--<li class="treeview">--%>
-                <%--<a href="#">--%>
-                <%--<i class="fa fa-table"></i> <span>表格</span>--%>
-                <%--<span class="pull-right-container">--%>
-                <%--<i class="fa fa-angle-left pull-right"></i>--%>
-                <%--</span>--%>
-                <%--</a>--%>
-                <%--<ul class="treeview-menu">--%>
-                <%--<li><a href="simple.html"><i class="fa fa-circle-o"></i> 简单表格</a></li>--%>
-                <%--<li><a href="data.html"><i class="fa fa-circle-o"></i> 数据表格</a></li>--%>
-                <%--</ul>--%>
-                <%--</li>--%>
-                <%--<li>--%>
-                <%--<a href="calendar.html">--%>
-                <%--<i class="fa fa-calendar"></i> <span>日历</span>--%>
-                <%--<span class="pull-right-container">--%>
-                <%--<small class="label pull-right bg-red">3</small>--%>
-                <%--<small class="label pull-right bg-blue">17</small>--%>
-                <%--</span>--%>
-                <%--</a>--%>
-                <%--</li>--%>
-                <%--<li>--%>
-                <%--<a href="mailbox.html">--%>
-                <%--<i class="fa fa-envelope"></i> <span>邮箱</span>--%>
-                <%--<span class="pull-right-container">--%>
-                <%--<small class="label pull-right bg-yellow">12</small>--%>
-                <%--<small class="label pull-right bg-green">16</small>--%>
-                <%--<small class="label pull-right bg-red">5</small>--%>
-                <%--</span>--%>
-                <%--</a>--%>
-                <%--</li>--%>
+
                 <li class="treeview active">
                     <a href="#">
                         <i class="fa fa-folder"></i> <span>用户管理</span>
@@ -462,13 +174,7 @@
                     <ul class="treeview-menu">
                         <li><a href="invoice.html"><i class="fa fa-circle-o"></i> 用户删除</a></li>
                         <li><a href="profile.html"><i class="fa fa-circle-o"></i> 用户查看</a></li>
-                        <%--<li><a href="login.html"><i class="fa fa-circle-o"></i> 登录</a></li>--%>
-                        <%--<li><a href="register.html"><i class="fa fa-circle-o"></i> 注册</a></li>--%>
-                        <%--<li><a href="lockscreen.html"><i class="fa fa-circle-o"></i> 锁屏</a></li>--%>
-                        <%--<li class="active"><a href="404.html"><i class="fa fa-circle-o"></i> 404错误</a></li>--%>
-                        <%--<li><a href="500.html"><i class="fa fa-circle-o"></i> 500错误</a></li>--%>
-                        <%--<li><a href="blank.html"><i class="fa fa-circle-o"></i> 空白页面</a></li>--%>
-                        <%--<li><a href="pace.html"><i class="fa fa-circle-o"></i> 一页</a></li>--%>
+
                     </ul>
                 </li>
 
@@ -487,44 +193,6 @@
                         <%--<li><a href="fixed.html"><i class="fa fa-circle-o"></i> 固定布局</a></li>--%>
                     </ul>
                 </li>
-                <%--<li class="treeview">--%>
-                <%--<a href="#">--%>
-                <%--<i class="fa fa-share"></i> <span>多层级</span>--%>
-                <%--<span class="pull-right-container">--%>
-                <%--<i class="fa fa-angle-left pull-right"></i>--%>
-                <%--</span>--%>
-                <%--</a>--%>
-                <%--<ul class="treeview-menu">--%>
-                <%--<li><a href="#"><i class="fa fa-circle-o"></i> 一级</a></li>--%>
-                <%--<li>--%>
-                <%--<a href="#"><i class="fa fa-circle-o"></i> 一级--%>
-                <%--<span class="pull-right-container">--%>
-                <%--<i class="fa fa-angle-left pull-right"></i>--%>
-                <%--</span>--%>
-                <%--</a>--%>
-                <%--<ul class="treeview-menu">--%>
-                <%--<li><a href="#"><i class="fa fa-circle-o"></i> 二级</a></li>--%>
-                <%--<li>--%>
-                <%--<a href="#"><i class="fa fa-circle-o"></i> 二级--%>
-                <%--<span class="pull-right-container">--%>
-                <%--<i class="fa fa-angle-left pull-right"></i>--%>
-                <%--</span>--%>
-                <%--</a>--%>
-                <%--<ul class="treeview-menu">--%>
-                <%--<li><a href="#"><i class="fa fa-circle-o"></i> 三级</a></li>--%>
-                <%--<li><a href="#"><i class="fa fa-circle-o"></i> 三级</a></li>--%>
-                <%--</ul>--%>
-                <%--</li>--%>
-                <%--</ul>--%>
-                <%--</li>--%>
-                <%--<li><a href="#"><i class="fa fa-circle-o"></i> 一级</a></li>--%>
-                <%--</ul>--%>
-                <%--</li>--%>
-                <%--<li><a href="/AdminLTE-cn/documentation/index.html"><i class="fa fa-book"></i> <span>文档</span></a></li>--%>
-                <%--<li class="header">标签</li>--%>
-                <%--<li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>重要</span></a></li>--%>
-                <%--<li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>警告</span></a></li>--%>
-                <%--<li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>信息</span></a></li>--%>
             </ul>
         </section>
         <!-- /.sidebar -->
@@ -624,8 +292,9 @@
                         <div class="box-body">
 
                             <div class="form-group col-lg-4">
-                                <select class="form-control" onchange="getCategory_second(this.value)" >
-                                    <%--<option>一级分类</option>--%>
+
+                                <select class="form-control" id="the_first" onchange="getCategory_second(this.value)" >
+                                    <option value="${category.c_id}"><c:out value="${category.c_name}"/></option>
                                     <c:forEach items="${categories}" var="i" step="1">
                                         <option class="form-control-item" value="${i.c_id}">
                                             <c:out value="${i.c_name}"/>
@@ -635,8 +304,18 @@
                             </div>
 
                             <div class="form-group col-lg-4" id="category_second">
-                                <select class="form-control">
-                                    <option>二级分类</option>
+                                <select class="form-control"
+                                        onchange="getCategory_third(
+                                            document.getElementById('the_first').options[document.getElementById('the_first').selectedIndex].value,
+                                            this.value
+                                        )">
+                                    <%--<option>二级分类</option>--%>
+                                    <c:forEach items="${categories_seconds}" var="i" step="1">
+                                        <c:set var="id" value="${i.cs_id}"/>
+                                        <option class="form-control" value="${id}">
+                                            <c:out value="${i.cs_name}"/>
+                                        </option>
+                                    </c:forEach>
                                 </select>
                             </div>
 
@@ -900,6 +579,24 @@
         //Add text editor
         $("#compose-textarea").wysihtml5();
     });
+
+    function getCategory_third(str,str1) {
+        var xmlhttp;
+        if (window.XMLHttpRequest) {
+            xmlhttp = new XMLHttpRequest();
+        }
+        else {
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange=function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                window.location = "/category_third/"+xmlhttp.getResponseHeader("categories")+"/"+xmlhttp.getResponseHeader("categories_second");
+            }
+        }
+        xmlhttp.open("GET", "/getCategory_third/"+str+"/"+str1, false);
+        xmlhttp.send();
+
+    }
 
     function getCategory_second(str) {
         var xmlhttp;

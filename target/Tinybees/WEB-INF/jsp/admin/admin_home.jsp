@@ -76,23 +76,12 @@
                             <!-- Menu Body -->
                             <li class="user-body">
                                 <div class="row">
-                                    <%--<div class="col-xs-4 text-center">--%>
-                                        <%--<a href="#">点赞</a>--%>
-                                    <%--</div>--%>
-                                    <%--<div class="col-xs-4 text-center">--%>
-                                        <%--<a href="#">销售</a>--%>
-                                    <%--</div>--%>
-                                    <%--<div class="col-xs-4 text-center">--%>
-                                        <%--<a href="#">朋友</a>--%>
-                                    <%--</div>--%>
+
                                 </div>
                                 <!-- /.row -->
                             </li>
                             <!-- Menu Footer-->
                             <li class="user-footer">
-                                <%--<div class="pull-left">--%>
-                                    <%--<a href="#" class="btn btn-default btn-flat">简介</a>--%>
-                                <%--</div>--%>
                                 <div class="pull-right">
                                     <a href="/admin_logout" class="btn btn-default btn-flat">退出</a>
                                 </div>
@@ -163,95 +152,11 @@
                     </a>
                     <ul class="treeview-menu">
                         <li><a href="#"><i class="fa fa-circle-o"></i> 新增分类</a></li>
-                        <li><a href="#"><i class="fa fa-circle-o"></i> 修改分类</a></li>
+                        <li><a href="/sort_list"><i class="fa fa-circle-o"></i> 分类列表</a></li>
                         <%--<li><a href="fixed.html"><i class="fa fa-circle-o"></i> 固定布局</a></li>--%>
                     </ul>
                 </li>
-                <%--<li>--%>
-                    <%--<a href="widgets.html">--%>
-                        <%--<i class="fa fa-th"></i> <span>小部件</span>--%>
-                        <%--<span class="pull-right-container">--%>
-              <%--<small class="label pull-right bg-green">新</small>--%>
-            <%--</span>--%>
-                    <%--</a>--%>
-                <%--</li>--%>
-                <%--<li class="treeview">--%>
-                    <%--<a href="#">--%>
-                        <%--<i class="fa fa-pie-chart"></i>--%>
-                        <%--<span>图表</span>--%>
-                        <%--<span class="pull-right-container">--%>
-              <%--<i class="fa fa-angle-left pull-right"></i>--%>
-            <%--</span>--%>
-                    <%--</a>--%>
-                    <%--<ul class="treeview-menu">--%>
-                        <%--<li><a href="chartjs.html"><i class="fa fa-circle-o"></i> JS图表</a></li>--%>
-                        <%--<li><a href="morris.html"><i class="fa fa-circle-o"></i> 遍历</a></li>--%>
-                        <%--<li><a href="flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>--%>
-                        <%--<li><a href="inline.html"><i class="fa fa-circle-o"></i> 内嵌图表</a></li>--%>
-                        <%--<li><a href="collapsed-sidebar.html"><i class="fa fa-circle-o"></i> 折叠侧栏</a></li>--%>
-                    <%--</ul>--%>
-                <%--</li>--%>
-                <%--<li class="treeview">--%>
-                    <%--<a href="#">--%>
-                        <%--<i class="fa fa-laptop"></i>--%>
-                        <%--<span>UI元素</span>--%>
-                        <%--<span class="pull-right-container">--%>
-              <%--<i class="fa fa-angle-left pull-right"></i>--%>
-            <%--</span>--%>
-                    <%--</a>--%>
-                    <%--<ul class="treeview-menu">--%>
-                        <%--<li><a href="general.html"><i class="fa fa-circle-o"></i> 一般</a></li>--%>
-                        <%--<li><a href="icons.html"><i class="fa fa-circle-o"></i> 图标</a></li>--%>
-                        <%--<li><a href="buttons.html"><i class="fa fa-circle-o"></i> 按钮</a></li>--%>
-                        <%--<li><a href="sliders.html"><i class="fa fa-circle-o"></i> 滑动条</a></li>--%>
-                        <%--<li><a href="timeline.html"><i class="fa fa-circle-o"></i> 时间行</a></li>--%>
-                        <%--<li><a href="modals.html"><i class="fa fa-circle-o"></i> 模式</a></li>--%>
-                    <%--</ul>--%>
-                <%--</li>--%>
-                <%--<li class="treeview">--%>
-                    <%--<a href="#">--%>
-                        <%--<i class="fa fa-edit"></i> <span>表单</span>--%>
-                        <%--<span class="pull-right-container">--%>
-              <%--<i class="fa fa-angle-left pull-right"></i>--%>
-            <%--</span>--%>
-                    <%--</a>--%>
-                    <%--<ul class="treeview-menu">--%>
-                        <%--<li><a href="general.html"><i class="fa fa-circle-o"></i> 普通元素</a></li>--%>
-                        <%--<li><a href="advanced.html"><i class="fa fa-circle-o"></i> 高级元素</a></li>--%>
-                        <%--<li><a href="editors.html"><i class="fa fa-circle-o"></i> 编辑</a></li>--%>
-                    <%--</ul>--%>
-                <%--</li>--%>
-                <%--<li class="treeview">--%>
-                    <%--<a href="#">--%>
-                        <%--<i class="fa fa-table"></i> <span>表格</span>--%>
-                        <%--<span class="pull-right-container">--%>
-              <%--<i class="fa fa-angle-left pull-right"></i>--%>
-            <%--</span>--%>
-                    <%--</a>--%>
-                    <%--<ul class="treeview-menu">--%>
-                        <%--<li><a href="simple.html"><i class="fa fa-circle-o"></i> 简单表格</a></li>--%>
-                        <%--<li><a href="data.html"><i class="fa fa-circle-o"></i> 数据表格</a></li>--%>
-                    <%--</ul>--%>
-                <%--</li>--%>
-                <%--<li>--%>
-                    <%--<a href="calendar.html">--%>
-                        <%--<i class="fa fa-calendar"></i> <span>日历</span>--%>
-                        <%--<span class="pull-right-container">--%>
-              <%--<small class="label pull-right bg-red">3</small>--%>
-              <%--<small class="label pull-right bg-blue">17</small>--%>
-            <%--</span>--%>
-                    <%--</a>--%>
-                <%--</li>--%>
-                <%--<li>--%>
-                    <%--<a href="mailbox.html">--%>
-                        <%--<i class="fa fa-envelope"></i> <span>邮箱</span>--%>
-                        <%--<span class="pull-right-container">--%>
-              <%--<small class="label pull-right bg-yellow">12</small>--%>
-              <%--<small class="label pull-right bg-green">16</small>--%>
-              <%--<small class="label pull-right bg-red">5</small>--%>
-            <%--</span>--%>
-                    <%--</a>--%>
-                <%--</li>--%>
+
                 <li class="treeview active">
                     <a href="#">
                         <i class="fa fa-folder"></i> <span>用户管理</span>
@@ -262,13 +167,7 @@
                     <ul class="treeview-menu">
                         <li><a href="invoice.html"><i class="fa fa-circle-o"></i> 用户删除</a></li>
                         <li><a href="profile.html"><i class="fa fa-circle-o"></i> 用户查看</a></li>
-                        <%--<li><a href="login.html"><i class="fa fa-circle-o"></i> 登录</a></li>--%>
-                        <%--<li><a href="register.html"><i class="fa fa-circle-o"></i> 注册</a></li>--%>
-                        <%--<li><a href="lockscreen.html"><i class="fa fa-circle-o"></i> 锁屏</a></li>--%>
-                        <%--<li class="active"><a href="404.html"><i class="fa fa-circle-o"></i> 404错误</a></li>--%>
-                        <%--<li><a href="500.html"><i class="fa fa-circle-o"></i> 500错误</a></li>--%>
-                        <%--<li><a href="blank.html"><i class="fa fa-circle-o"></i> 空白页面</a></li>--%>
-                        <%--<li><a href="pace.html"><i class="fa fa-circle-o"></i> 一页</a></li>--%>
+
                     </ul>
                 </li>
 
@@ -287,44 +186,6 @@
                         <%--<li><a href="fixed.html"><i class="fa fa-circle-o"></i> 固定布局</a></li>--%>
                     </ul>
                 </li>
-                <%--<li class="treeview">--%>
-                    <%--<a href="#">--%>
-                        <%--<i class="fa fa-share"></i> <span>多层级</span>--%>
-                        <%--<span class="pull-right-container">--%>
-              <%--<i class="fa fa-angle-left pull-right"></i>--%>
-            <%--</span>--%>
-                    <%--</a>--%>
-                    <%--<ul class="treeview-menu">--%>
-                        <%--<li><a href="#"><i class="fa fa-circle-o"></i> 一级</a></li>--%>
-                        <%--<li>--%>
-                            <%--<a href="#"><i class="fa fa-circle-o"></i> 一级--%>
-                                <%--<span class="pull-right-container">--%>
-                  <%--<i class="fa fa-angle-left pull-right"></i>--%>
-                <%--</span>--%>
-                            <%--</a>--%>
-                            <%--<ul class="treeview-menu">--%>
-                                <%--<li><a href="#"><i class="fa fa-circle-o"></i> 二级</a></li>--%>
-                                <%--<li>--%>
-                                    <%--<a href="#"><i class="fa fa-circle-o"></i> 二级--%>
-                                        <%--<span class="pull-right-container">--%>
-                      <%--<i class="fa fa-angle-left pull-right"></i>--%>
-                    <%--</span>--%>
-                                    <%--</a>--%>
-                                    <%--<ul class="treeview-menu">--%>
-                                        <%--<li><a href="#"><i class="fa fa-circle-o"></i> 三级</a></li>--%>
-                                        <%--<li><a href="#"><i class="fa fa-circle-o"></i> 三级</a></li>--%>
-                                    <%--</ul>--%>
-                                <%--</li>--%>
-                            <%--</ul>--%>
-                        <%--</li>--%>
-                        <%--<li><a href="#"><i class="fa fa-circle-o"></i> 一级</a></li>--%>
-                    <%--</ul>--%>
-                <%--</li>--%>
-                <%--<li><a href="/AdminLTE-cn/documentation/index.html"><i class="fa fa-book"></i> <span>文档</span></a></li>--%>
-                <%--<li class="header">标签</li>--%>
-                <%--<li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>重要</span></a></li>--%>
-                <%--<li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>警告</span></a></li>--%>
-                <%--<li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>信息</span></a></li>--%>
             </ul>
         </section>
         <!-- /.sidebar -->

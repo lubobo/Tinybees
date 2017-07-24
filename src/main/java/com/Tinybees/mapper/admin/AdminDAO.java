@@ -10,23 +10,25 @@ import java.util.List;
 public interface AdminDAO {
     Admin selectAdminByName(Admin admin);
 
+//    一级分类
     List<Category> getAllCategory();
-
     Category getCategoryById(String category);
 
-    List<Category_second> getCategorySecondByName(String categories);
-
+//    二级分类
+    List<Category_second> getAllCategorySecond();
+//    一级分类级联查询二级分类
+    List<Category_second> getAllCategorySecondById(String categories);
     Category_second getCategorySecondById(String category_second);
 
-    List<Category_second> getAllCategorySecond();
-
-    List<Category_third> getCategoryThirdByName(String category_seconds);
-
+//    三级分类
     List<Category_third> getAllCategoryThird();
+//    二级分类级联查询三级分类
+    List<Category_third> getAllCategoryThirdById(String category_seconds);
+    Category_third getCategoryThirdById(String category_third);
 
+//    商品操作
     void addProduct(Product product);
-
     List<Product> getAllProduct();
-
     void deleteProductById(int p_id);
+
 }
