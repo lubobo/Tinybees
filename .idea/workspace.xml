@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b364a2b-2d04-41ad-9a69-074ea3501830" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/classes/com/Tinybees/controller/back/AdminController.class" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/classes/com/Tinybees/controller/back/AdminController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/classes/com/Tinybees/mapper/admin/AdminDAO.class" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/classes/com/Tinybees/mapper/admin/AdminDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Tinybees/controller/back/AdminController.class" afterPath="$PROJECT_DIR$/target/classes/com/Tinybees/controller/back/AdminController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Tinybees/mapper/admin/AdminDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/Tinybees/mapper/admin/AdminDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/AdminController.java" afterPath="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/AdminController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.xml" afterPath="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/add_product.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/add_product.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/classes/com/Tinybees/mapper/admin/AdminDAO.xml" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/classes/com/Tinybees/mapper/admin/AdminDAO.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/classfication/add_sort.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/classfication/add_sort.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/product/add_product.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/product/add_product.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Tinybees/mapper/admin/AdminDAO.xml" afterPath="$PROJECT_DIR$/target/classes/com/Tinybees/mapper/admin/AdminDAO.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -68,8 +57,8 @@
       <file leaf-file-name="AdminDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="42" column="61" lean-forward="false" selection-start-line="42" selection-start-column="61" selection-end-line="42" selection-end-column="61" />
+            <state relative-caret-position="266">
+              <caret line="42" column="65" lean-forward="false" selection-start-line="42" selection-start-column="65" selection-end-line="42" selection-end-column="65" />
               <folding>
                 <element signature="docComment;class#AdminDAO#0" expanded="false" />
               </folding>
@@ -113,8 +102,8 @@
       <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="285" column="59" lean-forward="true" selection-start-line="285" selection-start-column="59" selection-end-line="285" selection-end-column="59" />
+            <state relative-caret-position="236">
+              <caret line="285" column="55" lean-forward="false" selection-start-line="285" selection-start-column="55" selection-end-line="285" selection-end-column="55" />
               <folding>
                 <element signature="docComment;class#AdminController#0" expanded="false" />
               </folding>
@@ -125,8 +114,8 @@
       <file leaf-file-name="add_sort.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="327" column="4" lean-forward="false" selection-start-line="327" selection-start-column="4" selection-end-line="327" selection-end-column="4" />
+            <state relative-caret-position="1469">
+              <caret line="326" column="80" lean-forward="true" selection-start-line="326" selection-start-column="80" selection-end-line="326" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -268,9 +257,9 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/add_product.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort_3.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort_2.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/AdminController.java" />
       </list>
     </option>
@@ -454,6 +443,10 @@
               <option name="myItemId" value="jsp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -486,6 +479,82 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tinybees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tinybees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="product" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tinybees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tinybees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classfication" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1323,12 +1392,12 @@
       <workItem from="1500770254610" duration="8410000" />
       <workItem from="1500790775646" duration="10358000" />
       <workItem from="1500856954256" duration="9983000" />
-      <workItem from="1500875924923" duration="5452000" />
+      <workItem from="1500875924923" duration="5994000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167291000" />
+    <option name="totallyTimeSpent" value="167833000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1784,16 +1853,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="42" column="61" lean-forward="false" selection-start-line="42" selection-start-column="61" selection-end-line="42" selection-end-column="61" />
-          <folding>
-            <element signature="docComment;class#AdminDAO#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="412">
@@ -1825,16 +1884,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="285" column="59" lean-forward="true" selection-start-line="285" selection-start-column="59" selection-end-line="285" selection-end-column="59" />
-          <folding>
-            <element signature="docComment;class#AdminController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort_2.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1971">
@@ -1843,10 +1892,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="42" column="65" lean-forward="false" selection-start-line="42" selection-start-column="65" selection-end-line="42" selection-end-column="65" />
+          <folding>
+            <element signature="docComment;class#AdminDAO#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="285" column="55" lean-forward="false" selection-start-line="285" selection-start-column="55" selection-end-line="285" selection-end-column="55" />
+          <folding>
+            <element signature="docComment;class#AdminController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="327" column="4" lean-forward="false" selection-start-line="327" selection-start-column="4" selection-end-line="327" selection-end-column="4" />
+        <state relative-caret-position="1469">
+          <caret line="326" column="80" lean-forward="true" selection-start-line="326" selection-start-column="80" selection-end-line="326" selection-end-column="80" />
           <folding />
         </state>
       </provider>

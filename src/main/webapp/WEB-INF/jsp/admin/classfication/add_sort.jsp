@@ -319,12 +319,27 @@
                                     </c:if>
                                     <c:if test="${(empty categorySecond_success && empty categorySecond_error) || (!empty categorySecond_error)}">
                                     <input class="form-control" name="category_third">
-                                    <input class="hidden" name="category" value="${sessionScope.category}">
+                                    <input class="hidden" name="category_second" value="${sessionScope.category_second}">
                                     </c:if>
                                     <H1> </H1>
-                                    <button class="col-md-4 btn btn-block btn-primary btn-flat" type="submit">
-                                        提交
-                                    </button>
+                                    <c:if test="${empty categorySecond_success && empty categorySecond_error}">
+                                        <button class="col-md-4 btn btn-block btn-primary btn-flat" type="submit">
+                                            <span class="fa fa-edit">  添加</span>
+                                        </button>
+                                    </c:if>
+                                    <c:if test="${!empty categorySecond_success}">
+                                        <span class="col-md-4 btn btn-block disabled btn-google btn-flat">
+                                            添加成功
+                                        </span>
+                                    </c:if>
+                                    <c:if test="${!empty categorySecond_error}">
+                                        <script type="text/javascript">
+                                            alert("${categoryThird_error}");
+                                        </script>
+                                        <button class="col-md-4 btn btn-block btn-primary btn-flat" type="submit">
+                                            <span class="fa fa-edit">  添加</span>
+                                        </button>
+                                    </c:if>
                                 </div>
                             </form>
                         </div>

@@ -277,16 +277,14 @@ public class AdminController {
     }
 
     @RequestMapping("/add_sort_3")
-    public ModelAndView add_sort_3(Model model,HttpServletRequest request,HttpSession session){
+    public ModelAndView add_sort_3(Model model,HttpServletRequest request){
         String category_third = request.getParameter("category_third");
+        String category_second = request.getParameter("category_second");
         Category_third category_third1 = adminDAO.getCategoryThirdByName(category_third);
         if(category_third1==null){
             Category_third category_third2 = new Category_third();
             category_third2.setCt_name(category_third);
-            HttpSession httpSession = request.getSession();
-//            httpSession.getAttribute("category_second").toString();
-//            Category_second category_second = adminDAO.getCategorySecondByName(httpSession.getAttribute("category_second").toString());
-//            adminDAO.add_category_third(category_third2,category_second.getCs_id());
+            adminDAO.add_category_third(category_third2,category_second);
             model.addAttribute("categoryThird_success",category_third);
             ModelAndView modelAndView = new ModelAndView();
             modelAndView.setViewName("admin/classfication/add_sort");

@@ -40,6 +40,6 @@ public interface AdminDAO {
 //    添加二级分类
     void add_category_second(Category_second category_second,String category);
 //    添加三级分类
-    void add_category_third(Category_third category_third,int category_second);
+    void add_category_third(Category_third category_third,String  category_second);
 }
 
