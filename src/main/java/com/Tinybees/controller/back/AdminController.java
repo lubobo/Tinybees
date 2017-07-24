@@ -2,6 +2,7 @@ package com.Tinybees.controller.back;
 
 import com.Tinybees.mapper.admin.AdminDAO;
 import com.Tinybees.model.*;
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -221,10 +222,108 @@ public class AdminController {
         return modelAndView;
     }
 
-    @RequestMapping("add_sort")
-    public ModelAndView add_sort(){
+    @RequestMapping("/add_sort")
+    public ModelAndView add_sort(Model model){
         ModelAndView modelAndView = new ModelAndView();
+        List<Category> categories = adminDAO.getAllCategory();
+        model.addAttribute("categories",categories);
         modelAndView.setViewName("admin/classfication/add_sort");
         return modelAndView;
     }
+
+    @RequestMapping("/add_sort_1")
+    public ModelAndView add_sort_1(Model model,HttpServletRequest request,HttpSession session){
+        String category = request.getParameter("category");
+        Category category1 = adminDAO.getCategoryByName(category);
+        if(category1==null){
+            Category category2 = new Category();
+            category2.setC_name(category);
+            adminDAO.add_category(category2);
+            model.addAttribute("category_success",category);
+            HttpSession httpSession = request.getSession();
+            httpSession.setAttribute("category",adminDAO.getCategoryByName(category).getC_id());
+            ModelAndView modelAndView = new ModelAndView();
+            modelAndView.setViewName("admin/classfication/add_sort");
+            return modelAndView;
+        }else{
+            model.addAttribute("category_error","一级分类已存在");
+            ModelAndView modelAndView = new ModelAndView();
+            modelAndView.setViewName("admin/classfication/add_sort");
+            return modelAndView;
+        }
+    }
+
+    @RequestMapping("/add_sort_2")
+    public ModelAndView add_sort_2(Model model,HttpServletRequest request,HttpSession session){
+        String category_second = request.getParameter("category_second");
+        String category = request.getParameter("category");
+        Category_second category_second1 = adminDAO.getCategorySecondByName(category_second);
+        if(category_second1==null){
+            Category_second category_second2 = new Category_second();
+            category_second2.setCs_name(category_second);
+            adminDAO.add_category_second(category_second2,category);
+            model.addAttribute("categorySecond_success",category_second);
+            HttpSession httpSession = request.getSession();
+            httpSession.setAttribute("category_second",category_second);
+            ModelAndView modelAndView = new ModelAndView();
+            modelAndView.setViewName("admin/classfication/add_sort");
+            return modelAndView;
+        }else{
+            model.addAttribute("categorySecond_error","二级分类已存在");
+            ModelAndView modelAndView = new ModelAndView();
+            modelAndView.setViewName("admin/classfication/add_sort");
+            return modelAndView;
+        }
+    }
+
+    @RequestMapping("/add_sort_3")
+    public ModelAndView add_sort_3(Model model,HttpServletRequest request,HttpSession session){
+        String category_third = request.getParameter("category_third");
+        Category_third category_third1 = adminDAO.getCategoryThirdByName(category_third);
+        if(category_third1==null){
+            Category_third category_third2 = new Category_third();
+            category_third2.setCt_name(category_third);
+            HttpSession httpSession = request.getSession();
+//            httpSession.getAttribute("category_second").toString();
+//            Category_second category_second = adminDAO.getCategorySecondByName(httpSession.getAttribute("category_second").toString());
+//            adminDAO.add_category_third(category_third2,category_second.getCs_id());
+            model.addAttribute("categoryThird_success",category_third);
+            ModelAndView modelAndView = new ModelAndView();
+            modelAndView.setViewName("admin/classfication/add_sort");
+            return modelAndView;
+        }else {
+            model.addAttribute("categoryThird_error","三级分类已存在");
+            ModelAndView modelAndView = new ModelAndView();
+            modelAndView.setViewName("admin/classfication/add_sort");
+            return modelAndView;
+        }
+    }
+
+    @RequestMapping("/sort_second/{categories}")
+    public ModelAndView sort_second(@PathVariable String categories,Model model){
+        ModelAndView modelAndView = new ModelAndView();
+        List<Category_second> category_seconds = adminDAO.getAllCategorySecondById(categories);
+        List<Category> categories1 = adminDAO.getAllCategory();
+        model.addAttribute("categories",categories1);
+        model.addAttribute("category",adminDAO.getCategoryById(categories));
+        model.addAttribute("categories_seconds",category_seconds);
+        modelAndView.setViewName("admin/classfication/add_sort_2");
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/sort_third/{categories}/{categories_second}")
+    public ModelAndView sort_third(@PathVariable String categories,@PathVariable String categories_second, Model model,HttpServletRequest request,HttpServletResponse response){
+        ModelAndView modelAndView = new ModelAndView();
+        List<Category_third> category_thirds = adminDAO.getAllCategoryThirdById(categories);
+        model.addAttribute("category",adminDAO.getCategoryById(categories));
+        model.addAttribute("category_second",adminDAO.getCategorySecondById(categories_second));
+
+        model.addAttribute("categories",adminDAO.getAllCategory());
+        model.addAttribute("categories_second",adminDAO.getAllCategorySecondById(categories_second));
+
+        model.addAttribute("categories_third",category_thirds);
+        modelAndView.setViewName("admin/classfication/add_sort_3");
+        return modelAndView;
+    }
+
 }

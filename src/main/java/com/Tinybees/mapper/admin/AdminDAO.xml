@@ -17,6 +17,10 @@
     <select id="getCategoryById" resultType="Category">
         SELECT * FROM category WHERE c_id=#{category};
     </select>
+
+    <select id="getCategoryByName" resultType="Category">
+        SELECT * FROM category WHERE c_name=#{category};
+    </select>
     <!--*********************************************************************-->
 
 
@@ -26,7 +30,11 @@
     </select>
 
     <select id="getCategorySecondById" resultType="Category_second">
-        SELECT *FROM category_second WHERE cs_id=#{category_second}
+        SELECT * FROM category_second WHERE cs_id=#{category_second}
+    </select>
+
+    <select id="getCategorySecondByName" resultType="Category_second">
+        SELECT * FROM category_second WHERE cs_name=#{category_second};
     </select>
 
     <select id="getAllCategorySecondById" resultType="Category_second">
@@ -47,8 +55,12 @@
         category_third.cs_id=#{category_seconds} GROUP BY category_third.ct_name;
     </select>
 
+    <select id="getCategoryThirdByName" resultType="Category_third">
+        SELECT * FROM category_third WHERE ct_name =#{category_third};
+    </select>
+
     <select id="getCategoryThirdById" resultType="Category_third">
-        SELECT * FROM category_third WHERE ct_id=${category_third};
+        SELECT * FROM category_third WHERE ct_id=#{category_third};
     </select>
     <!--***********************************************************************-->
 
@@ -65,5 +77,21 @@
     <delete id="deleteProductById" parameterType="Product">
         DELETE FROM product WHERE p_id=#{p_id};
     </delete>
+
+    <!--*******************************分类添加********************************-->
+    <!--添加一级分类-->
+    <insert id="add_category" parameterType="Category">
+        INSERT INTO category (c_name) VALUES (#{c_name});
+    </insert>
+
+    <!--添加二级分类-->
+    <insert id="add_category_second">
+        INSERT INTO  category_second(cs_name,c_id)VALUES ("sasd",25);
+    </insert>
+
+    <!--添加三级分类-->
+    <insert id="add_category_third">
+        INSERT INTO category_third(ct_name,cs_id)VALUES (#{ct_name},#{category_second});
+    </insert>
 
 </mapper>

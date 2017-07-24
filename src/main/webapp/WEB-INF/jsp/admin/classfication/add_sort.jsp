@@ -5,6 +5,8 @@
   Time: 16:41
   To change this template use File | Settings | File Templates.
 --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="C" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
@@ -197,11 +199,11 @@
                 Tinybees
                 <small>Administrator</small>
             </h1>
-            <%--<ol class="breadcrumb">--%>
-            <%--<li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>--%>
-            <%--<li><a href="#">Forms</a></li>--%>
-            <%--<li class="active">Advanced Elements</li>--%>
-            <%--</ol>--%>
+            <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> 主页</a></li>
+            <li><a href="#">分类</a></li>
+            <li class="active">添加分类</li>
+            </ol>
         </section>
 
         <!-- Main content -->
@@ -219,36 +221,106 @@
                 <!-- /.box-header -->
                 <div class="box-body">
                     <div class="row">
+                        <div class="form-group col-lg-4">
+                            <select class="form-control" onchange="getCategory_second(this.value)" >
+                                <%--<option>一级分类</option>--%>
+                                <c:forEach items="${categories}" var="i" step="1">
+                                    <option class="form-control-item" value="${i.c_id}">
+                                        <c:out value="${i.c_name}"/>
+                                    </option>
+                                </c:forEach>
+                            </select>
+                        </div>
+
+                        <div class="form-group col-lg-4" id="category_second">
+                            <select class="form-control">
+                                <option>二级分类</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group col-lg-4" id="category_third">
+                            <select class="form-control">
+                                <option>三级分类</option>
+                            </select>
+                        </div>
+
                         <div class="col-md-4">
-                            <form action="#" method="post">
+                            <form action="/add_sort_1" method="post">
                                 <div class="form-group">
                                     <label>一级分类</label>
-                                    <input class="form-control" name="category">
+                                    <c:if test="${!empty category_success||!empty categorySecond_success||!empty categorySecond_error||!empty categoryThird_success||!empty categoryThird_error}">
+                                        <input class="form-control" disabled value="${category_success}">
+                                    </c:if>
+                                    <c:if test="${(empty category_success && empty category_error) || (!empty category_error)}">
+                                        <input class="form-control" name="category">
+                                    </c:if>
                                     <H1> </H1>
-                                    <button class="col-md-4 btn btn-block btn-primary btn-flat" type="submit">
-                                        提交
-                                    </button>
+                                    <c:if test="${empty category_success && empty category_error}">
+                                        <button class="col-md-4 btn btn-block btn-primary btn-flat" type="submit">
+                                            <span class="fa fa-edit">  添加</span>
+                                        </button>
+                                    </c:if>
+                                    <c:if test="${!empty category_success}">
+                                        <span class="col-md-4 btn btn-block disabled btn-google btn-flat">
+                                            添加成功
+                                        </span>
+                                    </c:if>
+                                    <c:if test="${!empty category_error}">
+                                        <script type="text/javascript">
+                                            alert("${category_error}");
+                                        </script>
+                                        <button class="col-md-4 btn btn-block btn-primary btn-flat" type="submit">
+                                            <span class="fa fa-edit">  添加</span>
+                                        </button>
+                                    </c:if>
                                 </div>
                             </form>
                         </div>
                         <div class="col-md-4">
-                            <form action="#" method="post">
+                            <form action="/add_sort_2" method="post">
                                 <div class="form-group">
                                     <label>二级分类</label>
-                                    <input class="form-control" name="category_second">
+                                    <c:if test="${!empty categorySecond_success||!empty categorySecond_error||!empty categoryThird_success||!empty categoryThird_error}">
+                                        <input class="form-control" disabled value="${categorySecond_success}">
+                                    </c:if>
+                                    <c:if test="${(empty categorySecond_success && empty categorySecond_error) || (!empty categorySecond_error)}">
+                                        <input class="form-control" name="category_second">
+                                        <input class="hidden" name="category" value="${sessionScope.category}">
+                                    </c:if>
                                     <H1> </H1>
-                                    <button class="col-md-4 btn btn-block btn-primary btn-flat" type="submit">
-                                        提交
-                                    </button>
+                                    <c:if test="${empty categorySecond_success && empty categorySecond_error}">
+                                        <button class="col-md-4 btn btn-block btn-primary btn-flat" type="submit">
+                                            <span class="fa fa-edit">  添加</span>
+                                        </button>
+                                    </c:if>
+                                    <c:if test="${!empty categorySecond_success}">
+                                        <span class="col-md-4 btn btn-block disabled btn-google btn-flat">
+                                            添加成功
+                                        </span>
+                                    </c:if>
+                                    <c:if test="${!empty categorySecond_error}">
+                                        <script type="text/javascript">
+                                            alert("${categorySecond_error}");
+                                        </script>
+                                        <button class="col-md-4 btn btn-block btn-primary btn-flat" type="submit">
+                                            <span class="fa fa-edit">  添加</span>
+                                        </button>
+                                    </c:if>
                                 </div>
                             </form>
                         </div>
 
                         <div class="col-md-4">
-                            <form action="#" method="post">
+                            <form action="/add_sort_3" method="post">
                                 <div class="form-group">
                                     <label>三级分类</label>
+                                    <c:if test="${!empty categoryThird_success||!empty categoryThird_error}">
+                                        <input class="form-control" disabled value="${categorySecond_success}">
+                                    </c:if>
+                                    <c:if test="${(empty categorySecond_success && empty categorySecond_error) || (!empty categorySecond_error)}">
                                     <input class="form-control" name="category_third">
+                                    <input class="hidden" name="category" value="${sessionScope.category}">
+                                    </c:if>
                                     <H1> </H1>
                                     <button class="col-md-4 btn btn-block btn-primary btn-flat" type="submit">
                                         提交
@@ -267,210 +339,210 @@
     </div>
     <!-- /.box -->
     <!-- /.content -->
-</div>
-<!-- /.content -->
-<!-- /.content-wrapper -->
-<footer class="main-footer">
-    <div class="pull-right hidden-xs">
-        <b>Version</b> 2.3.7
-    </div>
-    <strong>Copyright &copy; 2014-2016 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
-    reserved.
-</footer>
 
-<!-- Control Sidebar -->
-<aside class="control-sidebar control-sidebar-dark">
-    <!-- Create the tabs -->
-    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
-        <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
-        <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
-    </ul>
-    <!-- Tab panes -->
-    <div class="tab-content">
-        <!-- Home tab content -->
-        <div class="tab-pane" id="control-sidebar-home-tab">
-            <h3 class="control-sidebar-heading">全新界面</h3>
-            <ul class="control-sidebar-menu">
-                <li>
-                    <a href="javascript:void(0)">
-                        <i class="menu-icon fa fa-birthday-cake bg-red"></i>
-
-                        <div class="menu-info">
-                            <h4 class="control-sidebar-subheading">生日</h4>
-
-                            <p>10/02 1990</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)">
-                        <i class="menu-icon fa fa-user bg-yellow"></i>
-
-                        <div class="menu-info">
-                            <h4 class="control-sidebar-subheading">更新联系方式</h4>
-
-                            <p>新手机 +1(800)555-1234</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)">
-                        <i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
-
-                        <div class="menu-info">
-                            <h4 class="control-sidebar-subheading">加入邮件列表</h4>
-
-                            <p>yaoxue2014@gmail.com</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)">
-                        <i class="menu-icon fa fa-file-code-o bg-green"></i>
-
-                        <div class="menu-info">
-                            <h4 class="control-sidebar-subheading">Cron Job 254 Executed</h4>
-
-                            <p>执行时间5s</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-            <!-- /.control-sidebar-menu -->
-
-            <h3 class="control-sidebar-heading">任务进度</h3>
-            <ul class="control-sidebar-menu">
-                <li>
-                    <a href="javascript:void(0)">
-                        <h4 class="control-sidebar-subheading">
-                            自定义模板设计
-                            <span class="label label-danger pull-right">70%</span>
-                        </h4>
-
-                        <div class="progress progress-xxs">
-                            <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)">
-                        <h4 class="control-sidebar-subheading">
-                            更新简历
-                            <span class="label label-success pull-right">95%</span>
-                        </h4>
-
-                        <div class="progress progress-xxs">
-                            <div class="progress-bar progress-bar-success" style="width: 95%"></div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)">
-                        <h4 class="control-sidebar-subheading">
-                            Laravel整合
-                            <span class="label label-warning pull-right">50%</span>
-                        </h4>
-
-                        <div class="progress progress-xxs">
-                            <div class="progress-bar progress-bar-warning" style="width: 50%"></div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)">
-                        <h4 class="control-sidebar-subheading">
-                            后端框架
-                            <span class="label label-primary pull-right">68%</span>
-                        </h4>
-
-                        <div class="progress progress-xxs">
-                            <div class="progress-bar progress-bar-primary" style="width: 68%"></div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-            <!-- /.control-sidebar-menu -->
-
+    <!-- /.content -->
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+            <b>Version</b> 2.3.7
         </div>
-        <!-- /.tab-pane -->
-        <!-- Stats tab content -->
-        <div class="tab-pane" id="control-sidebar-stats-tab">统计选项卡内容</div>
-        <!-- /.tab-pane -->
-        <!-- Settings tab content -->
-        <div class="tab-pane" id="control-sidebar-settings-tab">
-            <form method="post">
-                <h3 class="control-sidebar-heading">普通设置</h3>
+        <strong>Copyright &copy; 2014-2016 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
+        reserved.
+    </footer>
 
-                <div class="form-group">
-                    <label class="control-sidebar-subheading">
-                        报告面板的使用
-                        <input type="checkbox" class="pull-right" checked>
-                    </label>
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Create the tabs -->
+        <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+            <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+            <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <!-- Home tab content -->
+            <div class="tab-pane" id="control-sidebar-home-tab">
+                <h3 class="control-sidebar-heading">全新界面</h3>
+                <ul class="control-sidebar-menu">
+                    <li>
+                        <a href="javascript:void(0)">
+                            <i class="menu-icon fa fa-birthday-cake bg-red"></i>
 
-                    <p>
-                        关于其它信息普通设置选项
-                    </p>
-                </div>
-                <!-- /.form-group -->
+                            <div class="menu-info">
+                                <h4 class="control-sidebar-subheading">生日</h4>
 
-                <div class="form-group">
-                    <label class="control-sidebar-subheading">
-                        允许邮件更改
-                        <input type="checkbox" class="pull-right" checked>
-                    </label>
+                                <p>10/02 1990</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <i class="menu-icon fa fa-user bg-yellow"></i>
 
-                    <p>
-                        其它设置选项是有效
-                    </p>
-                </div>
-                <!-- /.form-group -->
+                            <div class="menu-info">
+                                <h4 class="control-sidebar-subheading">更新联系方式</h4>
 
-                <div class="form-group">
-                    <label class="control-sidebar-subheading">
-                        文章作者姓名
-                        <input type="checkbox" class="pull-right" checked>
-                    </label>
+                                <p>新手机 +1(800)555-1234</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
 
-                    <p>
-                        允许用户在博客上显示名字
-                    </p>
-                </div>
-                <!-- /.form-group -->
+                            <div class="menu-info">
+                                <h4 class="control-sidebar-subheading">加入邮件列表</h4>
 
-                <h3 class="control-sidebar-heading">聊天设置</h3>
+                                <p>yaoxue2014@gmail.com</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <i class="menu-icon fa fa-file-code-o bg-green"></i>
 
-                <div class="form-group">
-                    <label class="control-sidebar-subheading">
-                        在线显示
-                        <input type="checkbox" class="pull-right" checked>
-                    </label>
-                </div>
-                <!-- /.form-group -->
+                            <div class="menu-info">
+                                <h4 class="control-sidebar-subheading">Cron Job 254 Executed</h4>
 
-                <div class="form-group">
-                    <label class="control-sidebar-subheading">
-                        关闭通知
-                        <input type="checkbox" class="pull-right">
-                    </label>
-                </div>
-                <!-- /.form-group -->
+                                <p>执行时间5s</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <!-- /.control-sidebar-menu -->
 
-                <div class="form-group">
-                    <label class="control-sidebar-subheading">
-                        删除聊天记录
-                        <a href="javascript:void(0)" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
-                    </label>
-                </div>
-                <!-- /.form-group -->
-            </form>
+                <h3 class="control-sidebar-heading">任务进度</h3>
+                <ul class="control-sidebar-menu">
+                    <li>
+                        <a href="javascript:void(0)">
+                            <h4 class="control-sidebar-subheading">
+                                自定义模板设计
+                                <span class="label label-danger pull-right">70%</span>
+                            </h4>
+
+                            <div class="progress progress-xxs">
+                                <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <h4 class="control-sidebar-subheading">
+                                更新简历
+                                <span class="label label-success pull-right">95%</span>
+                            </h4>
+
+                            <div class="progress progress-xxs">
+                                <div class="progress-bar progress-bar-success" style="width: 95%"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <h4 class="control-sidebar-subheading">
+                                Laravel整合
+                                <span class="label label-warning pull-right">50%</span>
+                            </h4>
+
+                            <div class="progress progress-xxs">
+                                <div class="progress-bar progress-bar-warning" style="width: 50%"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <h4 class="control-sidebar-subheading">
+                                后端框架
+                                <span class="label label-primary pull-right">68%</span>
+                            </h4>
+
+                            <div class="progress progress-xxs">
+                                <div class="progress-bar progress-bar-primary" style="width: 68%"></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <!-- /.control-sidebar-menu -->
+
+            </div>
+            <!-- /.tab-pane -->
+            <!-- Stats tab content -->
+            <div class="tab-pane" id="control-sidebar-stats-tab">统计选项卡内容</div>
+            <!-- /.tab-pane -->
+            <!-- Settings tab content -->
+            <div class="tab-pane" id="control-sidebar-settings-tab">
+                <form method="post">
+                    <h3 class="control-sidebar-heading">普通设置</h3>
+
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            报告面板的使用
+                            <input type="checkbox" class="pull-right" checked>
+                        </label>
+
+                        <p>
+                            关于其它信息普通设置选项
+                        </p>
+                    </div>
+                    <!-- /.form-group -->
+
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            允许邮件更改
+                            <input type="checkbox" class="pull-right" checked>
+                        </label>
+
+                        <p>
+                            其它设置选项是有效
+                        </p>
+                    </div>
+                    <!-- /.form-group -->
+
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            文章作者姓名
+                            <input type="checkbox" class="pull-right" checked>
+                        </label>
+
+                        <p>
+                            允许用户在博客上显示名字
+                        </p>
+                    </div>
+                    <!-- /.form-group -->
+
+                    <h3 class="control-sidebar-heading">聊天设置</h3>
+
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            在线显示
+                            <input type="checkbox" class="pull-right" checked>
+                        </label>
+                    </div>
+                    <!-- /.form-group -->
+
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            关闭通知
+                            <input type="checkbox" class="pull-right">
+                        </label>
+                    </div>
+                    <!-- /.form-group -->
+
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            删除聊天记录
+                            <a href="javascript:void(0)" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
+                        </label>
+                    </div>
+                    <!-- /.form-group -->
+                </form>
+            </div>
+            <!-- /.tab-pane -->
         </div>
-        <!-- /.tab-pane -->
-    </div>
-</aside>
-<!-- /.control-sidebar -->
-<!-- Add the sidebar's background. This div must be placed
-     immediately after the control sidebar -->
-<div class="control-sidebar-bg"></div>
+    </aside>
+    <!-- /.control-sidebar -->
+    <!-- Add the sidebar's background. This div must be placed
+         immediately after the control sidebar -->
+    <div class="control-sidebar-bg"></div>
 </div>
 <!-- ./wrapper -->
 
@@ -488,3 +560,21 @@
 <script src="/AdminLTE-cn/dist/js/demo.js"></script>
 </body>
 </html>
+<script type="text/javascript">
+    function getCategory_second(str) {
+        var xmlhttp;
+        if (window.XMLHttpRequest) {
+            xmlhttp = new XMLHttpRequest();
+        }
+        else {
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange=function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                window.location = "/sort_second/"+xmlhttp.responseText;
+            }
+        }
+        xmlhttp.open("GET", "/getCategory_second/"+str, true);
+        xmlhttp.send();
+    }
+</script>
