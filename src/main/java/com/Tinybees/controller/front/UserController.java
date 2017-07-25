@@ -52,7 +52,7 @@ public class UserController {
     @RequestMapping("/user_register")
     public ModelAndView user_register(User user){
         userDAO.insert_user(user);
-        this.sqlSession.commit();
+//        this.sqlSession.commit();
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("home/login");
         return modelAndView;

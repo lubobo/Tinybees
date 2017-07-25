@@ -42,5 +42,17 @@ public interface AdminDAO {
     void add_category_second(@Param("category_second") Category_second category_second,@Param("category") String category);
 //    添加三级分类
     void add_category_third(@Param("category_third") Category_third category_third,@Param("category_second") String category_second);
+
+
+//    删除分类
+//    删除一级分类
+    void deleteCategory(String category_id);
+//    删除二级分类
+    void deleteCategory_Second(String category_second_id);
+//    删除三级分类
+    void deleteCategory_Third(String category_third_id);
+
+
 }
+
 

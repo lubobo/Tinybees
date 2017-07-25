@@ -167,8 +167,8 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="invoice.html"><i class="fa fa-circle-o"></i> 用户删除</a></li>
-                        <li><a href="profile.html"><i class="fa fa-circle-o"></i> 用户查看</a></li>
+                        <li><a href="/user_detail_lists"><i class="fa fa-circle-o"></i> 用户查看</a></li>
+                        <li><a href="/user_lists"><i class="fa fa-circle-o"></i> 用户删除</a></li>
 
                     </ul>
                 </li>
@@ -240,31 +240,33 @@
                                         <td><c:out value="${product.current_price}"/></td>
                                         <td><c:out value="${product.size}"/></td>
                                         <td>否</td>
-                                        <td><a href="/product_detail/${product.p_id}"><span class="btn-facebook btn btn-xs">查看详情</span></a></td>
-                                        <td><button data-toggle="modal" data-target="#myModal" type="button" class="btn-danger btn btn-xs">删除商品</button> </td>
-                                    </tr>
+                                        <c:set var="p_id" value="${product.p_id}"/>
 
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                        <div class="modal-dialog modal-danger" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                    <h4 class="modal-title" id="myModalLabel">重要提示</h4>
-                                                </div>
-                                                <div class="modal-body">
-                                                    即将删除该商品，是否删除?
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">关闭</button>
-                                                    <form action="/delete_product" method="post">
-                                                        <input name="product_id" class="hidden" value="${product.p_id}">
-                                                        <button type="submit" class="btn btn-outline">删除</button>
-                                                    </form>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="${p_id}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                            <div class="modal-dialog modal-danger" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                        <h4 class="modal-title" id="myModalLabel">重要提示</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        即将删除该商品，是否删除?
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">关闭</button>
+                                                        <form action="/delete_product" method="post">
+                                                            <input name="product_id" class="hidden" value="${product.p_id}">
+                                                            <button type="submit" class="btn btn-outline">删除</button>
+                                                        </form>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+
+                                        <td><a href="/product_detail/${product.p_id}"><span class="btn-facebook btn btn-xs">查看详情</span></a></td>
+                                        <td><button data-toggle="modal" data-target="#${p_id}" type="button" class="btn-danger btn btn-xs">删除商品</button> </td>
+                                    </tr>
 
                                 </c:forEach>
 

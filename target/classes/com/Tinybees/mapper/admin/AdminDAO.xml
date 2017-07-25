@@ -94,4 +94,19 @@
         INSERT INTO category_third(ct_name,cs_id)VALUES (#{category_third.ct_name},#{category_second});
     </insert>
 
+
+    <!--删除一级分类-->
+    <delete id="deleteCategory">
+        DELETE FROM category WHERE c_id=#{category_id};
+    </delete>
+
+    <!--删除二级分类-->
+    <delete id="deleteCategory_Second">
+        DELETE FROM category_second WHERE cs_id=#{category_second_id};
+    </delete>
+
+    <!--删除三级分类-->
+    <delete id="deleteCategory_Third">
+        DELETE FROM category_third WHERE ct_id=#{category_third_id};
+    </delete>
 </mapper>

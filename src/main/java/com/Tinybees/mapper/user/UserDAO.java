@@ -11,6 +11,9 @@ public interface UserDAO {
 
     User selectByEmail(User user);
 
+    List<User> getAllUser();
+
+    void deleteUserById(int u_id);
 //    void insertSelective(User record);
 //
 //    User selectByPrimaryKey(Integer uId);

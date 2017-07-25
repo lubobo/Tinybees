@@ -165,8 +165,8 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="invoice.html"><i class="fa fa-circle-o"></i> 用户删除</a></li>
-                        <li><a href="profile.html"><i class="fa fa-circle-o"></i> 用户查看</a></li>
+                        <li><a href="/user_detail_lists"><i class="fa fa-circle-o"></i> 用户查看</a></li>
+                        <li><a href="/user_lists"><i class="fa fa-circle-o"></i> 用户删除</a></li>
 
                     </ul>
                 </li>

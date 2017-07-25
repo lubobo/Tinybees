@@ -5,6 +5,8 @@
   Time: 16:37
   To change this template use File | Settings | File Templates.
 --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="C" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
@@ -37,6 +39,7 @@
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
+
     <header class="main-header">
         <!-- Logo -->
         <a href="index2.html" class="logo">
@@ -76,7 +79,6 @@
                             <!-- Menu Body -->
                             <li class="user-body">
                                 <div class="row">
-
                                 </div>
                                 <!-- /.row -->
                             </li>
@@ -151,7 +153,7 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="#"><i class="fa fa-circle-o"></i> 新增分类</a></li>
+                        <li><a href="/add_sort"><i class="fa fa-circle-o"></i> 新增分类</a></li>
                         <li><a href="/sort_list"><i class="fa fa-circle-o"></i> 分类列表</a></li>
                         <%--<li><a href="fixed.html"><i class="fa fa-circle-o"></i> 固定布局</a></li>--%>
                     </ul>
@@ -165,8 +167,8 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="invoice.html"><i class="fa fa-circle-o"></i> 用户删除</a></li>
-                        <li><a href="profile.html"><i class="fa fa-circle-o"></i> 用户查看</a></li>
+                        <li><a href="/user_detail_lists"><i class="fa fa-circle-o"></i> 用户查看</a></li>
+                        <li><a href="/user_lists"><i class="fa fa-circle-o"></i> 用户删除</a></li>
 
                     </ul>
                 </li>

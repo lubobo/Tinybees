@@ -172,8 +172,8 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="invoice.html"><i class="fa fa-circle-o"></i> 用户删除</a></li>
-                        <li><a href="profile.html"><i class="fa fa-circle-o"></i> 用户查看</a></li>
+                        <li><a href="/user_detail_lists"><i class="fa fa-circle-o"></i> 用户查看</a></li>
+                        <li><a href="/user_lists"><i class="fa fa-circle-o"></i> 用户删除</a></li>
 
                     </ul>
                 </li>
@@ -262,23 +262,7 @@
                     </div>
                     <!-- /. box -->
                     <div class="box box-solid">
-                        <%--<div class="box-header with-border">--%>
-                        <%--<h3 class="box-title">Labels</h3>--%>
 
-                        <%--<div class="box-tools">--%>
-                        <%--<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>--%>
-                        <%--</button>--%>
-                        <%--</div>--%>
-                        <%--</div>--%>
-                        <!-- /.box-header -->
-                        <%--<div class="box-body no-padding">--%>
-                        <%--<ul class="nav nav-pills nav-stacked">--%>
-                        <%--<li><a href="#"><i class="fa fa-circle-o text-red"></i> Important</a></li>--%>
-                        <%--<li><a href="#"><i class="fa fa-circle-o text-yellow"></i> Promotions</a></li>--%>
-                        <%--<li><a href="#"><i class="fa fa-circle-o text-light-blue"></i> Social</a></li>--%>
-                        <%--</ul>--%>
-                        <%--</div>--%>
-                        <!-- /.box-body -->
                     </div>
                     <!-- /.box -->
                 </div>

@@ -13,4 +13,11 @@
         SELECT * FROM user WHERE email=#{email} AND password=#{password};
     </select>
 
+    <select id="getAllUser" resultType="User">
+        SELECT * FROM user ORDER BY u_id;
+    </select>
+
+    <delete id="deleteUserById">
+        DELETE FROM user WHERE u_id=#{u_id};
+    </delete>
 </mapper>

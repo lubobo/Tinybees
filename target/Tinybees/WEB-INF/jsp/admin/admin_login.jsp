@@ -39,7 +39,7 @@
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">
-        <p class="login-box-msg">Sign in to start your admin</p>
+        <p class="login-box-msg">Sign in to start your admin for TinyBees</p>
 
         <form action="/post_admin" method="post">
             <div class="form-group has-feedback">

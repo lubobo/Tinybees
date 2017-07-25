@@ -1,18 +1,19 @@
 <%--
   Created by IntelliJ IDEA.
   User: lukbo
-  Date: 2017/7/20
-  Time: 10:58
+  Date: 2017/7/23
+  Time: 9:11
   To change this template use File | Settings | File Templates.
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="C" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AdminLTE 2 | Compose Message</title>
+    <title>AdminLTE 2 | 数据表格</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.6 -->
@@ -21,18 +22,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- fullCalendar 2.2.5-->
-    <link rel="stylesheet" href="/AdminLTE-cn/plugins/fullcalendar/fullcalendar.min.css">
-    <link rel="stylesheet" href="/AdminLTE-cn/plugins/fullcalendar/fullcalendar.print.css" media="print">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="/AdminLTE-cn/plugins/datatables/dataTables.bootstrap.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="/AdminLTE-cn/dist/css/AdminLTE.min.css">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="/AdminLTE-cn/dist/css/skins/all-skins.min.css">
-    <!-- iCheck -->
-    <link rel="stylesheet" href="/AdminLTE-cn/plugins/iCheck/flat/blue.css">
-    <!-- bootstrap wysihtml5 - text editor -->
-    <link rel="stylesheet" href="/AdminLTE-cn/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -202,120 +198,104 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                TinyBees
-                <small>Administrator</small>
+                用户管理
+                <small>用户信息</small>
             </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i> 主页</a></li>
+                <li><a href="#">用户</a></li>
+                <li class="active">用户信息</li>
+            </ol>
         </section>
 
         <!-- Main content -->
         <section class="content">
             <div class="row">
-                <div class="col-md-3">
-                    <a href="#" class="btn btn-primary btn-block margin-bottom">Back to Index</a>
-                    <div class="box box-solid">
-                        <div class="box-header with-border">
-                            <h3 class="box-danger box-title margin-bottom">选择商品配图</h3>
-
-                            <div class="box-tools">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="box-body no-padding">
-                            <ul class="nav nav-pills nav-stacked">
-                                <li>
-                                    <div class="form-group">
-                                        <div class="btn btn-default btn-file btn-block">
-                                            <i class="fa fa-paperclip"></i> 商品配图 （1）
-                                            <input type="file" name="p_image">
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-group">
-                                        <div class="btn btn-default btn-file btn-block">
-                                            <i class="fa fa-paperclip"></i> 商品配图 （2）
-                                            <input type="file" name="p_image1">
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-group">
-                                        <div class="btn btn-default btn-file btn-block">
-                                            <i class="fa fa-paperclip"></i> 商品配图 （3）
-                                            <input type="file" name="p_image2">
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-group">
-                                        <div class="btn btn-default btn-file btn-block">
-                                            <i class="fa fa-paperclip"></i> 商品配图 （4）
-                                            <input type="file" name="p_image3">
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- /.box-body -->
-                    </div>
-                    <!-- /. box -->
-                    <div class="box box-solid">
-
-                    </div>
+                <div class="col-xs-12">
                     <!-- /.box -->
-                </div>
-                <!-- /.col -->
-                <div class="col-md-9">
-                    <div class="box box-primary">
-                        <div class="box-header with-border">
-                            <h3 class="box-title">发布商品</h3>
+
+                    <div class="box">
+                        <div class="box-header">
+                            <h3 class="box-title">用户管理信息展示</h3>
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body">
+                            <table id="example1" class="table table-bordered table-striped">
+                                <thead>
+                                <tr>
+                                    <th>用户名称</th>
+                                    <th>用户邮箱</th>
+                                    <th>用户电话</th>
+                                    <th>用户国籍</th>
+                                    <th>用户城市</th>
+                                    <th>用户乡镇</th>
+                                    <th>用户地址</th>
+                                    <th>用户邮编</th>
+                                    <th>用户密码</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <c:forEach var="user" items="${users}" varStatus="status" step="1">
+                                    <tr>
+                                        <td><c:out value="${user.u_name}"/></td>
+                                        <td><c:out value="${user.email}"/></td>
+                                        <td><c:out value="${user.phone}"/></td>
+                                        <td><c:out value="${user.country}"/></td>
+                                        <td><c:out value="${user.city}"/></td>
+                                        <td><c:out value="${user.region}"/></td>
+                                        <td><c:out value="${user.addr}"/></td>
+                                        <td><c:out value="${user.code}"/></td>
+                                        <td><c:out value="${user.password}"/></td>
 
-                            <div class="form-group col-lg-4">
-                                <select class="form-control" onchange="getCategory_second(this.value)" >
-                                    <%--<option>一级分类</option>--%>
-                                    <c:forEach items="${categories}" var="i" step="1">
-                                        <option class="form-control-item" value="${i.c_id}">
-                                            <c:out value="${i.c_name}"/>
-                                        </option>
-                                    </c:forEach>
-                                </select>
-                            </div>
+                                        <c:set var="u_id" value="${user.u_id}"/>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="${u_id}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                            <div class="modal-dialog modal-danger" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                        <h4 class="modal-title" id="myModalLabel">重要提示</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        即将删除该用户，是否删除?
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">关闭</button>
+                                                        <form action="/delete_user" method="post">
+                                                            <input name="user_id" class="hidden" value="${u_id}">
+                                                            <button type="submit" class="btn btn-outline">删除</button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                            <div class="form-group col-lg-4" id="category_second">
-                                <select class="form-control">
-                                    <option>二级分类</option>
-                                </select>
-                            </div>
+                                        <td><button data-toggle="modal" data-target="#${u_id}" type="button" class="btn-danger btn btn-xs">删除用户</button> </td>
+                                    </tr>
 
-                            <div class="form-group col-lg-4" id="category_third">
-                                <select class="form-control">
-                                    <option>三级分类</option>
-                                </select>
-                            </div>
+                                </c:forEach>
 
-                            <div class="form-group">
-                                <input class="form-control" placeholder="商品名称:">
-                            </div>
-                            <div class="form-group">
-                                <textarea id="compose-textarea" placeholder="商品简介" class="form-control" style="height: 280px">
-                                </textarea>
-                            </div>
+
+
+                                </tbody>
+                                <tfoot>
+                                <tr>
+                                    <th>用户名称</th>
+                                    <th>用户邮箱</th>
+                                    <th>用户电话</th>
+                                    <th>用户国籍</th>
+                                    <th>用户城市</th>
+                                    <th>用户乡镇</th>
+                                    <th>用户地址</th>
+                                    <th>用户邮编</th>
+                                    <th>用户密码</th>
+                                </tr>
+                                </tfoot>
+                            </table>
                         </div>
                         <!-- /.box-body -->
-                        <div class="box-footer">
-                            <div class="pull-right">
-                                <button type="button" class="btn btn-default"><i class="fa fa-pencil"></i> Draft</button>
-                                <button type="submit" class="btn btn-primary"><i class="fa fa-envelope-o"></i> Send</button>
-                            </div>
-                            <button type="reset" class="btn btn-default"><i class="fa fa-times"></i> Discard</button>
-                        </div>
-                        <!-- /.box-footer -->
                     </div>
-                    <!-- /. box -->
+                    <!-- /.box -->
                 </div>
                 <!-- /.col -->
             </div>
@@ -528,12 +508,14 @@
 </div>
 <!-- ./wrapper -->
 
-
 <!-- jQuery 2.2.3 -->
 <script src="/AdminLTE-cn/plugins/jQuery/jquery-2.2.3.min.js"></script>
 <!-- Bootstrap 3.3.6 -->
 <script src="/AdminLTE-cn/bootstrap/js/bootstrap.min.js"></script>
-<!-- Slimscroll -->
+<!-- DataTables -->
+<script src="/AdminLTE-cn/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="/AdminLTE-cn/plugins/datatables/dataTables.bootstrap.min.js"></script>
+<!-- SlimScroll -->
 <script src="/AdminLTE-cn/plugins/slimScroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
 <script src="/AdminLTE-cn/plugins/fastclick/fastclick.js"></script>
@@ -541,33 +523,20 @@
 <script src="/AdminLTE-cn/dist/js/app.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="/AdminLTE-cn/dist/js/demo.js"></script>
-<!-- iCheck -->
-<script src="/AdminLTE-cn/plugins/iCheck/icheck.min.js"></script>
-<!-- Bootstrap WYSIHTML5 -->
-<script src="/AdminLTE-cn/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
-<!-- Page Script -->
+<!-- page script -->
 <script>
     $(function () {
-        //Add text editor
-        $("#compose-textarea").wysihtml5();
+        $("#example1").DataTable();
+        $('#example2').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false
+        });
     });
-
-    function getCategory_second(str) {
-        var xmlhttp;
-        if (window.XMLHttpRequest) {
-            xmlhttp = new XMLHttpRequest();
-        }
-        else {
-            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-        }
-        xmlhttp.onreadystatechange=function() {
-            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                window.location = "/category_second/"+xmlhttp.responseText;
-            }
-        }
-        xmlhttp.open("GET", "/getCategory_second/"+str, true);
-        xmlhttp.send();
-    }
 </script>
 </body>
 </html>
+

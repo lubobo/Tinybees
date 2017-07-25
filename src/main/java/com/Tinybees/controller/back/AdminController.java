@@ -1,6 +1,7 @@
 package com.Tinybees.controller.back;
 
 import com.Tinybees.mapper.admin.AdminDAO;
+import com.Tinybees.mapper.user.UserDAO;
 import com.Tinybees.model.*;
 import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.apache.ibatis.io.Resources;
@@ -33,6 +34,7 @@ import java.util.List;
 public class AdminController {
 
     private AdminDAO adminDAO;
+    private UserDAO userDAO;
     private SqlSessionFactory sqlSessionFactory;
     private SqlSession sqlSession;
     public AdminController()throws IOException {
@@ -42,6 +44,7 @@ public class AdminController {
         this.sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
         this.sqlSession = sqlSessionFactory.openSession();
         adminDAO = sqlSession.getMapper(AdminDAO.class);
+        userDAO = sqlSession.getMapper(UserDAO.class);
         /*-------------------------------------------------------------------------------*/
     }
     @RequestMapping("/admin_login")
@@ -238,25 +241,6 @@ public class AdminController {
         category1.setC_name(category);
         adminDAO.add_category(category1);
         return "redirect:/add_sort";
-
-//        String category = request.getParameter("category");
-//        Category category1 = adminDAO.getCategoryByName(category);
-//        if(category1==null){
-//            Category category2 = new Category();
-//            category2.setC_name(category);
-//            adminDAO.add_category(category2);
-//            model.addAttribute("category_success",category);
-//            HttpSession httpSession = request.getSession();
-//            httpSession.setAttribute("category",adminDAO.getCategoryByName(category).getC_id());
-//            ModelAndView modelAndView = new ModelAndView();
-//            modelAndView.setViewName("admin/classfication/add_sort");
-//            return modelAndView;
-//        }else{
-//            model.addAttribute("category_error","一级分类已存在");
-//            ModelAndView modelAndView = new ModelAndView();
-//            modelAndView.setViewName("admin/classfication/add_sort");
-//            return modelAndView;
-//        }
     }
 
     @RequestMapping("/add_sort_2/{category_id}")
@@ -269,25 +253,6 @@ public class AdminController {
         model.addAttribute("category_seconds",category_seconds);
         modelAndView.setViewName("admin/classfication/add_sort_2");
         return modelAndView;
-//        String category_second = request.getParameter("category_second");
-//        String category = request.getParameter("category");
-//        Category_second category_second1 = adminDAO.getCategorySecondByName(category_second);
-//        if(category_second1==null){
-//            Category_second category_second2 = new Category_second();
-//            category_second2.setCs_name(category_second);
-//            adminDAO.add_category_second(category_second2,category);
-//            model.addAttribute("categorySecond_success",category_second);
-//            HttpSession httpSession = request.getSession();
-//            httpSession.setAttribute("category_second",category_second);
-//            ModelAndView modelAndView = new ModelAndView();
-//            modelAndView.setViewName("admin/classfication/add_sort");
-//            return modelAndView;
-//        }else{
-//            model.addAttribute("categorySecond_error","二级分类已存在");
-//            ModelAndView modelAndView = new ModelAndView();
-//            modelAndView.setViewName("admin/classfication/add_sort");
-//            return modelAndView;
-//        }
     }
 
     @RequestMapping("/post_sort_2")
@@ -315,24 +280,6 @@ public class AdminController {
         model.addAttribute("category_thirds",category_thirds);
         modelAndView.setViewName("admin/classfication/add_sort_3");
         return modelAndView;
-
-//        String category_third = request.getParameter("category_third");
-//        String category_second = request.getParameter("category_second");
-//        Category_third category_third1 = adminDAO.getCategoryThirdByName(category_third);
-//        if(category_third1==null){
-//            Category_third category_third2 = new Category_third();
-//            category_third2.setCt_name(category_third);
-//            adminDAO.add_category_third(category_third2,category_second);
-//            model.addAttribute("categoryThird_success",category_third);
-//            ModelAndView modelAndView = new ModelAndView();
-//            modelAndView.setViewName("admin/classfication/add_sort");
-//            return modelAndView;
-//        }else {
-//            model.addAttribute("categoryThird_error","三级分类已存在");
-//            ModelAndView modelAndView = new ModelAndView();
-//            modelAndView.setViewName("admin/classfication/add_sort");
-//            return modelAndView;
-//        }
     }
 
     @RequestMapping("/post_sort_3")
@@ -345,12 +292,30 @@ public class AdminController {
         adminDAO.add_category_third(category_third1,category_second_id);
         return "redirect:/add_sort_3/"+category_id+"/"+category_second_id;
     }
-//
-//    @RequestMapping("/delete_sort/{category}")
-//    public String delete_sort(@PathVariable String category){
-//
-//    }
 
+    @RequestMapping("/delete_category")
+    public String delete_category(HttpServletRequest request){
+        String category_id = request.getParameter("category_id");
+        adminDAO.deleteCategory(category_id);
+        return "redirect:/add_sort";
+    }
+
+    @RequestMapping("/delete_category_second")
+    public String delete_category_second(HttpServletRequest request){
+        String category_id = request.getParameter("category_id");
+        String category_second_id = request.getParameter("category_second_id");
+        adminDAO.deleteCategory_Second(category_second_id);
+        return "redirect:/add_sort_2/"+category_id;
+    }
+
+    @RequestMapping("/delete_category_third")
+    public String delete_category_third(HttpServletRequest request){
+        String category_id = request.getParameter("category_id");
+        String category_second_id = request.getParameter("category_second_id");
+        String category_third_id = request.getParameter("category_third_id");
+        adminDAO.deleteCategory_Third(category_third_id);
+        return "redirect:/add_sort_3/"+category_id+"/"+category_second_id;
+    }
 
     @RequestMapping("/sort_second/{categories}")
     public ModelAndView sort_second(@PathVariable String categories,Model model){
@@ -376,6 +341,31 @@ public class AdminController {
 
         model.addAttribute("categories_third",category_thirds);
         modelAndView.setViewName("admin/classfication/add_sort_3");
+        return modelAndView;
+    }
+
+    @RequestMapping("/user_lists")
+    public ModelAndView user_lists(Model model){
+        ModelAndView modelAndView = new ModelAndView();
+        List<User> users = userDAO.getAllUser();
+        model.addAttribute("users",users);
+        modelAndView.setViewName("admin/user/user_lists");
+        return modelAndView;
+    }
+
+    @RequestMapping("/delete_user")
+    public String delete_user(HttpServletRequest request){
+        int user_id=Integer.parseInt(request.getParameter("user_id"));
+        userDAO.deleteUserById(user_id);
+        return "redirect:/user_lists";
+    }
+
+    @RequestMapping("/user_detail_lists")
+    public ModelAndView user_detail_lists(Model model){
+        ModelAndView modelAndView = new ModelAndView();
+        List<User> users = userDAO.getAllUser();
+        model.addAttribute("users",users);
+        modelAndView.setViewName("admin/user/user_detail_lists");
         return modelAndView;
     }
 
