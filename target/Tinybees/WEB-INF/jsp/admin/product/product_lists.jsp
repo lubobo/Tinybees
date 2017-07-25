@@ -85,7 +85,7 @@
                             <!-- Menu Footer-->
                             <li class="user-footer">
                                 <div class="pull-right">
-                                    <a href="/admin_logout" class="btn btn-default btn-flat">退出</a>
+                                    <a href="/admin_logout" class="btn btn-block btn-md btn-github btn-flat">退出</a>
                                 </div>
                             </li>
                         </ul>

@@ -66,18 +66,6 @@
             </div>
         </form>
 
-        <%--<div class="social-auth-links text-center">--%>
-            <%--<p>- OR -</p>--%>
-            <%--<a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i>--%>
-                <%--Facebook登录</a>--%>
-            <%--<a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i>--%>
-                <%--Google+登录</a>--%>
-        <%--</div>--%>
-        <!-- /.social-auth-links -->
-
-        <%--<a href="#">忘记密码</a><br>--%>
-        <%--<a href="#" class="text-center">注册帐号</a>--%>
-
     </div>
     <!-- /.login-box-body -->
 </div>

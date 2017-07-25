@@ -85,7 +85,7 @@
                             <!-- Menu Footer-->
                             <li class="user-footer">
                                 <div class="pull-right">
-                                    <a href="/admin_logout" class="btn btn-default btn-flat">退出</a>
+                                    <a href="/admin_logout" class="btn btn-block btn-md btn-github btn-flat">退出</a>
                                 </div>
                             </li>
                         </ul>
@@ -603,7 +603,7 @@
         <div class="pull-right hidden-xs">
             <b>Version</b> 2.3.7
         </div>
-        <strong>Copyright &copy; 2017-2018 <a href="http://almsaeedstudio.com">TinyBees</a>.</strong> All rights
+        <strong>Copyright &copy; 2016-2017 <a href="http://almsaeedstudio.com">Tiny Bees</a>.</strong> All rights
         reserved.
     </footer>
 

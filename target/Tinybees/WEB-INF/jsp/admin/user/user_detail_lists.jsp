@@ -85,7 +85,7 @@
                             <!-- Menu Footer-->
                             <li class="user-footer">
                                 <div class="pull-right">
-                                    <a href="/admin_logout" class="btn btn-default btn-flat">退出</a>
+                                    <a href="/admin_logout" class="btn btn-block btn-md btn-github btn-flat">退出</a>
                                 </div>
                             </li>
                         </ul>
@@ -200,6 +200,11 @@
             <h1>
                 用户管理
                 <small>用户信息</small>
+                <ol class="breadcrumb">
+                    <li><a href="#"><i class="fa fa-dashboard"></i> 主页</a></li>
+                    <li><a href="#">用户</a></li>
+                    <li class="active">用户信息</li>
+                </ol>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> 主页</a></li>
@@ -281,6 +286,45 @@
                                                             </div>
                                                             <!-- /.box-body -->
                                                         </div>
+
+                                                        <div class="box box-primary">
+                                                            <div class="box-header with-border">
+                                                                <h3 class="box-title">关于用户</h3>
+                                                            </div>
+                                                            <!-- /.box-header -->
+                                                            <div class="text-muted box-body">
+                                                                <strong><i class="fa fa-book margin-r-5"></i> 电话</strong>
+
+                                                                <p class="text-muted">
+                                                                        ${user.phone}
+                                                                </p>
+
+                                                                <hr>
+
+                                                                <strong><i class="fa fa-envelope-o margin-r-5"></i> 邮箱</strong>
+
+                                                                <p class="text-muted">
+                                                                        ${user.email}
+                                                                </p>
+
+                                                                <hr>
+
+                                                                <strong><i class="fa fa-map-marker margin-r-5"></i> 位置</strong>
+
+                                                                <p class="text-muted">${user.city},${user.country}</p>
+
+                                                                <hr>
+
+                                                                <strong><i class="fa fa-truck margin-r-5"></i> 地址</strong>
+
+                                                                <p class="text-muted">${user.addr}</p>
+
+                                                                <hr>
+
+                                                            </div>
+                                                            <!-- /.box-body -->
+                                                        </div>
+
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">关闭</button>

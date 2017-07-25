@@ -90,7 +90,7 @@
                             <!-- Menu Footer-->
                             <li class="user-footer">
                                 <div class="pull-right">
-                                    <a href="/admin_logout" class="btn btn-default btn-flat">退出</a>
+                                    <a href="/admin_logout" class="btn btn-block btn-md btn-github btn-flat">退出</a>
                                 </div>
                             </li>
                         </ul>
@@ -206,13 +206,18 @@
                 TinyBees
                 <small>Administrator</small>
             </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i> 主页</a></li>
+                <li><a href="#">商品</a></li>
+                <li class="active">新增商品</li>
+            </ol>
         </section>
 
         <!-- Main content -->
         <section class="content">
             <div class="row">
                 <div class="col-md-3">
-                    <a href="#" class="btn btn-primary btn-block margin-bottom">Back to Index</a>
+                    <%--<a href="#" class="btn btn-primary btn-block margin-bottom">Back to Index</a>--%>
                     <div class="box box-solid">
                         <div class="box-header with-border">
                             <h3 class="box-danger box-title margin-bottom">选择商品配图</h3>

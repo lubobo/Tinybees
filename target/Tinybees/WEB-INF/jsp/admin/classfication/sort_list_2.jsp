@@ -83,7 +83,7 @@
                             <!-- Menu Footer-->
                             <li class="user-footer">
                                 <div class="pull-right">
-                                    <a href="/admin_logout" class="btn btn-default btn-flat">退出</a>
+                                    <a href="/admin_logout" class="btn btn-block btn-md btn-github btn-flat">退出</a>
                                 </div>
                             </li>
                         </ul>
@@ -199,7 +199,13 @@
             <h1>
                 二级分类
                 <small><a href="/sort_list"><b>一级分类</b> </a>/ ${category.c_name}</small>
+
             </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i> 主页</a></li>
+                <li><a href="#">分类</a></li>
+                <li class="active">分类信息</li>
+            </ol>
         </section>
 
         <!-- Main content -->
@@ -233,7 +239,7 @@
         <div class="pull-right hidden-xs">
             <b>Version</b> 2.3.7
         </div>
-        <strong>Copyright &copy; 2014-2016 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
+        <strong>Copyright &copy; 2016-2017 <a href="http://almsaeedstudio.com">Tiny Bees</a>.</strong> All rights
         reserved.
     </footer>
 
