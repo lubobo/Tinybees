@@ -109,4 +109,15 @@
     <delete id="deleteCategory_Third">
         DELETE FROM category_third WHERE ct_id=#{category_third_id};
     </delete>
+
+    <!--订单管理-->
+    <!--获取分类列表-->
+    <select id="getAllOrders" resultType="Orders">
+        SELECT * FROM orders;
+    </select>
+
+    <!--获取订单项列表-->
+    <select id="getAllOrderItemsByOrderId" resultType="Orderitem">
+        SELECT b FROM order_item a,orders b WHERE a.o_id=b.o_id AND b.o_id=#{o_id};
+    </select>
 </mapper>

@@ -66,5 +66,6 @@ public class UserController {
         modelAndView.setViewName("home/home");
         return modelAndView;
     }
+
 }
 

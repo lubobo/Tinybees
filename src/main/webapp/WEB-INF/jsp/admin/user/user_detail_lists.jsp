@@ -183,8 +183,8 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="#"><i class="fa fa-circle-o"></i> 订单查看</a></li>
-                        <li><a href="#"><i class="fa fa-circle-o"></i> 订单修改</a></li>
+                        <li><a href="/order_lists"><i class="fa fa-circle-o"></i> 订单查看</a></li>
+                        <li><a href="/order_delete_lists"><i class="fa fa-circle-o"></i> 订单修改</a></li>
                         <%--<li><a href="fixed.html"><i class="fa fa-circle-o"></i> 固定布局</a></li>--%>
                     </ul>
                 </li>
@@ -200,11 +200,6 @@
             <h1>
                 用户管理
                 <small>用户信息</small>
-                <ol class="breadcrumb">
-                    <li><a href="#"><i class="fa fa-dashboard"></i> 主页</a></li>
-                    <li><a href="#">用户</a></li>
-                    <li class="active">用户信息</li>
-                </ol>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> 主页</a></li>
@@ -218,7 +213,6 @@
             <div class="row">
                 <div class="col-xs-12">
                     <!-- /.box -->
-
                     <div class="box">
                         <div class="box-header">
                             <h3 class="box-title">用户管理信息展示</h3>
@@ -237,6 +231,7 @@
                                     <th>用户地址</th>
                                     <th>用户邮编</th>
                                     <th>用户密码</th>
+                                    <th>用户管理</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -262,7 +257,7 @@
                                                         <h4 class="modal-title" id="myModalLabel">用户详情</h4>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <div class="box box-primary">
+                                                        <div class="box box-info">
                                                             <div class="box-body box-profile">
                                                                 <img class="profile-user-img img-responsive img-circle" src="/AdminLTE-cn/dist/img/user4-128x128.jpg" alt="User profile picture">
 
@@ -287,7 +282,7 @@
                                                             <!-- /.box-body -->
                                                         </div>
 
-                                                        <div class="box box-primary">
+                                                        <div class="box box-info">
                                                             <div class="box-header with-border">
                                                                 <h3 class="box-title">关于用户</h3>
                                                             </div>
@@ -337,8 +332,7 @@
                                             </div>
                                         </div>
 
-
-                                        <td><button data-toggle="modal" data-target="#${u_id}" type="button" class="btn-facebook btn btn-xs">查看详情</button> </td>
+                                        <td><button data-toggle="modal" data-target="#${u_id}" type="button" class="btn-flat btn-facebook btn btn-xs">查看详情</button></td>
                                     </tr>
                                 </c:forEach>
 
@@ -354,6 +348,7 @@
                                     <th>用户地址</th>
                                     <th>用户邮编</th>
                                     <th>用户密码</th>
+                                    <th>用户管理</th>
                                 </tr>
                                 </tfoot>
                             </table>

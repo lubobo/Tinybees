@@ -181,8 +181,8 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="#"><i class="fa fa-circle-o"></i> 订单查看</a></li>
-                        <li><a href="#"><i class="fa fa-circle-o"></i> 订单修改</a></li>
+                        <li><a href="/order_lists"><i class="fa fa-circle-o"></i> 订单查看</a></li>
+                        <li><a href="/order_delete_lists"><i class="fa fa-circle-o"></i> 订单修改</a></li>
                         <%--<li><a href="fixed.html"><i class="fa fa-circle-o"></i> 固定布局</a></li>--%>
                     </ul>
                 </li>

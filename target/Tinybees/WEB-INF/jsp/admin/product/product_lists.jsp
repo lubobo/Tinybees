@@ -183,8 +183,8 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="#"><i class="fa fa-circle-o"></i> 订单查看</a></li>
-                        <li><a href="#"><i class="fa fa-circle-o"></i> 订单修改</a></li>
+                        <li><a href="/order_lists"><i class="fa fa-circle-o"></i> 订单查看</a></li>
+                        <li><a href="/order_delete_lists"><i class="fa fa-circle-o"></i> 订单修改</a></li>
                         <%--<li><a href="fixed.html"><i class="fa fa-circle-o"></i> 固定布局</a></li>--%>
                     </ul>
                 </li>
@@ -241,6 +241,8 @@
                                         <td><c:out value="${product.size}"/></td>
                                         <td>否</td>
                                         <c:set var="p_id" value="${product.p_id}"/>
+                                        <c:set var="p_name" value="${product.p_name}"/>
+                                        <c:set var="p_image" value="${product.image}"/>
 
                                         <!-- Modal -->
                                         <div class="modal fade" id="${p_id}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -264,8 +266,91 @@
                                             </div>
                                         </div>
 
-                                        <td><a href="/product_detail/${product.p_id}"><span class="btn-facebook btn btn-xs">查看详情</span></a></td>
-                                        <td><button data-toggle="modal" data-target="#${p_id}" type="button" class="btn-danger btn btn-xs">删除商品</button> </td>
+                                        <div class="modal fade" id="${p_id+1000000}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+                                            <div class="modal-dialog modal-success" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                        <h4 class="modal-title" id="myModalLabel1">商品详情</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="box box-success">
+                                                            <div class="box-body box-profile">
+                                                                <img class="profile-user-img img-responsive img-circle" src="${p_image}" alt="User profile picture">
+
+                                                                <h3 class="profile-username text-muted text-center">${p_name}</h3>
+
+                                                                <p class="text-muted text-center">商品详情</p>
+
+                                                                <ul class="list-group text-muted list-group-unbordered">
+                                                                    <li class="list-group-item">
+                                                                        <b>销量</b> <a class="pull-right">1,322</a>
+                                                                    </li>
+                                                                    <li class="list-group-item">
+                                                                        <b>评价</b> <a class="pull-right">543</a>
+                                                                    </li>
+                                                                    <li class="list-group-item">
+                                                                        <b>购物车量</b> <a class="pull-right">13,287</a>
+                                                                    </li>
+                                                                </ul>
+
+                                                                    <%--<a href="#" class="btn btn-primary btn-block"><b>关注</b></a>--%>
+                                                            </div>
+                                                            <!-- /.box-body -->
+                                                        </div>
+
+                                                        <div class="box box-success">
+                                                            <div class="box-header with-border">
+                                                                <h3 class="box-title">关于商品</h3>
+                                                            </div>
+                                                            <!-- /.box-header -->
+                                                            <div class="text-muted box-body">
+                                                                <strong><i class="fa fa-book margin-r-5"></i> 当前价格</strong>
+
+                                                                <p class="text-muted">
+                                                                        ${product.current_price}
+                                                                </p>
+
+                                                                <hr>
+
+                                                                <strong><i class="fa fa-envelope-o margin-r-5"></i> 市场价格</strong>
+
+                                                                <p class="text-muted">
+                                                                        ${product.market_price}
+                                                                </p>
+
+                                                                <hr>
+
+                                                                <strong><i class="fa fa-map-marker margin-r-5"></i> 描述</strong>
+
+                                                                <p class="text-muted">${product.pdesc}</p>
+
+                                                                <hr>
+
+                                                                <strong><i class="fa fa-truck margin-r-5"></i> 颜色</strong>
+
+                                                                <p class="text-muted">${product.color}</p>
+
+                                                                <hr>
+
+                                                            </div>
+                                                            <!-- /.box-body -->
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">关闭</button>
+                                                            <%--<form action="/delete_user" method="post">--%>
+                                                            <%--<input name="user_id" class="hidden" value="${u_id}">--%>
+                                                        <button type="button" class="btn btn-outline" data-dismiss="modal">确定</button>
+                                                            <%--</form>--%>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <td><button data-toggle="modal" data-target="#${p_id+1000000}" type="button" class="btn-flat btn-facebook btn btn-xs">查看详情</button></td>
+                                        <td><button data-toggle="modal" data-target="#${p_id}" type="button" class="btn-flat btn-danger btn btn-xs">删除商品</button> </td>
                                     </tr>
 
                                 </c:forEach>
@@ -493,8 +578,6 @@
         </div>
     </aside>
     <!-- /.control-sidebar -->
-    <!-- Add the sidebar's background. This div must be placed
-         immediately after the control sidebar -->
     <div class="control-sidebar-bg"></div>
 </div>
 <!-- ./wrapper -->

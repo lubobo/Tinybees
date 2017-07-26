@@ -2,6 +2,7 @@ package com.Tinybees.mapper.admin;
 
 import com.Tinybees.model.*;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.core.annotation.Order;
 
 import java.util.List;
 
@@ -52,6 +53,12 @@ public interface AdminDAO {
 //    删除三级分类
     void deleteCategory_Third(String category_third_id);
 
+
+//    订单管理
+//    订单查询
+    List<Orders> getAllOrders();
+//    订单项查询
+    List<Orderitem> getAllOrderItemsByOrderId(String o_id);
 
 }
 

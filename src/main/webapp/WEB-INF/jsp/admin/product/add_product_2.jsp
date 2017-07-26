@@ -187,8 +187,8 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="#"><i class="fa fa-circle-o"></i> 订单查看</a></li>
-                        <li><a href="#"><i class="fa fa-circle-o"></i> 订单修改</a></li>
+                        <li><a href="/order_lists"><i class="fa fa-circle-o"></i> 订单查看</a></li>
+                        <li><a href="/order_delete_lists"><i class="fa fa-circle-o"></i> 订单修改</a></li>
                         <%--<li><a href="fixed.html"><i class="fa fa-circle-o"></i> 固定布局</a></li>--%>
                     </ul>
                 </li>
@@ -233,15 +233,15 @@
                                         <div class="form-group">
                                             <div class="btn btn-default btn-file btn-block">
                                                 <i class="fa fa-paperclip"></i> 商品配图 （1）
-                                                <input type="file" name="p_image">
+                                                <input id="imageInput1" onclick="changeImage1()" type="file" name="p_image">
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="form-group">
-                                            <div class="btn btn-default btn-file btn-block">
+                                            <div  class="btn btn-default btn-file btn-block">
                                                 <i class="fa fa-paperclip"></i> 商品配图 （2）
-                                                <input type="file" name="p_image1">
+                                                <input id="imageInput2" onclick="changeImage2()" type="file" name="p_image1">
                                             </div>
                                         </div>
                                     </li>
@@ -249,7 +249,7 @@
                                         <div class="form-group">
                                             <div class="btn btn-default btn-file btn-block">
                                                 <i class="fa fa-paperclip"></i> 商品配图 （3）
-                                                <input type="file" name="p_image2">
+                                                <input id="imageInput3" onclick="changeImage3()" type="file" name="p_image2">
                                             </div>
                                         </div>
                                     </li>
@@ -257,7 +257,7 @@
                                         <div class="form-group">
                                             <div class="btn btn-default btn-file btn-block">
                                                 <i class="fa fa-paperclip"></i> 商品配图 （4）
-                                                <input type="file" name="p_image3">
+                                                <input id="imageInput4" onclick="changeImage4()" type="file" name="p_image3">
                                             </div>
                                         </div>
                                     </li>
@@ -623,6 +623,23 @@
         xmlhttp.open("GET", "/getCategory_second/"+str, true);
         xmlhttp.send();
     }
+
+    function changeImage1() {
+        document.getElementById("imageInput1").style.visibility=hidden;
+    }
+
+    function changeImage2() {
+        document.getElementById("imageInput2").style.visibility=disabled;
+    }
+
+    function changeImage3() {
+        document.getElementById("imageInput3").style.visibility=disabled;
+    }
+
+    function changeImage4() {
+        document.getElementById("imageInput4").style.visibility=disabled;
+    }
+
 </script>
 </body>
 </html>

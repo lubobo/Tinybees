@@ -183,8 +183,8 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="#"><i class="fa fa-circle-o"></i> 订单查看</a></li>
-                        <li><a href="#"><i class="fa fa-circle-o"></i> 订单修改</a></li>
+                        <li><a href="/order_lists"><i class="fa fa-circle-o"></i> 订单查看</a></li>
+                        <li><a href="/order_delete_lists"><i class="fa fa-circle-o"></i> 订单修改</a></li>
                         <%--<li><a href="fixed.html"><i class="fa fa-circle-o"></i> 固定布局</a></li>--%>
                     </ul>
                 </li>
@@ -216,7 +216,7 @@
 
                     <div class="box">
                         <div class="box-header">
-                            <h3 class="box-title">用户管理信息展示</h3>
+                            <h3 class="box-title">商品管理信息展示</h3>
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body">
@@ -232,6 +232,7 @@
                                     <th>用户地址</th>
                                     <th>用户邮编</th>
                                     <th>用户密码</th>
+                                    <th>用户管理</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -270,13 +271,9 @@
                                             </div>
                                         </div>
 
-                                        <td><button data-toggle="modal" data-target="#${u_id}" type="button" class="btn-danger btn btn-xs">删除用户</button> </td>
+                                        <td><button data-toggle="modal" data-target="#${u_id}" type="button" class="btn-flat btn-danger btn btn-xs">删除用户</button> </td>
                                     </tr>
-
                                 </c:forEach>
-
-
-
                                 </tbody>
                                 <tfoot>
                                 <tr>
@@ -289,6 +286,7 @@
                                     <th>用户地址</th>
                                     <th>用户邮编</th>
                                     <th>用户密码</th>
+                                    <th>用户管理</th>
                                 </tr>
                                 </tfoot>
                             </table>
@@ -502,8 +500,6 @@
         </div>
     </aside>
     <!-- /.control-sidebar -->
-    <!-- Add the sidebar's background. This div must be placed
-         immediately after the control sidebar -->
     <div class="control-sidebar-bg"></div>
 </div>
 <!-- ./wrapper -->
