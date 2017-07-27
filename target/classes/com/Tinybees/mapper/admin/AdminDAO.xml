@@ -164,4 +164,12 @@
         UPDATE activity SET a_name=#{activity.a_name},a_reward=#{activity.a_reward},
         start_time=#{activity.start_time},end_time=#{activity.end_time} WHERE a_id=#{a_id};
     </update>
+
+    <select id="getOrderById" resultType="Orders">
+        SELECT * FROM orders WHERE o_id=#{o_id};
+    </select>
+
+    <update id="postOrderById">
+        UPDATE orders SET state=1 WHERE o_id=#{o_id};
+    </update>
 </mapper>

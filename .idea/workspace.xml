@@ -2,41 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b364a2b-2d04-41ad-9a69-074ea3501830" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/public/images/18775260557881140.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/public/images/18861022463060361.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/public/images/18883012695662068.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/public/images/19083123811847472.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/public/images/5679271fNb7355c8e.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/public/images/TB1tsSrSXXXXXbKapXXXXXXXXXX_!!0-item_pic.jpg_60x60q90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/public/images/TB2AmZkv4XkpuFjy0FiXXbUfFXa_!!1115488308.jpg_60x60q90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/public/images/TB2SsMFv3xlpuFjSszbXXcSVpXa_!!1115488308.jpg_60x60q90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/public/images/TB2St46bZtnpuFjSZFKXXalFFXa_!!2966545063.jpg_60x60q90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/public/images/TB2sSp1b94mpuFjSZFOXXaUqpXa_!!2966545063.jpg_60x60q90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/public/images/TB2xnYqvl0kpuFjSsppXXcGTXXa_!!65386645.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/public/images/TB2yPW6wuJ8puFjy1XbXXagqVXa_!!1115488308.jpg_60x60q90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Tinybees/public/images/18775260557881140.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Tinybees/public/images/18861022463060361.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Tinybees/public/images/18883012695662068.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Tinybees/public/images/19083123811847472.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Tinybees/public/images/5679271fNb7355c8e.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Tinybees/public/images/TB1tsSrSXXXXXbKapXXXXXXXXXX_!!0-item_pic.jpg_60x60q90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Tinybees/public/images/TB2AmZkv4XkpuFjy0FiXXbUfFXa_!!1115488308.jpg_60x60q90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Tinybees/public/images/TB2SsMFv3xlpuFjSszbXXcSVpXa_!!1115488308.jpg_60x60q90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Tinybees/public/images/TB2St46bZtnpuFjSZFKXXalFFXa_!!2966545063.jpg_60x60q90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Tinybees/public/images/TB2sSp1b94mpuFjSZFOXXaUqpXa_!!2966545063.jpg_60x60q90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Tinybees/public/images/TB2xnYqvl0kpuFjSsppXXcGTXXa_!!65386645.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Tinybees/public/images/TB2yPW6wuJ8puFjy1XbXXagqVXa_!!1115488308.jpg_60x60q90.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/classes/com/Tinybees/controller/back/order/OrderController.class" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/classes/com/Tinybees/controller/back/order/OrderController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/classes/com/Tinybees/mapper/admin/AdminDAO.class" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/classes/com/Tinybees/mapper/admin/AdminDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Tinybees/controller/back/order/OrderController.class" afterPath="$PROJECT_DIR$/target/classes/com/Tinybees/controller/back/order/OrderController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Tinybees/mapper/admin/AdminDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/Tinybees/mapper/admin/AdminDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/activity/ActivityController.java" afterPath="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/activity/ActivityController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/category/CategoryController.java" afterPath="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/category/CategoryController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/admin/AdminController.java" afterPath="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/admin/AdminController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/order/OrderController.java" afterPath="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/order/OrderController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.xml" afterPath="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/AdminLTE-cn/dist/css/AdminLTE.css" afterPath="$PROJECT_DIR$/src/main/webapp/AdminLTE-cn/dist/css/AdminLTE.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/AdminLTE-cn/dist/css/AdminLTE.min.css" afterPath="$PROJECT_DIR$/src/main/webapp/AdminLTE-cn/dist/css/AdminLTE.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/activity/activity_lists.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/activity/activity_lists.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/activity/add_activity.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/activity/add_activity.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/activity/update_activity.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/activity/update_activity.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/admin_home.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/admin_home.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/admin_login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/admin_login.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort_2.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort_2.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort_3.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort_3.jsp" />
@@ -54,41 +33,30 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/update_product_3.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/update_product_3.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/user/user_detail_lists.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/user/user_detail_lists.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/user/user_lists.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/user/user_lists.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/404.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/404.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/about-us.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/about-us.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/cart.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/cart.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/category.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/category.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/checkout.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/checkout.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/compare.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/compare.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/contact-us.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/contact-us.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/elements.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/elements.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/faq.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/faq.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/home.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/home.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/product.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/product.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/register.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/register.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/search.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/search.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/sitemap.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/sitemap.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/wishlist.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/wishlist.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/classes/spring-mvc.xml" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/classes/spring-mvc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/classes/com/Tinybees/mapper/admin/AdminDAO.xml" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/classes/com/Tinybees/mapper/admin/AdminDAO.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/activity/activity_lists.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/activity/activity_lists.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/activity/add_activity.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/activity/add_activity.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/activity/update_activity.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/activity/update_activity.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/admin_home.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/admin_home.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/admin_login.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/admin_login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/classfication/add_sort.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/classfication/add_sort.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/classfication/add_sort_2.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/classfication/add_sort_2.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/classfication/add_sort_3.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/classfication/add_sort_3.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/classfication/sort_list_2.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/classfication/sort_list_2.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/classfication/sort_list_3.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/classfication/sort_list_3.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/classfication/sort_lists.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/classfication/sort_lists.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/404.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/404.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/about-us.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/about-us.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/cart.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/cart.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/category.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/category.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/checkout.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/checkout.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/compare.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/compare.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/contact-us.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/contact-us.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/elements.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/elements.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/faq.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/faq.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/home.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/home.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/login.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/product.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/product.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/register.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/register.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/search.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/search.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/sitemap.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/sitemap.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/wishlist.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/home/wishlist.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterPath="$PROJECT_DIR$/target/classes/spring-mvc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/order/order_delete_lists.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/order/order_delete_lists.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/order/order_lists.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/order/order_lists.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/product/add_product.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/product/add_product.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/product/add_product_1.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/product/add_product_1.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/product/add_product_2.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/product/add_product_2.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/product/product_lists.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/product/product_lists.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/product/update_product_1.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/product/update_product_1.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/product/update_product_2.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/product/update_product_2.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/product/update_product_3.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/product/update_product_3.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/user/user_detail_lists.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/user/user_detail_lists.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/user/user_lists.jsp" afterPath="$PROJECT_DIR$/target/Tinybees/WEB-INF/jsp/admin/user/user_lists.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Tinybees/mapper/admin/AdminDAO.xml" afterPath="$PROJECT_DIR$/target/classes/com/Tinybees/mapper/admin/AdminDAO.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -138,108 +106,105 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="activity_lists.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/activity/activity_lists.jsp">
+      <file leaf-file-name="order_lists.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/order/order_lists.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="163" column="37" lean-forward="false" selection-start-line="163" selection-start-column="37" selection-end-line="163" selection-end-column="37" />
-              <folding>
-                <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActivityController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/activity/ActivityController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="128" column="42" lean-forward="true" selection-start-line="128" selection-start-column="42" selection-end-line="128" selection-end-column="42" />
-              <folding>
-                <element signature="method#ActivityController#0;class#ActivityController#0" expanded="false" />
-                <element signature="method#add_activity#0;class#ActivityController#0" expanded="false" />
-                <element signature="method#activity_lists#0;class#ActivityController#0" expanded="false" />
-                <element signature="method#delete_activity#0;class#ActivityController#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="update_activity.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/activity/update_activity.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="267" column="87" lean-forward="false" selection-start-line="267" selection-start-column="87" selection-end-line="267" selection-end-column="87" />
-              <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#aside#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add_sort.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="284" column="134" lean-forward="false" selection-start-line="284" selection-start-column="134" selection-end-line="284" selection-end-column="134" />
+            <state relative-caret-position="7020">
+              <caret line="260" column="0" lean-forward="false" selection-start-line="260" selection-start-column="0" selection-end-line="267" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add_sort_2.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort_2.jsp">
+      <file leaf-file-name="order_delete_lists.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/order/order_delete_lists.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="288" column="135" lean-forward="false" selection-start-line="288" selection-start-column="135" selection-end-line="288" selection-end-column="135" />
+            <state relative-caret-position="6966">
+              <caret line="258" column="84" lean-forward="false" selection-start-line="258" selection-start-column="84" selection-end-line="258" selection-end-column="84" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin_home.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/admin_home.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1755">
+              <caret line="65" column="38" lean-forward="false" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_lists.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/activity/activity_lists.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="38" selection-end-column="7" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add_sort_3.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort_3.jsp">
+      <file leaf-file-name="simple.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/AdminLTE-cn/pages/simple.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="535">
-              <caret line="160" column="32" lean-forward="true" selection-start-line="160" selection-start-column="32" selection-end-line="160" selection-end-column="32" />
+            <state relative-caret-position="-1620">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="widgets.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/AdminLTE-cn/pages/widgets.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="900" column="10" lean-forward="false" selection-start-line="900" selection-start-column="10" selection-end-line="984" selection-end-column="16" />
               <folding>
-                <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#5;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sort_list_2.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/sort_list_2.jsp">
+      <file leaf-file-name="community.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/user/community.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="248" column="85" lean-forward="false" selection-start-line="248" selection-start-column="85" selection-end-line="248" selection-end-column="85" />
+            <state relative-caret-position="81">
+              <caret line="37" column="59" lean-forward="false" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
               <folding>
-                <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add_activity.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/activity/add_activity.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="576" selection-end-column="7" />
-              <folding>
-                <element signature="n#html#0;n#!!top" expanded="false" />
                 <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/admin/AdminController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="554">
+              <caret line="94" column="28" lean-forward="false" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="28" />
+              <folding>
+                <element signature="docComment;class#AdminController#0" expanded="false" />
+                <element signature="method#AdminController#0;class#AdminController#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/order/OrderController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1107">
+              <caret line="57" column="28" lean-forward="false" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -248,56 +213,11 @@
       <file leaf-file-name="AdminDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="81" column="36" lean-forward="false" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="44" />
+            <state relative-caret-position="1782">
+              <caret line="72" column="10" lean-forward="false" selection-start-line="72" selection-start-column="10" selection-end-line="72" selection-end-column="10" />
               <folding>
+                <element signature="imports" expanded="false" />
                 <element signature="docComment;class#AdminDAO#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminDAO.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="167" column="0" lean-forward="true" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
-              <folding>
-                <marker date="1501123851563" expanded="true" signature="342:417" ph="SELECT * FRO... admin" />
-                <marker date="1501123851563" expanded="true" signature="575:597" ph="SELECT * FRO... category" />
-                <marker date="1501123851563" expanded="true" signature="678:723" ph="SELECT * FRO... category" />
-                <marker date="1501123851563" expanded="true" signature="806:853" ph="SELECT * FRO... category" />
-                <marker date="1501123851563" expanded="true" signature="1105:1134" ph="SELECT * FRO... category_second" />
-                <marker date="1501123851563" expanded="true" signature="1228:1288" ph="SELECT * FRO... category_second" />
-                <marker date="1501123851563" expanded="true" signature="1383:1445" ph="SELECT * FRO... category_second" />
-                <marker date="1501123851563" expanded="true" signature="1542:1662" ph="SELECT * FRO... category_second" />
-                <marker date="1501123851563" expanded="true" signature="1914:1942" ph="SELECT * FRO... category_third" />
-                <marker date="1501123851563" expanded="true" signature="2037:2176" ph="SELECT * FRO... category_third" />
-                <marker date="1501123851563" expanded="true" signature="2270:2331" ph="SELECT * FRO... category_third" />
-                <marker date="1501123851563" expanded="true" signature="2423:2481" ph="SELECT * FRO... category_third" />
-                <marker date="1501123851563" expanded="true" signature="2658:2896" ph="INSERT INTO product... " />
-                <marker date="1501123851563" expanded="true" signature="2974:2995" ph="SELECT * FRO... product" />
-                <marker date="1501123851563" expanded="true" signature="3080:3118" ph="DELETE FROM " />
-                <marker date="1501123851563" expanded="true" signature="3296:3344" ph="INSERT INTO category... " />
-                <marker date="1501123851563" expanded="true" signature="3425:3514" ph="INSERT INTO category_second" />
-                <marker date="1501123851563" expanded="true" signature="3594:3688" ph="INSERT INTO category_third... " />
-                <marker date="1501123851563" expanded="true" signature="3765:3811" ph="DELETE FROM " />
-                <marker date="1501123851563" expanded="true" signature="3894:3955" ph="DELETE FROM " />
-                <marker date="1501123851563" expanded="true" signature="4037:4096" ph="DELETE FROM " />
-                <marker date="1501123851563" expanded="true" signature="4206:4226" ph="SELECT * FRO... orders" />
-                <marker date="1501123851563" expanded="true" signature="4337:4411" ph="SELECT b FRO... order_item" />
-                <marker date="1501123851563" expanded="true" signature="4492:4609" ph="INSERT INTO activity... " />
-                <marker date="1501123851563" expanded="true" signature="4692:4737" ph="SELECT * FRO... activity" />
-                <marker date="1501123851563" expanded="true" signature="4817:4839" ph="SELECT * FRO... activity" />
-                <marker date="1501123851563" expanded="true" signature="4901:4940" ph="DELETE FROM " />
-                <marker date="1501123851563" expanded="true" signature="5019:5059" ph="SELECT * FRO... product" />
-                <marker date="1501123851563" expanded="true" signature="5120:5487" ph="UPDATE produ... " />
-                <marker date="1501123851563" expanded="true" signature="5549:5568" ph="UPDATE categ... " />
-                <marker date="1501123851563" expanded="true" signature="5549:5604" ph="UPDATE categ... " />
-                <marker date="1501123851563" expanded="true" signature="5672:5738" ph="UPDATE categ... " />
-                <marker date="1501123851563" expanded="true" signature="5805:5870" ph="UPDATE categ... " />
-                <marker date="1501123851563" expanded="true" signature="5932:5977" ph="UPDATE activ... " />
-                <marker date="1501123851563" expanded="true" signature="5932:6099" ph="UPDATE activ... " />
               </folding>
             </state>
           </provider>
@@ -317,10 +237,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>//fonts.googleapis.com/css?family1=Open+Sans:300italic,400italic,600italic,300,400,6</find>
-      <find>//fonts.googleapis.com/css?family1=Open+Sans:300italic,400italic,600italic,300,400,</find>
-      <find>//fonts.googleapis.com/css?family1=Open+Sans:300italic,400italic,600italic,300,400</find>
-      <find>//fonts.googleapis.com/css?family1=Open+Sans:300italic,400italic,600italic,300,40</find>
       <find>//fonts.googleapis.com/css?family1=Open+Sans:300italic,400italic,600italic,300,4</find>
       <find>//fonts.googleapis.com/css?family1=Open+Sans:300italic,400italic,600italic,300,</find>
       <find>//fonts.googleapis.com/css?family1=Open+Sans:300italic,400italic,600italic,300</find>
@@ -345,8 +261,12 @@
       <find>index2.ht</find>
       <find>index2.html</find>
       <find>md</find>
-      <find>用</find>
       <find>fa-folder</find>
+      <find>AdminLTE 2 | 小部件</find>
+      <find>用</find>
+      <find>AdminLTE 2 | Compose Message</find>
+      <find>/AdminLTE-cn/dist/img/user2-160x160.jpg</find>
+      <find>直接聊天</find>
     </findStrings>
     <replaceStrings>
       <replace>/home</replace>
@@ -365,6 +285,10 @@
       <replace>/admin_home</replace>
       <replace>发、</replace>
       <replace>fa-files-o</replace>
+      <replace>TinyBees | 添加分类</replace>
+      <replace>TinyBees | 添加商品</replace>
+      <replace>TinyBees | 更新商品</replace>
+      <replace>/image/TinyBees.jpg</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\lukbo\.m2\repository\mysql\mysql-connector-java\5.1.40\mysql-connector-java-5.1.40.jar</dir>
@@ -383,7 +307,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/add_product_2.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/add_product_1.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/home.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/model/User.java" />
@@ -392,48 +315,49 @@
         <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/user/UserDAO.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/user/user_details.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/AdminController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/admin_login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/user/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/front/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/front/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/model/Orderitem.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/model/Orders.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/order/OrderController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/admin/AdminController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/model/Activity.java" />
         <option value="$PROJECT_DIR$/src/main/resources/SqlMapConfig.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a7aded01-e61b-4ffa-bfcb-76ee9b801010/console.sql" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/user/user_lists.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/user/user_detail_lists.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/update_product_1.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/update_product_2.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/product/ProductController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/update_product_3.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/product_lists.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home/404.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/AdminLTE-cn/dist/css/AdminLTE.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/category/CategoryController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/sort_list_3.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/activity/add_activity.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/admin_home.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/sort_lists.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/order/order_delete_lists.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/add_product.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/add_product_1.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/add_product_2.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/order/order_lists.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/activity/ActivityController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/activity/add_activity.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/activity/update_activity.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/sort_list_2.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort_2.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort_3.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/sort_lists.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/sort_list_3.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/sort_list_2.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/add_product.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/add_product_1.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/add_product_2.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/update_product_1.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/update_product_2.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/update_product_3.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/user/user_detail_lists.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/user/user_lists.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/admin_login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/product_lists.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/order/OrderController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/order/order_lists.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/order/order_delete_lists.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/admin_home.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/activity/activity_lists.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/admin/AdminController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/user/community.jsp" />
       </list>
     </option>
   </component>
@@ -548,6 +472,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -932,6 +858,70 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="mapper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tinybees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tinybees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tinybees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mapper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tinybees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tinybees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tinybees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -967,6 +957,82 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="back" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tinybees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tinybees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tinybees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="back" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="product" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tinybees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tinybees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tinybees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="back" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="order" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1042,6 +1108,44 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tinybees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tinybees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tinybees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="back" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="activity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1049,8 +1153,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1069,19 +1171,19 @@
     <property name="Repository.Attach.Sources" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Programs\IdeaProjects\Tinybees\src\main\java\com\Tinybees\model" />
-      <recent name="E:\Programs\IdeaProjects\Tinybees\src\main\webapp" />
-      <recent name="E:\Programs\IdeaProjects\Tinybees\src\main\webapp\DateTime" />
-      <recent name="F:\Tinybees\Tinybees\src\main\webapp" />
-      <recent name="F:\Tinybees\Tinybees\src\main\java\com\Tinybees\model" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Programs\IdeaProjects\Tinybees\src\main\webapp\WEB-INF\jsp\admin\product" />
       <recent name="E:\Programs\IdeaProjects\Tinybees\src\main\webapp\WEB-INF\jsp\home" />
       <recent name="E:\Programs\IdeaProjects\Tinybees\src\main\webapp\WEB-INF\jsp\admin" />
       <recent name="F:\Tinybees\Tinybees\src\main\java\com\Tinybees\mapper\admin" />
       <recent name="F:\Tinybees\Tinybees\src\main\webapp\WEB-INF\lib" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Programs\IdeaProjects\Tinybees\src\main\webapp\image" />
+      <recent name="E:\Programs\IdeaProjects\Tinybees\src\main\java\com\Tinybees\model" />
+      <recent name="E:\Programs\IdeaProjects\Tinybees\src\main\webapp" />
+      <recent name="E:\Programs\IdeaProjects\Tinybees\src\main\webapp\DateTime" />
+      <recent name="F:\Tinybees\Tinybees\src\main\webapp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1648,12 +1750,13 @@
       <workItem from="1501029545320" duration="9846000" />
       <workItem from="1501046866039" duration="11746000" />
       <workItem from="1501115995946" duration="2557000" />
-      <workItem from="1501118591391" duration="5906000" />
+      <workItem from="1501118591391" duration="9296000" />
+      <workItem from="1501134925801" duration="1256000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224983000" />
+    <option name="totallyTimeSpent" value="229629000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1691,9 +1794,8 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25965664" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26341203" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1704,6 +1806,7 @@
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" x="-280" y="352" width="1738" height="860" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4750869" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1761,35 +1864,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/AdminLTE-cn/pages/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="542" column="10" lean-forward="true" selection-start-line="542" selection-start-column="10" selection-end-line="579" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/admin_login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-217">
-          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/user/UserDAO.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/controller/front/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="68" column="4" lean-forward="false" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/controller/front/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-729">
@@ -1886,60 +1960,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/user/user_lists.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="210" column="12" lean-forward="false" selection-start-line="210" selection-start-column="12" selection-end-line="210" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/user/user_detail_lists.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="210" column="12" lean-forward="false" selection-start-line="210" selection-start-column="12" selection-end-line="210" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/order/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="54" column="54" lean-forward="false" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/admin/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-567">
-          <caret line="56" column="34" lean-forward="false" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
-          <folding>
-            <element signature="docComment;class#AdminController#0" expanded="false" />
-            <element signature="method#AdminController#0;class#AdminController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/user/AdminUserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="64" column="1" lean-forward="false" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
-          <folding>
-            <element signature="docComment;class#AdminUserController#0" expanded="false" />
-            <element signature="method#AdminUserController#0;class#AdminUserController#0" expanded="false" />
-            <element signature="method#user_lists#0;class#AdminUserController#0" expanded="false" />
-            <element signature="method#delete_user#0;class#AdminUserController#0" expanded="false" />
-            <element signature="method#user_detail_lists#0;class#AdminUserController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/update_product_2.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16281">
-          <caret line="603" column="0" lean-forward="false" selection-start-line="603" selection-start-column="0" selection-end-line="603" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1955,7 +1979,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="24" column="40" lean-forward="false" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1963,10 +1986,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding>
-            <element signature="e#114#342#0" expanded="false" />
-            <element signature="e#343#408#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1996,22 +2015,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/update_product_1.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="577" column="20" lean-forward="false" selection-start-line="577" selection-start-column="20" selection-end-line="577" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/update_product_3.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="367" column="34" lean-forward="false" selection-start-line="367" selection-start-column="34" selection-end-line="367" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/category/CategoryController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="729">
@@ -2037,110 +2040,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/sort_list_3.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="41" column="28" lean-forward="false" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
-          <folding>
-            <element signature="n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/admin_home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="44" column="17" lean-forward="false" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/sort_lists.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="41" column="17" lean-forward="false" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/order/order_delete_lists.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="44" column="17" lean-forward="false" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/add_product.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="48" column="17" lean-forward="false" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/add_product_1.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="49" column="17" lean-forward="false" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/add_product_2.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="743">
-          <caret line="48" column="17" lean-forward="false" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/order/order_lists.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="340" column="121" lean-forward="true" selection-start-line="340" selection-start-column="121" selection-end-line="340" selection-end-column="121" />
-          <folding>
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/product_lists.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="368" column="56" lean-forward="false" selection-start-line="368" selection-start-column="56" selection-end-line="368" selection-end-column="120" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="81" column="36" lean-forward="false" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="44" />
-          <folding>
-            <element signature="docComment;class#AdminDAO#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/activity/add_activity.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="576" selection-end-column="7" />
-          <folding>
-            <element signature="n#html#0;n#!!top" expanded="false" />
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/activity/ActivityController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
-          <caret line="128" column="42" lean-forward="true" selection-start-line="128" selection-start-column="42" selection-end-line="128" selection-end-column="42" />
+          <caret line="128" column="42" lean-forward="false" selection-start-line="128" selection-start-column="42" selection-end-line="128" selection-end-column="42" />
           <folding>
             <element signature="method#ActivityController#0;class#ActivityController#0" expanded="false" />
             <element signature="method#add_activity#0;class#ActivityController#0" expanded="false" />
@@ -2150,111 +2053,289 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/activity/add_activity.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="167" column="0" lean-forward="true" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
-          <folding>
-            <marker date="1501123851563" expanded="true" signature="342:417" ph="SELECT * FRO... admin" />
-            <marker date="1501123851563" expanded="true" signature="575:597" ph="SELECT * FRO... category" />
-            <marker date="1501123851563" expanded="true" signature="678:723" ph="SELECT * FRO... category" />
-            <marker date="1501123851563" expanded="true" signature="806:853" ph="SELECT * FRO... category" />
-            <marker date="1501123851563" expanded="true" signature="1105:1134" ph="SELECT * FRO... category_second" />
-            <marker date="1501123851563" expanded="true" signature="1228:1288" ph="SELECT * FRO... category_second" />
-            <marker date="1501123851563" expanded="true" signature="1383:1445" ph="SELECT * FRO... category_second" />
-            <marker date="1501123851563" expanded="true" signature="1542:1662" ph="SELECT * FRO... category_second" />
-            <marker date="1501123851563" expanded="true" signature="1914:1942" ph="SELECT * FRO... category_third" />
-            <marker date="1501123851563" expanded="true" signature="2037:2176" ph="SELECT * FRO... category_third" />
-            <marker date="1501123851563" expanded="true" signature="2270:2331" ph="SELECT * FRO... category_third" />
-            <marker date="1501123851563" expanded="true" signature="2423:2481" ph="SELECT * FRO... category_third" />
-            <marker date="1501123851563" expanded="true" signature="2658:2896" ph="INSERT INTO product... " />
-            <marker date="1501123851563" expanded="true" signature="2974:2995" ph="SELECT * FRO... product" />
-            <marker date="1501123851563" expanded="true" signature="3080:3118" ph="DELETE FROM " />
-            <marker date="1501123851563" expanded="true" signature="3296:3344" ph="INSERT INTO category... " />
-            <marker date="1501123851563" expanded="true" signature="3425:3514" ph="INSERT INTO category_second" />
-            <marker date="1501123851563" expanded="true" signature="3594:3688" ph="INSERT INTO category_third... " />
-            <marker date="1501123851563" expanded="true" signature="3765:3811" ph="DELETE FROM " />
-            <marker date="1501123851563" expanded="true" signature="3894:3955" ph="DELETE FROM " />
-            <marker date="1501123851563" expanded="true" signature="4037:4096" ph="DELETE FROM " />
-            <marker date="1501123851563" expanded="true" signature="4206:4226" ph="SELECT * FRO... orders" />
-            <marker date="1501123851563" expanded="true" signature="4337:4411" ph="SELECT b FRO... order_item" />
-            <marker date="1501123851563" expanded="true" signature="4492:4609" ph="INSERT INTO activity... " />
-            <marker date="1501123851563" expanded="true" signature="4692:4737" ph="SELECT * FRO... activity" />
-            <marker date="1501123851563" expanded="true" signature="4817:4839" ph="SELECT * FRO... activity" />
-            <marker date="1501123851563" expanded="true" signature="4901:4940" ph="DELETE FROM " />
-            <marker date="1501123851563" expanded="true" signature="5019:5059" ph="SELECT * FRO... product" />
-            <marker date="1501123851563" expanded="true" signature="5120:5487" ph="UPDATE produ... " />
-            <marker date="1501123851563" expanded="true" signature="5549:5568" ph="UPDATE categ... " />
-            <marker date="1501123851563" expanded="true" signature="5549:5604" ph="UPDATE categ... " />
-            <marker date="1501123851563" expanded="true" signature="5672:5738" ph="UPDATE categ... " />
-            <marker date="1501123851563" expanded="true" signature="5805:5870" ph="UPDATE categ... " />
-            <marker date="1501123851563" expanded="true" signature="5932:5977" ph="UPDATE activ... " />
-            <marker date="1501123851563" expanded="true" signature="5932:6099" ph="UPDATE activ... " />
-          </folding>
+        <state relative-caret-position="378">
+          <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/activity/update_activity.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="267" column="87" lean-forward="false" selection-start-line="267" selection-start-column="87" selection-end-line="267" selection-end-column="87" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#aside#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/sort_list_2.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="248" column="85" lean-forward="false" selection-start-line="248" selection-start-column="85" selection-end-line="248" selection-end-column="85" />
-          <folding>
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="378">
+          <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="284" column="134" lean-forward="false" selection-start-line="284" selection-start-column="134" selection-end-line="284" selection-end-column="134" />
+        <state relative-caret-position="243">
+          <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort_2.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="288" column="135" lean-forward="false" selection-start-line="288" selection-start-column="135" selection-end-line="288" selection-end-column="135" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="171">
+          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/add_sort_3.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="160" column="32" lean-forward="true" selection-start-line="160" selection-start-column="32" selection-end-line="160" selection-end-column="32" />
+        <state relative-caret-position="157">
+          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/sort_lists.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/sort_list_3.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/classfication/sort_list_2.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/add_product.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/admin_login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="52" column="29" lean-forward="true" selection-start-line="52" selection-start-column="29" selection-end-line="60" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/user/user_lists.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/user/user_detail_lists.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/update_product_1.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/update_product_2.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/update_product_3.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/add_product_2.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/add_product_1.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/product/product_lists.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7020">
+          <caret line="260" column="98" lean-forward="false" selection-start-line="260" selection-start-column="98" selection-end-line="260" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4644">
+          <caret line="172" column="53" lean-forward="false" selection-start-line="172" selection-start-column="53" selection-end-line="172" selection-end-column="53" />
           <folding>
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1501126819426" expanded="true" signature="342:417" ph="SELECT * FRO... admin" />
+            <marker date="1501126819426" expanded="true" signature="575:597" ph="SELECT * FRO... category" />
+            <marker date="1501126819426" expanded="true" signature="678:723" ph="SELECT * FRO... category" />
+            <marker date="1501126819426" expanded="true" signature="806:853" ph="SELECT * FRO... category" />
+            <marker date="1501126819426" expanded="true" signature="1105:1134" ph="SELECT * FRO... category_second" />
+            <marker date="1501126819426" expanded="true" signature="1228:1288" ph="SELECT * FRO... category_second" />
+            <marker date="1501126819426" expanded="true" signature="1383:1445" ph="SELECT * FRO... category_second" />
+            <marker date="1501126819426" expanded="true" signature="1542:1662" ph="SELECT * FRO... category_second" />
+            <marker date="1501126819426" expanded="true" signature="1914:1942" ph="SELECT * FRO... category_third" />
+            <marker date="1501126819426" expanded="true" signature="2037:2176" ph="SELECT * FRO... category_third" />
+            <marker date="1501126819426" expanded="true" signature="2270:2331" ph="SELECT * FRO... category_third" />
+            <marker date="1501126819426" expanded="true" signature="2423:2481" ph="SELECT * FRO... category_third" />
+            <marker date="1501126819426" expanded="true" signature="2658:2896" ph="INSERT INTO product... " />
+            <marker date="1501126819426" expanded="true" signature="2974:2995" ph="SELECT * FRO... product" />
+            <marker date="1501126819426" expanded="true" signature="3080:3118" ph="DELETE FROM " />
+            <marker date="1501126819426" expanded="true" signature="3296:3344" ph="INSERT INTO category... " />
+            <marker date="1501126819426" expanded="true" signature="3425:3514" ph="INSERT INTO category_second" />
+            <marker date="1501126819426" expanded="true" signature="3594:3688" ph="INSERT INTO category_third... " />
+            <marker date="1501126819426" expanded="true" signature="3765:3811" ph="DELETE FROM " />
+            <marker date="1501126819426" expanded="true" signature="3894:3955" ph="DELETE FROM " />
+            <marker date="1501126819426" expanded="true" signature="4037:4096" ph="DELETE FROM " />
+            <marker date="1501126819426" expanded="true" signature="4206:4226" ph="SELECT * FRO... orders" />
+            <marker date="1501126819426" expanded="true" signature="4337:4411" ph="SELECT b FRO... order_item" />
+            <marker date="1501126819426" expanded="true" signature="4492:4609" ph="INSERT INTO activity... " />
+            <marker date="1501126819426" expanded="true" signature="4692:4737" ph="SELECT * FRO... activity" />
+            <marker date="1501126819426" expanded="true" signature="4817:4839" ph="SELECT * FRO... activity" />
+            <marker date="1501126819426" expanded="true" signature="4901:4940" ph="DELETE FROM " />
+            <marker date="1501126819426" expanded="true" signature="5019:5059" ph="SELECT * FRO... product" />
+            <marker date="1501126819426" expanded="true" signature="5120:5487" ph="UPDATE produ... " />
+            <marker date="1501126819426" expanded="true" signature="5549:5568" ph="UPDATE categ... " />
+            <marker date="1501126819426" expanded="true" signature="5549:5604" ph="UPDATE categ... " />
+            <marker date="1501126819426" expanded="true" signature="5672:5738" ph="UPDATE categ... " />
+            <marker date="1501126819426" expanded="true" signature="5805:5870" ph="UPDATE categ... " />
+            <marker date="1501126819426" expanded="true" signature="5932:5977" ph="UPDATE activ... " />
+            <marker date="1501126819426" expanded="true" signature="5932:6099" ph="UPDATE activ... " />
+            <marker date="1501126819426" expanded="true" signature="6175:6214" ph="SELECT * FRO... orders" />
+            <marker date="1501126819426" expanded="true" signature="6271:6315" ph="UPDATE order... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/mapper/admin/AdminDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1782">
+          <caret line="72" column="10" lean-forward="false" selection-start-line="72" selection-start-column="10" selection-end-line="72" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#AdminDAO#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/order/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1107">
+          <caret line="57" column="28" lean-forward="false" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/order/order_lists.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7020">
+          <caret line="260" column="0" lean-forward="false" selection-start-line="260" selection-start-column="0" selection-end-line="267" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/order/order_delete_lists.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6966">
+          <caret line="258" column="84" lean-forward="false" selection-start-line="258" selection-start-column="84" selection-end-line="258" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/admin_home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1755">
+          <caret line="65" column="38" lean-forward="false" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/AdminLTE-cn/pages/simple.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1620">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/activity/activity_lists.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="163" column="37" lean-forward="false" selection-start-line="163" selection-start-column="37" selection-end-line="163" selection-end-column="37" />
+        <state relative-caret-position="324">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="38" selection-end-column="7" />
           <folding>
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/AdminLTE-cn/pages/widgets.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="900" column="10" lean-forward="false" selection-start-line="900" selection-start-column="10" selection-end-line="984" selection-end-column="16" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#5;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Tinybees/controller/back/admin/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="94" column="28" lean-forward="false" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="28" />
+          <folding>
+            <element signature="docComment;class#AdminController#0" expanded="false" />
+            <element signature="method#AdminController#0;class#AdminController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/user/community.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="37" column="59" lean-forward="false" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -68,6 +68,10 @@ public interface AdminDAO {
     List<Orders> getAllOrders();
 //    订单项查询
     List<Orderitem> getAllOrderItemsByOrderId(String o_id);
+//    订单查询
+    Orders getOrderById(int o_id);
+//    处理订单
+    void postOrderById(int o_id);
 
 //    活动管理
 //    查询活动

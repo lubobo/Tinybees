@@ -10,6 +10,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -55,5 +56,11 @@ public class OrderController {
         List<Orders> orders = adminDAO.getAllOrders();
         model.addAttribute("orders",orders);
         return modelAndView;
+    }
+
+    @RequestMapping("/post_order/{order_id}")
+    public String post_order(@PathVariable int order_id){
+        adminDAO.postOrderById(order_id);
+        return "redirect:/order_lists";
     }
 }

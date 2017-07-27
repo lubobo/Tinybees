@@ -87,4 +87,11 @@ public class AdminController {
             return modelAndView;
         }
     }
+
+    @RequestMapping("/community")
+    public ModelAndView community(){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("admin/user/community");
+        return modelAndView;
+    }
 }
