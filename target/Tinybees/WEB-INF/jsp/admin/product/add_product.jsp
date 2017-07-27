@@ -172,7 +172,7 @@
                     </a>
                     <ul class="treeview-menu">
                         <li><a href="/user_detail_lists"><i class="fa fa-circle-o"></i> 用户查看</a></li>
-                        <li><a href="/user_lists"><i class="fa fa-circle-o"></i> 用户删除</a></li>
+                        <li><a href="/user_lists"><i class="fa fa-circle-o"></i> 用户修改</a></li>
 
                     </ul>
                 </li>
@@ -192,7 +192,24 @@
                         <%--<li><a href="fixed.html"><i class="fa fa-circle-o"></i> 固定布局</a></li>--%>
                     </ul>
                 </li>
+
+                <li class="treeview active">
+                    <a href="#">
+                        <i class="fa fa-files-o"></i>
+                        <span>活动管理</span>
+                        <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+              <%--<span class="label label-primary pull-right">4</span>--%>
+            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="/add_activity"><i class="fa fa-circle-o"></i> 活动新增</a></li>
+                        <li><a href="/activity_lists"><i class="fa fa-circle-o"></i> 活动修改</a></li>
+                        <%--<li><a href="fixed.html"><i class="fa fa-circle-o"></i> 固定布局</a></li>--%>
+                    </ul>
+                </li>
             </ul>
+
         </section>
         <!-- /.sidebar -->
     </aside>
@@ -232,7 +249,7 @@
                                     <div class="form-group">
                                         <div class="btn btn-default btn-file btn-block">
                                             <i class="fa fa-paperclip"></i> 商品配图 （1）
-                                            <input type="file" name="p_image">
+                                            <input disabled type="file" name="p_image">
                                         </div>
                                     </div>
                                 </li>
@@ -240,7 +257,7 @@
                                     <div class="form-group">
                                         <div class="btn btn-default btn-file btn-block">
                                             <i class="fa fa-paperclip"></i> 商品配图 （2）
-                                            <input type="file" name="p_image1">
+                                            <input disabled type="file" name="p_image1">
                                         </div>
                                     </div>
                                 </li>
@@ -248,7 +265,7 @@
                                     <div class="form-group">
                                         <div class="btn btn-default btn-file btn-block">
                                             <i class="fa fa-paperclip"></i> 商品配图 （3）
-                                            <input type="file" name="p_image2">
+                                            <input disabled type="file" name="p_image2">
                                         </div>
                                     </div>
                                 </li>
@@ -256,7 +273,7 @@
                                     <div class="form-group">
                                         <div class="btn btn-default btn-file btn-block">
                                             <i class="fa fa-paperclip"></i> 商品配图 （4）
-                                            <input type="file" name="p_image3">
+                                            <input disabled type="file" name="p_image3">
                                         </div>
                                     </div>
                                 </li>
@@ -303,20 +320,20 @@
                             </div>
 
                             <div class="form-group">
-                                <input class="form-control" placeholder="商品名称:">
+                                <input disabled class="form-control" placeholder="商品名称:">
                             </div>
                             <div class="form-group">
-                                <textarea id="compose-textarea" placeholder="商品简介" class="form-control" style="height: 280px">
+                                <textarea disabled id="compose-textarea" placeholder="商品简介" class="form-control" style="height: 280px">
                                 </textarea>
                             </div>
                         </div>
                         <!-- /.box-body -->
                         <div class="box-footer">
                             <div class="pull-right">
-                                <button type="button" class="btn btn-default"><i class="fa fa-pencil"></i> Draft</button>
-                                <button type="submit" class="btn btn-primary"><i class="fa fa-envelope-o"></i> Send</button>
+                                <button disabled type="button" class="btn btn-default"><i class="fa fa-pencil"></i> Draft</button>
+                                <button disabled type="submit" class="btn btn-primary"><i class="fa fa-envelope-o"></i> Send</button>
                             </div>
-                            <button type="reset" class="btn btn-default"><i class="fa fa-times"></i> Discard</button>
+                            <button disabled type="reset" class="btn btn-default"><i class="fa fa-times"></i> Discard</button>
                         </div>
                         <!-- /.box-footer -->
                     </div>

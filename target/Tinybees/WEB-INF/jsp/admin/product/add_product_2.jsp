@@ -172,7 +172,7 @@
                     </a>
                     <ul class="treeview-menu">
                         <li><a href="/user_detail_lists"><i class="fa fa-circle-o"></i> 用户查看</a></li>
-                        <li><a href="/user_lists"><i class="fa fa-circle-o"></i> 用户删除</a></li>
+                        <li><a href="/user_lists"><i class="fa fa-circle-o"></i> 用户修改</a></li>
 
                     </ul>
                 </li>
@@ -192,7 +192,24 @@
                         <%--<li><a href="fixed.html"><i class="fa fa-circle-o"></i> 固定布局</a></li>--%>
                     </ul>
                 </li>
+
+                <li class="treeview active">
+                    <a href="#">
+                        <i class="fa fa-files-o"></i>
+                        <span>活动管理</span>
+                        <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+              <%--<span class="label label-primary pull-right">4</span>--%>
+            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="/add_activity"><i class="fa fa-circle-o"></i> 活动新增</a></li>
+                        <li><a href="/activity_lists"><i class="fa fa-circle-o"></i> 活动修改</a></li>
+                        <%--<li><a href="fixed.html"><i class="fa fa-circle-o"></i> 固定布局</a></li>--%>
+                    </ul>
+                </li>
             </ul>
+
         </section>
         <!-- /.sidebar -->
     </aside>
@@ -322,21 +339,30 @@
                                     </textarea>
                                 </div>
 
-                                <div class="form-group col-lg-3">
+                                <div class="form-group col-lg-2">
                                     <input class="form-control" name="p_market" placeholder="市场价格:">
                                 </div>
 
-                                <div class="form-group col-lg-3">
+                                <div class="form-group col-lg-2">
                                     <input class="form-control" name="p_current" placeholder="当前价格:">
                                 </div>
 
 
-                                <div class="form-group col-lg-3">
+                                <div class="form-group col-lg-2">
                                     <input class="form-control" name="p_color" placeholder="颜色:">
                                 </div>
 
-                                <div class="form-group col-lg-3">
+                                <div class="form-group col-lg-2">
                                     <input class="form-control" name="p_size" placeholder="库存:">
+                                </div>
+
+                                <div class="form-group col-lg-4">
+                                    <select class="form-control" name="a_id">
+                                        <option value="-1">---活动选项---</option>
+                                        <c:forEach var="activity" items="${activities}" step="1">
+                                            <option value="${activity.a_id}">${activity.a_name}</option>
+                                        </c:forEach>
+                                    </select>
                                 </div>
 
                             </div>

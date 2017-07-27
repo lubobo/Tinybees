@@ -18,7 +18,8 @@
     <resources mapping="/css/**" location="/css/" />
     <resources mapping="/image/**" location="/image/" />
     <resources mapping="/js/**" location="/js/" />
-    <resources mapping="/AdminLTE-cn/**" location="/AdminLTE-cn/" />
+    <resources mapping="/laydate/**" location="/laydate/"/>
+
     <!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
     <beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <beans:property name="prefix" value="/WEB-INF/jsp/" />

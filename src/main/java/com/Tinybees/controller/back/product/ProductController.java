@@ -2,10 +2,7 @@ package com.Tinybees.controller.back.product;
 
 import com.Tinybees.mapper.admin.AdminDAO;
 import com.Tinybees.mapper.user.UserDAO;
-import com.Tinybees.model.Category;
-import com.Tinybees.model.Category_second;
-import com.Tinybees.model.Category_third;
-import com.Tinybees.model.Product;
+import com.Tinybees.model.*;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -21,6 +18,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -87,6 +85,7 @@ public class ProductController {
     public ModelAndView category_third(@PathVariable String categories,@PathVariable String categories_second, Model model,HttpServletRequest request,HttpServletResponse response){
         ModelAndView modelAndView = new ModelAndView();
         List<Category_third> category_thirds = adminDAO.getAllCategoryThirdById(categories_second);
+        List<Activity>activities = adminDAO.getAllActivity();
 
         model.addAttribute("category",adminDAO.getCategoryById(categories));
         model.addAttribute("category_second",adminDAO.getCategorySecondById(categories_second));
@@ -95,6 +94,9 @@ public class ProductController {
         model.addAttribute("categories_second",adminDAO.getAllCategorySecondById(categories_second));
 
         model.addAttribute("categories_third",category_thirds);
+
+        model.addAttribute("activities",activities);
+
         modelAndView.setViewName("admin/product/add_product_2");
         return modelAndView;
     }
@@ -109,6 +111,7 @@ public class ProductController {
         String p_current = request.getParameter("p_current");
         String p_color = request.getParameter("p_color");
         String p_size = request.getParameter("p_size");
+        int a_id = Integer.parseInt(request.getParameter("a_id").toString());
         CommonsMultipartResolver multipartResolver=new CommonsMultipartResolver(request.getSession().getServletContext());
         if(multipartResolver.isMultipart(request)){
             MultipartHttpServletRequest multiRequest=(MultipartHttpServletRequest)request;
@@ -140,7 +143,7 @@ public class ProductController {
         product.setCt_id(ct_name);
         product.setPdesc(p_desc);
         product.setSize(p_size);
-        product.setAvailability(0);
+        product.setAvailability(a_id);
         adminDAO.addProduct(product);
         return "redirect:/product_lists";
     }
@@ -158,6 +161,105 @@ public class ProductController {
     public String delete_product(HttpServletRequest request){
         int product_id=Integer.parseInt(request.getParameter("product_id"));
         adminDAO.deleteProductById(product_id);
+        return "redirect:/product_lists";
+    }
+
+    @RequestMapping("/update_product/{p_id}")
+    public ModelAndView update_product(@PathVariable String p_id, Model model,HttpServletRequest request, HttpSession session){
+        ModelAndView modelAndView = new ModelAndView();
+        int product_id = Integer.parseInt(p_id);
+        Product product = adminDAO.getProductById(product_id);
+        List<Category> categories = adminDAO.getAllCategory();
+        model.addAttribute("categories",categories);
+        model.addAttribute("product",product);
+        HttpSession httpSession = request.getSession();
+        httpSession.setAttribute("p_id",p_id);
+        modelAndView.setViewName("admin/product/update_product_1");
+        return modelAndView;
+    }
+    @RequestMapping(value = "/update_second/{categories}")
+    public ModelAndView update_second(@PathVariable String categories, Model model, HttpServletRequest request, HttpServletResponse response){
+        ModelAndView modelAndView = new ModelAndView();
+        List<Category_second> category_seconds = adminDAO.getAllCategorySecondById(categories);
+        List<Category> categories1 =adminDAO.getAllCategory();
+        model.addAttribute("category",adminDAO.getCategoryById(categories));
+        model.addAttribute("categories",categories1);
+        model.addAttribute("categories_seconds",category_seconds);
+        modelAndView.setViewName("admin/product/update_product_2");
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/update_third/{categories}/{categories_second}")
+    public ModelAndView update_third(@PathVariable String categories,@PathVariable String categories_second, Model model,HttpSession session,HttpServletRequest request,HttpServletResponse response){
+        ModelAndView modelAndView = new ModelAndView();
+        List<Category_third> category_thirds = adminDAO.getAllCategoryThirdById(categories_second);
+        List<Activity>activities = adminDAO.getAllActivity();
+        HttpSession httpSession = request.getSession();
+        int p_id = Integer.parseInt(httpSession.getAttribute("p_id").toString());
+        Product product = adminDAO.getProductById(p_id);
+
+        model.addAttribute("category",adminDAO.getCategoryById(categories));
+        model.addAttribute("category_second",adminDAO.getCategorySecondById(categories_second));
+
+        model.addAttribute("categories",adminDAO.getAllCategory());
+        model.addAttribute("categories_second",adminDAO.getAllCategorySecondById(categories_second));
+
+        model.addAttribute("categories_third",category_thirds);
+
+        model.addAttribute("activities",activities);
+
+        model.addAttribute("product",product);
+
+        modelAndView.setViewName("admin/product/update_product_3");
+        return modelAndView;
+    }
+
+    @RequestMapping("/post_update_product")
+    public String post_update_product(Model model,HttpServletRequest request)throws IllegalStateException,IOException{
+        Product product = new Product();
+        String ct_name = request.getParameter("ct_name");
+        String p_name = request.getParameter("p_name");
+        String p_desc = request.getParameter("p_desc");
+        String p_market = request.getParameter("p_market");
+        String p_current = request.getParameter("p_current");
+        String p_color = request.getParameter("p_color");
+        String p_size = request.getParameter("p_size");
+        int a_id = Integer.parseInt(request.getParameter("a_id").toString());
+        CommonsMultipartResolver multipartResolver=new CommonsMultipartResolver(request.getSession().getServletContext());
+        if(multipartResolver.isMultipart(request)){
+            MultipartHttpServletRequest multiRequest=(MultipartHttpServletRequest)request;
+            Iterator iter=multiRequest.getFileNames();
+            int count = 0;
+            while(iter.hasNext()){
+                count++;
+                MultipartFile file=multiRequest.getFile(iter.next().toString());
+                if(file!=null){
+                    String path= "E:/Programs/IdeaProjects/Tinybees/src/main/webapp/public/images/"+file.getOriginalFilename();
+                    //上传
+                    if(count==1){
+                        product.setImage(path.substring(49));
+                    }else if(count==2){
+                        product.setImage1(path.substring(49));
+                    }else if(count==3){
+                        product.setImage2(path.substring(49));
+                    }else if(count==4){
+                        product.setImage3(path.substring(49));
+                    }
+                    file.transferTo(new File(path));
+                }
+            }
+        }
+        String product_id = request.getParameter("product_id");
+        int p_id = Integer.parseInt(product_id);
+        product.setP_name(p_name);
+        product.setMarket_price(p_market);
+        product.setCurrent_price(p_current);
+        product.setColor(p_color);
+        product.setCt_id(ct_name);
+        product.setPdesc(p_desc);
+        product.setSize(p_size);
+        product.setAvailability(a_id);
+        adminDAO.updateProductById(product,p_id);
         return "redirect:/product_lists";
     }
 

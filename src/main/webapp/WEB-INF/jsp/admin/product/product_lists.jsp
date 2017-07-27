@@ -168,7 +168,7 @@
                     </a>
                     <ul class="treeview-menu">
                         <li><a href="/user_detail_lists"><i class="fa fa-circle-o"></i> 用户查看</a></li>
-                        <li><a href="/user_lists"><i class="fa fa-circle-o"></i> 用户删除</a></li>
+                        <li><a href="/user_lists"><i class="fa fa-circle-o"></i> 用户修改</a></li>
 
                     </ul>
                 </li>
@@ -188,7 +188,24 @@
                         <%--<li><a href="fixed.html"><i class="fa fa-circle-o"></i> 固定布局</a></li>--%>
                     </ul>
                 </li>
+
+                <li class="treeview active">
+                    <a href="#">
+                        <i class="fa fa-files-o"></i>
+                        <span>活动管理</span>
+                        <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+              <%--<span class="label label-primary pull-right">4</span>--%>
+            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="/add_activity"><i class="fa fa-circle-o"></i> 活动新增</a></li>
+                        <li><a href="/activity_lists"><i class="fa fa-circle-o"></i> 活动修改</a></li>
+                        <%--<li><a href="fixed.html"><i class="fa fa-circle-o"></i> 固定布局</a></li>--%>
+                    </ul>
+                </li>
             </ul>
+
         </section>
         <!-- /.sidebar -->
     </aside>
@@ -239,7 +256,14 @@
                                         <td><c:out value="${product.market_price}"/></td>
                                         <td><c:out value="${product.current_price}"/></td>
                                         <td><c:out value="${product.size}"/></td>
-                                        <td>否</td>
+                                        <td>
+                                            <c:if test="${!empty product.availability}">
+                                                是
+                                            </c:if>
+                                            <c:if test="${empty product.availability}">
+                                                否
+                                            </c:if>
+                                        </td>
                                         <c:set var="p_id" value="${product.p_id}"/>
                                         <c:set var="p_name" value="${product.p_name}"/>
                                         <c:set var="p_image" value="${product.image}"/>
@@ -342,7 +366,7 @@
                                                         <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">关闭</button>
                                                             <%--<form action="/delete_user" method="post">--%>
                                                             <%--<input name="user_id" class="hidden" value="${u_id}">--%>
-                                                        <button type="button" class="btn btn-outline" data-dismiss="modal">确定</button>
+                                                        <a href="/update_product/${p_id}" class="btn btn-outline">修改</a>
                                                             <%--</form>--%>
                                                     </div>
                                                 </div>

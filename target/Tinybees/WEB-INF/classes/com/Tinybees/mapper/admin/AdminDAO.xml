@@ -120,4 +120,31 @@
     <select id="getAllOrderItemsByOrderId" resultType="Orderitem">
         SELECT b FROM order_item a,orders b WHERE a.o_id=b.o_id AND b.o_id=#{o_id};
     </select>
+
+    <select id="add_activity" parameterType="Activity">
+        INSERT INTO activity(a_name, a_reward, start_time, end_time) VALUES (#{a_name},#{a_reward},#{start_time},#{end_time});
+    </select>
+
+    <select id="getActivityByName" resultType="Activity">
+        SELECT * FROM activity WHERE a_name=#{a_name};
+    </select>
+
+    <select id="getAllActivity" resultType="Activity">
+        SELECT * FROM activity;
+    </select>
+
+    <delete id="deleteActivityById">
+        DELETE FROM activity WHERE a_id=#{a_id};
+    </delete>
+
+    <select id="getProductById" resultType="Product">
+        SELECT * FROM product WHERE p_id=#{p_id};
+    </select>
+
+    <update id="updateProductById">
+        UPDATE product SET p_name=#{product.p_name},pdesc=#{product.pdesc},
+        image=#{product.image},image1=#{product.image1},image2=#{product.image2},image3=#{product.image3},
+        current_price=#{product.current_price},market_price=#{product.market_price},size=#{product.size},
+        availability=#{product.availability},ct_id=#{product.ct_id} WHERE p_id=#{p_id};
+    </update>
 </mapper>

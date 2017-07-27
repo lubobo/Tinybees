@@ -54,18 +54,15 @@ public class AdminController {
         return modelAndView;
     }
 
-    @RequestMapping("post_admin")
-    public ModelAndView post_admin(Admin admin, HttpServletRequest request, HttpServletResponse response){
-        ModelAndView modelAndView = new ModelAndView();
+    @RequestMapping("/post_admin")
+    public String post_admin(Admin admin, HttpServletRequest request, HttpServletResponse response){
         Admin admin1 = adminDAO.selectAdminByName(admin);
         if(admin1!=null){
             HttpSession httpSession = request.getSession();
-            httpSession.setAttribute("login_user",admin1);
-            modelAndView.setViewName("admin/admin_home");
-            return modelAndView;
+            httpSession.setAttribute("login_admin",admin1);
+            return "redirect:/admin_home";
         }else{
-            modelAndView.setViewName("admin/admin_login");
-            return modelAndView;
+            return "redirect:/admin_login";
         }
     }
 
@@ -78,4 +75,16 @@ public class AdminController {
         return modelAndView;
     }
 
+    @RequestMapping("/admin_home")
+    public ModelAndView admin_home(HttpServletRequest request,HttpSession session){
+        HttpSession httpSession = request.getSession();
+        ModelAndView modelAndView = new ModelAndView();
+        if(httpSession.getAttribute("login_admin")!=null){
+            modelAndView.setViewName("admin/admin_home");
+            return modelAndView;
+        }else{
+            modelAndView.setViewName("admin/admin_login");
+            return modelAndView;
+        }
+    }
 }

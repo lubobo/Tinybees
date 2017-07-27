@@ -165,7 +165,7 @@
 <%--</span>--%>
 <%--</a>--%>
 <%--<ul class="treeview-menu">--%>
-<%--<li><a href="invoice.html"><i class="fa fa-circle-o"></i> 用户删除</a></li>--%>
+<%--<li><a href="invoice.html"><i class="fa fa-circle-o"></i> 用户修改</a></li>--%>
 <%--<li><a href="profile.html"><i class="fa fa-circle-o"></i> 用户查看</a></li>--%>
 
 <%--</ul>--%>
@@ -748,7 +748,7 @@
                     </a>
                     <ul class="treeview-menu">
                         <li><a href="/user_detail_lists"><i class="fa fa-circle-o"></i> 用户查看</a></li>
-                        <li><a href="/user_lists"><i class="fa fa-circle-o"></i> 用户删除</a></li>
+                        <li><a href="/user_lists"><i class="fa fa-circle-o"></i> 用户修改</a></li>
 
                     </ul>
                 </li>
@@ -768,7 +768,24 @@
                         <%--<li><a href="fixed.html"><i class="fa fa-circle-o"></i> 固定布局</a></li>--%>
                     </ul>
                 </li>
+
+                <li class="treeview active">
+                    <a href="#">
+                        <i class="fa fa-files-o"></i>
+                        <span>活动管理</span>
+                        <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+              <%--<span class="label label-primary pull-right">4</span>--%>
+            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="/add_activity"><i class="fa fa-circle-o"></i> 活动新增</a></li>
+                        <li><a href="/activity_lists"><i class="fa fa-circle-o"></i> 活动修改</a></li>
+                        <%--<li><a href="fixed.html"><i class="fa fa-circle-o"></i> 固定布局</a></li>--%>
+                    </ul>
+                </li>
             </ul>
+
         </section>
         <!-- /.sidebar -->
     </aside>

@@ -168,7 +168,7 @@
                     </a>
                     <ul class="treeview-menu">
                         <li><a href="/user_detail_lists"><i class="fa fa-circle-o"></i> 用户查看</a></li>
-                        <li><a href="/user_lists"><i class="fa fa-circle-o"></i> 用户删除</a></li>
+                        <li><a href="/user_lists"><i class="fa fa-circle-o"></i> 用户修改</a></li>
 
                     </ul>
                 </li>
@@ -188,7 +188,24 @@
                         <%--<li><a href="fixed.html"><i class="fa fa-circle-o"></i> 固定布局</a></li>--%>
                     </ul>
                 </li>
+
+                <li class="treeview active">
+                    <a href="#">
+                        <i class="fa fa-files-o"></i>
+                        <span>活动管理</span>
+                        <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+              <%--<span class="label label-primary pull-right">4</span>--%>
+            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="/add_activity"><i class="fa fa-circle-o"></i> 活动新增</a></li>
+                        <li><a href="/activity_lists"><i class="fa fa-circle-o"></i> 活动修改</a></li>
+                        <%--<li><a href="fixed.html"><i class="fa fa-circle-o"></i> 固定布局</a></li>--%>
+                    </ul>
+                </li>
             </ul>
+
         </section>
         <!-- /.sidebar -->
     </aside>
@@ -281,7 +298,7 @@
 
                                                         <div class="box box-warning">
                                                             <div class="box-header with-border">
-                                                                <h3 class="box-title">关于用户</h3>
+                                                                <h3 class="box-title">订单详情</h3>
                                                             </div>
                                                             <!-- /.box-header -->
                                                             <div class="text-muted box-body">
@@ -329,7 +346,7 @@
                                             </div>
                                         </div>
 
-                                        <td><button data-toggle="modal" data-target="#${o_id}" type="button" class="btn-flat btn-facebook btn btn-xs">查看详情</button></td>
+                                        <td><button data-toggle="modal" data-target="#${o_id}" type="button" onclick="getOrderItem(${o_id})" class="btn-flat btn-facebook btn btn-xs">查看详情</button></td>
                                         <%--<td><button data-toggle="modal" data-target="#${o_id}" type="button" class="btn-danger btn btn-xs">删除订单</button> </td>--%>
                                     </tr>
 
@@ -591,6 +608,10 @@
             "autoWidth": false
         });
     });
+
+    function getOrderItem(str) {
+
+    }
 </script>
 </body>
 </html>

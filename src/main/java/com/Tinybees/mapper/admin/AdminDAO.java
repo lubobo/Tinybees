@@ -35,6 +35,8 @@ public interface AdminDAO {
     void addProduct(Product product);
     List<Product> getAllProduct();
     void deleteProductById(int p_id);
+    Product getProductById(int p_id);
+    void updateProductById(@Param("product") Product product,@Param("p_id") int p_id);
 
 //    添加分类
 //    添加一级分类
@@ -60,6 +62,15 @@ public interface AdminDAO {
 //    订单项查询
     List<Orderitem> getAllOrderItemsByOrderId(String o_id);
 
+//    活动管理
+//    查询活动
+    Activity getActivityByName(String a_name);
+//    添加活动
+    void add_activity(Activity activity);
+//    获取活动
+    List<Activity> getAllActivity();
+//    活动删除
+    void deleteActivityById(int a_id);
 }
 
 
