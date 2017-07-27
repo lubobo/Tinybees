@@ -40,7 +40,7 @@
 
     <header class="main-header">
         <!-- Logo -->
-        <a href="index2.html" class="logo">
+        <a href="/admin_home" class="logo">
             <!-- mini logo for sidebar mini 50x50 pixels -->
             <span class="logo-mini"><b>T</b>INY</span>
             <!-- logo for regular state and mobile devices -->
@@ -159,7 +159,7 @@
 
                 <li class="treeview active">
                     <a href="#">
-                        <i class="fa fa-folder"></i> <span>用户管理</span>
+                        <i class="fa fa-files-o"></i> <span>用户管理</span>
                         <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -238,9 +238,26 @@
                             <a href="/sort_list_3/${category_second.c_id}/${category_second.cs_id}">
                                 <div class="info-box-content">
                                     <span class="info-box-number">${category_second.cs_name}</span>
-                                    <span class="info-box-text">一级分类</span>
+                                    <span class="info-box-text">二级分类</span>
                                 </div>
                             </a>
+
+                            <c:set var="cs_id" value="${category_second.cs_id}"/>
+                            <button href="#${cs_id}"
+                                    data-toggle="collapse"
+                                    data-parent="#accordion"
+                                    class="btn btn-flat btn-block btn-xs btn-facebook">
+                                修改分类信息
+                            </button>
+
+                            <div id="${cs_id}" class="panel-collapse collapse out">
+                                <form class="form-group" action="/update_sort_2" method="post">
+                                    <input name="cs_name" class="form-control">
+                                    <input name="cs_id" class="hidden" value="${category_second.cs_id}">
+                                    <input name="c_id" class="hidden" value="${category.c_id}">
+                                    <button class="btn btn-xs btn-flat btn-google" type="submit">提交</button>
+                                </form>
+                            </div>
                             <!-- /.info-box-content -->
                         </div>
                         <!-- /.info-box -->

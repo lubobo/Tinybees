@@ -24,7 +24,7 @@
     <%--<link rel="stylesheet" type="text/css" href="/css/owl.carousel.css" />--%>
     <%--<link rel="stylesheet" type="text/css" href="/css/owl.transitions.css" />--%>
     <%--<link rel="stylesheet" type="text/css" href="/css/responsive.css" />--%>
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans' type='text/css'>
+    <link rel='stylesheet' href='http://fonts.css.network/css?family=Poiret+One' type='text/css'>
     <style type="text/css">@import url(/css/owl.carousel.css);</style>
     <style type="text/css">@import url(/css/font-awesome/css/font-awesome.min.css);</style>
     <style type="text/css">@import url(/css/owl.transitions.css);</style>

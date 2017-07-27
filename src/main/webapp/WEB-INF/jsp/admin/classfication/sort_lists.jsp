@@ -39,7 +39,7 @@
 <div class="wrapper">
     <header class="main-header">
         <!-- Logo -->
-        <a href="index2.html" class="logo">
+        <a href="/admin_home" class="logo">
             <!-- mini logo for sidebar mini 50x50 pixels -->
             <span class="logo-mini"><b>T</b>INY</span>
             <!-- logo for regular state and mobile devices -->
@@ -158,7 +158,7 @@
 
                 <li class="treeview active">
                     <a href="#">
-                        <i class="fa fa-folder"></i> <span>用户管理</span>
+                        <i class="fa fa-files-o"></i> <span>用户管理</span>
                         <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -239,6 +239,22 @@
                                     <span class="info-box-text">一级分类</span>
                                 </div>
                             </a>
+
+                            <c:set var="c_id" value="${category.c_id}"/>
+                            <button href="#${c_id}"
+                                    data-toggle="collapse"
+                                    data-parent="#accordion"
+                                    class="btn btn-flat btn-block btn-xs btn-facebook">
+                                    修改分类信息
+                            </button>
+
+                            <div id="${c_id}" class="panel-collapse collapse out">
+                                <form class="form-group" action="/update_sort_1" method="post">
+                                    <input name="c_name" class="form-control">
+                                    <input name="c_id" class="hidden" value="${category.c_id}">
+                                    <button class="btn btn-xs btn-flat btn-google" type="submit">提交</button>
+                                </form>
+                            </div>
                             <!-- /.info-box-content -->
                         </div>
                         <!-- /.info-box -->
@@ -467,4 +483,5 @@
 <!-- AdminLTE for demo purposes -->
 <script src="/AdminLTE-cn/dist/js/demo.js"></script>
 </body>
+
 </html>

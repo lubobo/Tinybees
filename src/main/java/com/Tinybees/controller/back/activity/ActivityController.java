@@ -9,6 +9,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -91,6 +92,40 @@ public class ActivityController {
     public String delete_activity(HttpServletRequest request){
         int a_id=Integer.parseInt(request.getParameter("a_id"));
         adminDAO.deleteActivityById(a_id);
+        return "redirect:/activity_lists";
+    }
+
+    @RequestMapping("/update_activity/{activity_name}")
+    public ModelAndView update_activity(@PathVariable String activity_name,Model model){
+        ModelAndView modelAndView = new ModelAndView();
+        Activity activity = adminDAO.getActivityByName(activity_name);
+        model.addAttribute("activity",activity);
+        modelAndView.setViewName("admin/activity/update_activity");
+        return modelAndView;
+    }
+
+    @RequestMapping("/post_update_activity")
+    public String post_update_activity(HttpServletRequest request){
+        int a_id = Integer.parseInt(request.getParameter("a_id").toString());
+        String a_name = request.getParameter("a_name");
+        String a_reward = request.getParameter("a_reward");
+        String s_time = request.getParameter("start_time");
+        String e_time = request.getParameter("end_time");
+        Date start_time = null;
+        Date end_time = null;
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        try {
+            start_time = dateFormat.parse(s_time);
+            end_time = dateFormat.parse(e_time);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        Activity activity = new Activity();
+        activity.setA_name(a_name);
+        activity.setA_reward(a_reward);
+        activity.setStart_time(start_time);
+        activity.setEnd_time(end_time);
+        adminDAO.updateActivityById(activity,a_id);
         return "redirect:/activity_lists";
     }
 }

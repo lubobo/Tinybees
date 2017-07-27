@@ -47,7 +47,7 @@
 
     <header class="main-header">
         <!-- Logo -->
-        <a href="index2.html" class="logo">
+        <a href="/admin_home" class="logo">
             <!-- mini logo for sidebar mini 50x50 pixels -->
             <span class="logo-mini"><b>T</b>INY</span>
             <!-- logo for regular state and mobile devices -->
@@ -166,7 +166,7 @@
 
                 <li class="treeview active">
                     <a href="#">
-                        <i class="fa fa-folder"></i> <span>用户管理</span>
+                        <i class="fa fa-files-o"></i> <span>用户管理</span>
                         <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>

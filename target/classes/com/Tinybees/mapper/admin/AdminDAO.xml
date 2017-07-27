@@ -147,4 +147,21 @@
         current_price=#{product.current_price},market_price=#{product.market_price},size=#{product.size},
         availability=#{product.availability},ct_id=#{product.ct_id} WHERE p_id=#{p_id};
     </update>
+
+    <update id="updateCategoryById">
+        UPDATE category SET c_name=#{c_name} WHERE c_id=#{c_id};
+    </update>
+
+    <update id="updateCategorySecondById">
+        UPDATE category_second SET cs_name=#{cs_name} WHERE cs_id=#{cs_id};
+    </update>
+
+    <update id="updateCategoryThirdById">
+        UPDATE category_third SET ct_name=#{ct_name} WHERE ct_id=#{ct_id};
+    </update>
+
+    <update id="updateActivityById">
+        UPDATE activity SET a_name=#{activity.a_name},a_reward=#{activity.a_reward},
+        start_time=#{activity.start_time},end_time=#{activity.end_time} WHERE a_id=#{a_id};
+    </update>
 </mapper>

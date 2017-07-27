@@ -55,6 +55,13 @@ public interface AdminDAO {
 //    删除三级分类
     void deleteCategory_Third(String category_third_id);
 
+//    修改分类
+//    修改一级分类
+    void updateCategoryById(@Param("c_id") int c_id,@Param("c_name") String c_name);
+//    修改二级分类
+    void updateCategorySecondById(@Param("cs_id") int cs_id,@Param("cs_name") String cs_name);
+//    修改三级分类
+    void updateCategoryThirdById(@Param("ct_id") int ct_id,@Param("ct_name") String ct_name);
 
 //    订单管理
 //    订单查询
@@ -71,6 +78,8 @@ public interface AdminDAO {
     List<Activity> getAllActivity();
 //    活动删除
     void deleteActivityById(int a_id);
+//    活动更新
+    void updateActivityById(@Param("activity") Activity activity,@Param("a_id") int a_id);
 }
 
 

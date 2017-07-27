@@ -13,6 +13,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
@@ -193,4 +194,30 @@ public class CategoryController {
         return modelAndView;
     }
 
+    @RequestMapping("/update_sort_1")
+    public String update_sort_1(HttpServletRequest request){
+        int c_id = Integer.parseInt(request.getParameter("c_id").toString());
+        String c_name = request.getParameter("c_name");
+        adminDAO.updateCategoryById(c_id,c_name);
+        return "redirect:/sort_list";
+    }
+
+    @RequestMapping("/update_sort_2")
+    public String update_sort_2(HttpServletRequest request){
+        int cs_id = Integer.parseInt(request.getParameter("cs_id").toString());
+        int c_id = Integer.parseInt(request.getParameter("c_id").toString());
+        String cs_name = request.getParameter("cs_name");
+        adminDAO.updateCategorySecondById(cs_id,cs_name);
+        return "redirect:/sort_list_2/"+c_id;
+    }
+
+    @RequestMapping("/update_sort_3")
+    public String update_sort_3(HttpServletRequest request){
+        int c_id = Integer.parseInt(request.getParameter("c_id").toString());
+        int cs_id = Integer.parseInt(request.getParameter("cs_id").toString());
+        int ct_id = Integer.parseInt(request.getParameter("ct_id").toString());
+        String ct_name = request.getParameter("ct_name");
+        adminDAO.updateCategoryThirdById(ct_id,ct_name);
+        return "redirect:/sort_list_3/"+c_id+"/"+cs_id;
+    }
 }

@@ -1,19 +1,18 @@
 <%--
   Created by IntelliJ IDEA.
   User: lukbo
-  Date: 2017/7/23
-  Time: 14:38
+  Date: 2017/7/27
+  Time: 10:34
   To change this template use File | Settings | File Templates.
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="C" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AdminLTE 2 | 小部件</title>
+    <title>AdminLTE 2 | Compose Message</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.6 -->
@@ -22,11 +21,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- fullCalendar 2.2.5-->
+    <link rel="stylesheet" href="/AdminLTE-cn/plugins/fullcalendar/fullcalendar.min.css">
+    <link rel="stylesheet" href="/AdminLTE-cn/plugins/fullcalendar/fullcalendar.print.css" media="print">
     <!-- Theme style -->
     <link rel="stylesheet" href="/AdminLTE-cn/dist/css/AdminLTE.min.css">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="/AdminLTE-cn/dist/css/skins/all-skins.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="/AdminLTE-cn/plugins/iCheck/flat/blue.css">
+    <!-- bootstrap wysihtml5 - text editor -->
+    <link rel="stylesheet" href="/AdminLTE-cn/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+
+    <link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
+
+    <%--&lt;%&ndash;bootstrap datetime&ndash;%&gt;--%>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+    <script src="/laydate/laydate.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,7 +51,9 @@
     <![endif]-->
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
+
 <div class="wrapper">
+
     <header class="main-header">
         <!-- Logo -->
         <a href="/admin_home" class="logo">
@@ -214,57 +231,63 @@
             <h1>
                 TinyBees
                 <small>Administrator</small>
-
             </h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> 主页</a></li>
-                <li><a href="#">分类</a></li>
-                <li class="active">分类信息</li>
+                <li><a href="#">活动</a></li>
+                <li class="active">新增活动</li>
             </ol>
         </section>
 
         <!-- Main content -->
         <section class="content">
-
             <div class="row">
                 <!-- /.col -->
-                <c:forEach var="category" items="${categories}" step="1">
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box">
-                            <span class="info-box-icon bg-green"><i class="fa fa-flag-o"></i></span>
-
-                            <a href="/sort_list_2/${category.c_id}">
-                                <div class="info-box-content">
-                                    <span class="info-box-number">${category.c_name}</span>
-                                    <span class="info-box-text">一级分类</span>
-                                </div>
-                            </a>
-
-                            <c:set var="c_id" value="${category.c_id}"/>
-                            <button href="#${c_id}"
-                                    data-toggle="collapse"
-                                    data-parent="#accordion"
-                                    class="btn btn-flat btn-block btn-xs btn-facebook">
-                                    修改分类信息
-                            </button>
-
-                            <div id="${c_id}" class="panel-collapse collapse out">
-                                <form class="form-group" action="/update_sort_1" method="post">
-                                    <input name="c_name" class="form-control">
-                                    <input name="c_id" class="hidden" value="${category.c_id}">
-                                    <button class="btn btn-xs btn-flat btn-google" type="submit">提交</button>
-                                </form>
+                <div class="col-md-12">
+                    <form action="/post_update_activity" method="post">
+                        <div class="box box-primary">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">发布活动</h3>
                             </div>
-                            <!-- /.info-box-content -->
+                            <!-- /.box-header -->
+                            <div class="box-body">
+
+                                <div class="form-group">
+                                    <input class="form-control" name="a_name" value="${activity.a_name}">
+                                </div>
+                                <div class="form-group">
+                                <textarea id="compose-textarea" placeholder="${activity.a_reward}" name="a_reward" class="form-control" style="height: 280px">
+                                </textarea>
+                                </div>
+
+                                <div class="form-group col-lg-6">
+                                    <input class="form-control" name="start_time" value="${activity.start_time}" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+                                </div>
+
+                                <div class="form-group col-lg-6">
+                                    <input class="form-control" name="end_time" value="${activity.end_time}" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+                                </div>
+
+                            </div>
+                            <!-- /.box-body -->
+                            <div class="box-footer">
+                                <div class="pull-right">
+                                    <input class="hidden" name="a_id" value="${activity.a_id}">
+                                    <button type="submit" class="btn btn-primary"><i class="fa fa-envelope-o"></i> Send</button>
+                                </div>
+                                <%--<button type="reset" class="btn btn-default"><i class="fa fa-times"></i> Discard</button>--%>
+                            </div>
+                            <!-- /.box-footer -->
                         </div>
-                        <!-- /.info-box -->
-                    </div>
-                </c:forEach>
+                    </form>
+                    <!-- /. box -->
+                </div>
                 <!-- /.col -->
             </div>
+            <!-- /.row -->
         </section>
+        <!-- /.content -->
     </div>
-    <!-- /.content -->
     <!-- /.content-wrapper -->
     <footer class="main-footer">
         <div class="pull-right hidden-xs">
@@ -470,6 +493,7 @@
 </div>
 <!-- ./wrapper -->
 
+
 <!-- jQuery 2.2.3 -->
 <script src="/AdminLTE-cn/plugins/jQuery/jquery-2.2.3.min.js"></script>
 <!-- Bootstrap 3.3.6 -->
@@ -482,6 +506,72 @@
 <script src="/AdminLTE-cn/dist/js/app.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="/AdminLTE-cn/dist/js/demo.js"></script>
-</body>
+<!-- iCheck -->
+<script src="/AdminLTE-cn/plugins/iCheck/icheck.min.js"></script>
+<!-- Bootstrap WYSIHTML5 -->
+<script src="/AdminLTE-cn/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+<!-- Page Script -->
 
+<%--<script type="text/javascript" src="/DateTime/jquery/jquery-1.8.3.min.js" charset="UTF-8"></script>--%>
+<%--<script type="text/javascript" src="/DateTime/bootstrap/js/bootstrap.min.js"></script>--%>
+<%--<script type="text/javascript" src="/DateTime/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>--%>
+<%--<script type="text/javascript" src="/DateTime/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>--%>
+<script>
+    $(function () {
+        //Add text editor
+        $("#compose-textarea").wysihtml5();
+    });
+
+    function getCategory_second(str) {
+        var xmlhttp;
+        if (window.XMLHttpRequest) {
+            xmlhttp = new XMLHttpRequest();
+        }
+        else {
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange=function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                window.location = "/category_second/"+xmlhttp.responseText;
+            }
+        }
+        xmlhttp.open("GET", "/getCategory_second/"+str, true);
+        xmlhttp.send();
+    }
+
+
+    $('.form_datetime').datetimepicker({
+        //language:  'fr',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0,
+        showMeridian: 1
+    });
+    $('.form_date').datetimepicker({
+        language:  'fr',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+    });
+    $('.form_time').datetimepicker({
+        language:  'fr',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 1,
+        minView: 0,
+        maxView: 1,
+        forceParse: 0
+    });
+    $('#datetimepicker').datetimepicker('show');
+</script>
+</body>
 </html>
