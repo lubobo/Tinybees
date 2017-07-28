@@ -9,7 +9,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8" />
     <meta name="format-detection" content="telephone=no" />
@@ -18,12 +17,6 @@
     <title>Marketshop - eCommerce HTML Template</title>
     <meta name="description" content="Responsive and clean html template design for any kind of ecommerce webshop">
     <!-- CSS Part Start-->
-    <%--<link rel="stylesheet" type="text/css" href="/js/bootstrap/css/bootstrap.min.css" />--%>
-    <%--<link rel="stylesheet" type="text/css" href="/css/font-awesome/css/font-awesome.min.css" />--%>
-    <%--<link rel="stylesheet" type="text/css" href="/css/stylesheet.css" />--%>
-    <%--<link rel="stylesheet" type="text/css" href="/css/owl.carousel.css" />--%>
-    <%--<link rel="stylesheet" type="text/css" href="/css/owl.transitions.css" />--%>
-    <%--<link rel="stylesheet" type="text/css" href="/css/responsive.css" />--%>
     <link rel='stylesheet' href='http://fonts.css.network/css?family=Poiret+One' type='text/css'>
     <style type="text/css">@import url(/css/owl.carousel.css);</style>
     <style type="text/css">@import url(/css/font-awesome/css/font-awesome.min.css);</style>
@@ -31,18 +24,16 @@
     <style type="text/css">@import url(/css/responsive.css);</style>
     <style type="text/css">@import url(/css/stylesheet.css);</style>
     <style type="text/css">@import url(/js/bootstrap/css/bootstrap.min.css);</style>
-
     <!-- CSS Part End-->
-
 </head>
 <body>
-
 <div class="wrapper-wide">
     <div id="header">
         <!-- Top Bar Start-->
         <nav id="top" class="htop">
             <div class="container">
-                <div class="row"> <span class="drop-icon visible-sm visible-xs"><i class="fa fa-align-justify"></i></span>
+                <div class="row">
+                    <span class="drop-icon visible-sm visible-xs"><i class="fa fa-align-justify"></i></span>
                     <div class="nav pull-right flip">
                         <div id="currency" class="btn-group">
                             <button class="btn-link dropdown-toggle" data-toggle="dropdown"> <span> 个人中心 <i class="fa fa-caret-down"></i></span></button>
@@ -56,6 +47,9 @@
                                 <li>
                                     <button class="currency-select btn btn-link btn-block" type="button" name="USD">购物车</button>
                                 </li>
+                                <li>
+                                    <a href="/con_commity" class="currency-select btn btn-link btn-block" type="button" name="USD">联系客服</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -66,10 +60,12 @@
                                 <c:if test="${!empty login_user}">
                                     <a href="/login">${login_user.u_id}</a>
                                     <a href="/logout">退出</a>
+                                    <a href="/profile">个人主页</a>
                                 </c:if>
                                 <c:if test="${empty login_user}">
                                     <a href="/login">登录</a>
                                     <a href="/register">注册</a>
+
                                 </c:if>
 
                             </li>
@@ -86,7 +82,7 @@
                 <div class="table-container">
                     <!-- Logo Start -->
                     <div class="col-table-cell col-lg-6 col-md-6 col-sm-12 col-xs-12 inner">
-                        <div id="logo"><a href="/Home"><img class="img-responsive" src="/image/logo.png" title="MarketShop" alt="MarketShop" /></a></div>
+                        <div id="logo"><a href="/home"><img class="img-responsive" src="/image/logo.png" title="MarketShop" alt="MarketShop" /></a></div>
                     </div>
                     <!-- Logo End -->
                     <!-- Mini Cart Start-->
@@ -1833,7 +1829,6 @@
             </div>
         </div>
     </div>
-    <!--Footer Start-->
     <footer id="footer">
         <div class="fpart-first">
             <div class="container">
@@ -1899,8 +1894,6 @@
         </div>
         <div id="back-top"><a data-toggle="tooltip" title="返回顶部" href="javascript:void(0)" class="backtotop"><i class="fa fa-chevron-up"></i></a></div>
     </footer>
-    <!--Footer End-->
-    <!-- Facebook Side Block Start -->
     <div id="facebook" class="fb-left sort-order-1">
         <div class="facebook_icon"><i class="fa fa-facebook"></i></div>
         <div class="fb-page" data-href="https://www.facebook.com/harnishdesign/" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true" data-show-posts="false">
@@ -1917,23 +1910,17 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
     </div>
-    <!-- Facebook Side Block End -->
-    <!-- Twitter Side Block Start -->
     <div id="twitter_footer" class="twit-left sort-order-2">
         <div class="twitter_icon"><i class="fa fa-twitter"></i></div>
         <a class="twitter-timeline" href="https://twitter.com/" data-chrome="nofooter noscrollbar transparent" data-theme="light" data-tweet-limit="2" data-related="twitterapi,twitter" data-aria-polite="assertive" data-widget-id="347621595801608192">Tweets by @</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </div>
-    <!-- Twitter Side Block End -->
-    <!-- Video Side Block Start -->
     <div id="video_box" class="vb-left sort-order-3">
         <div id="video_box_icon"><i class="fa fa-play"></i></div>
         <p>
             <iframe allowfullscreen="" src="//www.youtube.com/embed/SZEflIVnhH8" height="315" width="560"></iframe>
         </p>
     </div>
-    <!-- Video Side Block End -->
-    <!-- Custom Side Block Start -->
     <div id="custom_side_block" class="custom_side_block_left sort-order-4">
         <div class="custom_side_block_icon"> <i class="fa fa-chevron-right"></i> </div>
         <table>
@@ -1953,7 +1940,6 @@
             </tbody>
         </table>
     </div>
-    <!-- Custom Side Block End -->
 </div>
 <!-- JS Part Start-->
 <script type="text/javascript" src="/js/jquery-2.1.1.min.js"></script>

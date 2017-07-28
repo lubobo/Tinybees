@@ -10,6 +10,7 @@ import java.util.List;
  * Created by lukbo on 2017/7/19.
  */
 public interface AdminDAO {
+
     Admin selectAdminByName(Admin admin);
 
 //    一级分类

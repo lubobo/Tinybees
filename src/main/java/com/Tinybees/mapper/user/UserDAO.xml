@@ -20,4 +20,33 @@
     <delete id="deleteUserById">
         DELETE FROM user WHERE u_id=#{u_id};
     </delete>
+
+    <select id="getUserById" resultType="User">
+        SELECT * FROM user WHERE u_id=#{u_id};
+    </select>
+
+    <update id="updateUserPasswordById">
+        UPDATE user SET password=#{password} WHERE u_id=#{u_id};
+    </update>
+
+    <update id="updateUserNameById">
+        UPDATE user SET u_name=#{name} WHERE u_id=#{u_id};
+    </update>
+
+    <update id="updateUserEmailById">
+        UPDATE user SET email=#{email} WHERE u_id=#{u_id};
+    </update>
+
+    <update id="updateUserPhoneById">
+        UPDATE user SET phone=#{phone} WHERE u_id=#{u_id};
+    </update>
+
+    <update id="updateUserCCById">
+        UPDATE user SET country=#{country},region=#{region} WHERE u_id=#{u_id};
+    </update>
+
+    <update id="updateUserAdrById">
+        UPDATE user SET addr=#{adr} WHERE u_id=#{u_id};
+    </update>
+
 </mapper>

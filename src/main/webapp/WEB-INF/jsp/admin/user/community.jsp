@@ -5,8 +5,25 @@
   Time: 14:01
   To change this template use File | Settings | File Templates.
 --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<jsp:useBean id="now" class="java.util.Date" />
+<% response.setHeader("refresh","100"); %>
 <html>
+<script>
+    function flash() {
+        var xmlhttp;
+        if (window.XMLHttpRequest) {
+            xmlhttp = new XMLHttpRequest();
+        }
+        else {
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET", "/community", true);
+        xmlhttp.send();
+    }
+</script>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,10 +51,10 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
-<div class="box box-primary direct-chat direct-chat-primary">
+<body onload="flash()">
+<div class="box box-primary center-block direct-chat-primary" style="width: 600px;height: 620px">
     <div class="box-header with-border">
-        <h3 class="box-title">直接聊天</h3>
+        <h3 class="box-title">买家聊天</h3>
 
         <div class="box-tools pull-right">
             <span data-toggle="tooltip" title="3 New Messages" class="badge bg-light-blue">3</span>
@@ -51,70 +68,55 @@
     <!-- /.box-header -->
     <div class="box-body">
         <!-- Conversations are loaded here -->
-        <div class="direct-chat-messages">
+        <div class="direct-chat-messages" style="height: 500px">
             <!-- Message. Default to the left -->
-            <div class="direct-chat-msg">
-                <div class="direct-chat-info clearfix">
-                    <span class="direct-chat-name pull-left">Alexander Pierce</span>
-                    <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
-                </div>
-                <!-- /.direct-chat-info -->
-                <img class="direct-chat-img" src="/AdminLTE-cn/dist/img/user1-128x128.jpg" alt="Message User Image"><!-- /.direct-chat-img -->
-                <div class="direct-chat-text">
-                    Is this template really for free? That's unbelievable!
-                </div>
-                <!-- /.direct-chat-text -->
-            </div>
             <!-- /.direct-chat-msg -->
-
-            <!-- Message to the right -->
-            <div class="direct-chat-msg right">
-                <div class="direct-chat-info clearfix">
-                    <span class="direct-chat-name pull-right">Sarah Bullock</span>
-                    <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
-                </div>
-                <!-- /.direct-chat-info -->
-                <img class="direct-chat-img" src="/AdminLTE-cn/dist/img/user3-128x128.jpg" alt="Message User Image"><!-- /.direct-chat-img -->
-                <div class="direct-chat-text">
-                    You better believe it!
-                </div>
-                <!-- /.direct-chat-text -->
-            </div>
-            <!-- /.direct-chat-msg -->
-        </div>
-        <!--/.direct-chat-messages-->
-
-        <!-- Contacts are loaded here -->
-        <div class="direct-chat-contacts">
-            <ul class="contacts-list">
-                <li>
-                    <a href="#">
-                        <img class="contacts-list-img" src="/Admin/dist/img/user1-128x128.jpg" alt="User Image">
-
-                        <div class="contacts-list-info">
-                            <span class="contacts-list-name">
-                              Count Dracula
-                              <small class="contacts-list-date pull-right">2/28/2015</small>
+            <c:if test="${!empty con_messages}">
+                <c:forEach var="con_mess" items="${con_messages}">
+                    <div class="direct-chat-msg">
+                        <div class="direct-chat-info clearfix">
+                            <span class="direct-chat-name pull-left">买家</span>
+                            <span class="direct-chat-timestamp pull-right">
+                                <fmt:formatDate value="${now}" type="both" dateStyle="long" pattern="MM-dd HH:mm:ss" />
                             </span>
-                            <span class="contacts-list-msg">How have you been? I was...</span>
                         </div>
-                        <!-- /.contacts-list-info -->
-                    </a>
-                </li>
-                <!-- End Contact Item -->
-            </ul>
-            <!-- /.contatcts-list -->
+                        <!-- /.direct-chat-info -->
+                        <img class="direct-chat-img" src="/AdminLTE-cn/dist/img/user1-128x128.jpg" alt="Message User Image"><!-- /.direct-chat-img -->
+                        <div class="direct-chat-text">
+                            ${con_mess}
+                        </div>
+                        <!-- /.direct-chat-text -->
+                    </div>
+                </c:forEach>
+            </c:if>
+
+            <c:if test="${!empty send_messages}">
+                <c:forEach var="send_mess" items="${send_messages}">
+                    <div class="direct-chat-msg right">
+                        <div class="direct-chat-info clearfix">
+                            <span class="direct-chat-name pull-right">管理员</span>
+                            <span class="direct-chat-timestamp pull-left">
+                            <fmt:formatDate value="${now}" type="both" dateStyle="long" pattern="MM-dd HH:mm:ss" />
+                        </span>
+                        </div>
+                        <!-- /.direct-chat-info -->
+                        <img class="direct-chat-img" src="/AdminLTE-cn/dist/img/user3-128x128.jpg" alt="Message User Image"><!-- /.direct-chat-img -->
+                        <div class="direct-chat-text">
+                                ${send_mess}
+                        </div>
+                    </div>
+                </c:forEach>
+            </c:if>
         </div>
-        <!-- /.direct-chat-pane -->
     </div>
     <!-- /.box-body -->
     <div class="box-footer">
-        <form action="#" method="post">
+        <form action="/pro_send_message" method="post">
             <div class="input-group">
                 <input type="text" name="message" placeholder="Type Message ..." class="form-control">
                 <span class="input-group-btn">
                         <button type="submit" class="btn btn-primary btn-flat">Send</button>
-                      </span>
+                </span>
             </div>
         </form>
     </div>

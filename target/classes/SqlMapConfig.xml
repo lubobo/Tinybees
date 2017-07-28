@@ -21,7 +21,6 @@
             </dataSource>
         </environment>
     </environments>
-
     <mappers>
         <package name="com.Tinybees.mapper"></package>
     </mappers>

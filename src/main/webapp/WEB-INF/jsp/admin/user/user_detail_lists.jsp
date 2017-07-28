@@ -323,7 +323,7 @@
 
                                                                 <strong><i class="fa fa-map-marker margin-r-5"></i> 位置</strong>
 
-                                                                <p class="text-muted">${user.city},${user.country}</p>
+                                                                <p class="text-muted">${user.region},${user.country}</p>
 
                                                                 <hr>
 

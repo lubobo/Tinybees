@@ -8,11 +8,8 @@
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- DispatcherServlet Context: defines this servlet's request-processing infrastructure -->
-
     <!-- Enables the Spring MVC @Controller programming model -->
     <annotation-driven />
-
-
     <!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
     <resources mapping="/public/**" location="/public/"/>
     <resources mapping="/css/**" location="/css/" />
@@ -20,6 +17,8 @@
     <resources mapping="/js/**" location="/js/" />
     <resources mapping="/laydate/**" location="/laydate/"/>
     <resources mapping="/AdminLTE-cn/**" location="/AdminLTE-cn/"/>
+    <resources mapping="/activemq/**" location="/activemq"/>
+
     <!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
     <beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <beans:property name="prefix" value="/WEB-INF/jsp/" />
@@ -32,6 +31,35 @@
         <beans:property name="maxUploadSize" value="104857600" />
         <beans:property name="maxInMemorySize" value="4096" />
         <beans:property name="defaultEncoding" value="UTF-8"/>
+    </beans:bean>
+
+
+
+    <!--MQTT配置-->
+    <beans:bean id="targetConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+        <beans:property name="brokerURL" value="tcp://localhost:61616"/>
+    </beans:bean>
+
+    <beans:bean id="connectionFactory" class="org.springframework.jms.connection.SingleConnectionFactory">
+        <beans:property name="targetConnectionFactory" ref="targetConnectionFactory"/>
+    </beans:bean>
+
+    <beans:bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+        <beans:property name="connectionFactory" ref="connectionFactory"/>
+    </beans:bean>
+
+    <beans:bean id="queueDestination" class="org.apache.activemq.command.ActiveMQQueue">
+        <beans:constructor-arg>
+            <beans:value>queue</beans:value>
+        </beans:constructor-arg>
+    </beans:bean>
+
+    <beans:bean id="consumerMessageListener" class="com.Tinybees.listener.ConsumerMessageListener"/>
+
+    <beans:bean id="jmsContainer" class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+        <beans:property name="connectionFactory" ref="connectionFactory"/>
+        <beans:property name="destination" ref="queueDestination"/>
+        <beans:property name="messageListener" ref="consumerMessageListener"/>
     </beans:bean>
 
 </beans:beans>
