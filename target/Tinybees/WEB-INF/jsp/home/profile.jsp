@@ -14,9 +14,9 @@
     <meta charset="UTF-8" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="/image/favicon.png" rel="icon" />
-    <title>Marketshop - eCommerce HTML Template</title>
-    <meta name="description" content="Responsive and clean html template design for any kind of ecommerce webshop">
+    <%--<link href="/image/favicon.png" rel="icon" />--%>
+    <title>TinyBees | 个人主页</title>
+    <%--<meta name="description" content="Responsive and clean html template design for any kind of ecommerce webshop">--%>
     <link rel='stylesheet' href='http://fonts.css.network/css?family=Poiret+One' type='text/css'>
     <style type="text/css">@import url(/css/owl.carousel.css);</style>
     <style type="text/css">@import url(/css/font-awesome/css/font-awesome.min.css);</style>
@@ -48,8 +48,7 @@
             <!-- Top Bar Start-->
             <nav id="top" class="htop">
                 <div class="container">
-                    <div class="row">
-                        <span class="drop-icon visible-sm visible-xs"><i class="fa fa-align-justify"></i></span>
+                    <div class="row"> <span class="drop-icon visible-sm visible-xs"><i class="fa fa-align-justify"></i></span>
                         <div class="nav pull-right flip">
                             <div id="currency" class="btn-group">
                                 <button class="btn-link dropdown-toggle" data-toggle="dropdown"> <span> 个人中心 <i class="fa fa-caret-down"></i></span></button>
@@ -57,35 +56,36 @@
                                     <li>
                                         <button class="currency-select btn btn-link btn-block" type="button" name="EUR">我的订单</button>
                                     </li>
-                                    <li>
-                                        <button class="currency-select btn btn-link btn-block" type="button" name="GBP">我的收藏</button>
-                                    </li>
-                                    <li>
-                                        <button class="currency-select btn btn-link btn-block" type="button" name="USD">购物车</button>
-                                    </li>
-                                    <li>
-                                        <a href="/con_commity" class="currency-select btn btn-link btn-block" type="button" name="USD">联系客服</a>
-                                    </li>
-                                    <li>
-                                        <a href="/profile" class="currency-select btn btn-link btn-block" type="button" name="USD">个人主页</a>
-                                    </li>
+                                    <c:if test="${!empty login_user}">
+                                        <li>
+                                            <a href="/wishlist" class="currency-select btn btn-link btn-block" type="button" name="GBP">我的收藏</a>
+                                        </li>
+                                        <li>
+                                            <a href="/cart" class="currency-select btn btn-link btn-block" type="button" name="USD">购物车</a>
+                                        </li>
+                                    </c:if>
+                                    <c:if test="${empty login_user}">
+                                        <li>
+                                            <a href="#" class="currency-select btn btn-link btn-block" type="button" name="GBP">我的收藏</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="currency-select btn btn-link btn-block" type="button" name="USD">购物车</a>
+                                        </li>
+                                    </c:if>
                                 </ul>
                             </div>
                         </div>
                         <div id="top-links" class="nav pull-right flip">
                             <ul>
-                                <li>
-                                    <c:if test="${!empty login_user}">
-                                        <a href="/login">${login_user.u_id}</a>
-                                        <a href="/logout">退出</a>
-                                    </c:if>
-                                    <c:if test="${empty login_user}">
-                                        <a href="/login">登录</a>
-                                        <a href="/register">注册</a>
-                                    </c:if>
-                                </li>
+                                <c:if test="${empty login_user}">
+                                    <li><a href="/login">登录</a></li>
+                                    <li><a href="/register">注册</a></li>
+                                </c:if>
+                                <c:if test="${!empty login_user}">
+                                    <li><a href="/profile">${login_user.u_name}</a></li>
+                                    <li><a href="/logout">注销</a></li>
+                                </c:if>
                             </ul>
-
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
                     <div class="table-container">
                         <!-- Logo Start -->
                         <div class="col-table-cell col-lg-6 col-md-6 col-sm-12 col-xs-12 inner">
-                            <div id="logo"><a href="/home"><img class="img-responsive" src="/image/logo.png" title="MarketShop" alt="MarketShop" /></a></div>
+                            <div id="logo"><a href="/"><img class="img-responsive" src="/image/logo1.png" title="MarketShop" alt="MarketShop" /></a></div>
                         </div>
                         <div class="col-table-cell col-lg-3 col-md-3 col-sm-6 col-xs-12 inner">
                             <div id="search" class="input-group">

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace命名空间，作用就是对sql进行分类化管理-->
+<mapper namespace="com.Tinybees.mapper.home.ProductCategory">
+    <select id="getAllpro"  resultType="Product">
+        select * from product
+    </select>
+    <select id="cate1"  resultType="Category">
+        select * from category
+    </select>
+    <select id="cate2"  resultType="Category_second">
+        select * from category_second
+    </select>
+    <select id="cate3"  resultType="Category_third">
+        select * from category_third
+    </select>
+    <select id="getProByID"  parameterType="int" resultType="Product">
+        select * from product WHERE p_id=#{p_id}
+    </select>
+    <insert id="addCart" parameterType="Wishitem" >
+        INSERT INTO wish_item (p_id,u_id,count,subcount)
+        VALUES (#{p_id},#{u_id},#{count},#{subcount})
+    </insert>
+    <select id="getproBycart"  parameterType="int" resultType="Producti">
+        select b.*,sum(a.count) count from wish_item a,product b WHERE a.u_id=#{u_id} AND a.p_id=b.p_id GROUP by a.p_id
+    </select>
+    <select id="getAllcount" parameterType="int" resultType="Wishitem">
+        select sum(a.count*b.market_price) count from wish_item a,product b  WHERE a.u_id=#{u_id} AND a.p_id=b.p_id
+    </select>
+    <insert id="addOrders" parameterType="orders" >
+        INSERT INTO orders (name,u_id,phone,addr,total)
+        VALUES (#{name},#{u_id},#{phone},#{addr},#{total})
+    </insert>
+    <insert id="addorderitem" parameterType="int" >
+    insert into order_item(count,p_id) select w.count,w.p_id from wish_item w WHERE w.u_id=#{u_id};
+    update  order_item,orders set order_item.o_id = orders.o_id WHERE order_item.o_id is null and orders.o_id = (SELECT MAX(o_id) FROM orders);
+    DELETE FROM wish_item WHERE u_id=#{u_id}
+    </insert>
+    <select id="getproBycate1"  parameterType="int" resultType="Product">
+        SELECT p.* FROM category c1,category_second c2,category_third c3,product p WHERE c1.c_id=#{cate1} and c1.c_id=c2.c_id and c2.cs_id=c3.cs_id and c3.ct_id=p.ct_id
+    </select>
+    <select id="getproBycate2"  parameterType="int" resultType="Product">
+        SELECT p.* FROM category_second c2,category_third c3,product p WHERE c2.cs_id=#{cate2} and c2.cs_id=c3.cs_id and c3.ct_id=p.ct_id
+    </select>
+    <select id="getproBycate3"  parameterType="int" resultType="Product">
+        SELECT p.* FROM category_third c3,product p WHERE c3.ct_id=#{cate3} and c3.ct_id=p.ct_id
+    </select>
+    <select id="getnameBycate1"  parameterType="int" resultType="Category">
+        select *  from category WHERE c_id=#{cate1}
+    </select>
+    <select id="getnameBycate2"  parameterType="int" resultType="Category_second">
+        select *  from category_second WHERE cs_id=#{cate2}
+    </select>
+    <select id="getnameBycate3"  parameterType="int" resultType="Category_third">
+        select *  from category_third WHERE ct_id=#{cate3}
+    </select>
+    <insert id="addwish" parameterType="Wishlist">
+        INSERT INTO wish_list(p_id,u_id) VALUE (#{p_id},#{u_id});
+    </insert>
+    <select id="getwishpro" parameterType="int" resultType="Product">
+        SELECT p.* FROM wish_list w,product p WHERE w.u_id=#{u_id} and w.p_id=p.p_id;
+    </select>
+    <delete id="delwish" parameterType="Wishlist">
+        DELETE FROM wish_list WHERE u_id=#{u_id} AND p_id=#{p_id};
+    </delete>
+    <delete id="delcart" parameterType="Wishitem">
+        DELETE FROM wish_item WHERE u_id=#{u_id} AND p_id=#{p_id};
+    </delete>
+    <select id="search" parameterType="Product" resultType="Product">
+        SELECT * FROM product WHERE p_name LIKE CONCAT('%',#{p_name},'%') ;
+    </select>
+    <insert id="addreview" parameterType="review" >
+        INSERT INTO review (r_comment,u_id,p_id,r_rate)
+        VALUES (#{r_comment},#{u_id},#{p_id},#{r_rate})
+    </insert>
+    <select id="getreview" parameterType="int" resultType="Reviewi">
+        SELECT a.*,b.u_name FROM review a,user b WHERE a.p_id=#{p_id} AND a.u_id=b.u_id
+    </select>
+    <select id="getproByctid" parameterType="int" resultType="Product">
+        SELECT * FROM product WHERE ct_id=#{ct_id}
+    </select>
+    <select id="getproByava" parameterType="int" resultType="Product">
+        SELECT * FROM product WHERE availability=#{avai}
+    </select>
+</mapper>

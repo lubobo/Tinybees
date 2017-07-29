@@ -33,10 +33,26 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-2.1.1.min.js"></script>
     <![endif]-->
 </head>
+<script type="text/javascript">
+    var myPage;
+    var winflag;
+    function get_comm() {
+        if (!myPage || myPage.closed){
+            //如果窗口不存在，则新打开一个窗口
+            myPage=window.open('<%=request.getContextPath()%>/chatserver.jsp?clientID='+'Admin'+'&toID='+'${clientID}','wang.qj-litianhao-window','height=530,width=420,top=200,left=100','_blank');
+            myPage.blur();
+        }else{
+            myPage.focus;
+        }
+    }
+
+</script>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
+
     <header class="main-header">
         <!-- Logo -->
         <a href="/admin_home" class="logo">
@@ -60,13 +76,13 @@
                     <!-- User Account: style can be found in dropdown.less -->
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <img src="/image/TinyBees.jpg" class="user-image" alt="User Image">
+                            <img src="/image/2678.jpg" class="user-image" alt="User Image">
                             <span class="hidden-xs">TinyBees</span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- User image -->
                             <li class="user-header">
-                                <img src="/image/TinyBees.jpg" class="img-circle" alt="User Image">
+                                <img src="/image/2678.jpg" class="img-circle" alt="User Image">
 
                                 <p>
                                     TinyBees - Administrator
@@ -102,7 +118,7 @@
             <!-- Sidebar user panel -->
             <div class="user-panel">
                 <div class="pull-left image">
-                    <img src="/image/TinyBees.jpg" class="img-circle" alt="User Image">
+                    <img src="/image/2678.jpg" class="img-circle" alt="User Image">
                 </div>
                 <div class="pull-left info">
                     <p>TinyBees</p>
@@ -201,6 +217,7 @@
                         <%--<li><a href="fixed.html"><i class="fa fa-circle-o"></i> 固定布局</a></li>--%>
                     </ul>
                 </li>
+                <li class="treeview active"><i class="fa fa-files-o"></i><span class="btn btn-block btn-flat btn-google" onclick="get_comm()">卖家消息</span></li>
             </ul>
 
         </section>

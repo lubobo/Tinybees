@@ -2,8 +2,10 @@ package com.Tinybees.controller.front;
 
 import com.Tinybees.mapper.user.UserDAO;
 import com.Tinybees.model.User;
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.apache.activemq.ActiveMQConnection;
 import org.apache.activemq.ActiveMQConnectionFactory;
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -44,18 +46,18 @@ public class UserController {
     }
 
     @RequestMapping("/post_login")
-    public ModelAndView post_login(User user, HttpServletRequest request, HttpServletResponse response){
-        ModelAndView modelAndView = new ModelAndView();
+    public String post_login(User user, HttpServletRequest request, HttpServletResponse response){
+//        ModelAndView modelAndView = new ModelAndView();
         HttpSession httpSession = request.getSession();
         User user1 = userDAO.selectByEmail(user);
         if(user1 != null){
             httpSession.setAttribute("login_user",user1);
             httpSession.setAttribute("user_id",user1.getU_id());
-            modelAndView.setViewName("home/home");
-            return modelAndView;
+//            modelAndView.setViewName("home/home");
+            return "redirect:/";
         }else{
-            modelAndView.setViewName("home/login");
-            return modelAndView;
+//            modelAndView.setViewName("home/login");
+            return "redirect:/login";
         }
     }
 
@@ -69,14 +71,34 @@ public class UserController {
     }
 
     @RequestMapping("/logout")
-    public ModelAndView logout(HttpServletRequest request,HttpServletResponse response,HttpSession session){
+    public String logout(HttpServletRequest request,HttpServletResponse response,HttpSession session){
         HttpSession httpSession = request.getSession();
         httpSession.removeAttribute("login_user");
+//        ModelAndView modelAndView = new ModelAndView();
+//        modelAndView.setViewName("home/home");
+        return "redirect:/";
+    }
+
+    @RequestMapping("/get_community")
+    public ModelAndView get_community(){
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("home/home");
+        modelAndView.setViewName("home/getuser");
         return modelAndView;
     }
 
+    @RequestMapping("/get_comm_user")
+    public void get_comm_user(){
+
+    }
+
+    @RequestMapping("/get_chatclient/{clientID}/{toID}")
+    public ModelAndView get_chatclient(Model model,HttpServletRequest request, @Param("clientID") String clientID,@Param("toID") String toID){
+        ModelAndView modelAndView = new ModelAndView();
+        model.addAttribute("clientID",clientID);
+        model.addAttribute("toID",toID);
+        modelAndView.setViewName("home/chatclient");
+        return modelAndView;
+    }
 
     @RequestMapping("/con_comm")
     public ModelAndView con_comm(){

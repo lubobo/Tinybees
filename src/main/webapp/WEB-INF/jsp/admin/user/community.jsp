@@ -80,12 +80,10 @@
                                 <fmt:formatDate value="${now}" type="both" dateStyle="long" pattern="MM-dd HH:mm:ss" />
                             </span>
                         </div>
-                        <!-- /.direct-chat-info -->
                         <img class="direct-chat-img" src="/AdminLTE-cn/dist/img/user1-128x128.jpg" alt="Message User Image"><!-- /.direct-chat-img -->
                         <div class="direct-chat-text">
                             ${con_mess}
                         </div>
-                        <!-- /.direct-chat-text -->
                     </div>
                 </c:forEach>
             </c:if>

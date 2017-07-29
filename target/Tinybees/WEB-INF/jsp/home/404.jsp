@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: lukbo
@@ -22,7 +23,7 @@
     <link rel="stylesheet" type="text/css" href="/css/owl.carousel.css" />
     <link rel="stylesheet" type="text/css" href="/css/owl.transitions.css" />
     <link rel="stylesheet" type="text/css" href="/css/responsive.css" />
-    <link rel='stylesheet' href='http://fonts.css.network/css?family=Poiret+One' type='text/css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans' type='text/css'>
     <!-- CSS Part End-->
 </head>
 <body>
@@ -32,73 +33,42 @@
         <nav id="top" class="htop">
             <div class="container">
                 <div class="row"> <span class="drop-icon visible-sm visible-xs"><i class="fa fa-align-justify"></i></span>
-                    <div class="pull-left flip left-top">
-                        <div class="links">
-                            <ul>
-                                <li class="mobile"><i class="fa fa-phone"></i>+91 9898777656</li>
-                                <li class="email"><a href="mailto:info@marketshop.com"><i class="fa fa-envelope"></i>info@marketshop.com</a></li>
-                                <li class="wrap_custom_block hidden-sm hidden-xs"><a>Custom Block<b></b></a>
-                                    <div class="dropdown-menu custom_block">
-                                        <ul>
-                                            <li>
-                                                <table>
-                                                    <tbody>
-                                                    <tr>
-                                                        <td><img alt="" src="/image/banner/cms-block.jpg"></td>
-                                                        <td><img alt="" src="/image/banner/responsive.jpg"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><h4>CMS Blocks</h4></td>
-                                                        <td><h4>Responsive Template</h4></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>This is a CMS block. You can insert any content (HTML, Text, Images) Here.</td>
-                                                        <td>This is a CMS block. You can insert any content (HTML, Text, Images) Here.</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><strong><a class="btn btn-default btn-sm" href="#">Read More</a></strong></td>
-                                                        <td><strong><a class="btn btn-default btn-sm" href="#">Read More</a></strong></td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li><a href="#">Wish List (0)</a></li>
-                                <li><a href="//checkout">Checkout</a></li>
-                            </ul>
-                        </div>
-                        <div id="language" class="btn-group">
-                            <button class="btn-link dropdown-toggle" data-toggle="dropdown"> <span> <img src="/image/flags/gb.png" alt="English" title="English">English <i class="fa fa-caret-down"></i></span></button>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <button class="btn btn-link btn-block language-select" type="button" name="GB"><img src="/image/flags/gb.png" alt="English" title="English" /> English</button>
-                                </li>
-                                <li>
-                                    <button class="btn btn-link btn-block language-select" type="button" name="GB"><img src="/image/flags/ar.png" alt="Arabic" title="Arabic" /> Arabic</button>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="nav pull-right flip">
                         <div id="currency" class="btn-group">
-                            <button class="btn-link dropdown-toggle" data-toggle="dropdown"> <span> $ USD <i class="fa fa-caret-down"></i></span></button>
+                            <button class="btn-link dropdown-toggle" data-toggle="dropdown"> <span> 个人中心 <i class="fa fa-caret-down"></i></span></button>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <button class="currency-select btn btn-link btn-block" type="button" name="EUR">€ Euro</button>
+                                    <button class="currency-select btn btn-link btn-block" type="button" name="EUR">我的订单</button>
                                 </li>
-                                <li>
-                                    <button class="currency-select btn btn-link btn-block" type="button" name="GBP">£ Pound Sterling</button>
-                                </li>
-                                <li>
-                                    <button class="currency-select btn btn-link btn-block" type="button" name="USD">$ US Dollar</button>
-                                </li>
+                                <c:if test="${!empty login_user}">
+                                    <li>
+                                        <a href="/wishlist" class="currency-select btn btn-link btn-block" type="button" name="GBP">我的收藏</a>
+                                    </li>
+                                    <li>
+                                        <a href="/cart" class="currency-select btn btn-link btn-block" type="button" name="USD">购物车</a>
+                                    </li>
+                                </c:if>
+                                <c:if test="${empty login_user}">
+                                    <li>
+                                        <a href="#" class="currency-select btn btn-link btn-block" type="button" name="GBP">我的收藏</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="currency-select btn btn-link btn-block" type="button" name="USD">购物车</a>
+                                    </li>
+                                </c:if>
                             </ul>
                         </div>
                     </div>
                     <div id="top-links" class="nav pull-right flip">
                         <ul>
-                            <li><a href="/login">Login</a></li>
-                            <li><a href="/register">Register</a></li>
+                            <c:if test="${empty login_user}">
+                                <li><a href="/login">登录</a></li>
+                                <li><a href="/register">注册</a></li>
+                            </c:if>
+                            <c:if test="${!empty login_user}">
+                                <li><a href="/profile">${login_user.u_name}</a></li>
+                                <li><a href="/logout">注销</a></li>
+                            </c:if>
                         </ul>
                     </div>
                 </div>
@@ -111,7 +81,7 @@
                 <div class="table-container">
                     <!-- Logo Start -->
                     <div class="col-table-cell col-lg-6 col-md-6 col-sm-12 col-xs-12 inner">
-                        <div id="logo"><a href="/home"><img class="img-responsive" src="/image/logo.png" title="MarketShop" alt="MarketShop" /></a></div>
+                        <div id="logo"><a href="/"><img class="img-responsive" src="/image/logo1.png" title="MarketShop" alt="MarketShop" /></a></div>
                     </div>
                     <!-- Logo End -->
                     <!-- Mini Cart Start-->
@@ -188,236 +158,35 @@
                 <div class="navbar-header"> <span class="visible-xs visible-sm"> Menu <b></b></span></div>
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a class="home_link" title="Home" href="/home"><span>Home</span></a></li>
-                        <li class="mega-menu dropdown"><a>Categories</a>
+                        <li><a class="home_link" title="Home" href="/"><span>首页</span></a></li>
+                        <li class="contact-link"><a href="#"></a></li>
+                        <li class="mega-menu dropdown"><a>商品分类</a>
                             <div class="dropdown-menu">
-                                <div class="column col-lg-2 col-md-3"><a href="/category">Clothing</a>
-                                    <div>
-                                        <ul>
-                                            <li><a href="/category">Men <span>&rsaquo;</span></a>
-                                                <div class="dropdown-menu">
-                                                    <ul>
-                                                        <li><a href="/category">Sub Categories</a></li>
-                                                        <li><a href="/category">Sub Categories</a></li>
-                                                        <li><a href="/category">Sub Categories</a></li>
-                                                        <li><a href="/category">Sub Categories</a></li>
-                                                        <li><a href="/category">Sub Categories New</a></li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li><a href="/category" >Women</a> </li>
-                                            <li><a href="/category">Girls<span>&rsaquo;</span></a>
-                                                <div class="dropdown-menu">
-                                                    <ul>
-                                                        <li><a href="/category">Sub Categories </a></li>
-                                                        <li><a href="/category">Sub Categories New</a></li>
-                                                        <li><a href="/category">Sub Categories New</a></li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li><a href="/category">Boys</a></li>
-                                            <li><a href="/category">Baby</a></li>
-                                            <li><a href="/category">Accessories <span>&rsaquo;</span></a>
-                                                <div class="dropdown-menu">
-                                                    <ul>
-                                                        <li><a href="/category">New Sub Categories</a></li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                <c:forEach items="${cate1}" var="c1">
+                                    <div class="column col-lg-2 col-md-3"><a href="/category1?cate=${c1.c_id}">${c1.c_name}</a>
+                                        <div>
+                                            <ul><c:forEach items="${cate2}" var="c2">
+                                                <c:if test="${c1.c_id==c2.c_id}">
+                                                    <li><a href="/category2?cate=${c2.cs_id}">${c2.cs_name}<span>&rsaquo;</span></a>
+                                                        <div class="dropdown-menu">
+                                                            <ul><c:forEach items="${cate3}" var="c3">
+                                                                <c:if test="${c2.cs_id==c3.cs_id}">
+                                                                    <li><a href="/category3?cate=${c3.ct_id}">${c3.ct_name}</a></li>
+                                                                </c:if>
+                                                            </c:forEach>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </c:if>
+                                            </c:forEach>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="column col-lg-2 col-md-3"> <a href="/category">Electronics</a>
-                                    <div>
-                                        <ul>
-                                            <li> <a href="/category">Laptops <span>&rsaquo;</span></a>
-                                                <div class="dropdown-menu">
-                                                    <ul>
-                                                        <li> <a href="/category">New Sub Categories </a> </li>
-                                                        <li> <a href="/category">New Sub Categories </a> </li>
-                                                        <li> <a href="/category">Sub Categories New </a> </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li> <a href="/category">Desktops <span>&rsaquo;</span></a>
-                                                <div class="dropdown-menu">
-                                                    <ul>
-                                                        <li> <a href="/category">New Sub Categories </a> </li>
-                                                        <li> <a href="/category">Sub Categories New </a> </li>
-                                                        <li> <a href="/category">Sub Categories New </a> </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li> <a href="/category">Cameras <span>&rsaquo;</span></a>
-                                                <div class="dropdown-menu">
-                                                    <ul>
-                                                        <li> <a href="/category">New Sub Categories</a></li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li><a href="/category">Mobile Phones <span>&rsaquo;</span></a>
-                                                <div class="dropdown-menu">
-                                                    <ul>
-                                                        <li><a href="/category">New Sub Categories</a></li>
-                                                        <li><a href="/category">New Sub Categories</a></li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li><a href="/category">TV &amp; Home Audio <span>&rsaquo;</span></a>
-                                                <div class="dropdown-menu">
-                                                    <ul>
-                                                        <li><a href="/category">New Sub Categories </a> </li>
-                                                        <li><a href="/category">Sub Categories New </a> </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li><a href="/category">MP3 Players</a> </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="column col-lg-2 col-md-3"><a href="/category">Shoes</a>
-                                    <div>
-                                        <ul>
-                                            <li><a href="/category">Men</a> </li>
-                                            <li><a href="/category">Women <span>&rsaquo;</span></a>
-                                                <div class="dropdown-menu">
-                                                    <ul>
-                                                        <li><a href="/category">New Sub Categories </a> </li>
-                                                        <li><a href="/category">Sub Categories </a> </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li><a href="/category">Girls</a> </li>
-                                            <li><a href="/category">Boys</a> </li>
-                                            <li><a href="/category">Baby</a> </li>
-                                            <li><a href="/category">Accessories <span>&rsaquo;</span></a>
-                                                <div class="dropdown-menu">
-                                                    <ul>
-                                                        <li><a href="/category">New Sub Categories</a></li>
-                                                        <li><a href="/category">New Sub Categories</a></li>
-                                                        <li><a href="/category">Sub Categories</a></li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="column col-lg-2 col-md-3"> <a href="/category">Watches</a>
-                                    <div>
-                                        <ul>
-                                            <li> <a href="/category">Men's Watches</a></li>
-                                            <li> <a href="/category">Women's Watches</a></li>
-                                            <li> <a href="/category">Kids' Watches</a></li>
-                                            <li> <a href="/category">Accessories</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="column col-lg-2 col-md-3"> <a href="/category">Jewellery</a>
-                                    <div>
-                                        <ul>
-                                            <li> <a href="/category">Silver <span>&rsaquo;</span></a>
-                                                <div class="dropdown-menu">
-                                                    <ul>
-                                                        <li> <a href="/category">New Sub Categories</a></li>
-                                                        <li> <a href="/category">New Sub Categories</a></li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li><a href="/category">Gold <span>&rsaquo;</span></a>
-                                                <div class="dropdown-menu">
-                                                    <ul>
-                                                        <li><a href="/category">test 1</a></li>
-                                                        <li><a href="/category">test 2</a></li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li><a href="/category">Diamond</a></li>
-                                            <li><a href="/category">Pearl <span>&rsaquo;</span></a>
-                                                <div class="dropdown-menu">
-                                                    <ul>
-                                                        <li><a href="/category">New Sub Categories</a></li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li><a href="/category">Men's Jewellery</a></li>
-                                            <li><a href="/category">Children's Jewellery <span>&rsaquo;</span></a>
-                                                <div class="dropdown-menu">
-                                                    <ul>
-                                                        <li><a href="/category">New Sub Categories </a> </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="column col-lg-2 col-md-3"><a href="/category">Health &amp; Beauty</a>
-                                    <div>
-                                        <ul>
-                                            <li> <a href="/category">Perfumes</a></li>
-                                            <li> <a href="/category">Makeup</a></li>
-                                            <li> <a href="/category">Sun Care</a></li>
-                                            <li> <a href="/category">Skin Care</a></li>
-                                            <li> <a href="/category">Eye Care</a></li>
-                                            <li> <a href="/category">Hair Care</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="column col-lg-2 col-md-3"> <a href="/category">Kids &amp; Babies</a>
-                                    <div>
-                                        <ul>
-                                            <li><a href="/category">Toys</a></li>
-                                            <li><a href="/category">Games <span>&rsaquo;</span></a>
-                                                <div class="dropdown-menu">
-                                                    <ul>
-                                                        <li><a href="/category">test 25</a></li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li><a href="/category">Puzzles</a></li>
-                                            <li><a href="/category">Hobbies</a></li>
-                                            <li><a href="/category">Strollers</a></li>
-                                            <li><a href="/category">Health &amp; Safety</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="column col-lg-2 col-md-3"> <a href="/category">Sports</a>
-                                    <div>
-                                        <ul>
-                                            <li><a href="/category">Cycling</a></li>
-                                            <li><a href="/category">Running</a></li>
-                                            <li><a href="/category">Swimming</a></li>
-                                            <li><a href="/category">Football</a></li>
-                                            <li><a href="/category">Golf</a></li>
-                                            <li><a href="/category">Windsurfing</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="column col-lg-2 col-md-3"> <a href="/category">Home &amp; Garden</a>
-                                    <div>
-                                        <ul>
-                                            <li><a href="/category">Bedding</a></li>
-                                            <li><a href="/category">Food</a></li>
-                                            <li><a href="/category">Furniture</a></li>
-                                            <li><a href="/category">Kitchen</a></li>
-                                            <li><a href="/category">Lighting</a></li>
-                                            <li><a href="/category">Tools</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="column col-lg-2 col-md-3"> <a href="/category">Wines &amp; Spirits</a>
-                                    <div>
-                                        <ul>
-                                            <li><a href="/category">Wine</a></li>
-                                            <li><a href="/category">Whiskey</a></li>
-                                            <li><a href="/category">Vodka</a></li>
-                                            <li><a href="/category">Liqueurs</a></li>
-                                            <li><a href="/category">Beer</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                </c:forEach>
                             </div>
                         </li>
-                        <li class="menu_brands dropdown"><a href="#">Brands</a>
+                        <li class="contact-link"><a href="#"></a></li>
+                        <li class="menu_brands dropdown"><a href="#">热门商品</a>
                             <div class="dropdown-menu">
                                 <div class="col-lg-1 col-md-2 col-sm-3 col-xs-6"><a href="#"><img src="/image/product/apple_logo-60x60.jpg" title="Apple" alt="Apple" /></a><a href="#">Apple</a></div>
                                 <div class="col-lg-1 col-md-2 col-sm-3 col-xs-6"><a href="#"><img src="/image/product/canon_logo-60x60.jpg" title="Canon" alt="Canon" /></a><a href="#">Canon</a></div>
@@ -434,64 +203,26 @@
                                 <div class="col-lg-1 col-md-2 col-sm-3 col-xs-6"><a href="#"><img src="/image/product/apple_logo-60x60.jpg" title="test2" alt="test2" /></a><a href="#">test2</a></div>
                             </div>
                         </li>
-                        <li class="custom-link"><a href="#">Custom Links</a></li>
-                        <li class="dropdown wrap_custom_block hidden-sm hidden-xs"><a>Custom Block</a>
-                            <div class="dropdown-menu custom_block">
-                                <ul>
-                                    <li>
-                                        <table>
-                                            <tbody>
-                                            <tr>
-                                                <td><img alt="" src="/image/banner/cms-block.jpg"></td>
-                                                <td><img alt="" src="/image/banner/responsive.jpg"></td>
-                                                <td><img alt="" src="/image/banner/cms-block.jpg"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><h4>CMS Blocks</h4></td>
-                                                <td><h4>Responsive Template</h4></td>
-                                                <td><h4>Dedicated Support</h4></td>
-                                            </tr>
-                                            <tr>
-                                                <td>This is a CMS block. You can insert any content (HTML, Text, Images) Here.</td>
-                                                <td>This is a CMS block. You can insert any content (HTML, Text, Images) Here.</td>
-                                                <td>This is a CMS block. You can insert any content (HTML, Text, Images) Here.</td>
-                                            </tr>
-                                            <tr>
-                                                <td><strong><a class="btn btn-primary btn-sm" href="#">Read More</a></strong></td>
-                                                <td><strong><a class="btn btn-primary btn-sm" href="#">Read More</a></strong></td>
-                                                <td><strong><a class="btn btn-primary btn-sm" href="#">Read More</a></strong></td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="dropdown information-link"><a>Pages</a>
+                        <li class="contact-link"><a href="#"></a></li>
+                        <li class="dropdown information-link"><a>站内导航</a>
                             <div class="dropdown-menu">
                                 <ul>
-                                    <li><a href="/login">Login</a></li>
-                                    <li><a href="/register">Register</a></li>
-                                    <li><a href="/category">Category (Grid/List)</a></li>
-                                    <li><a href="/product">Product</a></li>
-                                    <li><a href="/cart">Shopping Cart</a></li>
-                                    <li><a href="/checkout">Checkout</a></li>
-                                    <li><a href="/compare">Compare</a></li>
-                                    <li><a href="/wishlist">Wishlist</a></li>
-                                    <li><a href="/search">Search</a></li>
-                                </ul>
-                                <ul>
-                                    <li><a href="/about-us">About Us</a></li>
-                                    <li><a href="/404">404</a></li>
-                                    <li><a href="/elements">Elements</a></li>
-                                    <li><a href="/faq">Faq</a></li>
-                                    <li><a href="/sitemap">Sitemap</a></li>
-                                    <li><a href="/contact-us">Contact Us</a></li>
+                                    <li><a href="/login">登录</a></li>
+                                    <li><a href="/register">注册</a></li>
+                                    <li><a href="/category">商品分类</a></li>
+                                    <c:if test="${!empty login_user}">
+                                        <li><a href="/cart">购物车</a></li>
+                                        <li><a href="#">联系客服</a></li>
+                                    </c:if>
+                                    <c:if test="${empty login_user}">
+                                        <li><a href="#">购物车</a></li>
+                                        <li><a href="#">联系客服</a></li>
+                                    </c:if>
                                 </ul>
                             </div>
                         </li>
-                        <li class="contact-link"><a href="/contact-us">Contact Us</a></li>
-                        <li class="custom-link-right"><a href="#" target="_blank"> Buy Now!</a></li>
+                        <li class="contact-link"><a href="#"></a></li>
+                        <li class="contact-link"><a href="#">联系我们</a></li>
                     </ul>
                 </div>
             </nav>
@@ -506,7 +237,7 @@
                     <h1 class="title-404 text-center">404</h1>
                     <p class="text-center lead">Sorry!<br>
                         The page you requested cannot be found! </p>
-                    <div class="buttons text-center"> <a class="btn btn-primary btn-lg" href="/home">Continue</a> </div>
+                    <div class="buttons text-center"> <a class="btn btn-primary btn-lg" href="/">Continue</a> </div>
                 </div>
                 <!--Middle Part End -->
             </div>
@@ -518,46 +249,43 @@
             <div class="container">
                 <div class="row">
                     <div class="contact col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                        <h5>Contact Details</h5>
+                        <h5>联系方式</h5>
                         <ul>
-                            <li class="address"><i class="fa fa-map-marker"></i>Central Square, 22 Hoi Wing Road, New Delhi, India</li>
-                            <li class="mobile"><i class="fa fa-phone"></i>+91 9898777656</li>
-                            <li class="email"><i class="fa fa-envelope"></i>Send email via our <a href="/contact-us">Contact Us</a>
+                            <li class="address"><i class="fa fa-map-marker"></i>计算机1408班，东北大学，沈阳，中国，地球</li>
+                            <li class="mobile"><i class="fa fa-phone"></i>8008208820</li>
+                            <li class="email"><i class="fa fa-envelope"></i>发邮件到 <a href="#">联系我们</a>
                         </ul>
                     </div>
                     <div class="column col-lg-2 col-md-2 col-sm-3 col-xs-12">
-                        <h5>Information</h5>
+                        <h5>关于我们</h5>
                         <ul>
-                            <li><a href="/about-us">About Us</a></li>
-                            <li><a href="/about-us">Delivery Information</a></li>
-                            <li><a href="/about-us">Privacy Policy</a></li>
-                            <li><a href="/about-us">Terms &amp; Conditions</a></li>
+                            <li><a href="#">关于我们</a></li>
+                            <li><a href="#">隐私条款</a></li>
                         </ul>
                     </div>
                     <div class="column col-lg-2 col-md-2 col-sm-3 col-xs-12">
-                        <h5>Customer Service</h5>
+                        <h5>用户手册</h5>
                         <ul>
-                            <li><a href="/contact-us">Contact Us</a></li>
-                            <li><a href="#">Returns</a></li>
-                            <li><a href="/sitemap">Site Map</a></li>
+                            <li><a href="#">联系我们</a></li>
+                            <li><a href="#">意见反馈</a></li>
+                            <li><a href="#">购物指南</a></li>
                         </ul>
                     </div>
                     <div class="column col-lg-2 col-md-2 col-sm-3 col-xs-12">
-                        <h5>Extras</h5>
+                        <h5>关于其他</h5>
                         <ul>
-                            <li><a href="#">Brands</a></li>
-                            <li><a href="#">Gift Vouchers</a></li>
-                            <li><a href="#">Affiliates</a></li>
-                            <li><a href="#">Specials</a></li>
+                            <li><a href="#">优惠券</a></li>
+                            <li><a href="#">分公司</a></li>
+                            <li><a href="#">友情链接</a></li>
                         </ul>
                     </div>
                     <div class="column col-lg-2 col-md-2 col-sm-3 col-xs-12">
-                        <h5>My Account</h5>
+                        <h5>个人账户</h5>
                         <ul>
-                            <li><a href="#">My Account</a></li>
-                            <li><a href="#">Order History</a></li>
-                            <li><a href="#">Wish List</a></li>
-                            <li><a href="#">Newsletter</a></li>
+                            <li><a href="#">个人中心</a></li>
+                            <li><a href="#">历史购买</a></li>
+                            <li><a href="#">我的收藏</a></li>
+                            <li><a href="#">新消息</a></li>
                         </ul>
                     </div>
                 </div>
@@ -567,19 +295,19 @@
             <div class="container">
                 <div id="powered" class="clearfix">
                     <div class="powered_text pull-left flip">
-                        <p>Marketshop Ecommerce Template © 2016 | Template By <a href="http://harnishdesign.net" target="_blank">Harnish Design</a></p>
+                        <p>雏蜂 © 2016 | 雏蜂 By <a href="http://harnishdesign.net" target="_blank">雏蜂小组</a></p>
                     </div>
                     <div class="social pull-right flip"> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/socialicons/facebook.png" alt="Facebook" title="Facebook"></a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/socialicons/twitter.png" alt="Twitter" title="Twitter"> </a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/socialicons/google_plus.png" alt="Google+" title="Google+"> </a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/socialicons/pinterest.png" alt="Pinterest" title="Pinterest"> </a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/socialicons/rss.png" alt="RSS" title="RSS"> </a> </div>
                 </div>
-                <div class="bottom-row">
-                    <div class="custom-text text-center">
-                        <p>This is a CMS block. You can insert any content (HTML, Text, Images) Here. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                    </div>
-                    <div class="payments_types"> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/payment/payment_paypal.png" alt="paypal" title="PayPal"></a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/payment/payment_american.png" alt="american-express" title="American Express"></a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/payment/payment_2checkout.png" alt="2checkout" title="2checkout"></a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/payment/payment_maestro.png" alt="maestro" title="Maestro"></a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/payment/payment_discover.png" alt="discover" title="Discover"></a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/payment/payment_mastercard.png" alt="mastercard" title="MasterCard"></a> </div>
-                </div>
+                <%--<div class="bottom-row">--%>
+                <%--<div class="custom-text text-center">--%>
+                <%--<p>This is a CMS block. You can insert any content (HTML, Text, Images) Here. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>--%>
+                <%--</div>--%>
+                <%--<div class="payments_types"> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/payment/payment_paypal.png" alt="paypal" title="PayPal"></a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/payment/payment_american.png" alt="american-express" title="American Express"></a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/payment/payment_2checkout.png" alt="2checkout" title="2checkout"></a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/payment/payment_maestro.png" alt="maestro" title="Maestro"></a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/payment/payment_discover.png" alt="discover" title="Discover"></a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/payment/payment_mastercard.png" alt="mastercard" title="MasterCard"></a> </div>--%>
+                <%--</div>--%>
             </div>
         </div>
-        <div id="back-top"><a data-toggle="tooltip" title="Back to Top" href="javascript:void(0)" class="backtotop"><i class="fa fa-chevron-up"></i></a></div>
+        <div id="back-top"><a data-toggle="tooltip" title="返回顶部" href="javascript:void(0)" class="backtotop"><i class="fa fa-chevron-up"></i></a></div>
     </footer>
     <!--Footer End-->
     <!-- Facebook Side Block Start -->

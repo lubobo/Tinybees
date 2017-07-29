@@ -12,9 +12,9 @@
     <meta charset="UTF-8" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="/image/favicon.png" rel="icon" />
-    <title>Product Comparison</title>
-    <meta name="description" content="Responsive and clean html template design for any kind of ecommerce webshop">
+    <%--<link href="/image/favicon.png" rel="icon" />--%>
+    <title>TinyBees | 比较</title>
+    <%--<meta name="description" content="Responsive and clean html template design for any kind of ecommerce webshop">--%>
     <!-- CSS Part Start-->
     <link rel="stylesheet" type="text/css" href="js/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css" />
@@ -22,7 +22,7 @@
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
     <link rel="stylesheet" type="text/css" href="css/owl.transitions.css" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
-    <link rel='stylesheet' href='http://fonts.css.network/css?family=Poiret+One' type='text/css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans' type='text/css'>
     <!-- CSS Part End-->
 </head>
 <body>
@@ -32,73 +32,42 @@
         <nav id="top" class="htop">
             <div class="container">
                 <div class="row"> <span class="drop-icon visible-sm visible-xs"><i class="fa fa-align-justify"></i></span>
-                    <div class="pull-left flip left-top">
-                        <div class="links">
-                            <ul>
-                                <li class="mobile"><i class="fa fa-phone"></i>+91 9898777656</li>
-                                <li class="email"><a href="mailto:info@marketshop.com"><i class="fa fa-envelope"></i>info@marketshop.com</a></li>
-                                <li class="wrap_custom_block hidden-sm hidden-xs"><a>Custom Block<b></b></a>
-                                    <div class="dropdown-menu custom_block">
-                                        <ul>
-                                            <li>
-                                                <table>
-                                                    <tbody>
-                                                    <tr>
-                                                        <td><img alt="" src="/image/banner/cms-block.jpg"></td>
-                                                        <td><img alt="" src="/image/banner/responsive.jpg"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><h4>CMS Blocks</h4></td>
-                                                        <td><h4>Responsive Template</h4></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>This is a CMS block. You can insert any content (HTML, Text, Images) Here.</td>
-                                                        <td>This is a CMS block. You can insert any content (HTML, Text, Images) Here.</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><strong><a class="btn btn-default btn-sm" href="#">Read More</a></strong></td>
-                                                        <td><strong><a class="btn btn-default btn-sm" href="#">Read More</a></strong></td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li><a href="#">Wish List (0)</a></li>
-                                <li><a href="/checkout">Checkout</a></li>
-                            </ul>
-                        </div>
-                        <div id="language" class="btn-group">
-                            <button class="btn-link dropdown-toggle" data-toggle="dropdown"> <span> <img src="/image/flags/gb.png" alt="English" title="English">English <i class="fa fa-caret-down"></i></span></button>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <button class="btn btn-link btn-block language-select" type="button" name="GB"><img src="/image/flags/gb.png" alt="English" title="English" /> English</button>
-                                </li>
-                                <li>
-                                    <button class="btn btn-link btn-block language-select" type="button" name="GB"><img src="/image/flags/ar.png" alt="Arabic" title="Arabic" /> Arabic</button>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="nav pull-right flip">
                         <div id="currency" class="btn-group">
-                            <button class="btn-link dropdown-toggle" data-toggle="dropdown"> <span> $ USD <i class="fa fa-caret-down"></i></span></button>
+                            <button class="btn-link dropdown-toggle" data-toggle="dropdown"> <span> 个人中心 <i class="fa fa-caret-down"></i></span></button>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <button class="currency-select btn btn-link btn-block" type="button" name="EUR">€ Euro</button>
+                                    <button class="currency-select btn btn-link btn-block" type="button" name="EUR">我的订单</button>
                                 </li>
-                                <li>
-                                    <button class="currency-select btn btn-link btn-block" type="button" name="GBP">£ Pound Sterling</button>
-                                </li>
-                                <li>
-                                    <button class="currency-select btn btn-link btn-block" type="button" name="USD">$ US Dollar</button>
-                                </li>
+                                <c:if test="${!empty login_user}">
+                                    <li>
+                                        <a href="/wishlist" class="currency-select btn btn-link btn-block" type="button" name="GBP">我的收藏</a>
+                                    </li>
+                                    <li>
+                                        <a href="/cart" class="currency-select btn btn-link btn-block" type="button" name="USD">购物车</a>
+                                    </li>
+                                </c:if>
+                                <c:if test="${empty login_user}">
+                                    <li>
+                                        <a href="#" class="currency-select btn btn-link btn-block" type="button" name="GBP">我的收藏</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="currency-select btn btn-link btn-block" type="button" name="USD">购物车</a>
+                                    </li>
+                                </c:if>
                             </ul>
                         </div>
                     </div>
                     <div id="top-links" class="nav pull-right flip">
                         <ul>
-                            <li><a href="/login">Login</a></li>
-                            <li><a href="/register">Register</a></li>
+                            <c:if test="${empty login_user}">
+                                <li><a href="/login">登录</a></li>
+                                <li><a href="/register">注册</a></li>
+                            </c:if>
+                            <c:if test="${!empty login_user}">
+                                <li><a href="/profile">${login_user.u_name}</a></li>
+                                <li><a href="/logout">注销</a></li>
+                            </c:if>
                         </ul>
                     </div>
                 </div>
@@ -111,7 +80,7 @@
                 <div class="table-container">
                     <!-- Logo Start -->
                     <div class="col-table-cell col-lg-6 col-md-6 col-sm-12 col-xs-12 inner">
-                        <div id="logo"><a href="/home"><img class="img-responsive" src="/image/logo.png" title="MarketShop" alt="MarketShop" /></a></div>
+                        <div id="logo"><a href="/"><img class="img-responsive" src="/image/logo1.png" title="MarketShop" alt="MarketShop" /></a></div>
                     </div>
                     <!-- Logo End -->
                     <!-- Mini Cart Start-->
@@ -188,236 +157,488 @@
                 <div class="navbar-header"> <span class="visible-xs visible-sm"> Menu <b></b></span></div>
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a class="home_link" title="Home" href="/home"><span>Home</span></a></li>
-                        <li class="mega-menu dropdown"><a>Categories</a>
+                        <li><a class="home_link" title="Home" href="/"><span>首页</span></a></li>
+                        <li class="contact-link"><a href="#"></a></li>
+                        <li class="mega-menu dropdown"><a>商品分类</a>
                             <div class="dropdown-menu">
-                                <div class="column col-lg-2 col-md-3"><a href="/category">Clothing</a>
+                                <div class="column col-lg-2 col-md-3"><a href="/category">男装</a>
                                     <div>
                                         <ul>
-                                            <li><a href="/category">Men <span>&rsaquo;</span></a>
+                                            <li><a href="/category">外套 <span>&rsaquo;</span></a>
                                                 <div class="dropdown-menu">
                                                     <ul>
-                                                        <li><a href="/category">Sub Categories</a></li>
-                                                        <li><a href="/category">Sub Categories</a></li>
-                                                        <li><a href="/category">Sub Categories</a></li>
-                                                        <li><a href="/category">Sub Categories</a></li>
-                                                        <li><a href="/category">Sub Categories New</a></li>
+                                                        <li><a href="/category">卫衣</a></li>
+                                                        <li><a href="/category">夹克</a></li>
+                                                        <li><a href="/category">羽绒服</a></li>
+                                                        <li><a href="/category">西装</a></li>
+                                                        <li><a href="/category">运动外套</a></li>
                                                     </ul>
                                                 </div>
                                             </li>
-                                            <li><a href="/category" >Women</a> </li>
-                                            <li><a href="/category">Girls<span>&rsaquo;</span></a>
+                                            <li><a href="/category">上装<span>&rsaquo;</span></a>
                                                 <div class="dropdown-menu">
                                                     <ul>
-                                                        <li><a href="/category">Sub Categories </a></li>
-                                                        <li><a href="/category">Sub Categories New</a></li>
-                                                        <li><a href="/category">Sub Categories New</a></li>
+                                                        <li><a href="/category">T恤 </a></li>
+                                                        <li><a href="/category">衬衫</a></li>
+                                                        <li><a href="/category">背心</a></li>
+                                                        <li><a href="/category">长袖 </a></li>
                                                     </ul>
                                                 </div>
                                             </li>
-                                            <li><a href="/category">Boys</a></li>
-                                            <li><a href="/category">Baby</a></li>
-                                            <li><a href="/category">Accessories <span>&rsaquo;</span></a>
+                                            <li><a href="/category">下装<span>&rsaquo;</span></a>
                                                 <div class="dropdown-menu">
                                                     <ul>
-                                                        <li><a href="/category">New Sub Categories</a></li>
+                                                        <li><a href="/category">运动裤</a></li>
+                                                        <li><a href="/category">牛仔裤</a></li>
+                                                        <li><a href="/category">短裤</a></li>
+                                                        <li><a href="/category">七分裤</a></li>
+                                                    </ul>
+                                                </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="column col-lg-2 col-md-3"> <a href="/category">女装</a>
+                                    <div>
+                                        <ul>
+                                            <li> <a href="/category">裙装 <span>&rsaquo;</span></a>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li> <a href="/category">连衣裙 </a> </li>
+                                                        <li> <a href="/category">背带裙</a> </li>
+                                                        <li> <a href="/category">半身裙</a> </li>
+                                                        <li> <a href="/category">A字群</a> </li>
+                                                        <li> <a href="/category">短裙</a> </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li> <a href="/category">上装<span>&rsaquo;</span></a>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li> <a href="/category">T恤</a> </li>
+                                                        <li> <a href="/category">衬衫 </a> </li>
+                                                        <li> <a href="/category">卫衣</a> </li>
+                                                        <li> <a href="/category">皮衣</a> </li>
+                                                        <li> <a href="/category">牛仔外套</a> </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li> <a href="/category">裤装<span>&rsaquo;</span></a>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li> <a href="/category">牛仔裤</a></li>
+                                                        <li> <a href="/category">休闲裤</a></li>
+                                                        <li> <a href="/category">背带裤</a></li>
+                                                        <li> <a href="/category">铅笔裤</a></li>
+                                                        <li> <a href="/category">短裤</a></li>
+                                                        <li> <a href="/category">运动裤</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li><a href="/category">特色装<span>&rsaquo;</span></a>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li><a href="/category">婚纱</a></li>
+                                                        <li><a href="/category">礼服</a></li>
+                                                        <li><a href="/category">旗袍</a></li>
+                                                        <li><a href="/category">汉服</a></li>
+                                                        <li><a href="/category">职业装</a></li>
                                                     </ul>
                                                 </div>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="column col-lg-2 col-md-3"> <a href="/category">Electronics</a>
+                                <div class="column col-lg-2 col-md-3"><a href="/category">鞋靴</a>
                                     <div>
                                         <ul>
-                                            <li> <a href="/category">Laptops <span>&rsaquo;</span></a>
+                                            <li><a href="/category"> 男鞋<span>&rsaquo;</span></a>
                                                 <div class="dropdown-menu">
                                                     <ul>
-                                                        <li> <a href="/category">New Sub Categories </a> </li>
-                                                        <li> <a href="/category">New Sub Categories </a> </li>
-                                                        <li> <a href="/category">Sub Categories New </a> </li>
+                                                        <li><a href="/category">帆布鞋</a> </li>
+                                                        <li><a href="/category">运动鞋</a> </li>
+                                                        <li><a href="/category">板鞋</a> </li>
+                                                        <li><a href="/category">皮鞋</a> </li>
+                                                        <li><a href="/category">凉鞋</a> </li>
+                                                        <li><a href="/category">人字拖</a> </li>
                                                     </ul>
                                                 </div>
                                             </li>
-                                            <li> <a href="/category">Desktops <span>&rsaquo;</span></a>
+                                            <li><a href="/category">女鞋<span>&rsaquo;</span></a>
                                                 <div class="dropdown-menu">
                                                     <ul>
-                                                        <li> <a href="/category">New Sub Categories </a> </li>
-                                                        <li> <a href="/category">Sub Categories New </a> </li>
-                                                        <li> <a href="/category">Sub Categories New </a> </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li> <a href="/category">Cameras <span>&rsaquo;</span></a>
-                                                <div class="dropdown-menu">
-                                                    <ul>
-                                                        <li> <a href="/category">New Sub Categories</a></li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li><a href="/category">Mobile Phones <span>&rsaquo;</span></a>
-                                                <div class="dropdown-menu">
-                                                    <ul>
-                                                        <li><a href="/category">New Sub Categories</a></li>
-                                                        <li><a href="/category">New Sub Categories</a></li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li><a href="/category">TV &amp; Home Audio <span>&rsaquo;</span></a>
-                                                <div class="dropdown-menu">
-                                                    <ul>
-                                                        <li><a href="/category">New Sub Categories </a> </li>
-                                                        <li><a href="/category">Sub Categories New </a> </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li><a href="/category">MP3 Players</a> </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="column col-lg-2 col-md-3"><a href="/category">Shoes</a>
-                                    <div>
-                                        <ul>
-                                            <li><a href="/category">Men</a> </li>
-                                            <li><a href="/category">Women <span>&rsaquo;</span></a>
-                                                <div class="dropdown-menu">
-                                                    <ul>
-                                                        <li><a href="/category">New Sub Categories </a> </li>
-                                                        <li><a href="/category">Sub Categories </a> </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li><a href="/category">Girls</a> </li>
-                                            <li><a href="/category">Boys</a> </li>
-                                            <li><a href="/category">Baby</a> </li>
-                                            <li><a href="/category">Accessories <span>&rsaquo;</span></a>
-                                                <div class="dropdown-menu">
-                                                    <ul>
-                                                        <li><a href="/category">New Sub Categories</a></li>
-                                                        <li><a href="/category">New Sub Categories</a></li>
-                                                        <li><a href="/category">Sub Categories</a></li>
+                                                        <li><a href="/category">高跟鞋</a></li>
+                                                        <li><a href="/category">运动鞋</a></li>
+                                                        <li><a href="/category">帆布鞋</a></li>
+                                                        <li><a href="/category">凉拖</a></li>
+                                                        <li><a href="/category">坡跟</a></li>
                                                     </ul>
                                                 </div>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="column col-lg-2 col-md-3"> <a href="/category">Watches</a>
+                                <div class="column col-lg-2 col-md-3"> <a href="/category">手机数码</a>
                                     <div>
                                         <ul>
-                                            <li> <a href="/category">Men's Watches</a></li>
-                                            <li> <a href="/category">Women's Watches</a></li>
-                                            <li> <a href="/category">Kids' Watches</a></li>
-                                            <li> <a href="/category">Accessories</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="column col-lg-2 col-md-3"> <a href="/category">Jewellery</a>
-                                    <div>
-                                        <ul>
-                                            <li> <a href="/category">Silver <span>&rsaquo;</span></a>
+                                            <li> <a href="/category">手机<span>&rsaquo;</span></a>
                                                 <div class="dropdown-menu">
                                                     <ul>
-                                                        <li> <a href="/category">New Sub Categories</a></li>
-                                                        <li> <a href="/category">New Sub Categories</a></li>
+                                                        <li> <a href="/category">老年机</a> </li>
+                                                        <li> <a href="/category">小米</a> </li>
+                                                        <li> <a href="/category">华为</a> </li>
+                                                        <li> <a href="/category">三星</a> </li>
+                                                        <li> <a href="/category">魅族</a> </li>
+                                                        <li> <a href="/category">OPPO</a> </li>
+                                                        <li> <a href="/category">苹果</a> </li>
                                                     </ul>
                                                 </div>
                                             </li>
-                                            <li><a href="/category">Gold <span>&rsaquo;</span></a>
+                                            <li> <a href="/category">笔记本电脑<span>&rsaquo;</span></a>
                                                 <div class="dropdown-menu">
                                                     <ul>
-                                                        <li><a href="/category">test 1</a></li>
-                                                        <li><a href="/category">test 2</a></li>
+                                                        <li> <a href="/category">联想</a> </li>
+                                                        <li> <a href="/category">戴尔</a> </li>
+                                                        <li> <a href="/category">华硕</a> </li>
+                                                        <li> <a href="/category">ThinkPad</a> </li>
+                                                        <li> <a href="/category">苹果</a> </li>
                                                     </ul>
                                                 </div>
                                             </li>
-                                            <li><a href="/category">Diamond</a></li>
-                                            <li><a href="/category">Pearl <span>&rsaquo;</span></a>
+                                            <li> <a href="/category">数码相机<span>&rsaquo;</span></a>
                                                 <div class="dropdown-menu">
                                                     <ul>
-                                                        <li><a href="/category">New Sub Categories</a></li>
+                                                        <li> <a href="/category">单反相机</a></li>
+                                                        <li> <a href="/category">数码相机</a></li>
+                                                        <li> <a href="/category">摄像机</a></li>
+                                                        <li> <a href="/category">长焦相机</a></li>
+                                                        <li> <a href="/category">拍立得</a></li>
                                                     </ul>
                                                 </div>
                                             </li>
-                                            <li><a href="/category">Men's Jewellery</a></li>
-                                            <li><a href="/category">Children's Jewellery <span>&rsaquo;</span></a>
+                                            <li><a href="/category">电脑配件<span>&rsaquo;</span></a>
                                                 <div class="dropdown-menu">
                                                     <ul>
-                                                        <li><a href="/category">New Sub Categories </a> </li>
+                                                        <li><a href="/category">键盘</a></li>
+                                                        <li><a href="/category">鼠标</a></li>
+                                                        <li><a href="/category">主板</a></li>
+                                                        <li><a href="/category">硬盘</a></li>
+                                                        <li><a href="/category">显卡</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li><a href="/category">3C数码配件<span>&rsaquo;</span></a>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li><a href="/category">手机保护壳</a></li>
+                                                        <li><a href="/category">移动电源</a></li>
+                                                        <li><a href="/category">手机数据线</a></li>
+                                                        <li><a href="/category">U盘</a></li>
+                                                        <li><a href="/category">手机储存卡</a></li>
+                                                        <li><a href="/category">耳机</a></li>
+                                                        <li><a href="/category">自拍杆</a></li>
                                                     </ul>
                                                 </div>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="column col-lg-2 col-md-3"><a href="/category">Health &amp; Beauty</a>
+                                <div class="column col-lg-2 col-md-3"> <a href="/category">食品</a>
                                     <div>
                                         <ul>
-                                            <li> <a href="/category">Perfumes</a></li>
-                                            <li> <a href="/category">Makeup</a></li>
-                                            <li> <a href="/category">Sun Care</a></li>
-                                            <li> <a href="/category">Skin Care</a></li>
-                                            <li> <a href="/category">Eye Care</a></li>
-                                            <li> <a href="/category">Hair Care</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="column col-lg-2 col-md-3"> <a href="/category">Kids &amp; Babies</a>
-                                    <div>
-                                        <ul>
-                                            <li><a href="/category">Toys</a></li>
-                                            <li><a href="/category">Games <span>&rsaquo;</span></a>
+                                            <li> <a href="/category">休闲零食<span>&rsaquo;</span></a>
                                                 <div class="dropdown-menu">
                                                     <ul>
-                                                        <li><a href="/category">test 25</a></li>
+                                                        <li> <a href="/category">坚果</a> </li>
+                                                        <li> <a href="/category">糖果</a> </li>
+                                                        <li> <a href="/category">牛肉干</a> </li>
+                                                        <li> <a href="/category">巧克力</a> </li>
+                                                        <li> <a href="/category">膨化食品</a> </li>
                                                     </ul>
                                                 </div>
                                             </li>
-                                            <li><a href="/category">Puzzles</a></li>
-                                            <li><a href="/category">Hobbies</a></li>
-                                            <li><a href="/category">Strollers</a></li>
-                                            <li><a href="/category">Health &amp; Safety</a></li>
+                                            <li> <a href="/category">水果<span>&rsaquo;</span></a>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li> <a href="/category">苹果</a> </li>
+                                                        <li> <a href="/category">香蕉</a> </li>
+                                                        <li> <a href="/category">葡萄</a> </li>
+                                                        <li> <a href="/category">梨子</a> </li>
+                                                        <li> <a href="/category">樱桃</a> </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li> <a href="/category">茶酒饮品<span>&rsaquo;</span></a>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li> <a href="/category">饮料</a></li>
+                                                        <li> <a href="/category">牛奶</a></li>
+                                                        <li> <a href="/category">酒水</a></li>
+                                                        <li> <a href="/category">茶叶</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li><a href="/category">粮油干货<span>&rsaquo;</span></a>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li><a href="/category">食用油</a></li>
+                                                        <li><a href="/category">大米</a></li>
+                                                        <li><a href="/category">老干妈</a></li>
+                                                        <li><a href="/category">挂面</a></li>
+                                                        <li><a href="/category">杂粮</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li><a href="/category">保健滋补<span>&rsaquo;</span></a>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li><a href="/category">蜂蜜</a></li>
+                                                        <li><a href="/category">枸杞</a></li>
+                                                        <li><a href="/category">蛋白粉</a></li>
+                                                        <li><a href="/category">膳食纤维</a></li>
+                                                        <li><a href="/category">胶原蛋白</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="column col-lg-2 col-md-3"> <a href="/category">Sports</a>
+                                <div class="column col-lg-2 col-md-3"> <a href="/category">户外运动</a>
                                     <div>
                                         <ul>
-                                            <li><a href="/category">Cycling</a></li>
-                                            <li><a href="/category">Running</a></li>
-                                            <li><a href="/category">Swimming</a></li>
-                                            <li><a href="/category">Football</a></li>
-                                            <li><a href="/category">Golf</a></li>
-                                            <li><a href="/category">Windsurfing</a></li>
+                                            <li><a href="/category">健身器材<span>&rsaquo;</span></a>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li><a href="/category">哑铃</a></li>
+                                                        <li><a href="/category">跑步机</a></li>
+                                                        <li><a href="/category">沙袋</a></li>
+                                                        <li><a href="/category">呼啦圈</a></li>
+                                                        <li><a href="/category">拉力器</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li><a href="/category">球类用品<span>&rsaquo;</span></a>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li><a href="/category">羽毛球</a></li>
+                                                        <li><a href="/category">羽毛球拍</a></li>
+                                                        <li><a href="/category">乒乓球</a></li>
+                                                        <li><a href="/category">乒乓球拍</a></li>
+                                                        <li><a href="/category">网球</a></li>
+                                                        <li><a href="/category">网球拍</a></li>
+                                                        <li><a href="/category">篮球</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li><a href="/category">骑行<span>&rsaquo;</span></a>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li><a href="/category">自行车</a></li>
+                                                        <li><a href="/category">骑行头盔</a></li>
+                                                        <li><a href="/category">骑行手套</a></li>
+                                                        <li><a href="/category">骑行眼镜</a></li>
+                                                        <li><a href="/category">打气筒</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li><a href="/category">户外登山<span>&rsaquo;</span></a>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li><a href="/category">帐篷</a></li>
+                                                        <li><a href="/category">睡袋</a></li>
+                                                        <li><a href="/category">登山杖</a></li>
+                                                        <li><a href="/category">吊床</a></li>
+                                                        <li><a href="/category">手电筒</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li><a href="/category">运动配件<span>&rsaquo;</span></a>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li><a href="/category">背包</a></li>
+                                                        <li><a href="/category">头巾</a></li>
+                                                        <li><a href="/category">护具</a></li>
+                                                        <li><a href="/category">手套</a></li>
+                                                        <li><a href="/category">腰包</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="column col-lg-2 col-md-3"> <a href="/category">Home &amp; Garden</a>
+                                <div class="column col-lg-2 col-md-3"> <a href="/category">家电</a>
                                     <div>
                                         <ul>
-                                            <li><a href="/category">Bedding</a></li>
-                                            <li><a href="/category">Food</a></li>
-                                            <li><a href="/category">Furniture</a></li>
-                                            <li><a href="/category">Kitchen</a></li>
-                                            <li><a href="/category">Lighting</a></li>
-                                            <li><a href="/category">Tools</a></li>
+                                            <li> <a href="/category">大家电<span>&rsaquo;</span></a>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li> <a href="/category">洗衣机</a> </li>
+                                                        <li> <a href="/category">平板电视</a> </li>
+                                                        <li> <a href="/category">冰箱</a> </li>
+                                                        <li> <a href="/category">空调</a> </li>
+                                                        <li> <a href="/category">油烟机</a> </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li> <a href="/category">厨房电器<span>&rsaquo;</span></a>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li> <a href="/category">电饭煲</a> </li>
+                                                        <li> <a href="/category">电热水壶</a> </li>
+                                                        <li> <a href="/category">电磁炉</a> </li>
+                                                        <li> <a href="/category">豆浆机</a> </li>
+                                                        <li> <a href="/category">微波炉</a> </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li> <a href="/category">生活电器<span>&rsaquo;</span></a>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li> <a href="/category">电风扇</a></li>
+                                                        <li> <a href="/category">电熨斗</a></li>
+                                                        <li> <a href="/category">空气净化器</a></li>
+                                                        <li> <a href="/category">电暖气</a></li>
+                                                        <li> <a href="/category">加湿器</a></li>
+                                                        <li> <a href="/category">电热毯</a></li>
+                                                        <li> <a href="/category">电子驱蚊器</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li><a href="/category">个人护理<span>&rsaquo;</span></a>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li><a href="/category">剃须刀</a></li>
+                                                        <li><a href="/category">牙刷</a></li>
+                                                        <li><a href="/category">电吹风</a></li>
+                                                        <li><a href="/category">体重秤</a></li>
+                                                        <li><a href="/category">直发器</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li><a href="/category">办公设备<span>&rsaquo;</span></a>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li><a href="/category">投影仪</a></li>
+                                                        <li><a href="/category">打印机</a></li>
+                                                        <li><a href="/category">点钞机</a></li>
+                                                        <li><a href="/category">收款机</a></li>
+                                                        <li><a href="/category">保险箱</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="column col-lg-2 col-md-3"> <a href="/category">Wines &amp; Spirits</a>
+                                <div class="column col-lg-2 col-md-3"> <a href="/category">文化用品</a>
                                     <div>
                                         <ul>
-                                            <li><a href="/category">Wine</a></li>
-                                            <li><a href="/category">Whiskey</a></li>
-                                            <li><a href="/category">Vodka</a></li>
-                                            <li><a href="/category">Liqueurs</a></li>
-                                            <li><a href="/category">Beer</a></li>
+                                            <li> <a href="/category">学习用品<span>&rsaquo;</span></a>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li> <a href="/category">笔袋</a> </li>
+                                                        <li> <a href="/category">铅笔</a> </li>
+                                                        <li> <a href="/category">钢笔</a> </li>
+                                                        <li> <a href="/category">橡皮</a> </li>
+                                                        <li> <a href="/category">中性笔</a> </li>
+                                                        <li> <a href="/category">记事本</a> </li>
+                                                        <li> <a href="/category">字帖</a> </li>
+                                                        <li> <a href="/category">毛笔</a> </li>
+                                                        <li> <a href="/category">墨水</a> </li>
+                                                        <li> <a href="/category">尺子</a> </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li> <a href="/category">图书<span>&rsaquo;</span></a>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li> <a href="/category">中外名著</a> </li>
+                                                        <li> <a href="/category">教辅资料</a> </li>
+                                                        <li> <a href="/category">儿童读物</a> </li>
+                                                        <li> <a href="/category">杂志</a> </li>
+                                                        <li> <a href="/category">小说</a> </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li> <a href="/category">乐器<span>&rsaquo;</span></a>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li> <a href="/category">吉他</a></li>
+                                                        <li> <a href="/category">电子琴</a></li>
+                                                        <li> <a href="/category">竖笛</a></li>
+                                                        <li> <a href="/category">口琴</a></li>
+                                                        <li> <a href="/category">架子鼓</a></li>
+                                                        <li> <a href="/category">小提琴</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="column col-lg-2 col-md-3"> <a href="/category">母婴用品</a>
+                                    <div>
+                                        <ul>
+                                            <li> <a href="/category">童装<span>&rsaquo;</span></a>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li> <a href="/category">连体衣</a> </li>
+                                                        <li> <a href="/category">外套</a> </li>
+                                                        <li> <a href="/category">上衣</a> </li>
+                                                        <li> <a href="/category">裤子</a> </li>
+                                                        <li> <a href="/category">袜子</a> </li>
+                                                        <li> <a href="/category">亲子装</a> </li>
+                                                        <li> <a href="/category">连衣裙</a> </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li> <a href="/category">童鞋<span>&rsaquo;</span></a>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li> <a href="/category">学步鞋</a> </li>
+                                                        <li> <a href="/category">靴子</a> </li>
+                                                        <li> <a href="/category">运动鞋</a> </li>
+                                                        <li> <a href="/category">皮鞋</a> </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li> <a href="/category">儿童玩具<span>&rsaquo;</span></a>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li> <a href="/category">儿童乐器</a></li>
+                                                        <li> <a href="/category">积木</a></li>
+                                                        <li> <a href="/category">绘画用品</a></li>
+                                                        <li> <a href="/category">毛绒玩具</a></li>
+                                                        <li> <a href="/category">扭扭车</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li><a href="/category">生活用品<span>&rsaquo;</span></a>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li><a href="/category">奶粉</a></li>
+                                                        <li><a href="/category">纸尿裤</a></li>
+                                                        <li><a href="/category">奶瓶</a></li>
+                                                        <li><a href="/category">推车</a></li>
+                                                        <li><a href="/category">背带</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li><a href="/category">孕妇专区<span>&rsaquo;</span></a>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li><a href="/category">哺乳装</a></li>
+                                                        <li><a href="/category">卫衣</a></li>
+                                                        <li><a href="/category">孕妇裤</a></li>
+                                                        <li><a href="/category">护腰枕</a></li>
+                                                        <li><a href="/category">防辐射群</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li class="menu_brands dropdown"><a href="#">Brands</a>
+                        <li class="contact-link"><a href="#"></a></li>
+                        <li class="menu_brands dropdown"><a href="#">热门商品</a>
                             <div class="dropdown-menu">
                                 <div class="col-lg-1 col-md-2 col-sm-3 col-xs-6"><a href="#"><img src="/image/product/apple_logo-60x60.jpg" title="Apple" alt="Apple" /></a><a href="#">Apple</a></div>
                                 <div class="col-lg-1 col-md-2 col-sm-3 col-xs-6"><a href="#"><img src="/image/product/canon_logo-60x60.jpg" title="Canon" alt="Canon" /></a><a href="#">Canon</a></div>
@@ -434,64 +655,26 @@
                                 <div class="col-lg-1 col-md-2 col-sm-3 col-xs-6"><a href="#"><img src="/image/product/apple_logo-60x60.jpg" title="test2" alt="test2" /></a><a href="#">test2</a></div>
                             </div>
                         </li>
-                        <li class="custom-link"><a href="#">Custom Links</a></li>
-                        <li class="dropdown wrap_custom_block hidden-sm hidden-xs"><a>Custom Block</a>
-                            <div class="dropdown-menu custom_block">
-                                <ul>
-                                    <li>
-                                        <table>
-                                            <tbody>
-                                            <tr>
-                                                <td><img alt="" src="/image/banner/cms-block.jpg"></td>
-                                                <td><img alt="" src="/image/banner/responsive.jpg"></td>
-                                                <td><img alt="" src="/image/banner/cms-block.jpg"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><h4>CMS Blocks</h4></td>
-                                                <td><h4>Responsive Template</h4></td>
-                                                <td><h4>Dedicated Support</h4></td>
-                                            </tr>
-                                            <tr>
-                                                <td>This is a CMS block. You can insert any content (HTML, Text, Images) Here.</td>
-                                                <td>This is a CMS block. You can insert any content (HTML, Text, Images) Here.</td>
-                                                <td>This is a CMS block. You can insert any content (HTML, Text, Images) Here.</td>
-                                            </tr>
-                                            <tr>
-                                                <td><strong><a class="btn btn-primary btn-sm" href="#">Read More</a></strong></td>
-                                                <td><strong><a class="btn btn-primary btn-sm" href="#">Read More</a></strong></td>
-                                                <td><strong><a class="btn btn-primary btn-sm" href="#">Read More</a></strong></td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="dropdown information-link"><a>Pages</a>
+                        <li class="contact-link"><a href="#"></a></li>
+                        <li class="dropdown information-link"><a>站内导航</a>
                             <div class="dropdown-menu">
                                 <ul>
-                                    <li><a href="/login">Login</a></li>
-                                    <li><a href="/register">Register</a></li>
-                                    <li><a href="/category">Category (Grid/List)</a></li>
-                                    <li><a href="/product">Product</a></li>
-                                    <li><a href="/cart">Shopping Cart</a></li>
-                                    <li><a href="/checkout">Checkout</a></li>
-                                    <li><a href="/compare">Compare</a></li>
-                                    <li><a href="/wishlist">Wishlist</a></li>
-                                    <li><a href="/search">Search</a></li>
-                                </ul>
-                                <ul>
-                                    <li><a href="/about-us">About Us</a></li>
-                                    <li><a href="/404">404</a></li>
-                                    <li><a href="/elements">Elements</a></li>
-                                    <li><a href="/faq">Faq</a></li>
-                                    <li><a href="/sitemap">Sitemap</a></li>
-                                    <li><a href="/contact-us">Contact Us</a></li>
+                                    <li><a href="/login">登录</a></li>
+                                    <li><a href="/register">注册</a></li>
+                                    <li><a href="/category">商品分类</a></li>
+                                    <c:if test="${!empty login_user}">
+                                        <li><a href="/cart">购物车</a></li>
+                                        <li><a href="#">联系客服</a></li>
+                                    </c:if>
+                                    <c:if test="${empty login_user}">
+                                        <li><a href="#">购物车</a></li>
+                                        <li><a href="#">联系客服</a></li>
+                                    </c:if>
                                 </ul>
                             </div>
                         </li>
-                        <li class="contact-link"><a href="/contact-us">Contact Us</a></li>
-                        <li class="custom-link-right"><a href="#" target="_blank"> Buy Now!</a></li>
+                        <li class="contact-link"><a href="#"></a></li>
+                        <li class="contact-link"><a href="#">联系我们</a></li>
                     </ul>
                 </div>
             </nav>
@@ -502,7 +685,7 @@
         <div class="container">
             <!-- Breadcrumb Start-->
             <ul class="breadcrumb">
-                <li><a href="/home"><i class="fa fa-home"></i></a></li>
+                <li><a href="/"><i class="fa fa-home"></i></a></li>
                 <li><a href="/compare">Product Comparison</a></li>
             </ul>
             <!-- Breadcrumb End-->
@@ -587,11 +770,11 @@
                             <tbody>
                             <tr>
                                 <td></td>
-                                <td><input type="button" onClick="" class="btn btn-primary btn-block" value="Add to Cart">
+                                <td><input type="button" onClick="" class="btn btn-primary btn-block" value="添加到购物车">
                                     <a class="btn btn-danger btn-block" href="#">Remove</a></td>
-                                <td><input type="button" onClick="" class="btn btn-primary btn-block" value="Add to Cart">
+                                <td><input type="button" onClick="" class="btn btn-primary btn-block" value="添加到购物车">
                                     <a class="btn btn-danger btn-block" href="#">Remove</a></td>
-                                <td><input type="button" onClick="" class="btn btn-primary btn-block" value="Add to Cart">
+                                <td><input type="button" onClick="" class="btn btn-primary btn-block" value="添加到购物车">
                                     <a class="btn btn-danger btn-block" href="#">Remove</a></td>
                             </tr>
                             </tbody>
@@ -608,46 +791,43 @@
             <div class="container">
                 <div class="row">
                     <div class="contact col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                        <h5>Contact Details</h5>
+                        <h5>联系方式</h5>
                         <ul>
-                            <li class="address"><i class="fa fa-map-marker"></i>Central Square, 22 Hoi Wing Road, New Delhi, India</li>
-                            <li class="mobile"><i class="fa fa-phone"></i>+91 9898777656</li>
-                            <li class="email"><i class="fa fa-envelope"></i>Send email via our <a href="/contact-us">Contact Us</a>
+                            <li class="address"><i class="fa fa-map-marker"></i>计算机1408班，东北大学，沈阳，中国，地球</li>
+                            <li class="mobile"><i class="fa fa-phone"></i>8008208820</li>
+                            <li class="email"><i class="fa fa-envelope"></i>发邮件到 <a href="#">联系我们</a>
                         </ul>
                     </div>
                     <div class="column col-lg-2 col-md-2 col-sm-3 col-xs-12">
-                        <h5>Information</h5>
+                        <h5>关于我们</h5>
                         <ul>
-                            <li><a href="/about-us">About Us</a></li>
-                            <li><a href="/about-us">Delivery Information</a></li>
-                            <li><a href="/about-us">Privacy Policy</a></li>
-                            <li><a href="/about-us">Terms &amp; Conditions</a></li>
+                            <li><a href="#">关于我们</a></li>
+                            <li><a href="#">隐私条款</a></li>
                         </ul>
                     </div>
                     <div class="column col-lg-2 col-md-2 col-sm-3 col-xs-12">
-                        <h5>Customer Service</h5>
+                        <h5>用户手册</h5>
                         <ul>
-                            <li><a href="/contact-us">Contact Us</a></li>
-                            <li><a href="#">Returns</a></li>
-                            <li><a href="/sitemap">Site Map</a></li>
+                            <li><a href="#">联系我们</a></li>
+                            <li><a href="#">意见反馈</a></li>
+                            <li><a href="/sitemap">购物指南</a></li>
                         </ul>
                     </div>
                     <div class="column col-lg-2 col-md-2 col-sm-3 col-xs-12">
-                        <h5>Extras</h5>
+                        <h5>关于其他</h5>
                         <ul>
-                            <li><a href="#">Brands</a></li>
-                            <li><a href="#">Gift Vouchers</a></li>
-                            <li><a href="#">Affiliates</a></li>
-                            <li><a href="#">Specials</a></li>
+                            <li><a href="#">优惠券</a></li>
+                            <li><a href="#">分公司</a></li>
+                            <li><a href="#">友情链接</a></li>
                         </ul>
                     </div>
                     <div class="column col-lg-2 col-md-2 col-sm-3 col-xs-12">
-                        <h5>My Account</h5>
+                        <h5>个人账户</h5>
                         <ul>
-                            <li><a href="#">My Account</a></li>
-                            <li><a href="#">Order History</a></li>
-                            <li><a href="#">Wish List</a></li>
-                            <li><a href="#">Newsletter</a></li>
+                            <li><a href="#">个人中心</a></li>
+                            <li><a href="#">历史购买</a></li>
+                            <li><a href="#">我的收藏</a></li>
+                            <li><a href="#">新消息</a></li>
                         </ul>
                     </div>
                 </div>
@@ -657,19 +837,19 @@
             <div class="container">
                 <div id="powered" class="clearfix">
                     <div class="powered_text pull-left flip">
-                        <p>Marketshop Ecommerce Template © 2016 | Template By <a href="http://harnishdesign.net" target="_blank">Harnish Design</a></p>
+                        <p>雏蜂 © 2016 | 雏蜂 By <a href="http://harnishdesign.net" target="_blank">雏蜂小组</a></p>
                     </div>
                     <div class="social pull-right flip"> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/socialicons/facebook.png" alt="Facebook" title="Facebook"></a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/socialicons/twitter.png" alt="Twitter" title="Twitter"> </a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/socialicons/google_plus.png" alt="Google+" title="Google+"> </a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/socialicons/pinterest.png" alt="Pinterest" title="Pinterest"> </a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/socialicons/rss.png" alt="RSS" title="RSS"> </a> </div>
                 </div>
-                <div class="bottom-row">
-                    <div class="custom-text text-center">
-                        <p>This is a CMS block. You can insert any content (HTML, Text, Images) Here. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                    </div>
-                    <div class="payments_types"> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/payment/payment_paypal.png" alt="paypal" title="PayPal"></a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/payment/payment_american.png" alt="american-express" title="American Express"></a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/payment/payment_2checkout.png" alt="2checkout" title="2checkout"></a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/payment/payment_maestro.png" alt="maestro" title="Maestro"></a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/payment/payment_discover.png" alt="discover" title="Discover"></a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/payment/payment_mastercard.png" alt="mastercard" title="MasterCard"></a> </div>
-                </div>
+                <%--<div class="bottom-row">--%>
+                <%--<div class="custom-text text-center">--%>
+                <%--<p>This is a CMS block. You can insert any content (HTML, Text, Images) Here. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>--%>
+                <%--</div>--%>
+                <%--<div class="payments_types"> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/payment/payment_paypal.png" alt="paypal" title="PayPal"></a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/payment/payment_american.png" alt="american-express" title="American Express"></a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/payment/payment_2checkout.png" alt="2checkout" title="2checkout"></a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/payment/payment_maestro.png" alt="maestro" title="Maestro"></a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/payment/payment_discover.png" alt="discover" title="Discover"></a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="/image/payment/payment_mastercard.png" alt="mastercard" title="MasterCard"></a> </div>--%>
+                <%--</div>--%>
             </div>
         </div>
-        <div id="back-top"><a data-toggle="tooltip" title="Back to Top" href="javascript:void(0)" class="backtotop"><i class="fa fa-chevron-up"></i></a></div>
+        <div id="back-top"><a data-toggle="tooltip" title="返回顶部" href="javascript:void(0)" class="backtotop"><i class="fa fa-chevron-up"></i></a></div>
     </footer>
     <!--Footer End-->
     <!-- Facebook Side Block Start -->

@@ -8,6 +8,7 @@ import com.Tinybees.model.*;
 import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.apache.activemq.ActiveMQConnection;
 import org.apache.activemq.ActiveMQConnectionFactory;
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -212,5 +213,28 @@ public class AdminController {
         // 发送消息到目的地方
         System.out.println(pro_message);
         producer.send(message);
+    }
+
+    @RequestMapping("/get_con_community")
+    public ModelAndView get_con_community(){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("admin/user/chatserver");
+        return modelAndView;
+    }
+
+    @RequestMapping( value = "/get_chatserver/{clientID}")
+    public String get_chatserver(HttpServletRequest request,HttpServletResponse response, HttpSession session, @PathVariable String clientID) throws IOException {
+        response.setContentType("text/plain");
+        response.setCharacterEncoding("UTF-8");
+        response.getWriter().print(clientID);
+        System.out.println(clientID);
+        HttpSession httpSession = request.getSession();
+        httpSession.setAttribute("clientID",clientID);
+        return clientID;
+    }
+
+    @RequestMapping("/chat_server")
+    public void chat_server(){
+
     }
 }

@@ -18,6 +18,7 @@
     <resources mapping="/laydate/**" location="/laydate/"/>
     <resources mapping="/AdminLTE-cn/**" location="/AdminLTE-cn/"/>
     <resources mapping="/activemq/**" location="/activemq"/>
+    <resources mapping="/WEB-INF/**" location="/WEB-INF/"/>
 
     <!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
     <beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
